@@ -1,8 +1,17 @@
 import React from 'react';
 
-const App = () => {
+import { useRoutes } from 'react-router-dom'; 
+import { routes } from '../../routes/index';
+import Header from '../Header';
+
+
+function App() {
+    let content = useRoutes(routes);
     return (
-        <div>App</div>
+        <div >
+            <Header />
+            {content}
+        </div>
     )
 }
 
