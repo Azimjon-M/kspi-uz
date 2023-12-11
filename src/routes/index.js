@@ -1,7 +1,7 @@
 import React from "react";
 import Root from "../root/index";
 
-import Home from "../pages/Home";
+import Main from "../pages/Main";
 
 export const routes = [
     {
@@ -9,7 +9,7 @@ export const routes = [
         path: '/',
         children: [
             {
-                element: <Home />,
+                element: <Main />,
                 path: '/'
             }
             // {
