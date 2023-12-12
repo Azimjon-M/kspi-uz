@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import kspi_logo from "../../assets/icons/logo_kspi.png";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
-import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useFormik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import {setLangUz, setLangRu, setLangEn} from "../../redux/moduls/language/action/";
@@ -55,21 +55,23 @@ function Navbar() {
     };
 
     return (
-        <nav className="flex bg-white shadow-2xl sticky z-50">
+        <nav className="flex justify-between bg-white shadow-2xl sticky z-50 px-8 py-4">
+            {/* Doimo bor */}
             <Link to="/">
-                <div className="min-w-[250px] flex items-center gap-x-[10px] my-[25px] mx-[60px]">
+                <div className="w-[150px] lg:min-w-[250px] flex items-center gap-x-[10px] lg:my-[25px] lg:mx-[60px]">
                     <img
-                        className="w-[60px] h-auto"
+                        className="w-[35px] lg:w-[60px] h-auto"
                         src={kspi_logo}
                         alt="icon"
                     />
-                    <p className="text-[18px] text-[#004269] font-bold">
+                    <p className="text-[14px] leading-4 lg:text-[18px] text-[#004269] font-bold">
                         <FormattedMessage id="navLogo" />
                     </p>
                 </div>
             </Link>
-            <div className="w-full flex flex-col">
-                <div className="flex justify-between bg-[#004269] text-white px-[20px] rounded-bl-lg">
+            {/* lg dan bor */}
+            <div className="w-full flex items-end justify-center flex-col">
+                <div className="hidden lg:flex lg:justify-between bg-[#004269] text-white px-[20px] rounded-bl-lg ">
                     <ul className="flex gap-x-[20px] text-[15px] font-medium">
                         <li className="py-[4px]">
                             <Link
@@ -143,7 +145,7 @@ function Navbar() {
                         </form>
                     </div>
                 </div>
-                <div className="w-full h-full flex items-center justify-center">
+                <div className="hidden w-full h-full lg:flex lg:items-center lg:justify-center">
                     <ul className="flex items-center gap-x-6 text-[22px] text-[#004269] font-semibold">
                         <li>
                             <FormattedMessage id="navYangiliklar" />
@@ -187,6 +189,11 @@ function Navbar() {
                         </li>
                     </ul>
                 </div>
+                {/* lg ga qadar bor */}
+                <button className="btn btn-outline lg:hidden flex items-center gap-x-2 font-medium">
+                    <AiOutlineMenu />
+                    MENU
+                </button>
             </div>
         </nav>
     );
