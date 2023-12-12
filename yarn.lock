@@ -3792,7 +3792,7 @@ culori@^3:
 
 daisyui@^4.4.19:
   version "4.4.19"
-  resolved "https://registry.npmjs.org/daisyui/-/daisyui-4.4.19.tgz"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.4.19.tgz#90187e2ce5c914e774bb174a13f446aac7f555ad"
   integrity sha512-IjOLWwnndD4N7Ut5CDxbUsaVtbqXPeVHM92IcgxGFxpuOd3CCKW/PAXZH6JoBTHFRaN57vB9XqEhdWm5yC+bPA==
   dependencies:
     css-selector-tokenizer "^0.8"
