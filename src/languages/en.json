@@ -1,9 +1,14 @@
 {
-    "hemis-tizimi": "HEMIS systems",
-    "institut-jurnali": "Journal of the institute",
-    "konferensyalar": "Conferences",
-    "ikkinchi-talim": "Second lesson",
-    "ochiq-malumotlar": "Open sources",
-    "logo": "Kokan state pedagogical institute",
-    "searchInpText": "Type here"
+    "hedHemis-tizimi": "HEMIS systems",
+    "hedInstitut-jurnali": "Journal of the institute",
+    "hedKonferensyalar": "Conferences",
+    "hedIkkinchi-talim": "Second lesson",
+    "hedOchiq-malumotlar": "Open sources",
+    "navLogo": "Kokan state pedagogical institute",
+    "navInstitut": "INSTITUTE",
+    "navFaoliyat": "ACTIVITY",
+    "navTuzilma": "STRUCTURE",
+    "navYangiliklar": "NEWS",
+    "navTalabalar": "STUDENTS",
+    "navAbiturient": "APPLICANT"
 }

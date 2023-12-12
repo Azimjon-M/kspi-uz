@@ -1,9 +1,9 @@
 export const setLangUz = () => {
-    return { type: "setLangUz" };
+    return { type: "uz" };
 };
 export const setLangRu = () => {
-    return { type: "setLangRu" };
+    return { type: "ru" };
 };
 export const setLangEn = () => {
-    return { type: "setLangEn" };
+    return { type: "en" };
 };
