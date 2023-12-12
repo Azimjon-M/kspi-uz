@@ -131,10 +131,10 @@ function Navbar() {
                         <li>Talabalar</li>
                         <li>Abturient</li>
                         <li>
-                            <div className="">
-                                <img src={flag_1} alt="flag uz" />
-                                <img src={flag_2} alt="flag ru" />
-                                <img src={flag_3} alt="flag en" />
+                            <div className="flex gap-x-2">
+                                <img className="w-[40px]" src={flag_1} alt="flag uz" />
+                                <img className="w-[40px]" src={flag_2} alt="flag ru" />
+                                <img className="w-[40px]" src={flag_3} alt="flag en" />
                             </div>
                         </li>
                     </ul>
