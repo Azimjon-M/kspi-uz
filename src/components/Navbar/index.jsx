@@ -4,12 +4,17 @@ import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { useFormik } from "formik";
+import { useDispatch, useSelector } from "react-redux";
+import {setLangUz, setLangRu, setLangEn} from "../../redux/moduls/language/action/";
 
-import flag_1 from '../../assets/icons/flag-uz.png'
-import flag_2 from '../../assets/icons/flag-ru.png'
-import flag_3 from '../../assets/icons/flag-en.png'
+import flag_1 from "../../assets/icons/flag-uz.png";
+import flag_2 from "../../assets/icons/flag-ru.png";
+import flag_3 from "../../assets/icons/flag-en.png";
 
 function Navbar() {
+    const dispatch = useDispatch()
+    const isLang = useSelector((state) => state.reducerLang.isLang);
+
     const [isFocusedSearInp, setFocusedSearInp] = useState(false);
 
     // search
@@ -32,9 +37,25 @@ function Navbar() {
     const handleClickClose = () => {
         setFocusedSearInp(false);
     };
+    // Change Language
+    const handleClickLang = (lang) => {
+        switch (lang) {
+            case "uz":
+                dispatch(setLangUz());
+                break;
+            case "ru":
+                dispatch(setLangRu());
+                break;
+            case "en":
+                dispatch(setLangEn());
+                break;
+            default:
+                break;
+        }
+    };
 
     return (
-        <nav className="flex border border-black bg-white shadow-xl">
+        <nav className="flex bg-white shadow-2xl sticky z-50">
             <Link to="/">
                 <div className="min-w-[250px] flex items-center gap-x-[10px] my-[25px] mx-[60px]">
                     <img
@@ -43,7 +64,7 @@ function Navbar() {
                         alt="icon"
                     />
                     <p className="text-[18px] text-[#004269] font-bold">
-                        <FormattedMessage id="logo" />
+                        <FormattedMessage id="navLogo" />
                     </p>
                 </div>
             </Link>
@@ -55,30 +76,30 @@ function Navbar() {
                                 target="_blank"
                                 to="https://talaba.kspi.uz/dashboard/login"
                             >
-                                <FormattedMessage id="hemis-tizimi" />
+                                <FormattedMessage id="hedHemis-tizimi" />
                             </Link>
                         </li>
                         <li className="cursor-pointer py-[4px]">
                             {/* Dropdown Boshqa saytlarga Yo'llantiriladi */}
-                            <FormattedMessage id="institut-jurnali" />
+                            <FormattedMessage id="hedInstitut-jurnali" />
                         </li>
                         <li className="py-[4px]">
                             <Link
                                 target="_blank"
                                 to="https://conferences.kspi.uz/"
                             >
-                                <FormattedMessage id="konferensyalar" />
+                                <FormattedMessage id="hedKonferensyalar" />
                             </Link>
                         </li>
                         <li className="py-[4px]">
                             <Link target="_blank" to="https://my.edu.uz/">
-                                <FormattedMessage id="ikkinchi-talim" />
+                                <FormattedMessage id="hedIkkinchi-talim" />
                             </Link>
                         </li>
                         <li className="py-[4px]">
                             {/* O'zimizni Page */}
                             <Link to="">
-                                <FormattedMessage id="ochiq-malumotlar" />
+                                <FormattedMessage id="hedOchiq-malumotlar" />
                             </Link>
                         </li>
                     </ul>
@@ -124,17 +145,44 @@ function Navbar() {
                 </div>
                 <div className="w-full h-full flex items-center justify-center">
                     <ul className="flex items-center gap-x-6 text-[22px] text-[#004269] font-semibold">
-                        <li>Tuzilma</li>
-                        <li>Faoliyat</li>
-                        <li>Tuzilma</li>
-                        <li>Yangiliklar</li>
-                        <li>Talabalar</li>
-                        <li>Abturient</li>
                         <li>
-                            <div className="flex gap-x-2">
-                                <img className="w-[40px]" src={flag_1} alt="flag uz" />
-                                <img className="w-[40px]" src={flag_2} alt="flag ru" />
-                                <img className="w-[40px]" src={flag_3} alt="flag en" />
+                            <FormattedMessage id="navYangiliklar" />
+                        </li>
+                        <li>
+                            <FormattedMessage id="navInstitut" />
+                        </li>
+                        <li>
+                            <FormattedMessage id="navFaoliyat" />
+                        </li>
+                        <li>
+                            <FormattedMessage id="navTuzilma" />
+                        </li>
+                        <li>
+                            <FormattedMessage id="navTalabalar" />
+                        </li>
+                        <li>
+                            <FormattedMessage id="navAbiturient" />
+                        </li>
+                        <li>
+                            <div className="flex items-end gap-x-2">
+                                <img
+                                    onClick={() => handleClickLang("uz")}
+                                    className={` ${isLang === "uz" && 'border-b-[3px] border-[#004269]'} w-[35px] cursor-pointer`}
+                                    src={flag_1}
+                                    alt="flag uz"
+                                />
+                                <img
+                                    onClick={() => handleClickLang("ru")}
+                                    className={` ${isLang === "ru" && 'border-b-[3px] border-[#004269]'} w-[35px] cursor-pointer`}
+                                    src={flag_2}
+                                    alt="flag ru"
+                                />
+                                <img
+                                    onClick={() => handleClickLang("en")}
+                                    className={` ${isLang === "en" && 'border-b-[3px] border-[#004269]'} w-[35px] cursor-pointer`}
+                                    src={flag_3}
+                                    alt="flag en"
+                                />
                             </div>
                         </li>
                     </ul>
