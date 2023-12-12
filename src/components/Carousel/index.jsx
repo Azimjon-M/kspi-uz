@@ -10,9 +10,9 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
 
 //IMG
-import img1 from '../../assets/images/kspi-img.jpg'
-import img2 from '../../assets/images/kspi-img2.jpg'
-import img3 from '../../assets/images/kspi-img3.png'
+import img1 from '../../assets/images/kspi-img1.jpg'
+import img2 from '../../assets/images/kspi-img1.jpg'
+import img3 from '../../assets/images/kspi-img1.jpg'
 
 const Carousel = () => {
     return (
