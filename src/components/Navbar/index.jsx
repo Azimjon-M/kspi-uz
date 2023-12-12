@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { useFormik } from "formik";
 
+import flag_1 from '../../assets/icons/flag-uz.png'
+import flag_2 from '../../assets/icons/flag-ru.png'
+import flag_3 from '../../assets/icons/flag-en.png'
+
 function Navbar() {
     const [isFocusedSearInp, setFocusedSearInp] = useState(false);
 
@@ -31,12 +35,18 @@ function Navbar() {
 
     return (
         <nav className="flex border border-black bg-white shadow-xl">
-            <div className="min-w-[250px] flex items-center gap-x-[10px] my-[25px] mx-[60px]">
-                <img className="w-[60px] h-auto" src={kspi_logo} alt="icon" />
-                <p className="text-[18px] text-[#004269] font-bold">
-                    <FormattedMessage id="logo" />
-                </p>
-            </div>
+            <Link to="/">
+                <div className="min-w-[250px] flex items-center gap-x-[10px] my-[25px] mx-[60px]">
+                    <img
+                        className="w-[60px] h-auto"
+                        src={kspi_logo}
+                        alt="icon"
+                    />
+                    <p className="text-[18px] text-[#004269] font-bold">
+                        <FormattedMessage id="logo" />
+                    </p>
+                </div>
+            </Link>
             <div className="w-full flex flex-col">
                 <div className="flex justify-between bg-[#004269] text-white px-[20px] rounded-bl-lg">
                     <ul className="flex gap-x-[20px] text-[15px] font-medium">
@@ -113,14 +123,20 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="w-full h-full flex items-center justify-center">
-                    <ul className="flex items-center">
+                    <ul className="flex items-center gap-x-6 text-[22px] text-[#004269] font-semibold">
                         <li>Tuzilma</li>
                         <li>Faoliyat</li>
                         <li>Tuzilma</li>
                         <li>Yangiliklar</li>
                         <li>Talabalar</li>
                         <li>Abturient</li>
-                        <li>Language</li>
+                        <li>
+                            <div className="flex gap-x-2">
+                                <img className="w-[40px]" src={flag_1} alt="flag uz" />
+                                <img className="w-[40px]" src={flag_2} alt="flag ru" />
+                                <img className="w-[40px]" src={flag_3} alt="flag en" />
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
