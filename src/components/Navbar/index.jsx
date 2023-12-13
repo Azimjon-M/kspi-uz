@@ -73,7 +73,7 @@ function Navbar() {
                         src={kspi_logo}
                         alt="icon"
                     />
-                    <p className="text-[11px] leading-4 text-[#004269] font-bold sm:text-[13px] md:text-[15px] xl:leading-6 xl:text-[16px]">
+                    <p className="text-[11px] leading-4 text-[#004269] font-bold sm:text-[13px] md:text-[15px] xl:leading-6 xl:text-[18px]">
                         <FormattedMessage id="navLogo" />
                     </p>
                 </div>
