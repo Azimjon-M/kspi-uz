@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Carousel from '../../components/Carousel';
+import Interactive from '../../components/Interactive';
 import News from '../../components/News';
 
 function Main() {
@@ -8,6 +9,7 @@ function Main() {
         <div>
             <Navbar />
             <Carousel />
+            <Interactive />
             <News />
         </div>
     )
