@@ -1,9 +1,14 @@
 {
-    "hemis-tizimi": "HEMIS tizimi",
-    "institut-jurnali": "Institut jurnali",
-    "konferensyalar": "Konferensyalar",
-    "ikkinchi-talim": "Ikkinchi ta'lim",
-    "ochiq-malumotlar": "Ochiq manbalar",
-    "logo": "Qo'qon davlat pedagogika insituti",
-    "searchInpText": "Shu yerga yozing"
+    "hedHemis-tizimi": "HEMIS tizimi",
+    "hedInstitut-jurnali": "Institut jurnali",
+    "hedKonferensyalar": "Konferensyalar",
+    "hedIkkinchi-talim": "Ikkinchi ta'lim",
+    "hedOchiq-malumotlar": "Ochiq manbalar",
+    "navLogo": "Qo'qon davlat pedagogika insituti",
+    "navInstitut": "INSTITUT",
+    "navFaoliyat": "FAOLIYAT",
+    "navTuzilma": "TUZILMA",
+    "navYangiliklar": "YANGILIKLAR",
+    "navTalabalar": "TALABALAR",
+    "navAbiturient": "ABITURIENT"
 }
