@@ -1,4 +1,6 @@
 import React from 'react'
+import { FormattedMessage } from "react-intl";
+
 import { FaLongArrowAltRight } from "react-icons/fa";
 import img from '../../assets/images/kspi-img1.jpg'
 
@@ -22,7 +24,7 @@ const News = () => {
                                 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
                             </p>
                             <button className="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">
-                                Batafsil
+                                <FormattedMessage id='batafsil'/>
                                 <FaLongArrowAltRight />
                             </button>
                         </div>
@@ -38,7 +40,7 @@ const News = () => {
                             <p className="leading-relaxed line-clamp-3 text-base dark:text-gray-300">
                                 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
                             </p>
-                            <button className="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Batafsil</button>
+                            <button className="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center"><FormattedMessage id='batafsil'/></button>
                         </div>
                     </div>
                 </div>
@@ -52,7 +54,7 @@ const News = () => {
                             <p className="leading-relaxed line-clamp-3 text-base dark:text-gray-300">
                                 Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum inventore et maxime amet.
                             </p>
-                            <button className="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Batafsil</button>
+                            <button className="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center"><FormattedMessage id='batafsil'/></button>
                         </div>
                     </div>
                 </div>
@@ -66,7 +68,7 @@ const News = () => {
                             <p className="leading-relaxed line-clamp-3 text-base dark:text-gray-300">
                                 Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum inventore et maxime amet.
                             </p>
-                            <button className="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Batafsil</button>
+                            <button className="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center"><FormattedMessage id='batafsil'/></button>
                         </div>
                     </div>
                 </div>
