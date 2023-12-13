@@ -58,25 +58,30 @@ function Navbar() {
         }
     };
 
+    // useEffect(() => {
+    //     const scroll = window.scrollY
+    //     console.log(scroll);
+    // }, [])
+
     return (
-        <nav className="flex justify-between bg-white shadow-2xl sticky z-50 px-4 py-4 xl:px-0 xl:py-0">
+        <nav className="flex justify-between bg-white shadow-2xl sticky z-50 px-4 py-4 sm:px-6 md:px-8 xl:px-0 xl:py-0">
             {/* Doimo bor */}
             <Link to="/">
-                <div className="w-[150px] flex items-center gap-x-[10px] xl:w-[280px] xl:my-[25px] xl:ms-[40px]">
+                <div className="w-[150px] flex items-center gap-x-[10px] sm:w-[180px] md:gap-x-[15px] xl:w-[280px] xl:my-[25px] xl:ms-[40px]">
                     <img
-                        className="w-[32px] xl:w-[60px] h-auto"
+                        className="w-[32px] sm:w-[36px] md:w-[45px] xl:w-[60px] h-auto"
                         src={kspi_logo}
                         alt="icon"
                     />
-                    <p className="text-[11px] leading-4 text-[#004269] font-bold xl:leading-6 xl:text-[16px]">
+                    <p className="text-[11px] leading-4 text-[#004269] font-bold sm:text-[13px] md:text-[15px] xl:leading-6 xl:text-[16px]">
                         <FormattedMessage id="navLogo" />
                     </p>
                 </div>
             </Link>
-            {/* lg dan bor */}
+            {/* Header */}
             <div className="w-full flex items-end justify-center flex-col">
                 <div className="hidden xl:flex xl:justify-between bg-[#004269] text-white px-[20px] rounded-bl-lg ">
-                    <ul className="flex gap-x-[20px] text-[15px] font-medium">
+                    <ul className="flex gap-x-[20px] text-[14px] font-medium">
                         <li className="py-[4px]">
                             <Link
                                 target="_blank"
@@ -85,7 +90,7 @@ function Navbar() {
                                 <FormattedMessage id="hedHemis-tizimi" />
                             </Link>
                         </li>
-                        <li className="cursor-pointer py-[4px]">
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-12px] after:w-[7px] after:h-[7px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] cursor-pointer py-[4px] mr-3">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={0}
@@ -168,8 +173,8 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
-                    <ul className="flex items-center gap-x-4 text-[18px] text-[#004269] font-semibold">
-                        <li>
+                    <ul className="flex items-center gap-x-8 text-[#004269] font-semibold">
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={1}
@@ -191,7 +196,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li>
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={2}
@@ -213,7 +218,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li>
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={3}
@@ -235,7 +240,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li>
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={4}
@@ -257,7 +262,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li>
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={5}
@@ -279,7 +284,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li>
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={6}
@@ -335,7 +340,7 @@ function Navbar() {
                     </ul>
                 </div>
                 {/* lg ga qadar bor */}
-                <button className="btn btn-outline xl:hidden flex items-center gap-x-2 font-medium">
+                <button className="btn btn-sm btn-outline xl:hidden flex items-center gap-x-2 font-medium md:btn-md">
                     <AiOutlineMenu />
                     MENU
                 </button>
