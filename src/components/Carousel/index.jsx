@@ -26,7 +26,7 @@ const Carousel = () => {
                 }}
                 loop={true}
                 modules={[Autoplay, Navigation]}
-                className="mySwiper w-[100%] h-[100vh] md:h-[calc(100vh-50px)] lg:h-[calc(100vh-130px)]"
+                className="mySwiper w-[100%] h-[60vh] md:h-[80vh] lg:h-[calc(100vh-130px)]"
             >
                 <SwiperSlide><img className='block w-[100%] h-[100%] object-cover' src={img1} alt="Institut rasmi" /></SwiperSlide>
                 <SwiperSlide><img className='block w-[100%] h-[100%] object-cover' src={img2} alt="Institut rasmi" /></SwiperSlide>
