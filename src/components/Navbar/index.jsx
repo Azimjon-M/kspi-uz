@@ -99,10 +99,10 @@ function Navbar() {
                                     className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-black"
                                 >
                                     <li>
-                                        <a>Item 1</a>
+                                        <a href="w">Item 1</a>
                                     </li>
                                     <li>
-                                        <a>Item 2</a>
+                                        <a href="w">Item 2</a>
                                     </li>
                                 </ul>
                             </div>
@@ -183,10 +183,10 @@ function Navbar() {
                                     className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                 >
                                     <li>
-                                        <a>Item 1</a>
+                                        <a href="w">Item 1</a>
                                     </li>
                                     <li>
-                                        <a>Item 2</a>
+                                        <a href="w">Item 2</a>
                                     </li>
                                 </ul>
                             </div>
@@ -205,10 +205,10 @@ function Navbar() {
                                     className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                 >
                                     <li>
-                                        <a>Item 1</a>
+                                        <a href="w">Item 1</a>
                                     </li>
                                     <li>
-                                        <a>Item 2</a>
+                                        <a href="w">Item 2</a>
                                     </li>
                                 </ul>
                             </div>
@@ -227,10 +227,10 @@ function Navbar() {
                                     className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                 >
                                     <li>
-                                        <a>Item 1</a>
+                                        <a href="w">Item 1</a>
                                     </li>
                                     <li>
-                                        <a>Item 2</a>
+                                        <a href="w">Item 2</a>
                                     </li>
                                 </ul>
                             </div>
@@ -249,10 +249,10 @@ function Navbar() {
                                     className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                 >
                                     <li>
-                                        <a>Item 1</a>
+                                        <a href="w">Item 1</a>
                                     </li>
                                     <li>
-                                        <a>Item 2</a>
+                                        <a href="w">Item 2</a>
                                     </li>
                                 </ul>
                             </div>
@@ -271,10 +271,10 @@ function Navbar() {
                                     className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                 >
                                     <li>
-                                        <a>Item 1</a>
+                                        <a href="w">Item 1</a>
                                     </li>
                                     <li>
-                                        <a>Item 2</a>
+                                        <a href="w">Item 2</a>
                                     </li>
                                 </ul>
                             </div>
@@ -293,10 +293,10 @@ function Navbar() {
                                     className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                 >
                                     <li>
-                                        <a>Item 1</a>
+                                        <a href="w">Item 1</a>
                                     </li>
                                     <li>
-                                        <a>Item 2</a>
+                                        <a href="w">Item 2</a>
                                     </li>
                                 </ul>
                             </div>
