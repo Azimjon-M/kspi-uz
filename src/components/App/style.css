@@ -1,3 +1,6 @@
 .style-transition-01 {
     transition: all 0.2s linear;
 }
+.style-transition-02 {
+    transition: all 0.3s linear;
+}
