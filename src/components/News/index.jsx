@@ -25,7 +25,7 @@ const News = () => {
     return (
         <div className='px-5 py-3 md:px-10 lg:px-20'>
             <div className='flex items-center justify-between my-1 md:my-3'>
-                <h2 className='text-xl md:text-3xl font-bold my-2'>Yangiliklar va tadbirlar</h2>
+                <h2 className='text-xl md:text-3xl font-bold my-2'><FormattedMessage id='newsHeading' /></h2>
             </div>
 
             <div className="grid md:grid-cols-1 xl:grid-cols-2">
@@ -40,7 +40,7 @@ const News = () => {
                                     {item.title}
                                 </h2>
                                 <button className="my-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">
-                                    <FormattedMessage id='batafsil' />
+                                    <FormattedMessage id='newsBatafsil' />
                                 </button>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ const News = () => {
                                         {item.title}
                                     </h2>
                                     <button className="my-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">
-                                        <FormattedMessage id='batafsil' />
+                                        <FormattedMessage id='newsBatafsil' />
                                     </button>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@ const News = () => {
                 </div>
             </div>
             <div className='flex justify-end my-2'>
-                <button className='flex items-center  md:text-xl'>Barcha yangiliklar <FaLongArrowAltRight /></button>
+                <button className='flex items-center  md:text-xl'><FormattedMessage id='newsToPage' /> <FaLongArrowAltRight /></button>
             </div>
         </div>
     )
