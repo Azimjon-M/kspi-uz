@@ -74,7 +74,7 @@ function Interactive() {
                 Biz osmonlarni zaft etamiz
               </p>
             </div>
-            <dl class="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+            <dl class="mt-8 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
               <div class="flex flex-col bg-white/5 p-8">
                 <dt class="text-sm font-semibold leading-6 text-gray-300">
                   Talabalar
