@@ -61,9 +61,9 @@ function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const threshold = 200;
+            const threshold = 120;
             const scrollY = window.scrollY;
-            setSticky(scrollY > threshold);
+            setSticky(scrollY >= threshold);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -75,7 +75,7 @@ function Navbar() {
     }, []);
 
     return (
-        <nav className={`${isSticky && "sticky top-0 left-0"} flex justify-between bg-white shadow-2xl sticky z-50 px-4 py-4 sm:px-6 md:px-8 xl:px-0 xl:py-0`}>
+        <nav className={`${isSticky && "sticky -top-1 left-0"} flex justify-between bg-white shadow-2xl sticky z-50 px-4 py-4 sm:px-6 md:px-8 xl:px-0 xl:py-0`}>
             {/* Doimo bor */}
             <Link to="/">
                 <div className="w-[150px] flex items-center gap-x-[10px] sm:w-[180px] md:gap-x-[15px] xl:w-[280px] xl:my-[25px] xl:ms-[40px]">
