@@ -11,7 +11,7 @@ import { FaRegEye } from "react-icons/fa";
 function Interactive() {
   return (
     <div>
-      <div className="max-w-xs md:max-w-7xl mx-auto relative -top-5 z-40 bg-white rounded-lg shadow-md">
+      <div className="max-w-xs md:max-w-7xl mx-auto relative -top-5 z-40 py-2 bg-white rounded-lg shadow-md">
         <ul className="xs:flex xs:flex-col md:flex">
           <li className=" flex justify-center md:w-2/12">
             <Link className="flex flex-col justify-center items-center group my-9 w-full md:border-r border-[#ebebeb] text-center">
