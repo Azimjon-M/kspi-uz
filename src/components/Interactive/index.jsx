@@ -9,7 +9,7 @@ import { FormattedMessage } from "react-intl";
 function Interactive() {
   return (
     <div>
-      <div className="max-w-7xl mx-auto relative -top-5 z-50 bg-white rounded-lg shadow-md">
+      <div className="max-w-7xl mx-auto relative -top-5 z-40 bg-white rounded-lg shadow-md">
         <ul className="flex">
           <li className=" flex justify-center w-2/12">
             <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
