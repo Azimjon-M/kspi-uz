@@ -5,12 +5,14 @@ import { GiBookshelf } from "react-icons/gi";
 import { MdOutlineLiveTv } from "react-icons/md";
 import { PiChalkboardTeacherFill } from "react-icons/pi";
 import { FormattedMessage } from "react-intl";
+import { FaRegCalendarCheck } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa";
 
 function Interactive() {
   return (
     <div>
-      <div className="max-w-7xl mx-auto relative -top-5 z-40 bg-white rounded-lg shadow-md">
-        <ul className="flex">
+      <div className="sm:max-w-sm md:max-w-4xl lg:max-w-7xl mx-auto relative -top-5 z-40 bg-white rounded-lg shadow-md">
+        <ul className="md:flex-row">
           <li className=" flex justify-center w-2/12">
             <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
               <RiComputerLine className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
@@ -23,7 +25,7 @@ function Interactive() {
             <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
               <GiBookshelf className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
               <h2 className="uppercase mt-2 text-[#004269] font-bold">
-                e-kutubxona
+                <FormattedMessage id="intEKutubxona" />
               </h2>
             </Link>
           </li>
@@ -31,7 +33,7 @@ function Interactive() {
             <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
               <PiChalkboardTeacherFill className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
               <h2 className="uppercase mt-2 text-[#004269] font-bold">
-                Masofaviy ta'lim
+                <FormattedMessage id="intMasofaviyTalim" />
               </h2>
             </Link>
           </li>
@@ -39,23 +41,23 @@ function Interactive() {
             <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
               <MdOutlineLiveTv className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
               <h2 className="uppercase mt-2 text-[#004269] font-bold">
-                Video maruzalar
+                <FormattedMessage id="intVideoMaruzalar" />
               </h2>
             </Link>
           </li>
           <li className=" flex justify-center w-2/12">
             <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
-              <RiComputerLine className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+              <FaRegCalendarCheck className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
               <h2 className="uppercase mt-2 text-[#004269] font-bold">
-                Qabul-2024
+                <FormattedMessage id="intQabul" />
               </h2>
             </Link>
           </li>
           <li className=" flex justify-center w-2/12">
             <Link className="flex flex-col justify-center items-center group my-9 w-full text-center">
-              <RiComputerLine className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+              <FaRegEye className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
               <h2 className="uppercase mt-2 text-[#004269] font-bold">
-                Imtixonlarni kuzatish
+                <FormattedMessage id="intImtixonlarniKuzatish" />
               </h2>
             </Link>
           </li>
