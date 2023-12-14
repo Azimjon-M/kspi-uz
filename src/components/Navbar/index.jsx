@@ -80,7 +80,7 @@ function Navbar() {
             <Link to="/">
                 <div className="w-[150px] flex items-center gap-x-[10px] sm:w-[180px] md:gap-x-[15px] xl:w-[280px] xl:my-[25px] xl:ms-[40px]">
                     <img
-                        className="w-[32px] sm:w-[36px] md:w-[45px] xl:w-[60px] h-auto"
+                        className="w-[32px] sm:w-[36px] md:w-[45px] xl:w-[60px] 3xl:w-[20px] 3xl:border h-auto"
                         src={kspi_logo}
                         alt="icon"
                     />
@@ -184,7 +184,7 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
-                    <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[22px]">
+                    <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[22px] ">
                         <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
                             <div className="dropdown dropdown-hover">
                                 <div
