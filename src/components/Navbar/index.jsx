@@ -75,7 +75,7 @@ function Navbar() {
     }, []);
 
     return (
-        <nav className={`${isSticky && "sticky -top-1 left-0"} flex justify-between bg-white shadow-2xl sticky z-50 px-4 py-4 sm:px-6 md:px-8 xl:px-0 xl:py-0`}>
+        <nav className={`${isSticky && "sticky -top-[1px] left-0"} flex justify-between bg-white shadow-2xl sticky z-50 px-4 py-4 sm:px-6 md:px-8 xl:px-0 xl:py-0`}>
             {/* Doimo bor */}
             <Link to="/">
                 <div className="w-[150px] flex items-center gap-x-[10px] sm:w-[180px] md:gap-x-[15px] xl:w-[280px] xl:my-[25px] xl:ms-[40px]">
@@ -184,7 +184,7 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
-                    <ul className="flex items-center gap-x-8 text-[#004269] font-semibold">
+                    <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[22px]">
                         <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
                             <div className="dropdown dropdown-hover">
                                 <div

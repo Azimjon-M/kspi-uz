@@ -5,9 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {
-        '2xl': '1800px'
-      }
     },
   },
   plugins: [require("daisyui")],
