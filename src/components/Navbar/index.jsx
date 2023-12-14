@@ -22,7 +22,6 @@ function Navbar() {
     const [isFocusedSearInp, setFocusedSearInp] = useState(false);
     const [isSticky, setSticky] = useState(false);
     const [isActiveMenu, setIsActiveMenu] = useState(false);
-
     // search
     const formik = useFormik({
         initialValues: {
@@ -66,6 +65,7 @@ function Navbar() {
             const scrollY = window.scrollY;
             setSticky(scrollY >= threshold);
         };
+        console.log(window.scrollY);
 
         window.addEventListener("scroll", handleScroll);
 
@@ -76,12 +76,12 @@ function Navbar() {
     }, []);
 
     return (
-        <div className={`${
-                    isSticky && "sticky -top-[1px] left-0"
-                } flex flex-col justify-between bg-white shadow-2xl sticky z-50 px-4 py-4 sm:px-6 md:px-8 xl:px-0 xl:py-0`}>
-            <nav
-                className="flex justify-between"
-            >
+        <div
+            className={`${
+                isSticky ? "sticky -top-[1px] left-0" : ""
+            } flex flex-col justify-between bg-white shadow-2xl sticky z-50 px-4 py-4 sm:px-6 md:px-8 xl:px-0 xl:py-0`}
+        >
+            <nav className="flex justify-between">
                 {/* Doimo bor */}
                 <Link to="/">
                     <div className="w-[150px] flex items-center gap-x-[10px] sm:w-[180px] md:gap-x-[15px] xl:w-[280px] 3xl:w-[320px] xl:my-[25px] xl:ms-[40px]">
@@ -133,7 +133,8 @@ function Navbar() {
                                                 target="_blank"
                                                 to="http://wsrjournal.com/index.php/wsrj"
                                             >
-                                                World scientific research journal
+                                                World scientific research
+                                                journal
                                             </Link>
                                         </li>
                                     </ul>
@@ -380,7 +381,13 @@ function Navbar() {
                     {/* /Menu */}
                 </div>
             </nav>
-            <div className={`${isActiveMenu ? "opacity-100 translate-x-0 z-50" : "opacity-0 -z-50 translate-x-[100%]" } style-transition-02 w-full h-[100vh] absolute top-0 left-0  mt-[92px] bg-red-600`} >
+            <div
+                className={`${
+                    isActiveMenu
+                        ? "opacity-100 translate-x-0 z-50"
+                        : "opacity-0 -z-50 translate-x-30"
+                } style-transition-02 w-full h-[100vh] absolute top-0 left-0  mt-[92px] bg-red-600`}
+            >
                 hello
             </div>
         </div>
