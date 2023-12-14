@@ -78,13 +78,13 @@ function Navbar() {
         <nav className={`${isSticky && "sticky -top-[1px] left-0"} flex justify-between bg-white shadow-2xl sticky z-50 px-4 py-4 sm:px-6 md:px-8 xl:px-0 xl:py-0`}>
             {/* Doimo bor */}
             <Link to="/">
-                <div className="w-[150px] flex items-center gap-x-[10px] sm:w-[180px] md:gap-x-[15px] xl:w-[280px] xl:my-[25px] xl:ms-[40px]">
+                <div className="w-[150px] flex items-center gap-x-[10px] sm:w-[180px] md:gap-x-[15px] xl:w-[280px] 3xl:w-[320px] xl:my-[25px] xl:ms-[40px]">
                     <img
                         className="w-[32px] sm:w-[36px] md:w-[45px] xl:w-[60px] 3xl:w-[70px] h-auto"
                         src={kspi_logo}
                         alt="icon"
                     />
-                    <p className="text-[11px] leading-4 text-[#004269] font-bold sm:text-[13px] md:text-[15px] xl:leading-6 xl:text-[18px]">
+                    <p className="text-[11px] leading-4 text-[#004269] font-bold sm:text-[13px] md:text-[15px] xl:leading-6 3xl:text-[22px] xl:text-[18px]">
                         <FormattedMessage id="navLogo" />
                     </p>
                 </div>
@@ -92,7 +92,7 @@ function Navbar() {
             {/* Header */}
             <div className="w-full flex items-end justify-center flex-col">
                 <div className="hidden xl:flex xl:justify-between bg-[#004269] text-white px-[20px] rounded-bl-lg ">
-                    <ul className="flex gap-x-[20px] text-[14px] font-medium">
+                    <ul className="flex gap-x-[20px] text-[14px] font-medium 3xl:gap-x-[30px] 3xl:text-[16px]">
                         <li className="py-[4px]">
                             <Link
                                 target="_blank"
@@ -101,7 +101,7 @@ function Navbar() {
                                 <FormattedMessage id="hedHemis-tizimi" />
                             </Link>
                         </li>
-                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-12px] after:w-[7px] after:h-[7px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] cursor-pointer py-[4px] mr-3">
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-12px] after:w-[7px] after:h-[7px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] cursor-pointer py-[4px] mr-3 3xl:after:w-[8px] 3xl:after:h-[8px] ">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={0}
@@ -184,8 +184,8 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
-                    <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[22px] ">
-                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
+                    <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[22px] 3xl:gap-x-12 3xl:text-[23px] ">
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={1}
@@ -207,7 +207,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={2}
@@ -229,7 +229,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={3}
@@ -251,7 +251,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={4}
@@ -273,7 +273,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={5}
@@ -295,7 +295,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg]">
+                        <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                             <div className="dropdown dropdown-hover">
                                 <div
                                     tabIndex={6}
@@ -324,7 +324,7 @@ function Navbar() {
                                     className={` ${
                                         isLang === "uz" &&
                                         "border-b-[3px] border-[#004269]"
-                                    } w-[30px] cursor-pointer`}
+                                    } w-[30px] cursor-pointer 3xl:w-[35px]`}
                                     src={flag_1}
                                     alt="flag uz"
                                 />
@@ -333,7 +333,7 @@ function Navbar() {
                                     className={` ${
                                         isLang === "ru" &&
                                         "border-b-[3px] border-[#004269]"
-                                    } w-[30px] cursor-pointer`}
+                                    } w-[30px] cursor-pointer 3xl:w-[35px]`}
                                     src={flag_2}
                                     alt="flag ru"
                                 />
@@ -342,7 +342,7 @@ function Navbar() {
                                     className={` ${
                                         isLang === "en" &&
                                         "border-b-[3px] border-[#004269]"
-                                    } w-[30px] cursor-pointer`}
+                                    } w-[30px] cursor-pointer 3xl:w-[35px]`}
                                     src={flag_3}
                                     alt="flag en"
                                 />
