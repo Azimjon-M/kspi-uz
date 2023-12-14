@@ -11,57 +11,105 @@ import { FaRegEye } from "react-icons/fa";
 function Interactive() {
   return (
     <div>
-      <div className="sm:max-w-sm md:max-w-4xl lg:max-w-7xl mx-auto relative -top-5 z-40 bg-white rounded-lg shadow-md">
-        <ul className="md:flex-row">
-          <li className=" flex justify-center w-2/12">
-            <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
-              <RiComputerLine className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
-              <h2 className="uppercase mt-2 text-[#004269] font-bold">
+      <div className="max-w-xs md:max-w-7xl mx-auto relative -top-5 z-40 py-2 mb-20 bg-white rounded-lg shadow-md">
+        <ul className="xs:flex xs:flex-col md:flex">
+          <li className=" flex justify-center md:w-2/12">
+            <Link className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center">
+              <RiComputerLine className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+              <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                 <FormattedMessage id="intVertualQabulxona" />
               </h2>
             </Link>
           </li>
-          <li className=" flex justify-center w-2/12">
-            <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
-              <GiBookshelf className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
-              <h2 className="uppercase mt-2 text-[#004269] font-bold">
+          <li className=" flex justify-center md:w-2/12 xs:w-full">
+            <Link className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center">
+              <GiBookshelf className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+              <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                 <FormattedMessage id="intEKutubxona" />
               </h2>
             </Link>
           </li>
-          <li className=" flex justify-center w-2/12">
-            <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
-              <PiChalkboardTeacherFill className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
-              <h2 className="uppercase mt-2 text-[#004269] font-bold">
+          <li className=" flex justify-center md:w-2/12 xs:w-full">
+            <Link className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center">
+              <PiChalkboardTeacherFill className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+              <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                 <FormattedMessage id="intMasofaviyTalim" />
               </h2>
             </Link>
           </li>
-          <li className=" flex justify-center w-2/12">
-            <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
-              <MdOutlineLiveTv className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
-              <h2 className="uppercase mt-2 text-[#004269] font-bold">
+          <li className=" flex justify-center md:w-2/12 xs:w-full">
+            <Link className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center">
+              <MdOutlineLiveTv className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+              <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                 <FormattedMessage id="intVideoMaruzalar" />
               </h2>
             </Link>
           </li>
-          <li className=" flex justify-center w-2/12">
-            <Link className="flex flex-col justify-center items-center group my-9 w-full border-r border-[#ebebeb] text-center">
-              <FaRegCalendarCheck className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
-              <h2 className="uppercase mt-2 text-[#004269] font-bold">
+          <li className=" flex justify-center md:w-2/12 xs:w-full">
+            <Link className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center">
+              <FaRegCalendarCheck className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+              <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                 <FormattedMessage id="intQabul" />
               </h2>
             </Link>
           </li>
-          <li className=" flex justify-center w-2/12">
-            <Link className="flex flex-col justify-center items-center group my-9 w-full text-center">
-              <FaRegEye className="text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
-              <h2 className="uppercase mt-2 text-[#004269] font-bold">
+          <li className=" flex justify-center md:w-2/12 xs:w-full">
+            <Link className="flex flex-col justify-center items-center group md:my-9 my-3 w-full text-center">
+              <FaRegEye className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+              <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                 <FormattedMessage id="intImtixonlarniKuzatish" />
               </h2>
             </Link>
           </li>
         </ul>
+      </div>
+      <div class="bg-gray-900 py-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:max-w-none">
+            <div class="text-center space-y-4">
+              <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Statistika
+              </h2>
+              <p class="text-lg leading-8 text-gray-300">
+                Biz osmonlarni zabt etamiz . . .
+              </p>
+            </div>
+            <dl class="mt-8 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col bg-white/5 p-8">
+                <dt class="text-sm font-semibold leading-6 text-gray-300">
+                  Talabalar
+                </dt>
+                <dd class="order-first text-3xl font-semibold tracking-tight text-white">
+                  15k
+                </dd>
+              </div>
+              <div class="flex flex-col bg-white/5 p-8">
+                <dt class="text-sm font-semibold leading-6 text-gray-300">
+                  phd
+                </dt>
+                <dd class="order-first text-3xl font-semibold tracking-tight text-white">
+                  171
+                </dd>
+              </div>
+              <div class="flex flex-col bg-white/5 p-8">
+                <dt class="text-sm font-semibold leading-6 text-gray-300">
+                  O'qituvchilar
+                </dt>
+                <dd class="order-first text-3xl font-semibold tracking-tight text-white">
+                  517
+                </dd>
+              </div>
+              <div class="flex flex-col bg-white/5 p-8">
+                <dt class="text-sm font-semibold leading-6 text-gray-300">
+                  Fan doktorlar
+                </dt>
+                <dd class="order-first text-3xl font-semibold tracking-tight text-white">
+                  10
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
       </div>
     </div>
   );
