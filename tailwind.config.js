@@ -4,8 +4,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    screens: {
-      '3xl': '1920px',
+    extend: {
+      screens: {
+        '3xl': '1800px'
+      }
     },
   },
   plugins: [require("daisyui")],

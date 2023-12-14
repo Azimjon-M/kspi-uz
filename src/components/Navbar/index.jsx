@@ -80,7 +80,7 @@ function Navbar() {
             <Link to="/">
                 <div className="w-[150px] flex items-center gap-x-[10px] sm:w-[180px] md:gap-x-[15px] xl:w-[280px] xl:my-[25px] xl:ms-[40px]">
                     <img
-                        className="w-[32px] sm:w-[36px] md:w-[45px] xl:w-[60px] 3xl:w-[20px] 3xl:border h-auto"
+                        className="w-[32px] sm:w-[36px] md:w-[45px] xl:w-[60px] 3xl:w-[70px] h-auto"
                         src={kspi_logo}
                         alt="icon"
                     />
