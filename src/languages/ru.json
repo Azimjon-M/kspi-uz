@@ -4,6 +4,8 @@
     "hedKonferensyalar": "Конференции",
     "hedIkkinchi-talim": "Второй урок",
     "hedOchiq-malumotlar": "Открытые источники",
+    "hedDropInstitut-jurnali_1": "Кокан ДПИ. Научные новости",
+    "hedDropInstitut-jurnali_2": "Всемирный журнал научных исследований",
     "navLogo": "Коканский государственный педагогический институт",
     "navInstitut": "ИНСТИТУТ",
     "navFaoliyat": "АКТИВНОСТЬ",
@@ -19,5 +21,35 @@
     "intMasofaviyTalim": "Дистанционное обучение",
     "intVideoMaruzalar": "Видео экспозиция",
     "intQabul": "Приемка-2024",
-    "intImtixonlarniKuzatish": "Мониторинг экзаменов"
+    "intImtixonlarniKuzatish": "Мониторинг экзаменов",
+
+    "navDropInstitut_1": "СОВЕТ ИНСТИТУТА",
+    "navDropInstitut_2": "ОБ ИНСТИТУТЕ",
+    "navDropInstitut_3": "СТРУКТУРА ИНСТИТУТА",
+    "navDropInstitut_4": "РЕКВИЗИТЫ",
+    "navDropInstitut_5": "ВИРТУАЛЬНЫЙ ПРИЕМ",
+
+    "navDropFaoliyat_1": "ДЕЯТЕЛЬНОСТЬ ОБЩЕСТВЕННОГО СОВЕТА",
+    "navDropFaoliyat_2": "КУЛЬТУРНАЯ И ОБРАЗОВАТЕЛЬНАЯ ДЕЯТЕЛЬНОСТЬ",
+    "navDropFaoliyat_3": "ОБРАЗОВАТЕЛЬНАЯ ДЕЯТЕЛЬНОСТЬ",
+    "navDropFaoliyat_4": "АКАДЕМИЧЕСКИЙ ЛИЦЕЙ",
+    "navDropFaoliyat_5": "НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ",
+    "navDropFaoliyat_6": "РАБОТА С МОЛОДЕЖЬЮ, ДУХОВНО-ПРОСВЕТИТЕЛЬСКОЕ НАПРАВЛЕНИЕ",
+
+    "navDropTuzilma_1": "РЕКТОРАТ",
+    "navDropTuzilma_2": "ФАКУЛЬТЕТЫ",
+    "navDropTuzilma_3": "ОТДЕЛЕНИЯ",
+    "navDropTuzilma_4": "ОТДЕЛЕНИЯ",
+    "navDropTuzilma_5": "ЦЕНТРЫ",
+
+    "navDropTalabalar_1": "BAKALVRIAT",
+    "navDropTalabalar_2": "MAGISTRATURA",
+    "navDropTalabalar_3": "TALABALAR TURAR JOYI",
+
+    "navDropAbiturient_1": "BAKALVRIAT",
+    "navDropAbiturient_2": "MAGISTRATURA",
+    "navDropAbiturient_3": "XORIJIY TALABALARNI QABUL QILISH HUJJATLARI",
+    "navDropAbiturient_4": "CALL MARKAZI",
+    "navDropAbiturient_5": "ME'YORIY-HUQUQIY HUJJATLAR",
+    "navDropAbiturient_6": "XORIJIY ABITURIENTLAR HUJJATLARINI ELECTRON QABUL QILISH"
 }

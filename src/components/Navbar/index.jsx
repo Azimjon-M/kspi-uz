@@ -61,7 +61,7 @@ function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const threshold = 140;
+            const threshold = 150;
             const scrollY = window.scrollY;
             setSticky(scrollY >= threshold);
         };
@@ -134,8 +134,7 @@ function Navbar() {
                                                 target="_blank"
                                                 to="http://wsrjournal.com/index.php/wsrj"
                                             >
-                                                World scientific research
-                                                journal
+                                                Jahon ilmiy tadqiqot jurnali
                                             </Link>
                                         </li>
                                     </ul>
@@ -311,19 +310,29 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li>
-                                            <Link to="">REKTORAT</Link>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropTuzilma_1" />
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link to="">FAKULTETLAR</Link>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropTuzilma_2" />
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link to="">KAFEDRALAR</Link>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropTuzilma_3" />
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link to="">BO'LIMLAR</Link>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropTuzilma_4" />
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link to="">MARKAZLAR</Link>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropTuzilma_5" />
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -342,14 +351,18 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li>
-                                            <Link to="">BAKALVRIAT</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="">MAGISTRATURA</Link>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropTalabalar_1" />
+                                            </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                TALABALAR TURAR JOYI
+                                                <FormattedMessage id="navDropTalabalar_2" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropTalabalar_3" />
                                             </Link>
                                         </li>
                                     </ul>
@@ -369,22 +382,39 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li>
-                                            <Link to="">BAKALVRIAT</Link>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropAbiturient_1" />
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link to="">MAGISTRATURA</Link>
+                                            <Link to="">
+                                            <FormattedMessage id="navDropAbiturient_2" />
+                                                
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link to="">XORIJIY TALABALARNI QABUL QILISH HUJJATLARI</Link>
+                                            <Link to="">
+                                            <FormattedMessage id="navDropAbiturient_3" />
+
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link to="">CALL MARKAZI</Link>
+                                            <Link to="">
+                                            <FormattedMessage id="navDropAbiturient_4" />
+
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link to="">ME'YORIY-HUQUQIY HUJJATLAR</Link>
+                                            <Link to="">
+                                            <FormattedMessage id="navDropAbiturient_5" />
+
+                                            </Link>
                                         </li>
                                         <li>
-                                            <Link to="">XORIJIY ABITURIENTLAR HUJJATLARINI ELECTRON QABUL QILISH</Link>
+                                            <Link to="">
+                                            <FormattedMessage id="navDropAbiturient_6" />
+
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>

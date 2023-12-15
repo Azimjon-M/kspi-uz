@@ -4,6 +4,8 @@
     "hedKonferensyalar": "Conferences",
     "hedIkkinchi-talim": "Second lesson",
     "hedOchiq-malumotlar": "Open sources",
+    "hedDropInstitut-jurnali_1": "Kokan DPI. Scientific news",
+    "hedDropInstitut-jurnali_2": "World Journal of Scientific Research",
     "navLogo": "Kokan state pedagogical institute",
     "navInstitut": "INSTITUTE",
     "navFaoliyat": "ACTIVITY",
@@ -19,5 +21,35 @@
     "intMasofaviyTalim": "Distance education",
     "intVideoMaruzalar": "Video exposure",
     "intQabul": "Acceptance-2024",
-    "intImtixonlarniKuzatish": "Monitoring of exams"
+    "intImtixonlarniKuzatish": "Monitoring of exams",
+
+    "navDropInstitut_1": "COUNCIL OF THE INSTITUTE",
+    "navDropInstitut_2": "ABOUT THE INSTITUTE",
+    "navDropInstitut_3": "STRUCTURE OF THE INSTITUTE",
+    "navDropInstitut_4": "REQUISITES",
+    "navDropInstitut_5": "VIRTUAL RECEPTION",
+
+    "navDropFaoliyat_1": "COMMUNITY COUNCIL ACTIVITIES",
+    "navDropFaoliyat_2": "CULTURAL AND EDUCATIONAL ACTIVITY",
+    "navDropFaoliyat_3": "EDUCATIONAL ACTIVITY",
+    "navDropFaoliyat_4": "ACADEMIC LYCEUM",
+    "navDropFaoliyat_5": "SCIENTIFIC ACTIVITY",
+    "navDropFaoliyat_6": "WORK WITH YOUTH, SPIRITUAL AND EDUCATIONAL DIRECTION",
+
+    "navDropTuzilma_1": "RECTORATE",
+    "navDropTuzilma_2": "FACULTIES",
+    "navDropTuzilma_3": "DEPARTMENTS",
+    "navDropTuzilma_4": "SECTIONS",
+    "navDropTuzilma_5": "CENTERS",
+
+    "navDropTalabalar_1": "BAKALVRIAT",
+    "navDropTalabalar_2": "MAGISTRATURA",
+    "navDropTalabalar_3": "TALABALAR TURAR JOYI",
+
+    "navDropAbiturient_1": "BAKALVRIAT",
+    "navDropAbiturient_2": "MAGISTRATURA",
+    "navDropAbiturient_3": "XORIJIY TALABALARNI QABUL QILISH HUJJATLARI",
+    "navDropAbiturient_4": "CALL MARKAZI",
+    "navDropAbiturient_5": "ME'YORIY-HUQUQIY HUJJATLAR",
+    "navDropAbiturient_6": "XORIJIY ABITURIENTLAR HUJJATLARINI ELECTRON QABUL QILISH"
 }
