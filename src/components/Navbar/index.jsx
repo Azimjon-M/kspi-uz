@@ -61,7 +61,7 @@ function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const threshold = 120;
+            const threshold = 140;
             const scrollY = window.scrollY;
             setSticky(scrollY >= threshold);
         };
@@ -203,28 +203,11 @@ function Navbar() {
                     {/* /Header */}
                     {/* Navigations */}
                     <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
-                        <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[22px] 3xl:gap-x-12 3xl:text-[23px] ">
-                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
-                                <div className="dropdown dropdown-hover">
-                                    <div
-                                        tabIndex={1}
-                                        role="button"
-                                        className="text-inherit"
-                                    >
-                                        <FormattedMessage id="navYangiliklar" />
-                                    </div>
-                                    <ul
-                                        tabIndex={1}
-                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-                                    >
-                                        <li>
-                                            <a href="w">Item 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="w">Item 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[20px] 3xl:gap-x-12 3xl:text-[22px] ">
+                            <li className="-mr-2">
+                                <Link to="">
+                                    <FormattedMessage id="navYangiliklar" />
+                                </Link>
                             </li>
                             <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                                 <div className="dropdown dropdown-hover">
@@ -240,10 +223,29 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li>
-                                            <a href="w">Item 1</a>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropInstitut_1" />
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="w">Item 2</a>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropInstitut_2" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropInstitut_3" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropInstitut_4" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropInstitut_5" />
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -262,10 +264,34 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li>
-                                            <a href="w">Item 1</a>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropFaoliyat_1" />
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="w">Item 2</a>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropFaoliyat_2" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropFaoliyat_3" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropFaoliyat_4" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropFaoliyat_5" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">
+                                                <FormattedMessage id="navDropFaoliyat_6" />
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -284,7 +310,43 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li>
-                                            <a href="w">Item 1</a>
+                                            <div className="collapse collapse-arrow">
+                                                <input
+                                                    type="radio"
+                                                    name="my-accordion-2"
+                                                    checked="checked"
+                                                />
+                                                <div className="collapse-title">
+                                                    REKTORAT
+                                                </div>
+                                                <div className="collapse-content">
+                                                    <p>hello</p>
+                                                </div>
+                                            </div>
+                                            <div className="collapse collapse-arrow">
+                                                <input
+                                                    type="radio"
+                                                    name="my-accordion-2"
+                                                />
+                                                <div className="collapse-title">
+                                                    open
+                                                </div>
+                                                <div className="collapse-content">
+                                                    <p>hello</p>
+                                                </div>
+                                            </div>
+                                            <div className="collapse collapse-arrow">
+                                                <input
+                                                    type="radio"
+                                                    name="my-accordion-2"
+                                                />
+                                                <div className="collapse-title">
+                                                    open
+                                                </div>
+                                                <div className="collapse-content">
+                                                    <p>hello</p>
+                                                </div>
+                                            </div>
                                         </li>
                                         <li>
                                             <a href="w">Item 2</a>
