@@ -7,7 +7,7 @@ import NewsHome from '../../components/NewsHomeCom';
 function Main() {
     return (
         <div>
-            {/* <Navbar /> */}
+            <Navbar />
             <Carousel />
             <Interactive />
             <NewsHome />
