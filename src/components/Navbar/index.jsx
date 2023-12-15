@@ -74,6 +74,7 @@ function Navbar() {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+    // hover
 
     return (
         <div
@@ -205,7 +206,7 @@ function Navbar() {
                     <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
                         <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[20px] 3xl:gap-x-12 3xl:text-[22px] ">
                             <li className="-mr-2">
-                                <Link to="">
+                                <Link to="/yangiliklar">
                                     <FormattedMessage id="navYangiliklar" />
                                 </Link>
                             </li>
@@ -310,46 +311,19 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li>
-                                            <div className="collapse collapse-arrow">
-                                                <input
-                                                    type="radio"
-                                                    name="my-accordion-2"
-                                                    checked="checked"
-                                                />
-                                                <div className="collapse-title">
-                                                    REKTORAT
-                                                </div>
-                                                <div className="collapse-content">
-                                                    <p>hello</p>
-                                                </div>
-                                            </div>
-                                            <div className="collapse collapse-arrow">
-                                                <input
-                                                    type="radio"
-                                                    name="my-accordion-2"
-                                                />
-                                                <div className="collapse-title">
-                                                    open
-                                                </div>
-                                                <div className="collapse-content">
-                                                    <p>hello</p>
-                                                </div>
-                                            </div>
-                                            <div className="collapse collapse-arrow">
-                                                <input
-                                                    type="radio"
-                                                    name="my-accordion-2"
-                                                />
-                                                <div className="collapse-title">
-                                                    open
-                                                </div>
-                                                <div className="collapse-content">
-                                                    <p>hello</p>
-                                                </div>
-                                            </div>
+                                            <Link to="">REKTORAT</Link>
                                         </li>
                                         <li>
-                                            <a href="w">Item 2</a>
+                                            <Link to="">FAKULTETLAR</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">KAFEDRALAR</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">BO'LIMLAR</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">MARKAZLAR</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -368,10 +342,15 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li>
-                                            <a href="w">Item 1</a>
+                                            <Link to="">BAKALVRIAT</Link>
                                         </li>
                                         <li>
-                                            <a href="w">Item 2</a>
+                                            <Link to="">MAGISTRATURA</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">
+                                                TALABALAR TURAR JOYI
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -390,10 +369,22 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li>
-                                            <a href="w">Item 1</a>
+                                            <Link to="">BAKALVRIAT</Link>
                                         </li>
                                         <li>
-                                            <a href="w">Item 2</a>
+                                            <Link to="">MAGISTRATURA</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">XORIJIY TALABALARNI QABUL QILISH HUJJATLARI</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">CALL MARKAZI</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">ME'YORIY-HUQUQIY HUJJATLAR</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">XORIJIY ABITURIENTLAR HUJJATLARINI ELECTRON QABUL QILISH</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -443,15 +434,15 @@ function Navbar() {
                     {/* /Menu */}
                 </div>
             </nav>
-            <div
+            {/* <div
                 className={`${
                     isActiveMenu
-                        ? "opacity-100 translate-x-0 z-50"
-                        : "opacity-0 -z-50 translate-x-30"
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -z-[100] translate-x-30"
                 } style-transition-02 w-full h-[100vh] absolute top-0 left-0  mt-[92px] bg-red-600`}
             >
                 hello
-            </div>
+            </div> */}
         </div>
     );
 }
