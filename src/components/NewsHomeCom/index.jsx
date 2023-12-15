@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
+import { Link } from "react-router-dom";
+
 import { FormattedMessage } from "react-intl";
 
-import { FaLongArrowAltRight } from "react-icons/fa";
-
-const News = () => {
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+const NewsHome = () => {
     const [firstNews, setFirstNews] = useState(null);
     const [news, setNews] = useState(null);
     useEffect(() => {
@@ -44,53 +45,80 @@ const News = () => {
             </div>
 
             {/* News items */}
+            {/* First news */}
             <div className="grid md:grid-cols-1 xl:grid-cols-2">
                 {firstNews && firstNews.map((item, idx) => (
-                    <div className="p-4 max-w-sm md:max-w-3xl lg:max-w-4xl mx-auto group/item" key={idx}>
+                    <div className="p-4 max-w-sm md:max-w-3xl lg:max-w-4xl mx-auto group/item hover:cursor-pointer" key={idx}>
                         <div className="flex rounded-lg h-full dark:bg-gray-800 shadow-md hover:shadow-lg flex-col group/edit">
                             <div className="flex items-center mb-3 relative overflow-hidden">
                                 <img className="w-full rounded group-hover/item:scale-105 ease-in duration-300 ..." src={item.rasm} alt="Sunset in the mountains" />
+                                <div className='absolute top-0 left-3 h-12 w-12 bg-[#802323] text-center flex flex-col text-sm p-1'>
+                                    <span className='text-white'>25.12</span>
+                                    <span className='text-white'>2023</span>
+                                </div>
                                 <div className='absolute bottom-0 border-[#004269] border-2 w-20 group-hover/edit:w-full ... ease-in duration-300 ...'></div>
                             </div>
+                            {/* News topics */}
+                            <div className='text-center'>
+                                <p className='text-[#802323] font-medium text-xs md:text-sm'>SPORT</p>
+                            </div>
+                            {/* News title */}
                             <div className="flex flex-col justify-between flex-grow px-2">
                                 <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-5 text-base text-[#004269] text-center dark:text-gray-300">
                                     {item.title}
                                 </h2>
-                                <button className="my-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">
-                                    <FormattedMessage id='newsBatafsil' />
-                                </button>
+                                <div className='flex justify-center items-center'>
+                                    <div className='border-4 bg-[#004269] w-10 my-5'></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 ))}
+                {/* Remaining news */}
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-2'>
                     {news && news.map((item, idx) => (
-                        <div className="p-4 max-w-sm lg:max-w-xs xl:max-w-md mx-auto group/item" key={idx}>
+                        <div className="p-4 max-w-sm lg:max-w-xs xl:max-w-md mx-auto group/item hover:cursor-pointer" key={idx}>
                             <div className="flex rounded-lg h-full dark:bg-gray-800 shadow-md hover:shadow-lg flex-col group/edit">
                                 <div className="flex items-center mb-3 relative overflow-hidden">
                                     <img className="w-full rounded group-hover/item:scale-105 ease-in duration-300 ..." src={item.rasm} alt="Sunset in the mountains" />
+                                    <div className='absolute top-0 left-3 h-12 w-12 bg-[#802323] text-center flex flex-col text-sm p-1'>
+                                        <span className='text-white'>20.12</span>
+                                        <span className='text-white'>2023</span>
+                                    </div>
                                     <div className='absolute bottom-0 border-[#004269] border-2 w-10 group-hover/edit:w-full ... ease-in duration-300 ...'></div>
                                 </div>
+                                {/* News topics */}
+                                <div className='text-center'>
+                                    <p className='text-[#802323] font-medium text-xs md:text-sm'>SPORT</p>
+                                </div>
+                                {/* News title */}
                                 <div className="flex flex-col justify-between flex-grow px-2">
-                                    <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-2 text-base text-[#004269] group-hover/edit:underline-offset-1 ... text-center dark:text-gray-300 line">
+                                    <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-2 text-base text-[#004269] text-center dark:text-gray-300 line">
                                         {item.title}
                                     </h2>
-                                    <button className="my-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">
-                                        <FormattedMessage id='newsBatafsil' />
-                                    </button>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='border-4 bg-[#004269] w-10 my-5'></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
+            {/* Barcha yangiliklarga o'tish */}
             <div className='flex justify-end my-2'>
-                <button className='flex items-center  md:text-xl'><FormattedMessage id='newsToPage' /> <FaLongArrowAltRight /></button>
+                <Link
+                    className='cursor-pointer md:text-xl hover:scale-105 ease-in-out duration-150 lg:pr-3'
+                    target="_blank"
+                    to="/yangiliklar"
+                >
+                    <span className='flex items-center ease-in-out duration-200'><FormattedMessage id='newsToPage' /> <MdOutlineKeyboardDoubleArrowRight /></span>
+                </Link>
             </div>
         </div>
     )
 }
 
-export default News;
+export default NewsHome;
 
 
