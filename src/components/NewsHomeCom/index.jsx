@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 
 import { FormattedMessage } from "react-intl";
 
-import { FaLongArrowAltRight } from "react-icons/fa";
-
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 const NewsHome = () => {
     const [firstNews, setFirstNews] = useState(null);
     const [news, setNews] = useState(null);
@@ -109,11 +108,11 @@ const NewsHome = () => {
             {/* Barcha yangiliklarga o'tish */}
             <div className='flex justify-end my-2'>
                 <Link
-                    className='flex items-center  md:text-xl'
+                    className='cursor-pointer md:text-xl hover:scale-105 ease-in-out duration-150 lg:pr-3'
                     target="_blank"
                     to="/yangiliklar"
                 >
-                    <FormattedMessage id='newsToPage' /> <FaLongArrowAltRight />
+                    <span className='flex items-center ease-in-out duration-200'><FormattedMessage id='newsToPage' /> <MdOutlineKeyboardDoubleArrowRight /></span>
                 </Link>
             </div>
         </div>
