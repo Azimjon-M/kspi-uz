@@ -1,15 +1,15 @@
 const initialState = {
-    isActiveM: false
+    isActiveMenu: false
 }
 
 const reducerIsActiveM = (state = initialState, {type}) => {
     switch (type) {
         case "setTrue":
-            return {isActiveM:(state.isActiveM = true)}
+            return {isActiveMenu:(state.isActiveMenu = true)}
         case "setFalse":
-            return {isActiveM:(state.isActiveM = false)}
+            return {isActiveMenu:(state.isActiveMenu = false)}
         default:
-            return {isActiveM:(state.isActiveM = false)}
+            return {isActiveMenu:(state.isActiveMenu = false)}
     }
 }
 

@@ -16,12 +16,19 @@
     "newsBatafsil": "Batafsil ...",
     "newsHeading": "Yangiliklar va tadbirlar",
     "newsToPage": "Barcha yangiliklar",
+
     "intVertualQabulxona": "VERTUAL QABULXONA",
     "intEKutubxona": "e-kutubxona",
     "intMasofaviyTalim": "Masofaviy ta'lim",
     "intVideoMaruzalar": "Video maruzalar",
     "intQabul": "Qabul-2024",
     "intImtixonlarniKuzatish": "Imtixonlarni kuzatish",
+    "intStatistika": "Statistika",
+    "intStatisTaytil": "Biz osmonlarni zabt etamiz . . .",
+    "intStatisTalabalar": "Talabalar",
+    "intStatisPhd": "phd",
+    "intStatisOqituvchilar": "O'qituvchilar",
+    "intStatisFanDoktorlar": "Fan doktorlar",
     
     "navDropInstitut_1": "INSTITUT KENGASHI",
     "navDropInstitut_2": "INSTITUT HAQIDA",
@@ -52,4 +59,5 @@
     "navDropAbiturient_4": "CALL MARKAZI",
     "navDropAbiturient_5": "ME'YORIY-HUQUQIY HUJJATLAR",
     "navDropAbiturient_6": "XORIJIY ABITURIENTLAR HUJJATLARINI ELECTRON QABUL QILISH"
+
 }
