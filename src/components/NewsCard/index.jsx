@@ -8,7 +8,7 @@ const NewsCard = () => {
 
     useEffect(() => {
         // API dan tanlangan yangilik ma'lumotlarini olish
-        fetch(`https://api.example.com/news/${id}`)
+        fetch(`https://api.kspi.uz/v1/yangilik/yangilik/${id}`)
             .then(response => response.json())
             .then(data => setNewsData(data))
             .catch(error => console.error('Xatolik: ', error));
@@ -16,8 +16,9 @@ const NewsCard = () => {
 
     return (
         <div>
+            <p>{newsData.rasm}</p>
             <h2>{newsData.title}</h2>
-            <p>{newsData.content}</p>
+            <p>{newsData.body}</p>
             {/* Boshqa yangilik ma'lumotlari */}
         </div>
     );
