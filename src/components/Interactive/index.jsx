@@ -5,8 +5,7 @@ import { GiBookshelf } from "react-icons/gi";
 import { MdOutlineLiveTv } from "react-icons/md";
 import { PiChalkboardTeacherFill } from "react-icons/pi";
 import { FormattedMessage } from "react-intl";
-import { FaRegCalendarCheck } from "react-icons/fa";
-import { FaRegEye } from "react-icons/fa";
+import { FaRegCalendarCheck, FaRegEye } from "react-icons/fa";
 
 function Interactive() {
   return (
