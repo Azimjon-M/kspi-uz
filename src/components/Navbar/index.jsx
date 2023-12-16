@@ -445,7 +445,7 @@ function Navbar() {
                 </div>
             </nav>
             {/* Mobile Drop */}
-            <div className={`${isActiveMenu ? "h-[calc(100vh-91px)] z-50 opacity-100 translate-x-0" : "h-0 -z-50 opacity-0 -translate-x-full"} style-transition-02 absolute top-[92px] left-0 w-full  bg-red-600`}>
+            <div className={`${isActiveMenu ? "h-[calc(100vh-91px)] z-50 opacity-100 translate-x-0" : "h-0 -z-50 opacity-0 -translate-x-full"} style-transition-02 absolute top-[92px] left-0 w-full  bg-[#004269] text-white`}>
                 hello
             </div>
             {/* /Mobile Drop */}
