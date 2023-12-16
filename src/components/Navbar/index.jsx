@@ -80,18 +80,18 @@ function Navbar() {
         <div
             className={`${
                 isSticky ? "sticky -top-[1px] left-0" : ""
-            } flex flex-col justify-between bg-white shadow-2xl sticky z-50 px-4 py-4 sm:px-6 md:px-8 xl:px-0 xl:py-0`}
+            } flex flex-col justify-between bg-white shadow-2xl sticky z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
         >
             <nav className="flex justify-between">
                 {/* Doimo bor */}
                 <Link to="/">
-                    <div className="w-[150px] flex items-center gap-x-[10px] sm:w-[180px] md:gap-x-[15px] xl:w-[280px] 3xl:w-[320px] xl:my-[25px] xl:ms-[40px]">
+                    <div className={`${isLang === "ru" ? "sm:w-[250px] xl:w-[300px] 3xl:w-[400px]" : " sm:w-[180px] xl:w-[280px] 3xl:w-[320px]" } w-[150px] flex items-center gap-x-[10px] md:gap-x-[15px] xl:my-[15px] xl:ms-[40px]`}>
                         <img
                             className="w-[32px] sm:w-[36px] md:w-[45px] xl:w-[60px] 3xl:w-[70px] h-auto"
                             src={kspi_logo}
                             alt="icon"
                         />
-                        <p className="text-[11px] leading-4 text-[#004269] font-bold sm:text-[13px] md:text-[15px] xl:leading-6 3xl:text-[22px] xl:text-[18px]">
+                        <p className="hidden sm:inline-block text-[11px] leading-4 text-[#004269] font-bold sm:text-[13px] md:text-[15px] xl:leading-6 3xl:text-[22px] xl:text-[18px]">
                             <FormattedMessage id="navLogo" />
                         </p>
                     </div>
@@ -126,7 +126,7 @@ function Navbar() {
                                                 target="_blank"
                                                 to="https://journal.kspi.uz/"
                                             >
-                                                Qo'qon DPI ilmiy habarlari
+                                                <FormattedMessage id="hedDropInstitut-jurnali_1" />
                                             </Link>
                                         </li>
                                         <li>
@@ -134,7 +134,7 @@ function Navbar() {
                                                 target="_blank"
                                                 to="http://wsrjournal.com/index.php/wsrj"
                                             >
-                                                Jahon ilmiy tadqiqot jurnali
+                                                <FormattedMessage id="hedDropInstitut-jurnali_2" />
                                             </Link>
                                         </li>
                                     </ul>
