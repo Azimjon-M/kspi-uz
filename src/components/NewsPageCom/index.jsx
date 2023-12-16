@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { FormattedMessage } from "react-intl";
 
@@ -9,6 +10,7 @@ const NewsPageCom = () => {
             try {
                 await axios.get("https://api.kspi.uz/v1/yangilik/yangilik/").then(res => {
                     setNews(res.data);
+                    console.log(res.data);
                 }).catch(err => {
                     console.log(err);
                 });
@@ -28,20 +30,21 @@ const NewsPageCom = () => {
 
                 {/* Topics */}
                 <div className='flex justify-end'>
-                    <select className='select lg:select-lg w-full max-w-xs' name="newsSelect" id="">
-                        <option disabled selected value="Topics">Mavzular</option>
-                        <option value="All">Hammasi</option>
-                        <option value="All">San'at</option>
-                        <option value="All">Ta'lim</option>
-                        <option value="All">Kampus & Jamiyat</option>
-                        <option value="All">Sport</option>
+                    <select className='select lg:select-lg w-full max-w-xs' name="newsSelect" defaultValue="1" >
+                        <option disabled>Mavzular</option>
+                        <option value="1">Hammasi</option>
+                        <option value="2">San'at</option>
+                        <option value="3">Ta'lim</option>
+                        <option value="4">Kampus & Jamiyat</option>
+                        <option value="5">Sport</option>
                     </select>
                 </div>
             </div>
 
             {/* News items */}
-                <div className='grid md:grid-cols-3 lg:grid-cols-4 3xl:grid-cols-6'>
-                    {news && news.map((item, idx) => (
+            <div className='grid md:grid-cols-3 lg:grid-cols-4 3xl:grid-cols-6'>
+                {news && news.map((item, idx) => (
+                    <Link to={`/yangiliklar/${item.id}`}>
                         <div className="p-4 max-w-sm lg:max-w-xs xl:max-w-md mx-auto group/item hover:cursor-pointer" key={idx}>
                             <div className="flex rounded-lg h-full dark:bg-gray-800 shadow-md hover:shadow-lg flex-col group/edit">
                                 <div className="flex items-center mb-3 relative overflow-hidden">
@@ -67,8 +70,10 @@ const NewsPageCom = () => {
                                 </div>
                             </div>
                         </div>
-                    ))}
-                </div>
+                    </Link>
+
+                ))}
+            </div>
         </div>
     )
 }
