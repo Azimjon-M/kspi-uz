@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import kspi_logo from "../../assets/icons/logo_kspi.png";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
@@ -20,7 +20,6 @@ function Navbar() {
     const isLang = useSelector((state) => state.reducerLang.isLang);
 
     const [isFocusedSearInp, setFocusedSearInp] = useState(false);
-    const [isSticky, setSticky] = useState(false);
     const [isActiveMenu, setIsActiveMenu] = useState(false);
     // search
     const formik = useFormik({
@@ -42,7 +41,7 @@ function Navbar() {
     const handleClickClose = () => {
         setFocusedSearInp(false);
     };
-    // Change Language
+    // Change Language log
     const handleClickLang = (lang) => {
         switch (lang) {
             case "uz":
@@ -59,28 +58,9 @@ function Navbar() {
         }
     };
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const threshold = 150;
-            const scrollY = window.scrollY;
-            setSticky(scrollY >= threshold);
-        };
-        console.log(window.scrollY);
-
-        window.addEventListener("scroll", handleScroll);
-
-        // Cleanup the event listener on component unmount
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-    // hover
-
     return (
         <div
-            className={`${
-                isSticky ? "sticky -top-[1px] left-0" : ""
-            } flex flex-col justify-between bg-white shadow-2xl sticky z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
+            className={` flex flex-col justify-between sticky top-0 left-0 bg-white shadow-2xl z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
         >
             <nav className="flex justify-between">
                 {/* Doimo bor */}
@@ -464,15 +444,11 @@ function Navbar() {
                     {/* /Menu */}
                 </div>
             </nav>
-            {/* <div
-                className={`${
-                    isActiveMenu
-                        ? "opacity-100 translate-x-0"
-                        : "opacity-0 -z-[100] translate-x-30"
-                } style-transition-02 w-full h-[100vh] absolute top-0 left-0  mt-[92px] bg-red-600`}
-            >
+            {/* Mobile Drop */}
+            <div className={`${isActiveMenu ? "h-[calc(100vh-91px)] z-50 opacity-100 translate-x-0" : "h-0 -z-50 opacity-0 -translate-x-full"} style-transition-02 absolute top-[92px] left-0 w-full  bg-red-600`}>
                 hello
-            </div> */}
+            </div>
+            {/* /Mobile Drop */}
         </div>
     );
 }
