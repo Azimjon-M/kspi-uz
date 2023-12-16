@@ -67,16 +67,16 @@ function Interactive() {
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                
+                <FormattedMessage id="intStatistika"/>
               </h2>
               <p className="text-lg leading-8 text-gray-300">
-                Biz osmonlarni zabt etamiz . . .
+                <FormattedMessage id="intStatisTaytil"/>
               </p>
             </div>
             <dl className="mt-8 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col bg-white/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
-                  Talabalar
+                  <FormattedMessage id="intStatisTalabalar"/>
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
                   15k
@@ -84,7 +84,7 @@ function Interactive() {
               </div>
               <div className="flex flex-col bg-white/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
-                  phd
+                <FormattedMessage id="intStatisPhd"/>
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
                   171
@@ -92,7 +92,7 @@ function Interactive() {
               </div>
               <div className="flex flex-col bg-white/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
-                  O'qituvchilar
+                  <FormattedMessage id="intStatisOqituvchilar"/>
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
                   517
@@ -100,7 +100,7 @@ function Interactive() {
               </div>
               <div className="flex flex-col bg-white/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
-                  Fan doktorlar
+                  <FormattedMessage id="intStatisFanDoktorlar"/>
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
                   10
