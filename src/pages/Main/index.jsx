@@ -5,6 +5,7 @@ import Interactive from "../../components/Interactive";
 import NewsHome from "../../components/NewsHomeCom";
 import StudentOpinion from "../../components/StudentOpinion";
 import Curriculum from "../../components/Curriculum";
+import ContactUs from "../../components/Contact";
 
 function Main() {
   return (
@@ -15,6 +16,7 @@ function Main() {
       <NewsHome />
       <StudentOpinion />
       <Curriculum />
+      <ContactUs />
     </div>
   );
 }
