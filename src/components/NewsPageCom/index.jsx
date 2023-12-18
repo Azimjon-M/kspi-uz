@@ -10,7 +10,6 @@ const NewsPageCom = () => {
             try {
                 await axios.get("https://api.kspi.uz/v1/yangilik/yangilik/").then(res => {
                     setNews(res.data);
-                    console.log(res.data);
                 }).catch(err => {
                     console.log(err);
                 });
@@ -44,14 +43,14 @@ const NewsPageCom = () => {
             {/* News items */}
             <div className='grid md:grid-cols-3 lg:grid-cols-4 3xl:grid-cols-6'>
                 {news && news.map((item, idx) => (
-                    <Link to={`/yangiliklar/${item.id}`}>
-                        <div className="p-4 max-w-sm lg:max-w-xs xl:max-w-md mx-auto group/item hover:cursor-pointer" key={idx}>
+                    <Link to={`/yangiliklar/${item.id}`} key={idx}>
+                        <div className="p-4 max-w-sm lg:max-w-xs xl:max-w-md mx-auto group/item hover:cursor-pointer" >
                             <div className="flex rounded-lg h-full dark:bg-gray-800 shadow-md hover:shadow-lg flex-col group/edit">
                                 <div className="flex items-center mb-3 relative overflow-hidden">
                                     <img className="w-full rounded group-hover/item:scale-105 ease-in duration-300 ..." src={item.rasm} alt="Sunset in the mountains" />
                                     <div className='absolute top-0 left-3 h-12 w-12 bg-[#802323] text-center flex flex-col text-sm p-1'>
-                                        <span className='text-white'>20.12</span>
-                                        <span className='text-white'>2023</span>
+                                        <span className='text-white'>{item.sana.slice(8,10)}.{item.sana.slice(5,7)}</span>
+                                        <span className='text-white'>{item.sana.slice(0,4)}</span>
                                     </div>
                                     <div className='absolute bottom-0 border-[#004269] border-2 w-10 group-hover/edit:w-full ... ease-in duration-300 ...'></div>
                                 </div>

@@ -16,10 +16,9 @@ const NewsCard = () => {
 
     return (
         <div>
-            <p>{newsData.rasm}</p>
+            <img src={newsData.rasm} alt="" />
             <h2>{newsData.title}</h2>
             <p>{newsData.body}</p>
-            {/* Boshqa yangilik ma'lumotlari */}
         </div>
     );
 };
