@@ -64,7 +64,7 @@ function Navbar() {
         } else {
             document.body.classList.remove("overflow-hidden");
         }
-    }, [isActiveMenu])
+    }, [isActiveMenu]);
 
     return (
         <div
@@ -442,24 +442,53 @@ function Navbar() {
                         </ul>
                     </div>
                     {/* /Navigations */}
-                    {/* Menu */}
-                    <button
-                        onClick={() => setIsActiveMenu(!isActiveMenu)}
-                        className="btn btn-sm btn-outline xl:hidden flex items-center gap-x-2 font-medium md:btn-md text-[#004269]"
-                    >
-                        {isActiveMenu ? <AiOutlineClose /> : <AiOutlineMenu />}
-                        MENU
-                    </button>
-                    {/* /Menu */}
+                    <div className="flex items-center md:gap-x-4">
+                        {/* Search to lg */}
+                        <div className="hidden md:inline-block xl:hidden">
+                            <form
+                                className="flex items-center justify-center px-4 py-2"
+                                onSubmit={formik.handleSubmit}
+                            >
+                                <div className="join">
+                                    <input
+                                        className="input join-item input-sm input-bordered border-[#004269] w-full max-w-xs text-[#004269] z-10 focus:border-[#004269] focus:outline-[#004269]"
+                                        placeholder="text..."
+                                        onChange={formik.handleChange}
+                                        value={formik.values.searchText}
+                                        type="text"
+                                        id="searchText"
+                                    />
+                                    <AiOutlineSearch
+                                        onClick={() => formik.handleSubmit()}
+                                        className="text-[32px] cursor-pointer join-item rounded-r-full border border-[#004269] bg-white p-[5px] z-20"
+                                    />
+                                </div>
+                            </form>
+                        </div>
+                        {/* /Search to lg */}
+                        {/* Menu */}
+                        <button
+                            onClick={() => setIsActiveMenu(!isActiveMenu)}
+                            className="btn btn-sm btn-outline xl:hidden flex items-center gap-x-2 font-medium md:btn-md text-[#004269]"
+                        >
+                            {isActiveMenu ? (
+                                <AiOutlineClose />
+                            ) : (
+                                <AiOutlineMenu />
+                            )}
+                            MENU
+                        </button>
+                        {/* /Menu */}
+                    </div>
                 </div>
             </nav>
             {/* Mobile Drop */}
             <div
                 className={`${
                     isActiveMenu
-                        ? "h-[calc(100vh-59px)] sm:h-[calc(100vh-64px)] md:h-[calc(100vh-91px)] z-40 opacity-100 translate-x-0 overflow-auto"
+                        ? "h-[calc(100vh-59px)] sm:h-[calc(100vh-64px)] md:h-[calc(100vh-91px)] z-40 opacity-100 translate-x-0"
                         : "h-0 -z-50 opacity-0 -translate-x-full"
-                } style-transition-02 flex flex-col justify-center absolute top-[59px] sm:top-[64px] md:top-[92px] left-0 w-full  bg-[#004269] text-white`}
+                } style-transition-02 md:flex md:flex-col overflow-auto absolute top-[59px] sm:top-[64px] md:top-[92px] left-0 w-full  bg-[#004269] text-white`}
             >
                 {/* Language */}
                 <div className="flex justify-end p-4">
@@ -492,7 +521,7 @@ function Navbar() {
                 </div>
                 {/* /Language */}
                 {/* Search */}
-                <div>
+                <div className="md:hidden">
                     <form
                         className="flex items-center justify-center px-4 py-2"
                         onSubmit={formik.handleSubmit}
