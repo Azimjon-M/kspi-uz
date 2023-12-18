@@ -42,10 +42,6 @@ const NewsPageCom = () => {
                                     </div>
                                     <div className='absolute bottom-0 border-[#004269] border-2 w-10 group-hover/edit:w-full ... ease-in duration-300 ...'></div>
                                 </div>
-                                {/* News topics */}
-                                <div className='text-center'>
-                                    <p className='text-[#802323] font-medium text-xs md:text-sm'>SPORT</p>
-                                </div>
                                 {/* News title */}
                                 <div className="flex flex-col justify-between flex-grow px-2">
                                     <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-2 text-base text-[#004269] text-center dark:text-gray-300 line">
