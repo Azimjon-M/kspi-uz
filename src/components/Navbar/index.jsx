@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import kspi_logo from "../../assets/icons/logo_kspi.png";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
@@ -57,15 +57,29 @@ function Navbar() {
                 break;
         }
     };
+    // Mobile Handler main no scroll
+    useEffect(() => {
+        if (isActiveMenu) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
+    }, [isActiveMenu])
 
     return (
         <div
-            className={` flex flex-col justify-between sticky top-0 left-0 bg-white shadow-2xl z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
+            className={`flex flex-col justify-between sticky top-0 left-0 bg-white shadow-2xl z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 lg:top-[-2px] xl:px-0 xl:py-0`}
         >
             <nav className="flex justify-between">
                 {/* Doimo bor */}
                 <Link to="/">
-                    <div className={`${isLang === "ru" ? "sm:w-[250px] xl:w-[300px] 3xl:w-[400px]" : " sm:w-[180px] xl:w-[280px] 3xl:w-[320px]" } w-[150px] flex items-center gap-x-[10px] md:gap-x-[15px] xl:my-[15px] xl:ms-[40px]`}>
+                    <div
+                        className={`${
+                            isLang === "ru"
+                                ? "sm:w-[250px] xl:w-[300px] 3xl:w-[400px]"
+                                : " sm:w-[180px] xl:w-[280px] 3xl:w-[320px]"
+                        } w-[150px] flex items-center gap-x-[10px] md:gap-x-[15px] xl:my-[15px] xl:ms-[40px]`}
+                    >
                         <img
                             className="w-[32px] sm:w-[36px] md:w-[45px] xl:w-[60px] 3xl:w-[70px] h-auto"
                             src={kspi_logo}
@@ -183,7 +197,7 @@ function Navbar() {
                     {/* /Header */}
                     {/* Navigations */}
                     <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
-                        <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[20px] 3xl:gap-x-12 3xl:text-[22px] ">
+                        <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[18px] 3xl:gap-x-12 3xl:text-[20px] ">
                             <li className="-mr-2">
                                 <Link to="/yangiliklar">
                                     <FormattedMessage id="navYangiliklar" />
@@ -368,32 +382,27 @@ function Navbar() {
                                         </li>
                                         <li>
                                             <Link to="">
-                                            <FormattedMessage id="navDropAbiturient_2" />
-                                                
+                                                <FormattedMessage id="navDropAbiturient_2" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                            <FormattedMessage id="navDropAbiturient_3" />
-
+                                                <FormattedMessage id="navDropAbiturient_3" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                            <FormattedMessage id="navDropAbiturient_4" />
-
+                                                <FormattedMessage id="navDropAbiturient_4" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                            <FormattedMessage id="navDropAbiturient_5" />
-
+                                                <FormattedMessage id="navDropAbiturient_5" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                            <FormattedMessage id="navDropAbiturient_6" />
-
+                                                <FormattedMessage id="navDropAbiturient_6" />
                                             </Link>
                                         </li>
                                     </ul>
@@ -445,8 +454,347 @@ function Navbar() {
                 </div>
             </nav>
             {/* Mobile Drop */}
-            <div className={`${isActiveMenu ? "h-[calc(100vh-91px)] z-50 opacity-100 translate-x-0" : "h-0 -z-50 opacity-0 -translate-x-full"} style-transition-02 absolute top-[92px] left-0 w-full  bg-[#004269] text-white`}>
-                hello
+            <div
+                className={`${
+                    isActiveMenu
+                        ? "h-[calc(100vh-59px)] sm:h-[calc(100vh-64px)] md:h-[calc(100vh-91px)] z-40 opacity-100 translate-x-0 overflow-auto"
+                        : "h-0 -z-50 opacity-0 -translate-x-full"
+                } style-transition-02 flex flex-col justify-center absolute top-[59px] sm:top-[64px] md:top-[92px] left-0 w-full  bg-[#004269] text-white`}
+            >
+                {/* Language */}
+                <div className="flex justify-end p-4">
+                    <div className="flex items-end gap-x-2 ms-8">
+                        <img
+                            onClick={() => handleClickLang("uz")}
+                            className={` ${
+                                isLang === "uz" && "border-b-[2px] border-white"
+                            } w-[25px] lg:w-[30px] cursor-pointer 3xl:w-[35px]`}
+                            src={flag_1}
+                            alt="flag uz"
+                        />
+                        <img
+                            onClick={() => handleClickLang("ru")}
+                            className={` ${
+                                isLang === "ru" && "border-b-[2px] border-white"
+                            } w-[25px] lg:w-[30px] cursor-pointer 3xl:w-[35px]`}
+                            src={flag_2}
+                            alt="flag ru"
+                        />
+                        <img
+                            onClick={() => handleClickLang("en")}
+                            className={` ${
+                                isLang === "en" && "border-b-[2px] border-white"
+                            } w-[25px] lg:w-[30px] cursor-pointer 3xl:w-[35px]`}
+                            src={flag_3}
+                            alt="flag en"
+                        />
+                    </div>
+                </div>
+                {/* /Language */}
+                {/* Search */}
+                <div>
+                    <form
+                        className="flex items-center justify-center px-4 py-2"
+                        onSubmit={formik.handleSubmit}
+                    >
+                        <input
+                            className="input input-sm input-bordered input-accent w-full max-w-xs text-[#004269]"
+                            placeholder="text..."
+                            onChange={formik.handleChange}
+                            value={formik.values.searchText}
+                            type="text"
+                            id="searchText"
+                        />
+                        <AiOutlineSearch
+                            onClick={() => formik.handleSubmit()}
+                            className="text-[30px] ms-[15px] cursor-pointer"
+                        />
+                    </form>
+                </div>
+                {/* /Search */}
+                <div className="flex flex-col md:flex-row md:pb-10 lg:mx-auto">
+                    {/* Navbar */}
+                    <div className="flex justify-start pt-4 px-6 sm:px-14">
+                        <ul className="flex flex-col items-start gap-x-8 text-white font-semibold 2xl:text-[20px] 3xl:gap-x-12 3xl:text-[22px] ">
+                            <li className="py-[3px] border-b-[1px] border-blue-300">
+                                <Link to="/yangiliklar">
+                                    <FormattedMessage id="navYangiliklar" />
+                                </Link>
+                            </li>
+                            <li className="py-[3px] border-b-[1px] border-blue-300">
+                                <div className="collapse collapse-arrow rounded-none">
+                                    <input
+                                        type="radio"
+                                        name="my-accordion-2"
+                                        className="min-h-0 w-[280px]"
+                                    />
+                                    <div className="collapse-title min-h-0 py-0 px-0 w-full">
+                                        <FormattedMessage id="navInstitut" />
+                                    </div>
+                                    <div className="collapse-content">
+                                        <ul>
+                                            <li className="leading-4 my-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropInstitut_1" />
+                                                </Link>
+                                            </li>
+                                            <li className="leading-4 my-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropInstitut_2" />
+                                                </Link>
+                                            </li>
+                                            <li className="leading-4 my-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropInstitut_3" />
+                                                </Link>
+                                            </li>
+                                            <li className="leading-4 my-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropInstitut_4" />
+                                                </Link>
+                                            </li>
+                                            <li className="leading-4 my-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropInstitut_5" />
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="py-[3px] border-b-[1px] border-blue-300">
+                                <div className="collapse collapse-arrow rounded-none">
+                                    <input
+                                        type="radio"
+                                        name="my-accordion-2"
+                                        className="min-h-0 w-[280px]"
+                                    />
+                                    <div className="collapse-title min-h-0 py-0 px-0">
+                                        <FormattedMessage id="navFaoliyat" />
+                                    </div>
+                                    <div className="collapse-content max-w-[280px]">
+                                        <ul>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropFaoliyat_1" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropFaoliyat_2" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropFaoliyat_3" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropFaoliyat_4" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropFaoliyat_5" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropFaoliyat_6" />
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="py-[3px] border-b-[1px] border-blue-300">
+                                <div className="collapse collapse-arrow rounded-none">
+                                    <input
+                                        type="radio"
+                                        name="my-accordion-2"
+                                        className="min-h-0 w-[280px]"
+                                    />
+                                    <div className="collapse-title min-h-0 py-0 px-0">
+                                        <FormattedMessage id="navTuzilma" />
+                                    </div>
+                                    <div className="collapse-content max-w-[280px]">
+                                        <ul>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropTuzilma_1" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropTuzilma_2" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropTuzilma_3" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropTuzilma_4" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropTuzilma_5" />
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="py-[3px] border-b-[1px] border-blue-300">
+                                <div className="collapse collapse-arrow rounded-none">
+                                    <input
+                                        type="radio"
+                                        name="my-accordion-2"
+                                        className="min-h-0 w-[280px]"
+                                    />
+                                    <div className="collapse-title min-h-0 py-0 px-0">
+                                        <FormattedMessage id="navTalabalar" />
+                                    </div>
+                                    <div className="collapse-content max-w-[280px]">
+                                        <ul>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropTalabalar_1" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropTalabalar_2" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropTalabalar_3" />
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="py-[3px] border-b-[1px] border-blue-300">
+                                <div className="collapse collapse-arrow rounded-none">
+                                    <input
+                                        type="radio"
+                                        name="my-accordion-2"
+                                        className="min-h-0 w-[280px]"
+                                    />
+                                    <div className="collapse-title min-h-0 py-0 px-0">
+                                        <FormattedMessage id="navAbiturient" />
+                                    </div>
+                                    <div className="collapse-content max-w-[280px]">
+                                        <ul>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropAbiturient_1" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropAbiturient_2" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropAbiturient_3" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropAbiturient_4" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropAbiturient_5" />
+                                                </Link>
+                                            </li>
+                                            <li className="my-4 leading-4">
+                                                <Link to="">
+                                                    <FormattedMessage id="navDropAbiturient_6" />
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    {/* /Navbar */}
+                    {/* Header */}
+                    <div className="flex justify-start py-4 sm:px-10">
+                        <ul className="text-white px-5 font-semibold">
+                            <li className="py-[4px] w-[250px]">
+                                <Link
+                                    target="_blank"
+                                    to="https://talaba.kspi.uz/dashboard/login"
+                                >
+                                    <FormattedMessage id="hedHemis-tizimi" />
+                                </Link>
+                            </li>
+                            <li className="w-[280px] border-b-[1px] border-blue-300">
+                                <div className="collapse collapse-arrow rounded-none">
+                                    <input
+                                        type="checkbox"
+                                        name="my-accordion-2"
+                                        className="min-h-0 max-w-[280px]"
+                                    />
+                                    <div className="collapse-title min-h-0 py-0 px-0">
+                                        <FormattedMessage id="hedInstitut-jurnali" />
+                                    </div>
+                                    <div className="collapse-content max-w-[280px]">
+                                        <ul>
+                                            <li className="mt-2">
+                                                <Link
+                                                    target="_blank"
+                                                    to="https://journal.kspi.uz/"
+                                                >
+                                                    <FormattedMessage id="hedDropInstitut-jurnali_1" />
+                                                </Link>
+                                            </li>
+                                            <li className="mt-2">
+                                                <Link
+                                                    target="_blank"
+                                                    to="http://wsrjournal.com/index.php/wsrj"
+                                                >
+                                                    <FormattedMessage id="hedDropInstitut-jurnali_2" />
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="py-[4px] w-[250px]">
+                                <Link
+                                    target="_blank"
+                                    to="https://conferences.kspi.uz/"
+                                >
+                                    <FormattedMessage id="hedKonferensyalar" />
+                                </Link>
+                            </li>
+                            <li className="py-[4px] w-[250px]">
+                                <Link target="_blank" to="https://my.edu.uz/">
+                                    <FormattedMessage id="hedIkkinchi-talim" />
+                                </Link>
+                            </li>
+                            <li className="py-[4px] w-[250px]">
+                                {/* O'zimizni Page */}
+                                <Link to="">
+                                    <FormattedMessage id="hedOchiq-malumotlar" />
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                {/* /Header */}
             </div>
             {/* /Mobile Drop */}
         </div>
