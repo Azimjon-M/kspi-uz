@@ -30,18 +30,6 @@ const NewsHome = () => {
                 <div className='flex items-center justify-between my-1 md:my-3'>
                     <h2 className='text-xl md:text-3xl font-bold my-2'><FormattedMessage id='newsHeading' /></h2>
                 </div>
-
-                {/* Topics */}
-                <div className='flex justify-end'>
-                    <select className='select lg:select-lg w-full max-w-xs' name="newsSelect" id="">
-                        <option disabled selected value="Topics">Mavzular</option>
-                        <option value="All">Hammasi</option>
-                        <option value="All">San'at</option>
-                        <option value="All">Ta'lim</option>
-                        <option value="All">Kampus & Jamiyat</option>
-                        <option value="All">Sport</option>
-                    </select>
-                </div>
             </div>
 
             {/* News items */}

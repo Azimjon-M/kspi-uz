@@ -26,18 +26,6 @@ const NewsPageCom = () => {
                 <div className='flex items-center justify-between my-1 md:my-3'>
                     <h2 className='text-xl md:text-3xl font-bold my-2'><FormattedMessage id='newsHeading' /></h2>
                 </div>
-
-                {/* Topics */}
-                <div className='flex justify-end'>
-                    <select className='select lg:select-lg w-full max-w-xs' name="newsSelect" defaultValue="1" >
-                        <option disabled>Mavzular</option>
-                        <option value="1">Hammasi</option>
-                        <option value="2">San'at</option>
-                        <option value="3">Ta'lim</option>
-                        <option value="4">Kampus & Jamiyat</option>
-                        <option value="5">Sport</option>
-                    </select>
-                </div>
             </div>
 
             {/* News items */}
