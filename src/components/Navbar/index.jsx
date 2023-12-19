@@ -68,7 +68,7 @@ function Navbar() {
 
     return (
         <div
-            className={`flex flex-col justify-between sticky top-[-1px] w-full h-auto bg-white shadow-2xl z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
+            className={`flex flex-col justify-between sticky top-0 w-full h-auto bg-white shadow-2xl z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
         >
             <nav className="flex justify-between">
                 {/* Doimo bor */}
