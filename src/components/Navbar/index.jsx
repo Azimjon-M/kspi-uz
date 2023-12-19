@@ -68,7 +68,7 @@ function Navbar() {
 
     return (
         <div
-            className={`flex flex-col justify-between sticky top-0 left-0 bg-white shadow-2xl z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 lg:top-[-2px] xl:px-0 xl:py-0`}
+            className={`flex flex-col justify-between sticky top-[-1px] w-full h-auto bg-white shadow-2xl z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
         >
             <nav className="flex justify-between">
                 {/* Doimo bor */}
@@ -491,7 +491,7 @@ function Navbar() {
                 } style-transition-02 md:flex md:flex-col overflow-auto absolute top-[59px] sm:top-[64px] md:top-[92px] left-0 w-full  bg-[#004269] text-white`}
             >
                 {/* Language */}
-                <div className="flex justify-end p-4">
+                <div className="flex justify-end p-4 sm:p-6 md:p-8 lg:p-10">
                     <div className="flex items-end gap-x-2 ms-8">
                         <img
                             onClick={() => handleClickLang("uz")}
