@@ -3,6 +3,7 @@ import Root from "../root/index";
 
 import Main from "../pages/Main";
 import News from "../pages/News"
+import New from "../pages/New";
 
 export const routes = [
     {
@@ -16,6 +17,10 @@ export const routes = [
             {
                 element: <News />,
                 path: '/yangiliklar'
+            },
+            {
+                element: <New />,
+                path: '/yangiliklar/:id',
             },
         ],
     },
