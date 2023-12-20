@@ -7,6 +7,7 @@ import StudentOpinion from "../../components/StudentOpinion";
 import Curriculum from "../../components/Curriculum";
 import ContactUs from "../../components/Contact";
 import Footer from "../../components/Footer";
+import Partners from "../../components/Partners";
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
       <NewsHome />
       <StudentOpinion />
       <Curriculum />
+      <Partners />
       <ContactUs />
       <Footer />
     </div>
