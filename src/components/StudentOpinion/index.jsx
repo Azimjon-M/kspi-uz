@@ -12,7 +12,7 @@ function StudentOpinion() {
   return (
     <div className="bg-blue-700">
       <div className="max-w-7xl mx-auto py-10 sm:py-28 px-6 flex flex-col md:flex-row md:relative">
-        <RiDoubleQuotesL className="md:text-[130px] absolute top-5 left-1 text-blue-400 hidden md:block" />
+        <RiDoubleQuotesL className="md:text-[130px] absolute top-5 left-1 z- text-blue-400 hidden md:block" />
         <div className="md:w-1/2 md:h-[420px] md:mb-12" data-aos="fade-right">
           <img
             className="w-full h-full object-cover md:rounded-2xl rounded-t-2xl"
