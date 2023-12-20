@@ -19,7 +19,7 @@ const NewsCard = () => {
             <img src={newsData.rasm} alt="" />
             <h2>{newsData.title}</h2>
             <p>{newsData.body}</p>
-        </div>
+        </div> 
     );
 };
 

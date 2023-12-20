@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { Link } from "react-router-dom";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import { FormattedMessage } from "react-intl";
 
-import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 const NewsHome = () => {
     const [firstNews, setFirstNews] = useState(null);
     const [news, setNews] = useState(null);
     useEffect(() => {
+        Aos.init();
         const loadPost = async () => {
             try {
                 await axios.get("https://api.kspi.uz/v1/yangilik/yangilik/").then(res => {
@@ -34,10 +36,10 @@ const NewsHome = () => {
 
             {/* News items */}
             {/* First news */}
-            <div className="grid md:grid-cols-1 xl:grid-cols-2">
+            <div className="grid md:grid-cols-1 xl:grid-cols-2 overflow-hidden">
                 {firstNews && firstNews.map((item, idx) => (
-                    <Link to={`/yangiliklar/${item.id}`} key={idx}>
-                        <div className="p-4 max-w-sm md:max-w-3xl lg:max-w-4xl mx-auto group/item hover:cursor-pointer">
+                    <Link className='inline-block' to={`/yangiliklar/${item.id}`} key={idx}>
+                        <div className="p-4 max-w-sm md:max-w-3xl lg:max-w-4xl mx-auto group/item hover:cursor-pointer h-full" data-aos="fade-right">
                             <div className="flex rounded-lg h-full dark:bg-gray-800 shadow-md hover:shadow-lg flex-col group/edit">
                                 <div className="flex items-center mb-3 relative overflow-hidden">
                                     <img className="w-full rounded group-hover/item:scale-105 ease-in duration-300 ..." src={item.rasm} alt="Sunset in the mountains" />
@@ -61,10 +63,10 @@ const NewsHome = () => {
                     </Link>
                 ))}
                 {/* Remaining news */}
-                <div className='grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-2'>
+                <div className='grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-2 overflow-hidden'>
                     {news && news.map((item, idx) => (
-                        <Link to={`/yangiliklar/${item.id}`} key={idx}>
-                            <div className="p-4 max-w-sm lg:max-w-xs xl:max-w-md mx-auto group/item hover:cursor-pointer">
+                        <Link className='inline-block' to={`/yangiliklar/${item.id}`} key={idx}>
+                            <div className="p-4 max-w-sm lg:max-w-xs xl:max-w-md mx-auto group/item hover:cursor-pointer" data-aos="fade-left">
                                 <div className="flex rounded-lg h-full dark:bg-gray-800 shadow-md hover:shadow-lg flex-col group/edit">
                                     <div className="flex items-center mb-3 relative overflow-hidden">
                                         <img className="w-full rounded group-hover/item:scale-105 ease-in duration-300 ..." src={item.rasm} alt="Sunset in the mountains" />
@@ -96,7 +98,7 @@ const NewsHome = () => {
                     target="_blank"
                     to="/yangiliklar"
                 >
-                    <span className='flex items-center ease-in-out duration-200'><FormattedMessage id='newsToPage' /> <MdOutlineKeyboardDoubleArrowRight /></span>
+                    <span className='flex items-center ease-in-out duration-200'><FormattedMessage id='newsToPage' /> »</span>
                 </Link>
             </div>
         </div>

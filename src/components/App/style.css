@@ -1,6 +1,18 @@
 .style-transition-01 {
     transition: all 0.2s linear;
 }
+
 .style-transition-02 {
     transition: all 0.3s linear;
+}
+
+/* Pagination styles */
+.pagination__link {
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
 }
