@@ -2,6 +2,7 @@ import React from 'react'
 import { FaMapLocationDot } from "react-icons/fa6";
 import { FaSquarePhone } from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
     return (
@@ -19,11 +20,11 @@ const ContactUs = () => {
                                 </div>
                                 <div className='flex items-center mb-5 md:mb-10'>
                                     <FaSquarePhone className='w-[40px] md:w-[60px] h-auto mr-4' />
-                                    <p className='text-[#004269]'><a href="tel:+998735423838">+998 73 542 38 38</a></p>
+                                    <p className='text-[#004269]'><Link href="tel:+998735423838">+998 73 542 38 38</Link></p>
                                 </div>
                                 <div className='flex items-center'>
                                     <MdMarkEmailUnread className='w-[40px] md:w-[60px] h-auto mr-4' />
-                                    <p className='text-[#004269]'><a href="mailto:kspi_info@edu.uz">kspi_info@edu.uz</a></p>
+                                    <p className='text-[#004269]'><Link href="mailto:kspi_info@edu.uz">kspi_info@edu.uz</Link></p>
                                 </div>
                             </div>
                         </div>
