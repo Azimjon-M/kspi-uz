@@ -10,7 +10,7 @@ function StudentOpinion() {
   },[])
 
   return (
-    <div className="bg-blue-700">
+    <div className="bg-blue-700 overflow-hidden">
       <div className="max-w-7xl mx-auto py-10 sm:py-28 px-6 flex flex-col md:flex-row md:relative">
         <RiDoubleQuotesL className="md:text-[130px] absolute top-5 left-1 z- text-blue-400 hidden md:block" />
         <div className="md:w-1/2 md:h-[420px] md:mb-12" data-aos="fade-right">
