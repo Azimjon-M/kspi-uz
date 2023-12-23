@@ -8,7 +8,6 @@ import Curriculum from "../../components/Curriculum";
 import ContactUs from "../../components/Contact";
 import Footer from "../../components/Footer";
 import Partners from "../../components/Partners";
-import Chat from "../../components/Chat";
 
 function Main() {
   return (
@@ -22,7 +21,6 @@ function Main() {
       <Partners />
       <ContactUs />
       <Footer />
-      <Chat />
     </div>
   );
 }

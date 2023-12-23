@@ -95,7 +95,6 @@ const NewsHome = () => {
             <div className='flex justify-end my-2'>
                 <Link
                     className='cursor-pointer md:text-xl hover:scale-105 ease-in-out duration-150 lg:pr-3'
-                    target="_blank"
                     to="/yangiliklar"
                 >
                     <span className='flex items-center ease-in-out duration-200'><FormattedMessage id='newsToPage' /> »</span>
