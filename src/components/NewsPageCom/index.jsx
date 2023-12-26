@@ -35,7 +35,7 @@ const NewsPage = () => {
                     <div className="flex rounded-lg h-full dark:bg-gray-800 shadow-md hover:shadow-lg flex-col group/edit">
                         <div className="flex items-center mb-3 relative overflow-hidden">
                             <img className="w-full rounded group-hover/item:scale-105 ease-in duration-300 ..." src={item.rasm} alt="Sunset in the mountains" />
-                            <div className='absolute top-0 left-3 h-12 w-12 bg-[#802323] text-center flex flex-col text-sm p-1'>
+                            <div className='absolute top-0 left-3 h-12 w-12 bg-[#802323] text-center flex flex-col text-sm p-1 rounded-b-md'>
                                 <span className='text-white'>{item.sana.slice(8, 10)}.{item.sana.slice(5, 7)}</span>
                                 <span className='text-white'>{item.sana.slice(0, 4)}</span>
                             </div>
