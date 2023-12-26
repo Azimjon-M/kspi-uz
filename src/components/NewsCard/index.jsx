@@ -15,10 +15,12 @@ const NewsCard = () => {
     }, [id]);
 
     return (
-        <div>
-            <img src={newsData.rasm} alt="" />
-            <h2>{newsData.title}</h2>
-            <p>{newsData.body}</p>
+        <div className='p-10'>
+            <h2 className='text-xl font-bold text-center mb-5'>{newsData.title}</h2>
+            <img className='mb-5 w-full' src={newsData.rasm} alt="" />
+            <div className='d-inline-block'>
+                <p><p className='d-inline-block text-3xl border-2 border-[#004269] px-5 py-3'>{newsData.body.slice(0, 1)}</p> {newsData.body.slice(1)}</p>
+            </div>
         </div>
     );
 };
