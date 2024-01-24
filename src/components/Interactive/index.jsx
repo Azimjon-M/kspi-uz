@@ -22,7 +22,7 @@ function Interactive() {
               </Link>
             </li>
             <li className="w-full">
-              <Link className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center">
+              <Link to={"https://unilibrary.uz/"} target="blank" className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center">
                 <GiBookshelf className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                   <FormattedMessage id="intEKutubxona" />
