@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import TextTranslate from '../TextTranslate';
 
 const Footer = () => {
+
     return (
         <footer className='flex flex-col bg-[#004269] text-white'>
             {/* Biz bilan bog'lanish */}
@@ -72,6 +74,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* /About */}
+            <TextTranslate id="Salom" />
         </footer>
     )
 }
