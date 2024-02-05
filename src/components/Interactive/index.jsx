@@ -14,7 +14,7 @@ function Interactive() {
         <div className="relative -top-5 z-40 py-2 mb-20 bg-white rounded-lg shadow-md">
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
             <li className="w-full">
-              <Link className="flex flex-col justify-center items-center group md:my-9 my-3 sm:border-r border-[#ebebeb] text-center">
+              <Link to='/qabulxona' className="flex flex-col justify-center items-center group md:my-9 my-3 sm:border-r border-[#ebebeb] text-center">
                 <RiComputerLine className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                   <FormattedMessage id="intVertualQabulxona" />
@@ -38,7 +38,7 @@ function Interactive() {
               </Link>
             </li>
             <li className="w-full">
-              <Link className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center">
+              <Link to='/videomaruza' className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center">
                 <MdOutlineLiveTv className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                   <FormattedMessage id="intVideoMaruzalar" />
