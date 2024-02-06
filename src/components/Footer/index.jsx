@@ -1,5 +1,4 @@
 import React from 'react';
-import TextTranslate from '../TextTranslate';
 
 const Footer = () => {
 
@@ -74,7 +73,6 @@ const Footer = () => {
                 </div>
             </div>
             {/* /About */}
-            <TextTranslate id="Salom" />
         </footer>
     )
 }
