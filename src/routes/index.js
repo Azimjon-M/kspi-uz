@@ -6,6 +6,8 @@ import News from "../pages/News";
 import New from "../pages/New";
 import VirQabulxona from "../pages/VirQabulxona";
 import VideoMaruzalar from "../pages/VideoMaruzalar";
+import Qabul from "../pages/Qabul";
+import OnlineKuzatish from "../pages/OnlineKuzatish";
 
 export const routes = [
     {
@@ -31,6 +33,14 @@ export const routes = [
             {
                 element: <VideoMaruzalar />,
                 path: '/videomaruza'
+            },
+            {
+                element: <Qabul />,
+                path: '/qabul'
+            },
+            {
+                element: <OnlineKuzatish />,
+                path: '/kuzatish'
             },
         ],
     },
