@@ -1,23 +1,16 @@
-import React, { useEffect, useState } from 'react'
-import data from '../../db.json'
-import { useSelector } from 'react-redux';
+import React, { useEffect, useState } from "react";
+import data from "../../languages/index.json";
+import { useSelector } from "react-redux";
 
-const TextTranslate = ({id="X_ID"}) => {
+const TextTranslate = ({ id = "X_ID" }) => {
     const lang = useSelector((state) => state.reducerLang.isLang);
-    const [text, setText] = useState();
+    const [text, setText] = useState(null);
 
-    
-    useEffect(()=> {
-    if (!id === "X_ID") {
-        setText(data[lang][id])
-    } else {
-        console.log("'TextTranslate'ga ID kiritilmagan! ERR: ");
-    }
-    }, [lang, id])
+    useEffect(() => {
+        setText(data[lang][id]);
+    }, [lang, id]);
 
-    return (
-        <>{text}</>
-    )
-}
+    return <>{text}</>;
+};
 
-export default TextTranslate
+export default TextTranslate;

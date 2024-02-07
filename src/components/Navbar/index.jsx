@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import kspi_logo from "../../assets/icons/logo_kspi.png";
-import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import { AiOutlineSearch, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useFormik } from "formik";
@@ -14,6 +13,7 @@ import {
 import flag_1 from "../../assets/icons/flag-uz.png";
 import flag_2 from "../../assets/icons/flag-ru.png";
 import flag_3 from "../../assets/icons/flag-en.png";
+import TextTranslate from "../TextTranslate/index";
 
 function Navbar() {
     const dispatch = useDispatch();
@@ -74,11 +74,7 @@ function Navbar() {
                 {/* Doimo bor */}
                 <Link to="/">
                     <div
-                        className={`${
-                            isLang === "ru"
-                                ? "sm:w-[250px] xl:w-[300px] 3xl:w-[400px]"
-                                : " sm:w-[180px] xl:w-[280px] 3xl:w-[320px]"
-                        } w-[150px] flex items-center gap-x-[10px] md:gap-x-[15px] xl:my-[15px] xl:ms-[40px]`}
+                        className={"sm:w-[250px] xl:w-[300px] 3xl:w-[400px] w-[150px] flex items-center gap-x-[10px] md:gap-x-[15px] xl:my-[15px] xl:ms-[40px]"}
                     >
                         <img
                             className="w-[32px] sm:w-[36px] md:w-[45px] xl:w-[60px] 3xl:w-[70px] h-auto"
@@ -86,7 +82,7 @@ function Navbar() {
                             alt="icon"
                         />
                         <p className="hidden sm:inline-block text-[11px] leading-4 text-[#004269] font-bold sm:text-[13px] md:text-[15px] xl:leading-6 3xl:text-[22px] xl:text-[18px]">
-                            <FormattedMessage id="navLogo" />
+                            <TextTranslate id="navLogo" />
                         </p>
                     </div>
                 </Link>
@@ -99,7 +95,7 @@ function Navbar() {
                                     target="_blank"
                                     to="https://talaba.kspi.uz/dashboard/login"
                                 >
-                                    <FormattedMessage id="hedHemis-tizimi" />
+                                    <TextTranslate id="hedHemis-tizimi" />
                                 </Link>
                             </li>
                             <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-12px] after:w-[7px] after:h-[7px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] cursor-pointer py-[4px] mr-3 3xl:after:w-[8px] 3xl:after:h-[8px] ">
@@ -109,7 +105,7 @@ function Navbar() {
                                         role="button"
                                         className="text-inherit"
                                     >
-                                        <FormattedMessage id="hedInstitut-jurnali" />
+                                        <TextTranslate id="hedInstitut-jurnali" />
                                     </div>
                                     <ul
                                         tabIndex={0}
@@ -120,7 +116,7 @@ function Navbar() {
                                                 target="_blank"
                                                 to="https://journal.kspi.uz/"
                                             >
-                                                <FormattedMessage id="hedDropInstitut-jurnali_1" />
+                                                <TextTranslate id="hedDropInstitut-jurnali_1" />
                                             </Link>
                                         </li>
                                         <li>
@@ -128,7 +124,7 @@ function Navbar() {
                                                 target="_blank"
                                                 to="http://wsrjournal.com/index.php/wsrj"
                                             >
-                                                <FormattedMessage id="hedDropInstitut-jurnali_2" />
+                                                <TextTranslate id="hedDropInstitut-jurnali_2" />
                                             </Link>
                                         </li>
                                     </ul>
@@ -139,18 +135,18 @@ function Navbar() {
                                     target="_blank"
                                     to="https://conferences.kspi.uz/"
                                 >
-                                    <FormattedMessage id="hedKonferensyalar" />
+                                    <TextTranslate id="hedKonferensyalar" />
                                 </Link>
                             </li>
                             <li className="py-[4px]">
                                 <Link target="_blank" to="https://my.edu.uz/">
-                                    <FormattedMessage id="hedIkkinchi-talim" />
+                                    <TextTranslate id="hedIkkinchi-talim" />
                                 </Link>
                             </li>
                             <li className="py-[4px]">
                                 {/* O'zimizni Page */}
                                 <Link to="">
-                                    <FormattedMessage id="hedOchiq-malumotlar" />
+                                    <TextTranslate id="hedOchiq-malumotlar" />
                                 </Link>
                             </li>
                         </ul>
@@ -200,7 +196,7 @@ function Navbar() {
                         <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[18px] 3xl:gap-x-12 3xl:text-[20px] ">
                             <li className="-mr-2">
                                 <Link to="/yangiliklar">
-                                    <FormattedMessage id="navYangiliklar" />
+                                    <TextTranslate id="navYangiliklar" />
                                 </Link>
                             </li>
                             <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
@@ -210,7 +206,7 @@ function Navbar() {
                                         role="button"
                                         className="text-inherit"
                                     >
-                                        <FormattedMessage id="navInstitut" />
+                                        <TextTranslate id="navInstitut" />
                                     </div>
                                     <ul
                                         tabIndex={2}
@@ -218,27 +214,27 @@ function Navbar() {
                                     >
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropInstitut_1" />
+                                                <TextTranslate id="navDropInstitut_1" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropInstitut_2" />
+                                                <TextTranslate id="navDropInstitut_2" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropInstitut_3" />
+                                                <TextTranslate id="navDropInstitut_3" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropInstitut_4" />
+                                                <TextTranslate id="navDropInstitut_4" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropInstitut_5" />
+                                                <TextTranslate id="navDropInstitut_5" />
                                             </Link>
                                         </li>
                                     </ul>
@@ -251,7 +247,7 @@ function Navbar() {
                                         role="button"
                                         className="text-inherit"
                                     >
-                                        <FormattedMessage id="navFaoliyat" />
+                                        <TextTranslate id="navFaoliyat" />
                                     </div>
                                     <ul
                                         tabIndex={3}
@@ -259,32 +255,32 @@ function Navbar() {
                                     >
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropFaoliyat_1" />
+                                                <TextTranslate id="navDropFaoliyat_1" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropFaoliyat_2" />
+                                                <TextTranslate id="navDropFaoliyat_2" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropFaoliyat_3" />
+                                                <TextTranslate id="navDropFaoliyat_3" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropFaoliyat_4" />
+                                                <TextTranslate id="navDropFaoliyat_4" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropFaoliyat_5" />
+                                                <TextTranslate id="navDropFaoliyat_5" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropFaoliyat_6" />
+                                                <TextTranslate id="navDropFaoliyat_6" />
                                             </Link>
                                         </li>
                                     </ul>
@@ -297,7 +293,7 @@ function Navbar() {
                                         role="button"
                                         className="text-inherit"
                                     >
-                                        <FormattedMessage id="navTuzilma" />
+                                        <TextTranslate id="navTuzilma" />
                                     </div>
                                     <ul
                                         tabIndex={4}
@@ -305,27 +301,27 @@ function Navbar() {
                                     >
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropTuzilma_1" />
+                                                <TextTranslate id="navDropTuzilma_1" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropTuzilma_2" />
+                                                <TextTranslate id="navDropTuzilma_2" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropTuzilma_3" />
+                                                <TextTranslate id="navDropTuzilma_3" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropTuzilma_4" />
+                                                <TextTranslate id="navDropTuzilma_4" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropTuzilma_5" />
+                                                <TextTranslate id="navDropTuzilma_5" />
                                             </Link>
                                         </li>
                                     </ul>
@@ -338,7 +334,7 @@ function Navbar() {
                                         role="button"
                                         className="text-inherit"
                                     >
-                                        <FormattedMessage id="navTalabalar" />
+                                        <TextTranslate id="navTalabalar" />
                                     </div>
                                     <ul
                                         tabIndex={5}
@@ -346,17 +342,17 @@ function Navbar() {
                                     >
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropTalabalar_1" />
+                                                <TextTranslate id="navDropTalabalar_1" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropTalabalar_2" />
+                                                <TextTranslate id="navDropTalabalar_2" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropTalabalar_3" />
+                                                <TextTranslate id="navDropTalabalar_3" />
                                             </Link>
                                         </li>
                                     </ul>
@@ -369,7 +365,7 @@ function Navbar() {
                                         role="button"
                                         className="text-inherit"
                                     >
-                                        <FormattedMessage id="navAbiturient" />
+                                        <TextTranslate id="navAbiturient" />
                                     </div>
                                     <ul
                                         tabIndex={6}
@@ -377,32 +373,32 @@ function Navbar() {
                                     >
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropAbiturient_1" />
+                                                <TextTranslate id="navDropAbiturient_1" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropAbiturient_2" />
+                                                <TextTranslate id="navDropAbiturient_2" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropAbiturient_3" />
+                                                <TextTranslate id="navDropAbiturient_3" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropAbiturient_4" />
+                                                <TextTranslate id="navDropAbiturient_4" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropAbiturient_5" />
+                                                <TextTranslate id="navDropAbiturient_5" />
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                <FormattedMessage id="navDropAbiturient_6" />
+                                                <TextTranslate id="navDropAbiturient_6" />
                                             </Link>
                                         </li>
                                     </ul>
@@ -547,7 +543,7 @@ function Navbar() {
                         <ul className="flex flex-col items-start gap-x-8 text-white font-semibold 2xl:text-[20px] 3xl:gap-x-12 3xl:text-[22px] ">
                             <li className="py-[3px] border-b-[1px] border-blue-300">
                                 <Link to="/yangiliklar">
-                                    <FormattedMessage id="navYangiliklar" />
+                                    <TextTranslate id="navYangiliklar" />
                                 </Link>
                             </li>
                             <li className="py-[3px] border-b-[1px] border-blue-300">
@@ -558,33 +554,33 @@ function Navbar() {
                                         className="min-h-0 w-[280px]"
                                     />
                                     <div className="collapse-title min-h-0 py-0 px-0 w-full">
-                                        <FormattedMessage id="navInstitut" />
+                                        <TextTranslate id="navInstitut" />
                                     </div>
                                     <div className="collapse-content">
                                         <ul>
                                             <li className="leading-4 my-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropInstitut_1" />
+                                                    <TextTranslate id="navDropInstitut_1" />
                                                 </Link>
                                             </li>
                                             <li className="leading-4 my-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropInstitut_2" />
+                                                    <TextTranslate id="navDropInstitut_2" />
                                                 </Link>
                                             </li>
                                             <li className="leading-4 my-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropInstitut_3" />
+                                                    <TextTranslate id="navDropInstitut_3" />
                                                 </Link>
                                             </li>
                                             <li className="leading-4 my-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropInstitut_4" />
+                                                    <TextTranslate id="navDropInstitut_4" />
                                                 </Link>
                                             </li>
                                             <li className="leading-4 my-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropInstitut_5" />
+                                                    <TextTranslate id="navDropInstitut_5" />
                                                 </Link>
                                             </li>
                                         </ul>
@@ -599,38 +595,38 @@ function Navbar() {
                                         className="min-h-0 w-[280px]"
                                     />
                                     <div className="collapse-title min-h-0 py-0 px-0">
-                                        <FormattedMessage id="navFaoliyat" />
+                                        <TextTranslate id="navFaoliyat" />
                                     </div>
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropFaoliyat_1" />
+                                                    <TextTranslate id="navDropFaoliyat_1" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropFaoliyat_2" />
+                                                    <TextTranslate id="navDropFaoliyat_2" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropFaoliyat_3" />
+                                                    <TextTranslate id="navDropFaoliyat_3" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropFaoliyat_4" />
+                                                    <TextTranslate id="navDropFaoliyat_4" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropFaoliyat_5" />
+                                                    <TextTranslate id="navDropFaoliyat_5" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropFaoliyat_6" />
+                                                    <TextTranslate id="navDropFaoliyat_6" />
                                                 </Link>
                                             </li>
                                         </ul>
@@ -645,33 +641,33 @@ function Navbar() {
                                         className="min-h-0 w-[280px]"
                                     />
                                     <div className="collapse-title min-h-0 py-0 px-0">
-                                        <FormattedMessage id="navTuzilma" />
+                                        <TextTranslate id="navTuzilma" />
                                     </div>
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropTuzilma_1" />
+                                                    <TextTranslate id="navDropTuzilma_1" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropTuzilma_2" />
+                                                    <TextTranslate id="navDropTuzilma_2" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropTuzilma_3" />
+                                                    <TextTranslate id="navDropTuzilma_3" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropTuzilma_4" />
+                                                    <TextTranslate id="navDropTuzilma_4" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropTuzilma_5" />
+                                                    <TextTranslate id="navDropTuzilma_5" />
                                                 </Link>
                                             </li>
                                         </ul>
@@ -686,23 +682,23 @@ function Navbar() {
                                         className="min-h-0 w-[280px]"
                                     />
                                     <div className="collapse-title min-h-0 py-0 px-0">
-                                        <FormattedMessage id="navTalabalar" />
+                                        <TextTranslate id="navTalabalar" />
                                     </div>
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropTalabalar_1" />
+                                                    <TextTranslate id="navDropTalabalar_1" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropTalabalar_2" />
+                                                    <TextTranslate id="navDropTalabalar_2" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropTalabalar_3" />
+                                                    <TextTranslate id="navDropTalabalar_3" />
                                                 </Link>
                                             </li>
                                         </ul>
@@ -717,38 +713,38 @@ function Navbar() {
                                         className="min-h-0 w-[280px]"
                                     />
                                     <div className="collapse-title min-h-0 py-0 px-0">
-                                        <FormattedMessage id="navAbiturient" />
+                                        <TextTranslate id="navAbiturient" />
                                     </div>
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropAbiturient_1" />
+                                                    <TextTranslate id="navDropAbiturient_1" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropAbiturient_2" />
+                                                    <TextTranslate id="navDropAbiturient_2" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropAbiturient_3" />
+                                                    <TextTranslate id="navDropAbiturient_3" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropAbiturient_4" />
+                                                    <TextTranslate id="navDropAbiturient_4" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropAbiturient_5" />
+                                                    <TextTranslate id="navDropAbiturient_5" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4">
                                                 <Link to="">
-                                                    <FormattedMessage id="navDropAbiturient_6" />
+                                                    <TextTranslate id="navDropAbiturient_6" />
                                                 </Link>
                                             </li>
                                         </ul>
@@ -766,7 +762,7 @@ function Navbar() {
                                     target="_blank"
                                     to="https://talaba.kspi.uz/dashboard/login"
                                 >
-                                    <FormattedMessage id="hedHemis-tizimi" />
+                                    <TextTranslate id="hedHemis-tizimi" />
                                 </Link>
                             </li>
                             <li className="w-[280px] border-b-[1px] border-blue-300">
@@ -777,7 +773,7 @@ function Navbar() {
                                         className="min-h-0 max-w-[280px]"
                                     />
                                     <div className="collapse-title min-h-0 py-0 px-0">
-                                        <FormattedMessage id="hedInstitut-jurnali" />
+                                        <TextTranslate id="hedInstitut-jurnali" />
                                     </div>
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
@@ -786,7 +782,7 @@ function Navbar() {
                                                     target="_blank"
                                                     to="https://journal.kspi.uz/"
                                                 >
-                                                    <FormattedMessage id="hedDropInstitut-jurnali_1" />
+                                                    <TextTranslate id="hedDropInstitut-jurnali_1" />
                                                 </Link>
                                             </li>
                                             <li className="mt-2">
@@ -794,7 +790,7 @@ function Navbar() {
                                                     target="_blank"
                                                     to="http://wsrjournal.com/index.php/wsrj"
                                                 >
-                                                    <FormattedMessage id="hedDropInstitut-jurnali_2" />
+                                                    <TextTranslate id="hedDropInstitut-jurnali_2" />
                                                 </Link>
                                             </li>
                                         </ul>
@@ -806,18 +802,18 @@ function Navbar() {
                                     target="_blank"
                                     to="https://conferences.kspi.uz/"
                                 >
-                                    <FormattedMessage id="hedKonferensyalar" />
+                                    <TextTranslate id="hedKonferensyalar" />
                                 </Link>
                             </li>
                             <li className="py-[4px] w-[250px]">
                                 <Link target="_blank" to="https://my.edu.uz/">
-                                    <FormattedMessage id="hedIkkinchi-talim" />
+                                    <TextTranslate id="hedIkkinchi-talim" />
                                 </Link>
                             </li>
                             <li className="py-[4px] w-[250px]">
                                 {/* O'zimizni Page */}
                                 <Link to="">
-                                    <FormattedMessage id="hedOchiq-malumotlar" />
+                                    <TextTranslate id="hedOchiq-malumotlar" />
                                 </Link>
                             </li>
                         </ul>
