@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { FaSquarePhone } from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const ContactUs = () => {
+  useEffect(() => {
+    const iframes = document.querySelectorAll("iframe");
+    iframes.forEach((iframe) => {
+      iframe.setAttribute("loading", "lazy");
+    });
+  }, []);
   return (
     <div className="p-5 lg:p-10 flex justify-center">
       <div className="w-[1000px]">
@@ -47,6 +53,7 @@ const ContactUs = () => {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              samesite="None"
             ></iframe>
           </section>
         </div>
