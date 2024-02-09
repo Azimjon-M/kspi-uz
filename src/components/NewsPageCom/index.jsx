@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import ReactPaginate from "react-paginate";
 import TextTranslate from "../TextTranslate";
+import Breadcrumb from "../Breadcrumb";
 
 const NewsPage = () => {
   const [news, setNews] = useState(null);
@@ -40,6 +41,14 @@ const NewsPage = () => {
 
   return (
     <div className="px-5 py-3 md:px-10 lg:px-20">
+            <div className="border-b-2 border-[#004269] block w-full">
+        <Breadcrumb
+          steps={[
+            { text: "Bosh sahifa", link: "/" },
+            { text: "Yangiliklar", },
+          ]}
+        />
+      </div>
       <div className="md:flex md:items-center justify-between">
         {/* News heading */}
         <div className="flex items-center justify-between my-1 md:my-3">
