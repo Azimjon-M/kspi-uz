@@ -4,7 +4,7 @@ import axios from "axios";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ReactPaginate from "react-paginate";
-import { FormattedMessage } from "react-intl";
+import TextTranslate from "../TextTranslate";
 
 const NewsPage = () => {
   const [news, setNews] = useState(null);
@@ -44,7 +44,7 @@ const NewsPage = () => {
         {/* News heading */}
         <div className="flex items-center justify-between my-1 md:my-3">
           <h2 className="text-xl md:text-3xl font-bold my-2">
-            <FormattedMessage id="newsHeading" />
+            <TextTranslate id="newsHeading" />
           </h2>
         </div>
       </div>

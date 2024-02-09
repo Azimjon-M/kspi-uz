@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-import { FormattedMessage } from "react-intl";
+import TextTranslate from "../TextTranslate";
 
 const NewsHome = () => {
     const [firstNews, setFirstNews] = useState(null);
@@ -30,7 +30,7 @@ const NewsHome = () => {
             <div className='md:flex md:items-center justify-between'>
                 {/* News heading */}
                 <div className='flex items-center justify-between my-1 md:my-3'>
-                    <h2 className='text-xl md:text-3xl font-bold my-2'><FormattedMessage id='newsHeading' /></h2>
+                    <h2 className='text-xl md:text-3xl font-bold my-2'><TextTranslate id='newsHeading' /></h2>
                 </div>
             </div>
 
@@ -97,7 +97,7 @@ const NewsHome = () => {
                     className='cursor-pointer md:text-xl hover:scale-105 ease-in-out duration-150 lg:pr-3'
                     to="/yangiliklar"
                 >
-                    <span className='flex items-center ease-in-out duration-200'><FormattedMessage id='newsToPage' /> »</span>
+                    <span className='flex items-center ease-in-out duration-200'><TextTranslate id='newsToPage' /> »</span>
                 </Link>
             </div>
         </div>

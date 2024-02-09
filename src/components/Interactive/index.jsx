@@ -4,7 +4,7 @@ import { RiComputerLine } from "react-icons/ri";
 import { GiBookshelf } from "react-icons/gi";
 import { MdOutlineLiveTv } from "react-icons/md";
 import { PiChalkboardTeacherFill } from "react-icons/pi";
-import { FormattedMessage } from "react-intl";
+import TextTranslate from "../TextTranslate";
 import { FaRegCalendarCheck, FaRegEye } from "react-icons/fa";
 
 function Interactive() {
@@ -20,7 +20,7 @@ function Interactive() {
               >
                 <RiComputerLine className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
-                  <FormattedMessage id="intVertualQabulxona" />
+                  <TextTranslate id="intVertualQabulxona" />
                 </h2>
               </Link>
             </li>
@@ -32,15 +32,18 @@ function Interactive() {
               >
                 <GiBookshelf className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
-                  <FormattedMessage id="intEKutubxona" />
+                  <TextTranslate id="intEKutubxona" />
                 </h2>
               </Link>
             </li>
             <li className="w-full">
-              <Link to="http://moodle.kspi.uz/doc/page/login.asp?_1707299150792" className="flex flex-col justify-center items-center group md:my-9 my-3 w-full sm:border-r border-[#ebebeb] text-center">
+              <Link
+                to="http://moodle.kspi.uz/doc/page/login.asp?_1707299150792"
+                className="flex flex-col justify-center items-center group md:my-9 my-3 w-full sm:border-r border-[#ebebeb] text-center"
+              >
                 <PiChalkboardTeacherFill className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
-                  <FormattedMessage id="intMasofaviyTalim" />
+                  <TextTranslate id="intMasofaviyTalim" />
                 </h2>
               </Link>
             </li>
@@ -51,7 +54,7 @@ function Interactive() {
               >
                 <MdOutlineLiveTv className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
-                  <FormattedMessage id="intVideoMaruzalar" />
+                  <TextTranslate id="intVideoMaruzalar" />
                 </h2>
               </Link>
             </li>
@@ -62,7 +65,7 @@ function Interactive() {
               >
                 <FaRegCalendarCheck className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
-                  <FormattedMessage id="intQabul" />
+                  <TextTranslate id="intQabul" />
                 </h2>
               </Link>
             </li>
@@ -73,7 +76,7 @@ function Interactive() {
               >
                 <FaRegEye className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
-                  <FormattedMessage id="intImtixonlarniKuzatish" />
+                  <TextTranslate id="intImtixonlarniKuzatish" />
                 </h2>
               </Link>
             </li>
@@ -85,16 +88,16 @@ function Interactive() {
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                <FormattedMessage id="intStatistika" />
+                <TextTranslate id="intStatistika" />
               </h2>
               <p className="text-lg leading-8 text-gray-300">
-                <FormattedMessage id="intStatisTaytil" />
+                <TextTranslate id="intStatisTaytil" />
               </p>
             </div>
             <dl className="mt-8 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col bg-white/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
-                  <FormattedMessage id="intStatisTalabalar" />
+                  <TextTranslate id="intStatisTalabalar" />
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
                   15k+
@@ -102,7 +105,7 @@ function Interactive() {
               </div>
               <div className="flex flex-col bg-white/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
-                  <FormattedMessage id="intStatisPhd" />
+                  <TextTranslate id="intStatisPhd" />
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
                   171
@@ -110,7 +113,7 @@ function Interactive() {
               </div>
               <div className="flex flex-col bg-white/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
-                  <FormattedMessage id="intStatisOqituvchilar" />
+                  <TextTranslate id="intStatisOqituvchilar" />
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
                   517
@@ -118,7 +121,7 @@ function Interactive() {
               </div>
               <div className="flex flex-col bg-white/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
-                  <FormattedMessage id="intStatisFanDoktorlar" />
+                  <TextTranslate id="intStatisFanDoktorlar" />
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
                   10
