@@ -54,6 +54,7 @@ function Navbar() {
                 dispatch(setLangEn());
                 break;
             default:
+                dispatch(setLangUz());
                 break;
         }
     };
