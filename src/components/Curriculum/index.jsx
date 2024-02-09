@@ -20,7 +20,7 @@ function Curriculum() {
             <div className="pl-3 w-full">
               <h2 className="text-md md:text-xl font-medium text-slate-600">Fanlar katalogi</h2>
               <p className="text-sm flex items-center"><span><FaRegCalendarAlt className="mr-1"/></span>12.12.2023</p>
-              <div className="text-end"><button className="text-sm bg-blue-500 text-gray-200 mt-11 px-2 py-1 rounded-md">Batafsil</button></div>
+              <div className="text-end"><button className="text-sm bg-[#004269] text-white mt-11 px-2 py-1 rounded-md">Batafsil</button></div>
             </div>
           </div>
           <div className="flex h-[140px] bg-white p-3 rounded-2xl duration-200 hover:scale-105 shadow-md hover:shadow-lg">
@@ -34,7 +34,7 @@ function Curriculum() {
             <div className="pl-3 w-full">
               <h2 className="text-md md:text-xl font-medium text-slate-600">Bakalavr malaka talablari</h2>
               <p className="text-sm flex items-center"><span><FaRegCalendarAlt className="mr-1"/></span>12.12.2023</p>
-              <div className="text-end"><button className="text-sm bg-blue-500 text-gray-200 mt-5 md:mt-4 lg:mt-4 px-2 py-1 rounded-md">Batafsil</button></div>
+              <div className="text-end"><button className="text-sm bg-[#004269] text-white mt-5 md:mt-4 lg:mt-4 px-2 py-1 rounded-md">Batafsil</button></div>
             </div>
           </div>
           <div className="flex h-[140px] bg-white bg p-3 rounded-2xl duration-200 hover:scale-105 shadow-md hover:shadow-lg">
@@ -48,7 +48,7 @@ function Curriculum() {
             <div className="pl-3 w-full">
               <h2 className="text-md md:text-xl font-medium text-slate-600">Magistr malaka talablari</h2>
               <p className="text-sm flex items-center"><span><FaRegCalendarAlt className="mr-1"/></span>12.12.2023</p>
-              <div className="text-end"><button className="text-sm bg-blue-500 text-gray-200 mt-5 md:mt-4 lg:mt-4 px-2 py-1 rounded-md">Batafsil</button></div>
+              <div className="text-end"><button className="text-sm bg-[#004269] text-white mt-5 md:mt-4 lg:mt-4 px-2 py-1 rounded-md">Batafsil</button></div>
             </div>
           </div>
         </div>
