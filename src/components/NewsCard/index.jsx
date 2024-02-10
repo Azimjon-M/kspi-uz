@@ -43,7 +43,7 @@ const NewsCard = () => {
         />
       </div>
 
-      <div className="p-10 grid grid-cols-4 gap-4">
+      <div className="p-10 grid grid-cols-4 gap-10">
         <div className="col-span-3 ...">
           <h2 className="text-xl font-bold text-center mb-5">
             {newsData.title}
