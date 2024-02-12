@@ -11,16 +11,32 @@ const Footer = () => {
     <footer className="flex flex-col bg-[#004269] text-white pt-3">
       {/* Biz bilan bog'lanish */}
       <div className="flex justify-center md:justify-end mb-3 md:pr-10">
-        <Link className="mr-4 group">
+        <Link
+          target="blank"
+          to={"https://t.me/kspi_official"}
+          className="mr-4 group"
+        >
           <FaTelegram className="h-6 lg:h-7 w-auto group-hover:bg-[#0088cc] rounded-full" />
         </Link>
-        <Link className="mr-4 group">
+        <Link
+          target="blank"
+          to={"https://www.instagram.com/kspi_uz/"}
+          className="mr-4 group"
+        >
           <FaSquareInstagram className="h-6 lg:h-7 w-auto group-hover:bg-[#690000] rounded-[3px]" />
         </Link>
-        <Link className="mr-4 group">
+        <Link
+          target="blank"
+          to={"https://www.youtube.com/@qoqondpi296"}
+          className="mr-4 group"
+        >
           <PiYoutubeLogoFill className="h-6 lg:h-7 w-auto group-hover:text-[#FF0000] rounded-[15px]" />
         </Link>
-        <Link className="mr-4 group">
+        <Link
+          target="blank"
+          to={"https://www.facebook.com/kspi.uz.56"}
+          className="mr-4 group"
+        >
           <FaSquareFacebook className="h-6 lg:h-7 w-auto group-hover:bg-[#316FF6]" />
         </Link>
       </div>
@@ -50,24 +66,27 @@ const Footer = () => {
           <p>Qo'qon shaxri, Turon ko'chasi, 23-uy</p>
           <ul>
             <li>
-              <Link className="transform hover:translate-x-2 transition duration-300 ease-in-out">
+              <Link to="mailto:kspi_info@edu.uz" className="transform hover:translate-x-2 transition duration-300 ease-in-out">
                 kspi_info@edu.uz
               </Link>
             </li>
             <li>
-              <Link className="transform hover:translate-x-2 transition duration-300 ease-in-out">
+              <Link to="tel:+998 73 542 38 38" className="transform hover:translate-x-2 transition duration-300 ease-in-out">
                 +998 73 542 38 38
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* Matbuot */}
+        {/* Foydali */}
         <div className="mb-3">
-          <h1 className="font-bold mb-3">Matbuot xizmati</h1>
+          <h1 className="font-bold mb-3">Foydali linklar</h1>
           <ul>
             <li>
-              <Link>Yangiliklar</Link>
+              <Link to="yangiliklar">Yangiliklar</Link>
+            </li>
+            <li>
+              <Link to="qabulxona">Virtual qabulxona</Link>
             </li>
             <li>
               <Link>RSS</Link>

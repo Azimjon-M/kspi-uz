@@ -1,8 +1,17 @@
 import React from "react";
+import Breadcrumb from "../Breadcrumb";
 
 const VirQabulCom = () => {
   return (
-    <div>
+    <div className="px-5 py-3 md:px-10 lg:px-20">
+      <div className="border-b-2 border-[#004269] block w-full">
+        <Breadcrumb
+          steps={[
+            { text: "Bosh sahifa", link: "/" },
+            { text: "Virtual qabulxona" },
+          ]}
+        />
+      </div>
       <section className="bg-white dark:bg-gray-900">
         <div className="py-2 lg:py-6 px-4 mx-auto max-w-screen-md">
           <h2 className="py-2 text-lg font-bold lg:mb-16 text-center text-[#004269] dark:text-gray-400 sm:text-xl">
