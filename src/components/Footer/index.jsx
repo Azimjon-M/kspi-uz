@@ -1,80 +1,96 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaTelegram } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { PiYoutubeLogoFill } from "react-icons/pi";
+import { FaSquareFacebook } from "react-icons/fa6";
+import Logo from "../../assets/icons/logo_kspi.png";
 
 const Footer = () => {
+  return (
+    <footer className="flex flex-col bg-[#004269] text-white pt-3">
+      {/* Biz bilan bog'lanish */}
+      <div className="flex justify-center md:justify-end mb-3 md:pr-10">
+        <Link className="mr-4 group">
+          <FaTelegram className="h-6 lg:h-7 w-auto group-hover:bg-[#0088cc] rounded-full" />
+        </Link>
+        <Link className="mr-4 group">
+          <FaSquareInstagram className="h-6 lg:h-7 w-auto group-hover:bg-[#690000] rounded-[3px]" />
+        </Link>
+        <Link className="mr-4 group">
+          <PiYoutubeLogoFill className="h-6 lg:h-7 w-auto group-hover:text-[#FF0000] rounded-[15px]" />
+        </Link>
+        <Link className="mr-4 group">
+          <FaSquareFacebook className="h-6 lg:h-7 w-auto group-hover:bg-[#316FF6]" />
+        </Link>
+      </div>
+      <div className="md:grid md:grid-cols-2 lg:flex lg:justify-evenly lg:items-start px-5">
+        {/* Asosiy */}
+        <div className="flex items-center mb-3">
+          {/* about */}
+          <div className="mb-3">
+            <div className="flex items-end mb-3">
+              <img className="w-10 mr-3" src={Logo} alt="" />
+              <h1 className="font-bold">
+                Qo'qon davlat <br /> pedagogika instituti
+              </h1>
+            </div>
+            <p className="md:w-[250px] lg:w-[350px] xl:w-[450px]">
+              Qo'qon davlat pedagogika instituti 1931-yil yanvar oyida kechki
+              pedagogika instituti sifatida tashkil etilgan. Institut 1939-1940
+              o'quv yilidan boshlab kunduzgi davlat o'qituvchilar institutiga
+              aylantirilgan.
+            </p>
+          </div>
+        </div>
 
-    return (
-        <footer className='flex flex-col bg-[#004269] text-white'>
-            {/* Biz bilan bog'lanish */}
-            <div className='flex justify-center'>
-                <div>
-                    Tel
-                </div>
-                <div>
-                    Ins
-                </div>
-                <div>
-                    YoTu
-                </div>
-                <div>
-                    Fak
-                </div>
-            </div>
-            {/* /Biz bilan bog'lanish */}
-            {/* Asosiy */}
-            <div className='flex flex-col items-center'>
-                <div>
-                    <h1 className='font-bold'>Title 1</h1>
-                    <p>contet 1</p>
-                    <p>contet 3</p>
-                    <p>contet 2</p>
-                </div>
-                <div>
-                    <h1 className='font-bold'>Title 2</h1>
-                    <p>contet 1</p>
-                    <p>contet 3</p>
-                    <p>contet 2</p>
-                </div>
-                <div>
-                    <h1 className='font-bold'>Title 3</h1>
-                    <p>contet 1</p>
-                    <p>contet 3</p>
-                    <p>contet 2</p>
-                </div>
-                <div>
-                    <h1 className='font-bold'>Title 4</h1>
-                    <p>contet 1</p>
-                    <p>contet 3</p>
-                    <p>contet 2</p>
-                </div>
-            </div>
-            {/* /Asosiy */}
-            {/* About */}
-            <div className='flex flex-col items-center'>
-                <div>
-                    Logo title
-                </div>
-                <div>
-                    <h1 className='font-bold'>Title 1</h1>
-                    <p>contet 1</p>
-                    <p>contet 3</p>
-                    <p>contet 2</p>
-                </div>
-                <div>
-                    <h1 className='font-bold'>Title 2</h1>
-                    <p>contet 1</p>
-                    <p>contet 3</p>
-                    <p>contet 2</p>
-                </div>
-                <div>
-                    <h1 className='font-bold'>Title 3</h1>
-                    <p>contet 1</p>
-                    <p>contet 3</p>
-                    <p>contet 2</p>
-                </div>
-            </div>
-            {/* /About */}
-        </footer>
-    )
-}
+        {/* Manzil */}
+        <div className="mb-3">
+          <h1 className="font-bold mb-3">Manzil va aloqa</h1>
+          <p>Qo'qon shaxri, Turon ko'chasi, 23-uy</p>
+          <ul>
+            <li>
+              <Link className="transform hover:translate-x-2 transition duration-300 ease-in-out">
+                kspi_info@edu.uz
+              </Link>
+            </li>
+            <li>
+              <Link className="transform hover:translate-x-2 transition duration-300 ease-in-out">
+                +998 73 542 38 38
+              </Link>
+            </li>
+          </ul>
+        </div>
 
-export default Footer
+        {/* Matbuot */}
+        <div className="mb-3">
+          <h1 className="font-bold mb-3">Matbuot xizmati</h1>
+          <ul>
+            <li>
+              <Link>Yangiliklar</Link>
+            </li>
+            <li>
+              <Link>RSS</Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Saytga tashrif */}
+        <div className="mb-3">
+          <h1 className="font-bold mb-3">Saytga tashriflar soni</h1>
+          <p className="lg:text-center font-bold text-3xl">5k+</p>
+        </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="bg-[#113246] text-center md:flex md:justify-center px-2 py-2">
+        <p className="mr-3">QDPI ©2024</p>
+        <p>
+          Sayt ishlab chiquvchisi: <b>QDPI IT Park</b>
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
