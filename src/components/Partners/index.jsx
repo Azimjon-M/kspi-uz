@@ -1,20 +1,25 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
+import hamkor1 from "../../assets/images/hamkor1.png";
+import hamkor2 from "../../assets/images/hamkor4.png";
 import hamkor3 from "../../assets/images/hamkor3.png";
+import hamkor4 from "../../assets/images/hamkor4.png";
+import hamkor5 from "../../assets/images/hamkor4.png";
 
 function Partners() {
-  const row = [
-    hamkor3,
-    "https://react.dev/images/home/community/react_india_sunil.webp",
-    "../../assets/images/hamkor1.png",
-    "../../assets/images/hamkor2.png",
-    "../../assets/images/hamkor3.png",
-    "../../assets/images/hamkor4.png",
-  ];
+  const row = [hamkor1, hamkor2, hamkor3, hamkor4, hamkor5];
   return (
-    <div className="max-w-7xl mx-auto px-6 py-10 md:py-20">
-      <div className="grid grid-cols-2 lg:grid-cols-6 gap-5">
+    <div className="max-w-8xl mx-auto py-10 md:py-20">
+      <h1 className="">Hamkorlarimiz</h1>
+      <div>
         <Marquee>
+          <MarqueeGroup>
+            {row.map((el) => (
+              <ImageGroup>
+                <Image src={el} />
+              </ImageGroup>
+            ))}
+          </MarqueeGroup>
           <MarqueeGroup>
             {row.map((el) => (
               <ImageGroup>
@@ -39,10 +44,8 @@ export default Partners;
 
 const Marquee = styled.div`
   display: flex;
-  width: 1200px;
   overflow: hidden;
-  user-select: nowrap;
-  border: 1px solid red;
+  user-select: none;
 `;
 
 const scrollX = keyframes`
@@ -59,9 +62,9 @@ const MarqueeGroup = styled.div`
   align-items: center;
   justify-content: space-around;
   white-space: nowrap;
-  width: 100%;
+  width: 60%;
 
-  animation: ${scrollX} 20s linear infinite;
+  animation: ${scrollX} 15s linear infinite;
 `;
 const ImageGroup = styled.div`
   display: grid;
@@ -74,9 +77,9 @@ const Image = styled.img`
   object-fit: contain;
   width: 100%;
   height: 100%;
-  border-radius: 5rem;
-  aspect-ratio: 16/9;
-  padding: 5px 20px;
+  border-radius: 15rem;
+  aspect-ratio: 16/16;
+  padding: 5px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0;
 `;
 
