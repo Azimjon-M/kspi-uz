@@ -8,6 +8,7 @@ import VirQabulxona from "../pages/VirQabulxona";
 import VideoMaruzalar from "../pages/VideoMaruzalar";
 import Qabul from "../pages/Qabul";
 import OnlineKuzatish from "../pages/OnlineKuzatish";
+import Rekvizitlar from "../pages/Rekvizitlar";
 
 export const routes = [
     {
@@ -41,6 +42,10 @@ export const routes = [
             {
                 element: <OnlineKuzatish />,
                 path: '/kuzatish'
+            },
+            {
+                element: <Rekvizitlar />,
+                path: '/rekvizitlar'
             },
         ],
     },

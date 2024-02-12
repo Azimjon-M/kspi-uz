@@ -229,12 +229,12 @@ function Navbar() {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="">
+                                            <Link to="/rekvizitlar">
                                                 <TextTranslate id="navDropInstitut_4" />
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="">
+                                            <Link to="/qabulxona">
                                                 <TextTranslate id="navDropInstitut_5" />
                                             </Link>
                                         </li>
