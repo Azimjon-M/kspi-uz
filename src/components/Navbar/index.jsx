@@ -213,27 +213,27 @@ function Navbar() {
                                         tabIndex={2}
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropInstitut_1" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropInstitut_2" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropInstitut_3" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="/rekvizitlar">
                                                 <TextTranslate id="navDropInstitut_4" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="/qabulxona">
                                                 <TextTranslate id="navDropInstitut_5" />
                                             </Link>
@@ -254,32 +254,32 @@ function Navbar() {
                                         tabIndex={3}
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_1" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_2" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_3" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_4" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_5" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_6" />
                                             </Link>
@@ -300,27 +300,27 @@ function Navbar() {
                                         tabIndex={4}
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
-                                        <li  className="text-black dark:text-white">
+                                        <li  className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropTuzilma_1" />
                                             </Link>
                                         </li>
-                                        <li  className="text-black dark:text-white">
+                                        <li  className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropTuzilma_2" />
                                             </Link>
                                         </li>
-                                        <li  className="text-black dark:text-white">
+                                        <li  className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropTuzilma_3" />
                                             </Link>
                                         </li>
-                                        <li  className="text-black dark:text-white">
+                                        <li  className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropTuzilma_4" />
                                             </Link>
                                         </li>
-                                        <li  className="text-black dark:text-white">
+                                        <li  className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropTuzilma_5" />
                                             </Link>
@@ -341,17 +341,17 @@ function Navbar() {
                                         tabIndex={5}
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropTalabalar_1" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropTalabalar_2" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropTalabalar_3" />
                                             </Link>
@@ -372,32 +372,32 @@ function Navbar() {
                                         tabIndex={6}
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropAbiturient_1" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropAbiturient_2" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropAbiturient_3" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropAbiturient_4" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropAbiturient_5" />
                                             </Link>
                                         </li>
-                                        <li className="text-black dark:text-white">
+                                        <li className="text-[#004269] dark:text-white">
                                             <Link to="">
                                                 <TextTranslate id="navDropAbiturient_6" />
                                             </Link>
@@ -559,27 +559,27 @@ function Navbar() {
                                     </div>
                                     <div className="collapse-content">
                                         <ul>
-                                            <li cla className="text-black dark:text-white"ssName="leading-4 my-4">
+                                            <li cla className="text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropInstitut_1" />
                                                 </Link>
                                             </li>
-                                            <li cla className="text-black dark:text-white"ssName="leading-4 my-4">
+                                            <li cla className="text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropInstitut_2" />
                                                 </Link>
                                             </li>
-                                            <li cla className="text-black dark:text-white"ssName="leading-4 my-4">
+                                            <li cla className="text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropInstitut_3" />
                                                 </Link>
                                             </li>
-                                            <li cla className="text-black dark:text-white"ssName="leading-4 my-4">
+                                            <li cla className="text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropInstitut_4" />
                                                 </Link>
                                             </li>
-                                            <li cla className="text-black dark:text-white"ssName="leading-4 my-4">
+                                            <li cla className="text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropInstitut_5" />
                                                 </Link>
@@ -600,32 +600,32 @@ function Navbar() {
                                     </div>
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_1" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_2" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_3" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_4" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_5" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_6" />
                                                 </Link>
@@ -646,27 +646,27 @@ function Navbar() {
                                     </div>
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropTuzilma_1" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropTuzilma_2" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropTuzilma_3" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropTuzilma_4" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropTuzilma_5" />
                                                 </Link>
@@ -687,17 +687,17 @@ function Navbar() {
                                     </div>
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropTalabalar_1" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropTalabalar_2" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropTalabalar_3" />
                                                 </Link>
@@ -718,32 +718,32 @@ function Navbar() {
                                     </div>
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropAbiturient_1" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropAbiturient_2" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropAbiturient_3" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropAbiturient_4" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropAbiturient_5" />
                                                 </Link>
                                             </li>
-                                            <li className="my-4 leading-4 text-black dark:text-white">
+                                            <li className="my-4 leading-4 text-[#004269] dark:text-white">
                                                 <Link to="">
                                                     <TextTranslate id="navDropAbiturient_6" />
                                                 </Link>
