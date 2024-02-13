@@ -12,6 +12,7 @@ const RekvizitlarCom = () => {
       <table
         border="1"
         className="table mx-auto"
+        cols="true"
       >
         <thead>
           <tr className="bg-[#ddd] text-center text-xl">
