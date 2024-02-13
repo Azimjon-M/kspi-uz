@@ -10,7 +10,9 @@ function Partners() {
   const row = [hamkor1, hamkor2, hamkor3, hamkor4, hamkor5];
   return (
     <div className="max-w-8xl mx-auto py-10 md:py-20">
-      <h1 className="text-xl">Hamkorlarimiz</h1>
+      <h1 className="text-xl lg:text-4xl font-bold text-[#004269] text-center">
+        Hamkorlarimiz
+      </h1>
       <div>
         <Marquee>
           <MarqueeGroup>
@@ -62,7 +64,7 @@ const MarqueeGroup = styled.div`
   align-items: center;
   justify-content: space-around;
   white-space: nowrap;
-  width: 60%;
+  width: 55%;
 
   animation: ${scrollX} 15s linear infinite;
 `;
