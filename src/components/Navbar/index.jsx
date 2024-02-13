@@ -110,7 +110,7 @@ function Navbar() {
                                     </div>
                                     <ul
                                         tabIndex={0}
-                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-white font-bold"
+                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-[#004269] dark:text-white font-bold"
                                     >
                                         <li>
                                             <Link
@@ -192,9 +192,9 @@ function Navbar() {
                         </div>
                     </div>
                     {/* /Header */}
-                    {/* Navigations */}
+                    {/* Navigations institut */}
                     <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
-                        <ul className="flex items-center gap-x-8 text-white font-semibold 2xl:text-[18px] 3xl:gap-x-12 3xl:text-[20px] ">
+                        <ul className="flex items-center gap-x-8 text-black dark:text-white font-semibold 2xl:text-[18px] 3xl:gap-x-12 3xl:text-[20px] ">
                             <li className="-mr-2">
                                 <Link to="/yangiliklar">
                                     <TextTranslate id="navYangiliklar" />
