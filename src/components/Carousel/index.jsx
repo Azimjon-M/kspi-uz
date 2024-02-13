@@ -7,7 +7,6 @@ import { Autoplay, Navigation } from "swiper/modules";
 import img1 from "../../assets/images/kspi-img-1.jpg";
 import img2 from "../../assets/images/kspi-img2.jpg";
 import img3 from "../../assets/images/kspi-img-3.jpg";
-import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const images = [img1, img2, img3];
