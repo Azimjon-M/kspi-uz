@@ -24,7 +24,7 @@ const Footer = () => {
         </ul>
       </div>
       {/* Biz bilan bog'lanish */}
-      <div className="flex justify-center md:justify-end mb-3 md:pr-10">
+      <div className="flex justify-center md:justify-end mb-3 md:pr-10 z-10">
         <Link
           target="blank"
           to={"https://t.me/kspi_official"}
@@ -54,7 +54,7 @@ const Footer = () => {
           <FaSquareFacebook className="h-6 lg:h-7 w-auto group-hover:bg-[#316FF6]" />
         </Link>
       </div>
-      <div className="md:grid md:grid-cols-2 lg:flex lg:justify-evenly lg:items-start px-5">
+      <div className="md:grid md:grid-cols-2 lg:flex lg:justify-evenly lg:items-start px-5 z-10">
         {/* Asosiy */}
         <div className="flex items-center mb-3">
           {/* about */}
