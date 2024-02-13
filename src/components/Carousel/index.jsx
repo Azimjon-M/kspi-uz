@@ -21,17 +21,17 @@ const Carousel = () => {
       }}
       loop={true}
       modules={[Autoplay, Navigation]}
-      className="mySwiper w-auto h-[80vh] object-cover md:h-[90vh] transition-all duration-2000 ease-in-out"
+      className="mySwiper w-full h-[70vh] object-cover md:h-[90vh] transition-all duration-2000 ease-in-out"
     >
       {images.map((img, index) => (
         <SwiperSlide key={index}>
-          <div className="relative">
+          <div className="relative h-full">
+            <div className="absolute inset-0 bg-gradient-to-b from-[#004269] to-transparent opacity-50" />
             <img
-              className="block w-auto h-[100%] object-cover transition-all duration-3000 ease-linear"
+              className="block w-full h-full object-cover transition-all duration-3000 ease-linear"
               src={img}
               alt="Institut rasmi"
             />
-            {/* <div className="absolute inset-0 bg-[#004269] opacity-50" /> */}
           </div>
         </SwiperSlide>
       ))}
