@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes, css } from "styled-components";
+import styled, { keyframes } from "styled-components";
 import hamkor1 from "../../assets/images/hamkor1.png";
 import hamkor2 from "../../assets/images/hamkor4.png";
 import hamkor3 from "../../assets/images/hamkor3.png";
@@ -84,46 +84,3 @@ const Image = styled.img`
   padding: 5px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0;
 `;
-
-{
-  /* <div className="h-40 w-40 flex justify-center items-center p-3 rounded-full shadow-md">
-  <img src={hamkor3} alt="" />
-</div>
-<div className="h-40 w-40 flex justify-center items-center p-3 rounded-full shadow-md">
-  <img
-    src="https://kspi.uz/wp-content/uploads/2022/09/hamkor4.png"
-    alt=""
-  />
-</div>
-<div className="h-40 w-40 flex justify-center items-center p-3 rounded-full shadow-md">
-  <img
-    className="object-cover"
-    src="https://kspi.uz/wp-content/uploads/2022/09/hamkor1.png"
-    alt=""
-  />
-</div>
-<div className="h-40 w-40 flex justify-center items-center p-3 rounded-full shadow-md">
-  <img
-    src="https://kspi.uz/wp-content/uploads/2022/09/hamkor2.jpg"
-    alt=""
-  />
-</div>
-<div className="h-40 w-40 flex justify-center items-center p-3 rounded-full shadow-md">
-  <img
-    src="https://kspi.uz/wp-content/uploads/2022/09/hamkor2.jpg"
-    alt=""
-  />
-</div>
-<div className="h-40 w-40 flex justify-center items-center p-3 rounded-full shadow-md">
-  <img
-    src="https://kspi.uz/wp-content/uploads/2022/09/hamkor2.jpg"
-    alt=""
-  />
-</div>
-<div className="h-40 w-40 flex justify-center items-center p-5 rounded-full shadow-md">
-  <img
-    src="https://kspi.uz/wp-content/uploads/2022/09/hamkor2.jpg"
-    alt=""
-  />
-</div> */
-}
