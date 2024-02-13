@@ -32,8 +32,8 @@ const NewsHome = () => {
     <div className="px-5 py-3 md:px-10 lg:px-20">
       <div className="md:flex md:items-center justify-between">
         {/* News heading */}
-        <div className="flex items-center justify-between my-1 md:my-3">
-          <h2 className="text-xl md:text-3xl font-bold my-2">
+        <div className="mx-auto my-1 md:my-3">
+          <h2 className="text-xl md:text-3xl font-bold my-2 text-[#004269]">
             <TextTranslate id="newsHeading" />
           </h2>
         </div>

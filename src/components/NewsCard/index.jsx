@@ -32,7 +32,7 @@ const NewsCard = () => {
   }, [id]);
 
   return (
-    <div className="px-5">
+    <div className="px-5 xl:px-0 max-w-7xl mx-auto">
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
           steps={[
@@ -43,9 +43,9 @@ const NewsCard = () => {
         />
       </div>
 
-      <div className="p-10 grid grid-cols-4 gap-10">
+      <div className="p-10 xl:px-0 grid grid-cols-4 gap-10">
         <div className="col-span-3 ...">
-          <h2 className="text-xl font-bold text-center mb-5">
+          <h2 className="text-xl text-[#004269] xl:text-2xl font-bold text-center mb-5">
             {newsData.title}
           </h2>
           <img className="mb-5 w-full rounded" src={newsData.rasm} alt="" />
