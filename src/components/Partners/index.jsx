@@ -10,7 +10,7 @@ function Partners() {
   const row = [hamkor1, hamkor2, hamkor3, hamkor4, hamkor5];
   return (
     <div className="max-w-8xl mx-auto py-10 md:py-20">
-      <h1 className="">Hamkorlarimiz</h1>
+      <h1 className="text-xl">Hamkorlarimiz</h1>
       <div>
         <Marquee>
           <MarqueeGroup>
