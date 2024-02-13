@@ -22,7 +22,7 @@ const Carousel = () => {
       }}
       loop={true}
       modules={[Autoplay, Navigation]}
-      className="mySwiper w-full h-[60vh] md:h-[80vh] lg:h-[calc(100vh-130px)] transition-all duration-2000 ease-in-out"
+      className="mySwiper w-full h-[60vh] md:h-[80vh] transition-all duration-2000 ease-in-out"
     >
       {images.map((img, index) => (
         <SwiperSlide key={index}>
