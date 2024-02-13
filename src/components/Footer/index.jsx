@@ -8,7 +8,21 @@ import Logo from "../../assets/icons/logo_kspi.png";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col bg-[#004269] text-white pt-3">
+    <footer className="w-full h-auto relative flex flex-col text-white pt-3 ">
+      <div className="absolute top-0 left-0 w-full h-full">
+        <ul className="background-footer w-full h-full bottom-0 absolute -z-10 overflow-hidden">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       {/* Biz bilan bog'lanish */}
       <div className="flex justify-center md:justify-end mb-3 md:pr-10">
         <Link
@@ -66,12 +80,18 @@ const Footer = () => {
           <p>Qo'qon shaxri, Turon ko'chasi, 23-uy</p>
           <ul>
             <li>
-              <Link to="mailto:kspi_info@edu.uz" className="transform hover:translate-x-2 transition duration-300 ease-in-out">
+              <Link
+                to="mailto:kspi_info@edu.uz"
+                className="transform hover:translate-x-2 transition duration-300 ease-in-out"
+              >
                 kspi_info@edu.uz
               </Link>
             </li>
             <li>
-              <Link to="tel:+998 73 542 38 38" className="transform hover:translate-x-2 transition duration-300 ease-in-out">
+              <Link
+                to="tel:+998 73 542 38 38"
+                className="transform hover:translate-x-2 transition duration-300 ease-in-out"
+              >
                 +998 73 542 38 38
               </Link>
             </li>
