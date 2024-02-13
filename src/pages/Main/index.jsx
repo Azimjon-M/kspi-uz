@@ -8,6 +8,7 @@ import Curriculum from "../../components/Curriculum";
 import ContactUs from "../../components/Contact";
 import Footer from "../../components/Footer";
 import Partners from "../../components/Partners";
+import WarmThoughts from "../../components/WarmThoughts";
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
       <Interactive />
       <NewsHome />
       <StudentOpinion />
+      <WarmThoughts/>
       <Curriculum />
       <Partners />
       <ContactUs />
