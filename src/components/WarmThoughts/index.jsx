@@ -4,8 +4,8 @@ function WarmThoughts() {
   return (
     <div>
       <div>
-        <div>logo</div>
-        <h1 className="text-xl md:text-4xl">Ularning so'zlarida</h1>
+        <div className="text-center">logo</div>
+        <h1 className="text-xl md:text-4xl text-center">Ularning so'zlarida</h1>
       </div>
     </div>
   );
