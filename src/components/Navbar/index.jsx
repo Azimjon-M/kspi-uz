@@ -69,7 +69,7 @@ function Navbar() {
 
     return (
         <div
-            className={`flex flex-col justify-between sticky top-0 w-full h-auto bg-white shadow-2xl z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
+            className={`flex flex-col justify-between absolute top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
         >
             <nav className="flex justify-between">
                 {/* Doimo bor */}
@@ -82,7 +82,7 @@ function Navbar() {
                             src={kspi_logo}
                             alt="icon"
                         />
-                        <p className="hidden sm:inline-block text-[11px] leading-4 text-[#004269] font-bold sm:text-[13px] md:text-[15px] xl:leading-6 3xl:text-[22px] xl:text-[18px]">
+                        <p className="hidden sm:inline-block text-[11px] leading-4 text-white font-bold sm:text-[13px] md:text-[15px] xl:leading-6 3xl:text-[22px] xl:text-[18px]">
                             <TextTranslate id="navLogo" />
                         </p>
                     </div>
@@ -110,7 +110,7 @@ function Navbar() {
                                     </div>
                                     <ul
                                         tabIndex={0}
-                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-[#004269] font-bold"
+                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-white font-bold"
                                     >
                                         <li>
                                             <Link
@@ -194,13 +194,13 @@ function Navbar() {
                     {/* /Header */}
                     {/* Navigations */}
                     <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
-                        <ul className="flex items-center gap-x-8 text-[#004269] font-semibold 2xl:text-[18px] 3xl:gap-x-12 3xl:text-[20px] ">
+                        <ul className="flex items-center gap-x-8 text-white font-semibold 2xl:text-[18px] 3xl:gap-x-12 3xl:text-[20px] ">
                             <li className="-mr-2">
                                 <Link to="/yangiliklar">
                                     <TextTranslate id="navYangiliklar" />
                                 </Link>
                             </li>
-                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
+                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                                 <div className="dropdown dropdown-hover">
                                     <div
                                         tabIndex={2}
@@ -241,7 +241,7 @@ function Navbar() {
                                     </ul>
                                 </div>
                             </li>
-                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
+                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                                 <div className="dropdown dropdown-hover">
                                     <div
                                         tabIndex={3}
@@ -287,7 +287,7 @@ function Navbar() {
                                     </ul>
                                 </div>
                             </li>
-                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
+                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                                 <div className="dropdown dropdown-hover">
                                     <div
                                         tabIndex={4}
@@ -328,7 +328,7 @@ function Navbar() {
                                     </ul>
                                 </div>
                             </li>
-                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
+                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                                 <div className="dropdown dropdown-hover">
                                     <div
                                         tabIndex={5}
@@ -359,7 +359,7 @@ function Navbar() {
                                     </ul>
                                 </div>
                             </li>
-                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-[#004269] after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
+                            <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
                                 <div className="dropdown dropdown-hover">
                                     <div
                                         tabIndex={6}
@@ -448,7 +448,7 @@ function Navbar() {
                             >
                                 <div className="join">
                                     <input
-                                        className="input join-item input-sm input-bordered border-[#004269] w-full max-w-xs text-[#004269] z-10 focus:border-[#004269] focus:outline-[#004269]"
+                                        className="input join-item input-sm input-bordered border-[#004269] w-full max-w-xs text-white z-10 focus:border-[#004269] focus:outline-[#004269]"
                                         placeholder="text..."
                                         onChange={formik.handleChange}
                                         value={formik.values.searchText}
@@ -466,7 +466,7 @@ function Navbar() {
                         {/* Menu */}
                         <button
                             onClick={() => setIsActiveMenu(!isActiveMenu)}
-                            className="btn btn-sm btn-outline xl:hidden flex items-center gap-x-2 font-medium md:btn-md text-[#004269]"
+                            className="btn btn-sm btn-outline xl:hidden flex items-center gap-x-2 font-medium md:btn-md text-white"
                         >
                             {isActiveMenu ? (
                                 <AiOutlineClose />
@@ -524,7 +524,7 @@ function Navbar() {
                         onSubmit={formik.handleSubmit}
                     >
                         <input
-                            className="input input-sm input-bordered input-accent w-full max-w-xs text-[#004269]"
+                            className="input input-sm input-bordered input-accent w-full max-w-xs text-white"
                             placeholder="text..."
                             onChange={formik.handleChange}
                             value={formik.values.searchText}
