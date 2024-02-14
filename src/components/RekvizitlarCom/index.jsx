@@ -10,12 +10,14 @@ const RekvizitlarCom = () => {
         />
       </div>
       <div className="mx-auto max-w-7xl">
-        <div className="flex items-center justify-between my-1 md:my-3">
-          <h2 className="text-xl md:text-3xl font-bold my-2">Rekvizitlar</h2>
+        <div className="my-1 md:my-3">
+          <h2 className="text-xl md:text-3xl font-bold my-2 text-[#004269] text-center">
+            Rekvizitlar
+          </h2>
         </div>
         <table border="1" className="table mx-auto" cols="true">
           <thead>
-            <tr className="bg-[#ddd] text-center text-xl">
+            <tr className="bg-[#ddd] text-center text-xl text-[#004269]">
               <th colSpan="2">Qo’qon davlat pedagogika instuti</th>
             </tr>
           </thead>
@@ -47,7 +49,7 @@ const RekvizitlarCom = () => {
                 <p className="md:text-lg font-semibold">Fax: 73-542-02-57</p>
               </td>
             </tr>
-            <tr className="bg-[#ddd] text-center text-xl">
+            <tr className="bg-[#ddd] text-center text-xl text-[#004269]">
               <th colSpan="2">Bank rekvizitlari</th>
             </tr>
             <tr>

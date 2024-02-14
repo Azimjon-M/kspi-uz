@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const QabulCom = () => {
   return (
     <div>
-      <h2 className="text-xl md:text-2xl text-center font-bold my-2">
+      <h2 className="text-xl md:text-2xl text-center font-bold my-2 text-[#004269]">
         Baholash mezonlari
       </h2>
       <div className="text-center p-5 font-semibold text-md">

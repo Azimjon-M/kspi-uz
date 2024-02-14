@@ -14,7 +14,10 @@ const VirQabulCom = () => {
       </div>
       <section className="bg-white dark:bg-gray-900">
         <div className="py-2 lg:py-6 px-4 mx-auto max-w-screen-md">
-          <h2 className="py-2 text-lg font-bold lg:mb-16 text-center text-[#004269] dark:text-gray-400 sm:text-xl">
+          <h1 className="text-xl md:text-3xl font-bold my-2 text-[#004269] text-center">
+            Virtual qabulxona
+          </h1>
+          <h2 className="py-2 text-lg font-bold lg:mb-10 text-center text-[#004269] dark:text-gray-400 sm:text-xl">
             Taklif va shikoyatlaringizni yuboring
           </h2>
           <form action="#" className="space-y-8">

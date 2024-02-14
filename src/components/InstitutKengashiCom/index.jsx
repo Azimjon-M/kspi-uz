@@ -12,14 +12,12 @@ const InstitutKengashiCom = () => {
           ]}
         />
       </div>
-      <div>
       <div className="max-w-7xl mx-auto mb-3">
-          {/* News heading */}
-          <div className="flex items-center justify-between my-1 md:my-3">
-            <h2 className="text-xl md:text-3xl font-bold my-2">
-              Institut kengashi
-            </h2>
-          </div>
+        {/* News heading */}
+        <div className="my-1 md:my-3">
+          <h2 className="text-xl md:text-3xl font-bold my-2 text-[#004269] text-center">
+            Institut kengashi
+          </h2>
         </div>
       </div>
     </div>
