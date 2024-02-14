@@ -16,22 +16,22 @@ function Partners() {
       <div>
         <Marquee>
           <MarqueeGroup>
-            {row.map((el) => (
-              <ImageGroup>
+            {row.map((el, idx) => (
+              <ImageGroup key={idx}>
                 <Image src={el} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
-            {row.map((el) => (
-              <ImageGroup>
+            {row.map((el, idx) => (
+              <ImageGroup key={idx}>
                 <Image src={el} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
-            {row.map((el) => (
-              <ImageGroup>
+            {row.map((el, idx) => (
+              <ImageGroup key={idx}>
                 <Image src={el} />
               </ImageGroup>
             ))}
