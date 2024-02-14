@@ -9,6 +9,9 @@ import VideoMaruzalar from "../pages/VideoMaruzalar";
 import Qabul from "../pages/Qabul";
 import OnlineKuzatish from "../pages/OnlineKuzatish";
 import Rekvizitlar from "../pages/Rekvizitlar";
+import InstitutTuzilmasi from "../pages/InstitutTuzilmasi";
+import InstitutKengashi from "../pages/InstitutKengashi";
+import InstitutHaqida from "../pages/InstitutHaqida";
 
 export const routes = [
     {
@@ -46,6 +49,18 @@ export const routes = [
             {
                 element: <Rekvizitlar />,
                 path: '/rekvizitlar'
+            },
+            {
+                element: <InstitutTuzilmasi />,
+                path: '/institut-tuzilma'
+            },
+            {
+                element: <InstitutKengashi />,
+                path: '/institut-kengashi'
+            },
+            {
+                element: <InstitutHaqida />,
+                path: '/institut-haqida'
             },
         ],
     },

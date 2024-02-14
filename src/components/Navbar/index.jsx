@@ -214,17 +214,17 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/institut-kengashi">
                                                 <TextTranslate id="navDropInstitut_1" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/institut-haqida">
                                                 <TextTranslate id="navDropInstitut_2" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/institut-tuzilma">
                                                 <TextTranslate id="navDropInstitut_3" />
                                             </Link>
                                         </li>
