@@ -1,45 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import YouTube from "react-youtube";
+import { useParams } from "react-router";
 
 const VideoMaruzalar = () => {
-  const [hovered, setHovered] = useState(false);
-  let player = null;
-
-  function getYoutubeVideoId(url) {
-    const match = url.match(
-      /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^/]+\/[^/]+\/|(?:v|e(?:mbed)?)\/|[^/]+\/(?:watch|v|e)(?:\?.*v=|\/))|youtu\.be\/)([^"&?/\s]{11})/
-    );
-    return match && match[1];
-  }
-
-  const videoId = getYoutubeVideoId(
-    "https://youtu.be/RTy6VcabQvI"
-  );
-
-  const onMouseEnter = () => {
-    setHovered(true);
-    if (player !== null) {
-      player.playVideo();
-    }
+  const data = {
+    posts: ["https://www.youtube.com/watch?v=RTy6VcabQvI"],
   };
 
-  const onMouseLeave = () => {
-    setHovered(false);
-    if (player !== null) {
-      player.pauseVideo();
-    }
-  };
-
-  const onReady = (event) => {
-    player = event.target;
-    if (!hovered) {
-      player.pauseVideo();
-    }
+  const params = useParams();
+  const post = data.posts.find((dataItem) => dataItem.id === params.id);
+  const youtubeID = post.split("v=")[1];
+  const onReady = (e) => {
+    console.log(e.target);
   };
 
   const opts = {
-    height: "390",
-    width: "640",
+    height: "100%",
+    width: "100%",
     playerVars: {
       autoplay: 0,
     },
@@ -54,9 +31,17 @@ const VideoMaruzalar = () => {
           <div className="collapse-title text-xl font-medium">
             Fizika va matematika
           </div>
-          <div className="flex flex-col gap-y-4 collapse-content">
-            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+          <div className="grid grid-cols-2 gap-y-4 collapse-content">
+            <div>
+              <div className="p-2">
+                <YouTube
+                  className="w-full h-full"
+                  videoId={youtubeID}
+                  onReady={onReady}
+                  opts={opts}
+                />
+              </div>
+              <div className="text-xl">Nyutonning birinchi qonuni</div>
             </div>
           </div>
         </div>
@@ -66,8 +51,8 @@ const VideoMaruzalar = () => {
             Xorijiy tillar
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-          <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            <div>
+              <YouTube videoId={youtubeID} onReady={onReady} opts={opts} />
             </div>
           </div>
         </div>
@@ -77,8 +62,8 @@ const VideoMaruzalar = () => {
             Pedagogika va psixologiya
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-          <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            <div>
+              <YouTube videoId={youtubeID} onReady={onReady} opts={opts} />
             </div>
           </div>
         </div>
@@ -88,8 +73,8 @@ const VideoMaruzalar = () => {
             Tabiiy fanlar
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-          <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            <div>
+              <YouTube videoId={youtubeID} onReady={onReady} opts={opts} />
             </div>
           </div>
         </div>
@@ -97,8 +82,8 @@ const VideoMaruzalar = () => {
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-xl font-medium">Tarix</div>
           <div className="flex flex-col gap-y-4 collapse-content">
-          <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            <div>
+              <YouTube videoId={youtubeID} onReady={onReady} opts={opts} />
             </div>
           </div>
         </div>
@@ -108,8 +93,8 @@ const VideoMaruzalar = () => {
             O’zbek tili va adabiyot
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            <div>
+              <YouTube videoId={youtubeID} onReady={onReady} opts={opts} />
             </div>
           </div>
         </div>
@@ -117,8 +102,8 @@ const VideoMaruzalar = () => {
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-xl font-medium">San'at</div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            <div>
+              <YouTube videoId={youtubeID} onReady={onReady} opts={opts} />
             </div>
           </div>
         </div>
@@ -128,8 +113,8 @@ const VideoMaruzalar = () => {
             Boshlang’ich ta’lim
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            <div>
+              <YouTube videoId={youtubeID} onReady={onReady} opts={opts} />
             </div>
           </div>
         </div>
@@ -139,8 +124,8 @@ const VideoMaruzalar = () => {
             Jismoniy tarbiya
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            <div>
+              <YouTube videoId={youtubeID} onReady={onReady} opts={opts} />
             </div>
           </div>
         </div>
@@ -150,8 +135,8 @@ const VideoMaruzalar = () => {
             Maktabgacha ta’lim
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            <div>
+              <YouTube videoId={youtubeID} onReady={onReady} opts={opts} />
             </div>
           </div>
         </div>
@@ -161,8 +146,8 @@ const VideoMaruzalar = () => {
             Rus tili va adabiyoti
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            <div>
+              <YouTube videoId={youtubeID} onReady={onReady} opts={opts} />
             </div>
           </div>
         </div>
@@ -172,6 +157,3 @@ const VideoMaruzalar = () => {
 };
 
 export default VideoMaruzalar;
-
-
-
