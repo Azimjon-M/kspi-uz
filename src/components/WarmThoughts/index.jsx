@@ -14,9 +14,9 @@ function WarmThoughts() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center md:text-3xl text-teal-700">QDPI</div>
         <h1 className="text-xl md:text-4xl text-center">Ularning so'zlarida</h1>
-        <div className="hidden md:block">
+        <div className="hidden md:block p-5">
           <div className="grid grid-cols-3 gap-2">
-            <div className="h-96 bg-orange-400 bg-">1</div>
+            <div className="h-96 bg-orange-400">1</div>
             <div className="h-96 bg-orange-400">2</div>
             <div className="h-96 bg-orange-400">3</div>
           </div>
@@ -52,7 +52,7 @@ function WarmThoughts() {
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
                 autoPlay
               ></iframe>
             </SwiperSlide>
