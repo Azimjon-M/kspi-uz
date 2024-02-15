@@ -17,22 +17,22 @@ function Partners() {
         <Marquee>
           <MarqueeGroup>
             {row.map((el, idx) => (
-              <ImageGroup key={idx}>
-                <Image src={el} />
+              <ImageGroup className="w-[100px]" key={idx}>
+                <Image className="w-[100px] h-[100px]" src={el} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
             {row.map((el, idx) => (
-              <ImageGroup key={idx}>
-                <Image src={el} />
+              <ImageGroup className="w-[100px]" key={idx}>
+                <Image className="w-[100px] h-[100px]" src={el} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
             {row.map((el, idx) => (
-              <ImageGroup key={idx}>
-                <Image src={el} />
+              <ImageGroup className="w-[100px]" key={idx}>
+                <Image className="w-[100px] h-[100px]" src={el} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
@@ -65,6 +65,26 @@ const MarqueeGroup = styled.div`
   justify-content: space-around;
   white-space: nowrap;
   width: 55%;
+
+  @media (max-width: 1400px) {
+    width: 75%;
+  }
+
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+
+  @media (max-width: 992px) {
+    width: 120%;
+  }
+
+  @media (max-width: 767px) {
+    width: 130%;
+  }
+
+  @media (max-width: 467px) {
+    width: 150%;
+  }
 
   animation: ${scrollX} 15s linear infinite;
 `;
