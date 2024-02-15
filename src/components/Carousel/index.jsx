@@ -26,7 +26,7 @@ const Carousel = () => {
       {images.map((img, index) => (
         <SwiperSlide key={index}>
           <div className="relative h-full">
-            <div className="absolute inset-0 bg-gradient-to-b from-[#004269] to-transparent opacity-50" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#000] to-transparent opacity-60" />
             <img
               className="block w-full h-full object-cover transition-all duration-3000 ease-linear"
               src={img}

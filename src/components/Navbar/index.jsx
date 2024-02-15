@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import kspi_logo from "../../assets/icons/logo_kspi.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AiOutlineSearch, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useFormik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,6 +16,7 @@ import flag_3 from "../../assets/icons/flag-en.png";
 import TextTranslate from "../TextTranslate/index";
 
 function Navbar() {
+    const location = useLocation()
     const dispatch = useDispatch();
     const isLang = useSelector((state) => state.reducerLang.isLang);
 
@@ -69,7 +70,7 @@ function Navbar() {
 
     return (
         <div
-            className={`flex flex-col justify-between absolute top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
+            className={`${location.pathname === "/" ? "absolute" : "sticky bg-white"} flex flex-col justify-between  top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0   `}
         >
             <nav className="flex justify-between">
                 {/* Doimo bor */}
@@ -82,7 +83,7 @@ function Navbar() {
                             src={kspi_logo}
                             alt="icon"
                         />
-                        <p className="hidden sm:inline-block text-[11px] leading-4 text-white font-bold sm:text-[13px] md:text-[15px] xl:leading-6 3xl:text-[22px] xl:text-[18px]">
+                        <p className={`${location.pathname === "/" ? "text-white" : "text-[#004269]"} hidden sm:inline-block text-[11px] leading-4  font-bold sm:text-[13px] md:text-[15px] xl:leading-6 3xl:text-[22px] xl:text-[18px] `}>
                             <TextTranslate id="navLogo" />
                         </p>
                     </div>
@@ -214,17 +215,17 @@ function Navbar() {
                                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/institut-kengashi">
                                                 <TextTranslate id="navDropInstitut_1" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/institut-haqida">
                                                 <TextTranslate id="navDropInstitut_2" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/institut-tuzilma">
                                                 <TextTranslate id="navDropInstitut_3" />
                                             </Link>
                                         </li>
