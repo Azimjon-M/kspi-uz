@@ -6,6 +6,10 @@
     transition: all 0.3s linear;
 }
 
+.swiper {
+    z-index: 0 !important;
+}
+
 /* Pagination styles */
 .pagination__link {
     cursor: pointer;
