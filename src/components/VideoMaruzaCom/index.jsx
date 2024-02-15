@@ -1,7 +1,49 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import YouTube from "react-youtube";
 
 const VideoMaruzalar = () => {
+  const [hovered, setHovered] = useState(false);
+  let player = null;
+
+  function getYoutubeVideoId(url) {
+    const match = url.match(
+      /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^/]+\/[^/]+\/|(?:v|e(?:mbed)?)\/|[^/]+\/(?:watch|v|e)(?:\?.*v=|\/))|youtu\.be\/)([^"&?/\s]{11})/
+    );
+    return match && match[1];
+  }
+
+  const videoId = getYoutubeVideoId(
+    "https://youtu.be/RTy6VcabQvI"
+  );
+
+  const onMouseEnter = () => {
+    setHovered(true);
+    if (player !== null) {
+      player.playVideo();
+    }
+  };
+
+  const onMouseLeave = () => {
+    setHovered(false);
+    if (player !== null) {
+      player.pauseVideo();
+    }
+  };
+
+  const onReady = (event) => {
+    player = event.target;
+    if (!hovered) {
+      player.pauseVideo();
+    }
+  };
+
+  const opts = {
+    height: "390",
+    width: "640",
+    playerVars: {
+      autoplay: 0,
+    },
+  };
 
   return (
     <div className="max-w-[1200px] mx-auto">
@@ -13,37 +55,9 @@ const VideoMaruzalar = () => {
             Fizika va matematika
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://youtu.be/xIgRht94pcM"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Quidem quasi enim dicta, inventore deserunt,
-              omnis harum commodi at expedita fugit natus aliquam vel itaque
-              iusto? Id laboriosam dolor vero harum.
-            </Link>
-            <Link
-              to="https://youtu.be/NNDhxZzmPeg"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant dg fdg ghn
-            </Link>
-            <Link
-              to="https://youtu.be/sfSJwmtiRQg"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
-            <Link
-              to="https://youtu.be/MlgzL27mUvM"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusanta gyjyjj jty
-            </Link>
+            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
         <div className="collapse bg-base-200 mb-4 collapse-arrow shadow-md">
@@ -52,13 +66,9 @@ const VideoMaruzalar = () => {
             Xorijiy tillar
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
+          <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
         <div className="collapse bg-base-200 mb-4 collapse-arrow shadow-md">
@@ -67,20 +77,9 @@ const VideoMaruzalar = () => {
             Pedagogika va psixologiya
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
+          <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
         <div className="collapse bg-base-200 mb-4 collapse-arrow shadow-md">
@@ -89,26 +88,18 @@ const VideoMaruzalar = () => {
             Tabiiy fanlar
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
+          <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
         <div className="collapse bg-base-200 mb-4 collapse-arrow shadow-md">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-xl font-medium">Tarix</div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
+          <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
         <div className="collapse bg-base-200 mb-4 collapse-arrow shadow-md">
@@ -117,26 +108,18 @@ const VideoMaruzalar = () => {
             O’zbek tili va adabiyot
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
+            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
         <div className="collapse bg-base-200 mb-4 collapse-arrow shadow-md">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-xl font-medium">San'at</div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
+            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
         <div className="collapse bg-base-200 mb-4 collapse-arrow shadow-md">
@@ -145,13 +128,9 @@ const VideoMaruzalar = () => {
             Boshlang’ich ta’lim
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
+            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
         <div className="collapse bg-base-200 mb-4 collapse-arrow shadow-md">
@@ -160,13 +139,9 @@ const VideoMaruzalar = () => {
             Jismoniy tarbiya
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
+            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
         <div className="collapse bg-base-200 mb-4 collapse-arrow shadow-md">
@@ -175,13 +150,9 @@ const VideoMaruzalar = () => {
             Maktabgacha ta’lim
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
+            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
         <div className="collapse bg-base-200 mb-4 collapse-arrow shadow-md">
@@ -190,13 +161,9 @@ const VideoMaruzalar = () => {
             Rus tili va adabiyoti
           </div>
           <div className="flex flex-col gap-y-4 collapse-content">
-            <Link
-              to="https://www.youtube.com/watch?v=zA7IcX816RQ"
-              className="link link-primary md:pr-5 line-clamp-1"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              nihil eaque accusant
-            </Link>
+            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+            </div>
           </div>
         </div>
       </div>
@@ -205,3 +172,6 @@ const VideoMaruzalar = () => {
 };
 
 export default VideoMaruzalar;
+
+
+

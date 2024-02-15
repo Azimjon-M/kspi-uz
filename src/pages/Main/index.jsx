@@ -9,6 +9,7 @@ import ContactUs from "../../components/Contact";
 import Footer from "../../components/Footer";
 import Partners from "../../components/Partners";
 import WarmThoughts from "../../components/WarmThoughts";
+import ChatIcon from "../../components/Chat";
 
 function Main() {
   return (
@@ -18,11 +19,12 @@ function Main() {
       <Interactive />
       <NewsHome />
       <StudentOpinion />
-      <WarmThoughts/>
+      <WarmThoughts />
       <Curriculum />
       <Partners />
       <ContactUs />
       <Footer />
+      <ChatIcon />
     </div>
   );
 }
