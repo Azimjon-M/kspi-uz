@@ -40,7 +40,7 @@ const NewsPage = () => {
   };
 
   return (
-    <div className="px-5 py-3 md:px-10 lg:px-20">
+    <div className="px-5 py-3 md:px-10 lg:px-20 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
           steps={[{ text: "Bosh sahifa", link: "/" }, { text: "Yangiliklar" }]}

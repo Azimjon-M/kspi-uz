@@ -32,7 +32,7 @@ const NewsCard = () => {
   }, [id]);
 
   return (
-    <div className="px-5 xl:px-0 max-w-7xl mx-auto">
+    <div className="px-5 xl:px-0 max-w-7xl mx-auto md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
           steps={[

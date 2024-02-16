@@ -29,7 +29,7 @@ const NewsHome = () => {
     loadPost();
   }, []);
   return (
-    <div className="px-5 py-3 md:px-10 lg:px-20">
+    <div className="px-5 py-3 md:px-10 lg:px-20 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="md:flex md:items-center justify-between">
         {/* News heading */}
         <div className="mx-auto my-1 md:my-3">

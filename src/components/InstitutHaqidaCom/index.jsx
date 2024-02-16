@@ -4,7 +4,7 @@ import kspi from "../../assets/images/kspi-img1.jpg";
 
 const InstitutHaqidaCom = () => {
   return (
-    <div className="px-5 py-3 md:px-10 mb-3">
+    <div className="px-5 py-3 md:px-10 mb-3 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
           steps={[
