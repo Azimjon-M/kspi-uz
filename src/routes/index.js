@@ -12,6 +12,11 @@ import Rekvizitlar from "../pages/Rekvizitlar";
 import InstitutTuzilmasi from "../pages/InstitutTuzilmasi";
 import InstitutKengashi from "../pages/InstitutKengashi";
 import InstitutHaqida from "../pages/InstitutHaqida";
+import Rektorat from "../pages/Tuzilma/Rektorat";
+import Kafedralar from "../pages/Tuzilma/Kafedralar";
+import Markazlar from "../pages/Tuzilma/Markazlar";
+import Fakultetlar from "../pages/Tuzilma/Fakultetlar";
+import Bolimlar from "../pages/Tuzilma/Bolimlar";
 
 export const routes = [
     {
@@ -61,6 +66,26 @@ export const routes = [
             {
                 element: <InstitutHaqida />,
                 path: '/institut-haqida'
+            },
+            {
+                element: <Rektorat />,
+                path: '/rektorat'
+            },
+            {
+                element: <Markazlar />,
+                path: '/markazlar'
+            },
+            {
+                element: <Kafedralar />,
+                path: '/kafedralar'
+            },
+            {
+                element: <Fakultetlar />,
+                path: '/fakultetlar'
+            },
+            {
+                element: <Bolimlar />,
+                path: '/bolimlar'
             },
         ],
     },
