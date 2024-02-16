@@ -44,7 +44,7 @@ const Footer = () => {
           to={"https://www.youtube.com/@qoqondpi296"}
           className="mr-4 group"
         >
-          <PiYoutubeLogoFill className="h-6 lg:h-7 w-auto group-hover:text-[#FF0000] rounded-[15px]" />
+          <PiYoutubeLogoFill className="h-6 lg:h-7 w-auto group-hover:text-[#FF0000] group-hover:bg-white rounded-[12px]" />
         </Link>
         <Link
           target="blank"

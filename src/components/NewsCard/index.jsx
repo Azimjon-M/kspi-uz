@@ -32,7 +32,7 @@ const NewsCard = () => {
   }, [id]);
 
   return (
-    <div className="px-5 xl:px-0 max-w-7xl mx-auto md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
+    <div className="px-5 xl:px-10 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
           steps={[
@@ -43,7 +43,7 @@ const NewsCard = () => {
         />
       </div>
 
-      <div className="p-10 xl:px-0 md:grid md:grid-cols-1 lg:grid-cols-4 gap-10">
+      <div className="p-10 xl:px-0 md:grid md:grid-cols-1 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
         <div className="col-span-3 ...">
           <h2 className="text-xl text-[#004269] xl:text-2xl font-bold text-center mb-5">
             {newsData.title}
