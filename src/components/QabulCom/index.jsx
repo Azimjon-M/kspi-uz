@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const QabulCom = () => {
   return (
-    <div>
+    <div className="md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <h2 className="text-xl md:text-2xl text-center font-bold my-2 text-[#004269]">
         Baholash mezonlari
       </h2>

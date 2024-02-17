@@ -15,4 +15,4 @@ const reducerLang = (state = initialState, { type }) => {
     }
 };
 
-export default reducerLang;
+export default reducerLang; 

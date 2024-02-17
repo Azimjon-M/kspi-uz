@@ -12,7 +12,7 @@ const ContactUs = () => {
     });
   }, []);
   return (
-    <div className="p-5 lg:p-10 flex justify-center">
+    <div className="p-5 lg:p-10 flex justify-center md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="w-[1000px]">
         <h2 className=" text-xl md:text-2xl lg:text-3xl tracking-tight font-extrabold text-center text-[#004269] dark:text-white">
           Biz bilan bog'lanish
