@@ -13,6 +13,12 @@ import InstitutTuzilmasi from "../pages/InstitutTuzilmasi";
 import InstitutKengashi from "../pages/InstitutKengashi";
 import InstitutHaqida from "../pages/InstitutHaqida";
 import Rektorat from "../pages/Tuzilma/Rektorat";
+import Rektor from "../pages/Tuzilma/Rektorat/Rektor";
+import IlmiyIshlar from "../pages/Tuzilma/Rektorat/IlmiyIshlar";
+import MoliyaVaIqtisod from "../pages/Tuzilma/Rektorat/MoliyaVaIqtisod";
+import OquvIshlarBoyicha from "../pages/Tuzilma/Rektorat/OquvIshlarBoyicha";
+import XalqaroHamkorlik from "../pages/Tuzilma/Rektorat/XalqaroHamkorlik";
+import YoshlarMasalalariMvaM from "../pages/Tuzilma/Rektorat/YoshlarMasalalariMvaM";
 import Kafedralar from "../pages/Tuzilma/Kafedralar";
 import Markazlar from "../pages/Tuzilma/Markazlar";
 import Fakultetlar from "../pages/Tuzilma/Fakultetlar";
@@ -86,6 +92,30 @@ export const routes = [
             {
                 element: <Bolimlar />,
                 path: '/bolimlar'
+            },
+            {
+                element: <Rektor />,
+                path: '/rektorat/rektor'
+            },
+            {
+                element: <IlmiyIshlar />,
+                path: '/rektorat/ilmiy-ishlar'
+            },
+            {
+                element: <OquvIshlarBoyicha />,
+                path: '/rektorat/oquv-ishlari'
+            },
+            {
+                element: <MoliyaVaIqtisod />,
+                path: '/rektorat/moliya'
+            },
+            {
+                element: <XalqaroHamkorlik />,
+                path: '/rektorat/xalqaro'
+            },
+            {
+                element: <YoshlarMasalalariMvaM />,
+                path: '/rektorat/yoshlar-masalalari'
             },
         ],
     },
