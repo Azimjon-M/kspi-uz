@@ -6,121 +6,165 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 import Breadcrumb from "../Breadcrumb";
+import rektor from "../../assets/images/rektor.png";
+import oquv from "../../assets/images/oquv.jpg";
+import ilmiy from "../../assets/images/ilmiy.jpg";
+import moliya from "../../assets/images/moliya.jpg";
+import xalqaro from "../../assets/images/xalqaro.jpg";
+import yoshlar from "../../assets/images/yoshlar.jpg";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { IoIosArrowForward } from "react-icons/io";
 
 const RektoratCom = () => {
   const data = [
     {
       label: "Rektor",
       value: "rektor",
-      desc: `It really matters and then like it really doesn't matter.
-      What matters is the people who are sparked by it. And the people
-      who are like offended by it, it doesn't matter.`,
       lavozim: "Rektor",
-      img: "",
+      qabul: "Dushanba-Shanba, 10:00 - 18:00",
+      ism: "Xodjayeva Dilnoza Shavkatovna",
+      tel: "+998 73 542 38 38",
+      img: rektor,
+      link: "/rektorat/rektor",
     },
     {
       label: "O'quv ishlari bo'yicha prorektor",
       value: "oquv",
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
+      lavozim: "O'quv ishlari bo'yicha prorektor",
+      qabul: "Dushanba-Shanba, 10:00 - 18:00",
+      ism: "Nargiza Muzaffarovna Babayeva",
+      tel: "+998 91 323 04 77",
+      img: oquv,
+      link: "/rektorat/oquv-ishlari",
     },
     {
       label: "Ilmiy ishlar bo'yicha prorektor",
       value: "ilmiy",
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
-      lavozim: "Prorektor",
-      img: "",
+      lavozim: "Ilmiy ishlar bo'yicha prorektor",
+      qabul: "Dushanba-Shanba, 10:00 - 18:00",
+      ism: "Nurbek Jo’rayev Sa’dullayevich",
+      tel: "+998 88 941 28 28",
+      img: ilmiy,
+      link: "/rektorat/ilmiy-ishlar",
     },
     {
       label: "Moliya va iqtisod bo'yicha prorektor",
       value: "moliya",
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
-      lavozim: "Prorektor",
-      img: "",
+      lavozim: "Moliya va iqtisod bo'yicha prorektor",
+      qabul: "Dushanba-Shanba, 10:00 - 18:00",
+      ism: "Jasurbek Azamov Murodovich",
+      tel: "+998 90 588 61 27",
+      img: moliya,
+      link: "/rektorat/moliya",
     },
     {
       label:
         "Yoshlar masalalari va ma'naviy-ma'rifiy ishlar bo'yicha prorektor",
       value: "yoshlar",
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
-      lavozim: "Prorektor",
-      img: "",
+      lavozim:
+        "Yoshlar masalalari va ma'naviy-ma'rifiy ishlar bo'yicha prorektor",
+      qabul: "Dushanba-Shanba, 10:00 - 18:00",
+      ism: "Oxunov Isroiljon Islomovich",
+      tel: "+998 90 317 82 10",
+      img: yoshlar,
+      link: "/rektorat/yoshlar-masalalari",
     },
     {
       label: "Xalqaro hamkorlik masalalari bo'yicha prorektor",
       value: "xalqaro",
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
-      lavozim: "Prorektor",
-      img: "",
+      lavozim: "Xalqaro hamkorlik masalalari bo'yicha prorektor",
+      qabul: "Dushanba-Shanba, 10:00 - 18:00",
+      ism: "Kadirova Nigora Abdurashidovna",
+      tel: "+998 97 309 86 68",
+      img: xalqaro,
+      link: "/rektorat/xalqaro",
     },
   ];
+
+  useEffect(() => {
+    const a = document.getElementById("0");
+    a.click();
+  }, []);
+
   return (
     <div className="px-5 py-3 md:px-10 mb-3 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
-          steps={[
-            { text: "Bosh sahifa", link: "/" },
-            { text: "Institut kengashi" },
-          ]}
+          steps={[{ text: "Bosh sahifa", link: "/" }, { text: "Rektorat" }]}
         />
       </div>
+      <h2 className="text-xl md:text-3xl font-bold my-5 text-[#004269] text-center">
+        Rektorat
+      </h2>
       <div className="max-w-7xl mx-auto">
-        <div className="my-1 md:my-5">
-          <h2 className="text-xl md:text-3xl font-bold my-2 text-[#004269] text-center">
-            Rektorat
-          </h2>
-        </div>
         <Tabs
-          className="flex flex-col md:flex-row"
+          className="flex flex-col md:flex-row lg:justify-evenly"
           value="html"
           orientation="vertical"
         >
-          <TabsHeader className="w-96 border-2 border-[#004269] p-5 mb-5">
-            {data.map(({ label, value }) => (
-              <Tab
-                className="flex flex-col items-start text-start font-semibold"
-                key={value}
-                value={value}
-              >
-                <div className="flex items-center">
-                  <div className="w-1 h-1 rounded-full bg-[#004269] mr-3"></div>
-                  {label}
-                </div>
-              </Tab>
-            ))}
-          </TabsHeader>
-          <TabsBody>
-            {data.map(({ value, desc, lavozim }) => (
-              <TabPanel key={value} value={value} className="py-0">
-                <div className="relative flex flex-col lg:flex-row mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
-                  <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-md bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40"></div>
-                  <div className="p-6">
-                    <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                      {lavozim}
-                    </h5>
-                    <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-                      {desc}
-                    </p>
+          <div>
+            <TabsHeader className="max-w-96 md:max-w-80 lg:w-96 border-2 border-[#004269] p-5 mb-5">
+              {data.map(({ label, value }, idx) => (
+                <Tab
+                  className="flex flex-col items-start text-start font-semibold"
+                  key={value}
+                  value={value}
+                >
+                  <div id={idx} className="flex items-center">
+                    <div className="text-[#004269] mr-3">
+                      <IoIosArrowForward />
+                    </div>
+                    {label}
                   </div>
-                  <div className="p-6 pt-0">
-                    <button
-                      className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
-                      type="button"
-                    >
-                      Batafsil ...
-                    </button>
-                  </div>
-                </div>
-              </TabPanel>
-            ))}
-          </TabsBody>
+                </Tab>
+              ))}
+            </TabsHeader>
+          </div>
+
+          <div>
+            <TabsBody className="p-0">
+              {data.map(
+                ({ value, lavozim, img = "", ism, qabul, tel, link }) => (
+                  <TabPanel key={value} value={value} className="py-0">
+                    <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-80 md:w-96 lg:w-[600px]">
+                      <div className="relative h-56 lg:w-80 lg:h-80 xl:w-80 -mt-6 lg:my-auto lg:py-5 mx-4 overflow-hidden rounded-xl">
+                        <img
+                          src={img}
+                          alt={lavozim}
+                          className="w-full lg:w-80 h-full object-cover lg:rounded"
+                        />
+                      </div>
+                      <div className="flex flex-col justify-between py-3">
+                        <div className="p-3">
+                          <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start">
+                            {lavozim}
+                          </h3>
+                          <h4 className="block mb-2 font-sans text-lg xl:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center lg:text-start">
+                            {ism}
+                          </h4>
+                          <h4 className="block mb-2 font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            Telefon: {tel}
+                          </h4>
+                          <h4 className="block mb-2 font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            Qabul kunlari: {qabul}
+                          </h4>
+                        </div>
+                        <div className="p-3 pt-0 lg:place-items-end">
+                          <Link
+                            to={link}
+                            className="btn align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-[#004269] text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:bg-[#004269]/90 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                          >
+                            Batafsil ...
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </TabPanel>
+                )
+              )}
+            </TabsBody>
+          </div>
         </Tabs>
       </div>
     </div>
