@@ -13,6 +13,8 @@ import moliya from "../../assets/images/moliya.jpg";
 import xalqaro from "../../assets/images/xalqaro.jpg";
 import yoshlar from "../../assets/images/yoshlar.jpg";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { IoIosArrowForward } from "react-icons/io";
 
 const RektoratCom = () => {
   const data = [
@@ -80,6 +82,11 @@ const RektoratCom = () => {
     },
   ];
 
+  useEffect(() => {
+    const a = document.getElementById("0");
+    a.click();
+  }, []);
+
   return (
     <div className="px-5 py-3 md:px-10 mb-3 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="border-b-2 border-[#004269] block w-full">
@@ -98,14 +105,16 @@ const RektoratCom = () => {
         >
           <div>
             <TabsHeader className="max-w-96 md:max-w-80 lg:w-96 border-2 border-[#004269] p-5 mb-5">
-              {data.map(({ label, value }) => (
+              {data.map(({ label, value }, idx) => (
                 <Tab
                   className="flex flex-col items-start text-start font-semibold"
                   key={value}
                   value={value}
                 >
-                  <div className="flex items-center">
-                    <div className="w-1 h-1 rounded-full bg-[#004269] mr-3"></div>
+                  <div id={idx} className="flex items-center">
+                    <div className="text-[#004269] mr-3">
+                      <IoIosArrowForward />
+                    </div>
                     {label}
                   </div>
                 </Tab>
@@ -118,8 +127,8 @@ const RektoratCom = () => {
               {data.map(
                 ({ value, lavozim, img = "", ism, qabul, tel, link }) => (
                   <TabPanel key={value} value={value} className="py-0">
-                    <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl max-w-96 lg:max-w-full">
-                      <div className="relative h-56 lg:h-80 -mt-6 lg:my-auto lg:py-5 mx-4 overflow-hidden rounded-xl">
+                    <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-80 md:w-96 lg:w-[600px]">
+                      <div className="relative h-56 lg:w-80 lg:h-80 xl:w-80 -mt-6 lg:my-auto lg:py-5 mx-4 overflow-hidden rounded-xl">
                         <img
                           src={img}
                           alt={lavozim}
