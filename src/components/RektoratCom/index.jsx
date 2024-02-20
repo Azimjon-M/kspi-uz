@@ -13,11 +13,11 @@ import moliya from "../../assets/images/moliya.jpg";
 import xalqaro from "../../assets/images/xalqaro.jpg";
 import yoshlar from "../../assets/images/yoshlar.jpg";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useMemo, useState  } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
 const RektoratCom = () => {
-  const data = [
+  const data = useMemo(() => [
     {
       label: "Rektor",
       value: "rektor",
@@ -26,7 +26,6 @@ const RektoratCom = () => {
       ism: "Xodjayeva Dilnoza Shavkatovna",
       tel: "+998 73 542 38 38",
       img: rektor,
-      link: "/rektorat/rektor",
     },
     {
       label: "O'quv ishlari bo'yicha prorektor",
@@ -36,7 +35,6 @@ const RektoratCom = () => {
       ism: "Nargiza Muzaffarovna Babayeva",
       tel: "+998 91 323 04 77",
       img: oquv,
-      link: "/rektorat/oquv-ishlari",
     },
     {
       label: "Ilmiy ishlar bo'yicha prorektor",
@@ -46,7 +44,6 @@ const RektoratCom = () => {
       ism: "Nurbek Jo’rayev Sa’dullayevich",
       tel: "+998 88 941 28 28",
       img: ilmiy,
-      link: "/rektorat/ilmiy-ishlar",
     },
     {
       label: "Moliya va iqtisod bo'yicha prorektor",
@@ -56,7 +53,6 @@ const RektoratCom = () => {
       ism: "Jasurbek Azamov Murodovich",
       tel: "+998 90 588 61 27",
       img: moliya,
-      link: "/rektorat/moliya",
     },
     {
       label:
@@ -68,7 +64,6 @@ const RektoratCom = () => {
       ism: "Oxunov Isroiljon Islomovich",
       tel: "+998 90 317 82 10",
       img: yoshlar,
-      link: "/rektorat/yoshlar-masalalari",
     },
     {
       label: "Xalqaro hamkorlik masalalari bo'yicha prorektor",
@@ -78,9 +73,47 @@ const RektoratCom = () => {
       ism: "Kadirova Nigora Abdurashidovna",
       tel: "+998 97 309 86 68",
       img: xalqaro,
+    },
+  ], []); 
+
+  const [filteredData, setFilteredData] = useState(data)
+
+  const links = useMemo(() => [
+    {
+      value: "xalqaro",
       link: "/rektorat/xalqaro",
     },
-  ];
+    {
+      value: "yoshlar",
+      link: "/rektorat/yoshlar-masalalari",
+    },
+    {
+      value: "moliya",
+      link: "/rektorat/moliya",
+    },
+    {
+      value: "ilmiy",
+      link: "/rektorat/ilmiy-ishlar",
+    },
+    {
+      value: "oquv",
+      link: "/rektorat/oquv-ishlari",
+    },
+    {
+      value: "rektor",
+      link: "/rektorat/rektor",
+    },
+  ], []);
+
+
+  useEffect(() => {
+    const allData = data.map(item => {
+      const link = links.find(linkItem => linkItem.value === item.value);
+      return { ...item, link: link ? link.link : "" };
+    });
+    setFilteredData(allData);
+  }, [links, data]);
+  
 
   useEffect(() => {
     const a = document.getElementById("0");
@@ -105,7 +138,7 @@ const RektoratCom = () => {
         >
           <div>
             <TabsHeader className="max-w-96 md:max-w-80 lg:w-96 border-2 border-[#004269] p-5 mb-5">
-              {data.map(({ label, value }, idx) => (
+              {filteredData.map(({ label, value }, idx) => (
                 <Tab
                   className="flex flex-col items-start text-start font-semibold"
                   key={value}
@@ -124,7 +157,7 @@ const RektoratCom = () => {
 
           <div>
             <TabsBody className="p-0">
-              {data.map(
+              {filteredData.map(
                 ({ value, lavozim, img = "", ism, qabul, tel, link }) => (
                   <TabPanel key={value} value={value} className="py-0">
                     <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-80 md:w-96 lg:w-[600px]">

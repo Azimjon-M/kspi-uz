@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../../../../components/Navbar'
 
 function IlmiyIshlar() {
   return (
-    <div>IlmiyIshlar</div>
+    <div>
+      <Navbar />
+    </div>
   )
 }
 
