@@ -39,18 +39,16 @@ const videos = [
 function WarmThoughts() {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
   const [isVideoPlay, setIsVideoPlay] = useState(false);
-  const [videoUrl, setVideoUrl] = useState(null);
+  const [selectedVideoId, setSelectedVideoId] = useState(null);
 
-  const handleClick = () => {
-    videos.forEach((video) => {
-      console.log(video.id);
-      setIsVideoVisible(true);
-      setIsVideoPlay(true);
-      setVideoUrl(videoUrl);
-    });
+  const handleClick = (videoId) => {
+    setSelectedVideoId(videoId);
+    setIsVideoVisible(true);
+    setIsVideoPlay(true);
   };
 
   const handleClose = () => {
+    setSelectedVideoId(null);
     setIsVideoVisible(false);
     setIsVideoPlay(false);
   };
@@ -85,12 +83,11 @@ function WarmThoughts() {
                       <source src={video1} type="video/mp4" />
                     </video>
                     <Link
-                      to=""
-                      onClick={() => handleClick(video.url)}
+                      onClick={() => handleClick(video.id)}
                       className="w-full group absolute bottom-0 left-0 z-[4] px-5 py-6 translate-y-[-5%] group-hover:translate-y-[0] opacity-0 group-hover:opacity-100 transition-transform duration-[400] ease-linear"
                     >
                       <span
-                        onClick={handleClick}
+                        onClick={() => handleClick(video.id)}
                         className="flex justify-center items-center w-16 h-16 mx-auto rounded-full text-3xl border border-gray-800 hover:border-yellow-500 bg-yellow-500 hover:bg-zinc-900 hover:text-yellow-500 font-bold"
                       >
                         <IoPlayOutline />
@@ -102,7 +99,8 @@ function WarmThoughts() {
                         {video.name}
                       </span>
                     </Link>
-                    <div
+                    {selectedVideoId === video.id && (
+                      <div
                       className="w-full h-full absolute top-0 left-0"
                       style={{ zIndex: isVideoVisible ? "5" : "-1" }}
                     >
@@ -116,7 +114,8 @@ function WarmThoughts() {
                         allowfullscreen
                       ></iframe>
                     </div>
-                    {isVideoVisible && (
+                    )}
+                    {selectedVideoId === video.id && (
                       <button
                         className="absolute top-2 right-2 z-[6] border border-gray-800 hover:border-yellow-500 bg-yellow-500 hover:bg-zinc-900 hover:text-yellow-500 text-lg px-2 py-1 rounded-md"
                         onClick={handleClose}
