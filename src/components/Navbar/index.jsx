@@ -72,7 +72,7 @@ function Navbar() {
     <div
       className={`${
         location.pathname === "/" ? "absolute" : "sticky bg-white"
-      } flex flex-col justify-between  top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0   `}
+      } flex flex-col justify-between  top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0 border border-red-600 shadow-xl`}
     >
       <nav className="flex justify-between">
         {/* Doimo bor */}
@@ -191,13 +191,13 @@ function Navbar() {
           {/* /Header */}
           {/* Navigations institut */}
           <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
-            <ul className="flex items-center gap-x-8 text-white font-semibold 2xl:text-[18px] 3xl:gap-x-12 3xl:text-[20px] ">
+            <ul className={`${location.pathname === "/" ? "text-white" : "text-[#004269]"} flex items-center gap-x-8 font-semibold 2xl:text-[18px] 3xl:gap-x-12 3xl:text-[20px]`}>
               <li className="-mr-2">
                 <Link to="/yangiliklar">
                   <TextTranslate id="navYangiliklar" />
                 </Link>
               </li>
-              <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
+              <li className={`relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 ${location.pathname === "/" ? "after:border-white" : " after:border-[#004269]"}  after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}>
                 <div className="dropdown dropdown-hover">
                   <div tabIndex={2} role="button" className="text-inherit">
                     <TextTranslate id="navInstitut" />
@@ -234,7 +234,7 @@ function Navbar() {
                   </ul>
                 </div>
               </li>
-              <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
+              <li className={`relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 ${location.pathname === "/" ? "after:border-white" : " after:border-[#004269]"} after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}>
                 <div className="dropdown dropdown-hover">
                   <div tabIndex={3} role="button" className="text-inherit">
                     <TextTranslate id="navFaoliyat" />
@@ -276,7 +276,7 @@ function Navbar() {
                   </ul>
                 </div>
               </li>
-              <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
+              <li className={`relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 ${location.pathname === "/" ? "after:border-white" : " after:border-[#004269]"} after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}>
                 <div className="dropdown dropdown-hover">
                   <div tabIndex={4} role="button" className="text-inherit">
                     <TextTranslate id="navTuzilma" />
@@ -313,7 +313,7 @@ function Navbar() {
                   </ul>
                 </div>
               </li>
-              <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
+              <li className={`relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 ${location.pathname === "/" ? "after:border-white" : " after:border-[#004269]"} after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}>
                 <div className="dropdown dropdown-hover">
                   <div tabIndex={5} role="button" className="text-inherit">
                     <TextTranslate id="navTalabalar" />
@@ -340,7 +340,7 @@ function Navbar() {
                   </ul>
                 </div>
               </li>
-              <li className="relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 after:border-white after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]">
+              <li className={`relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 ${location.pathname === "/" ? "after:border-white" : " after:border-[#004269]"} after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}>
                 <div className="dropdown dropdown-hover">
                   <div tabIndex={6} role="button" className="text-inherit">
                     <TextTranslate id="navAbiturient" />

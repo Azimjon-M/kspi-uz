@@ -12,84 +12,127 @@ import muhandis from "../../assets/images/muhandis.jpg";
 import energetik from "../../assets/images/energetik.png";
 import xalqaro from "../../assets/images/xalqaro.jpg";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
 const MarkazlarCom = () => {
-  const data = [
-    {
-      label: "Raqamli ta'lim texnalogiyalari markazi",
-      value: "raqamli",
-      lavozim: "Raqamli ta'lim texnalogiyalari markazi boshlig'i",
-      ism: "Ubaydullayev Muhammadjon Abdusamad o'g'li",
-      tel: "+998 99 998 00 57",
-      img: raqamliImg,
-      link: "/rektorat/raqamli-talim",
-    },
-    {
-      label: "Axborot resurs markazi",
-      value: "axborot",
-      lavozim: "Axborot resurs markazi boshlig'i",
-      ism: "Meliqo'ziyev Dadaqo'zi Jo'raqo'zi o'g'li",
-      tel: "+998 91 323 04 77",
-      img: oquv,
-      link: "/rektorat/axborot",
-    },
-    {
-      label: "Bosh muhandis",
-      value: "muhandis",
-      lavozim: "Bosh muhandis",
-      ism: "Boybekov Muhiddin Madaminovich",
-      tel: "+998 97 334 25 52",
-      img: muhandis,
-      link: "/rektorat/muhandis",
-    },
-    {
-      label: "Bosh energetik",
-      value: "energetik",
-      lavozim: "Bosh energetik",
-      ism: "Ikromov Aziz",
-      tel: "+998 94 495 00 93",
-      img: energetik,
-      link: "/rektorat/energtik",
-    },
-    {
-      label: "Rektor yordamchisi",
-      value: "rekYordamchi",
-      lavozim: "Rektor yordamchisi",
-      ism: "Kadirova Nigora Abdurashidovna",
-      tel: "+998 97 309 86 68",
-      img: xalqaro,
-      link: "/rektorat/rektor-yordamchisi",
-    },
-    {
-      label: "Matbuot kotibi",
-      value: "kotib",
-      lavozim: "Matbuot kotibi",
-      ism: "Kadirova Nigora Abdurashidovna",
-      tel: "+998 97 309 86 68",
-      img: xalqaro,
-      link: "/rektorat/matbuot-kotib",
-    },
-    {
-      label: "Yuriskonsolt",
-      value: "yuriskonsolt",
-      lavozim: "Yuriskonsolt",
-      ism: "Hazratqulov Hayrullo",
-      tel: "+998 91 201 98 73",
-      img: xalqaro,
-      link: "/rektorat/yuriskonsolt",
-    },
-    {
-      label: "Bosh auditor",
-      value: "auditor",
-      lavozim: "Bosh auditor",
-      ism: "Alimov Elyor Akramovich",
-      tel: "+998 94 440 83 31",
-      img: xalqaro,
-      link: "/rektorat/auditor",
-    },
-  ];
+  const data = useMemo(
+    () => [
+      {
+        label: "Raqamli ta'lim texnalogiyalari markazi",
+        value: "raqamli",
+        lavozim: "Raqamli ta'lim texnalogiyalari markazi boshlig'i",
+        ism: "Ubaydullayev Muhammadjon Abdusamad o'g'li",
+        tel: "+998 99 998 00 57",
+        img: raqamliImg,
+      },
+      {
+        label: "Axborot resurs markazi",
+        value: "axborot",
+        lavozim: "Axborot resurs markazi boshlig'i",
+        ism: "Meliqo'ziyev Dadaqo'zi Jo'raqo'zi o'g'li",
+        tel: "+998 91 323 04 77",
+        img: oquv,
+      },
+      {
+        label: "Bosh muhandis",
+        value: "muhandis",
+        lavozim: "Bosh muhandis",
+        ism: "Boybekov Muhiddin Madaminovich",
+        tel: "+998 97 334 25 52",
+        img: muhandis,
+      },
+      {
+        label: "Bosh energetik",
+        value: "energetik",
+        lavozim: "Bosh energetik",
+        ism: "Ikromov Aziz",
+        tel: "+998 94 495 00 93",
+        img: energetik,
+      },
+      {
+        label: "Rektor yordamchisi",
+        value: "rekYordamchi",
+        lavozim: "Rektor yordamchisi",
+        ism: "Kadirova Nigora Abdurashidovna",
+        tel: "+998 97 309 86 68",
+        img: xalqaro,
+      },
+      {
+        label: "Matbuot kotibi",
+        value: "kotib",
+        lavozim: "Matbuot kotibi",
+        ism: "Kadirova Nigora Abdurashidovna",
+        tel: "+998 97 309 86 68",
+        img: xalqaro,
+      },
+      {
+        label: "Yuriskonsolt",
+        value: "yuriskonsolt",
+        lavozim: "Yuriskonsolt",
+        ism: "Hazratqulov Hayrullo",
+        tel: "+998 91 201 98 73",
+        img: xalqaro,
+      },
+      {
+        label: "Bosh auditor",
+        value: "auditor",
+        lavozim: "Bosh auditor",
+        ism: "Alimov Elyor Akramovich",
+        tel: "+998 94 440 83 31",
+        img: xalqaro,
+      },
+    ],
+    []
+  );
+
+  const [filteredData, setFilteredData] = useState(data);
+
+  const links = useMemo(
+    () => [
+      {
+        value: "raqamli",
+        link: "/markazlar/raqamli-talim",
+      },
+      {
+        value: "axborot",
+        link: "/markazlar/axborot",
+      },
+      {
+        value: "muhandis",
+        link: "/markazlar/muhandis",
+      },
+      {
+        value: "energetik",
+        link: "/markazlar/energtik",
+      },
+      {
+        value: "rekYordamchi",
+        link: "/markazlar/rektor-yordamchisi",
+      },
+      {
+        value: "kotib",
+        link: "/markazlar/matbuot-kotib",
+      },
+      {
+        value: "yuriskonsolt",
+        link: "/markazlar/yuriskonsolt",
+      },
+      {
+        value: "auditor",
+        link: "/markazlar/auditor",
+      },
+    ],
+    []
+  );
+
+  useEffect(() => {
+    const allData = data.map((item) => {
+      const link = links.find((linkItem) => linkItem.value === item.value);
+      return { ...item, link: link ? link.link : "" };
+    });
+    setFilteredData(allData);
+  }, [links, data]);
 
   useEffect(() => {
     const a = document.getElementById("0");
@@ -114,7 +157,7 @@ const MarkazlarCom = () => {
         >
           <div>
             <TabsHeader className="max-w-96 md:max-w-80 lg:w-96 border-2 border-[#004269] p-5 mb-5">
-              {data.map(({ label, value }, idx) => (
+              {filteredData.map(({ label, value }, idx) => (
                 <Tab
                   className="flex flex-col items-start text-start font-semibold"
                   key={value}
@@ -133,7 +176,7 @@ const MarkazlarCom = () => {
 
           <div>
             <TabsBody className="p-0 lg:w-[600px] xl:w-[800px]">
-              {data.map(
+              {filteredData.map(
                 ({ value, lavozim, img = "", ism, qabul, tel, link }) => (
                   <TabPanel key={value} value={value} className="py-0">
                     <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl max-w-96 lg:max-w-full">
@@ -154,9 +197,6 @@ const MarkazlarCom = () => {
                           </h4>
                           <h4 className="block mb-2 font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                             Telefon: {tel}
-                          </h4>
-                          <h4 className="block mb-2 font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                            Qabul kunlari: {qabul}
                           </h4>
                         </div>
                         <div className="p-3 pt-0 lg:place-items-end">
