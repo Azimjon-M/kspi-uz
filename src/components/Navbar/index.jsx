@@ -135,7 +135,7 @@ function Navbar() {
                                     </div>
                                     <ul
                                         tabIndex={0}
-                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-[#004269] dark:text-white font-bold"
+                                        className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52 text-[#004269] dark:text-white font-bold"
                                     >
                                         <li>
                                             <Link
@@ -248,7 +248,7 @@ function Navbar() {
                                     </div>
                                     <ul
                                         tabIndex={2}
-                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                                        className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li className="text-[#004269] dark:text-white">
                                             <Link to="/institut-kengashi">
@@ -295,7 +295,7 @@ function Navbar() {
                                     </div>
                                     <ul
                                         tabIndex={3}
-                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                                        className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li className="text-[#004269] dark:text-white">
                                             <Link to="">
@@ -347,7 +347,7 @@ function Navbar() {
                                     </div>
                                     <ul
                                         tabIndex={4}
-                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                                        className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li className="text-[#004269] dark:text-white">
                                             <Link to="/rektorat">
@@ -394,7 +394,7 @@ function Navbar() {
                                     </div>
                                     <ul
                                         tabIndex={5}
-                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                                        className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li className="text-[#004269] dark:text-white">
                                             <Link to="">
@@ -431,7 +431,7 @@ function Navbar() {
                                     </div>
                                     <ul
                                         tabIndex={6}
-                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                                        className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li className="text-[#004269] dark:text-white">
                                             <Link to="">

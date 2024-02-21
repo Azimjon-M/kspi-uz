@@ -13,107 +13,111 @@ import moliya from "../../assets/images/moliya.jpg";
 import xalqaro from "../../assets/images/xalqaro.jpg";
 import yoshlar from "../../assets/images/yoshlar.jpg";
 import { Link } from "react-router-dom";
-import { useEffect, useMemo, useState  } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
 const RektoratCom = () => {
-  const data = useMemo(() => [
-    {
-      label: "Rektor",
-      value: "rektor",
-      lavozim: "Rektor",
-      qabul: "Dushanba-Shanba, 10:00 - 18:00",
-      ism: "Xodjayeva Dilnoza Shavkatovna",
-      tel: "+998 73 542 38 38",
-      img: rektor,
-    },
-    {
-      label: "O'quv ishlari bo'yicha prorektor",
-      value: "oquv",
-      lavozim: "O'quv ishlari bo'yicha prorektor",
-      qabul: "Dushanba-Shanba, 10:00 - 18:00",
-      ism: "Nargiza Muzaffarovna Babayeva",
-      tel: "+998 91 323 04 77",
-      img: oquv,
-    },
-    {
-      label: "Ilmiy ishlar bo'yicha prorektor",
-      value: "ilmiy",
-      lavozim: "Ilmiy ishlar bo'yicha prorektor",
-      qabul: "Dushanba-Shanba, 10:00 - 18:00",
-      ism: "Nurbek Jo’rayev Sa’dullayevich",
-      tel: "+998 88 941 28 28",
-      img: ilmiy,
-    },
-    {
-      label: "Moliya va iqtisod bo'yicha prorektor",
-      value: "moliya",
-      lavozim: "Moliya va iqtisod bo'yicha prorektor",
-      qabul: "Dushanba-Shanba, 10:00 - 18:00",
-      ism: "Jasurbek Azamov Murodovich",
-      tel: "+998 90 588 61 27",
-      img: moliya,
-    },
-    {
-      label:
-        "Yoshlar masalalari va ma'naviy-ma'rifiy ishlar bo'yicha prorektor",
-      value: "yoshlar",
-      lavozim:
-        "Yoshlar masalalari va ma'naviy-ma'rifiy ishlar bo'yicha prorektor",
-      qabul: "Dushanba-Shanba, 10:00 - 18:00",
-      ism: "Oxunov Isroiljon Islomovich",
-      tel: "+998 90 317 82 10",
-      img: yoshlar,
-    },
-    {
-      label: "Xalqaro hamkorlik masalalari bo'yicha prorektor",
-      value: "xalqaro",
-      lavozim: "Xalqaro hamkorlik masalalari bo'yicha prorektor",
-      qabul: "Dushanba-Shanba, 10:00 - 18:00",
-      ism: "Kadirova Nigora Abdurashidovna",
-      tel: "+998 97 309 86 68",
-      img: xalqaro,
-    },
-  ], []); 
+  const data = useMemo(
+    () => [
+      {
+        label: "Rektor",
+        value: "rektor",
+        lavozim: "Rektor",
+        qabul: "Dushanba-Shanba, 10:00 - 18:00",
+        ism: "Xodjayeva Dilnoza Shavkatovna",
+        tel: "+998 73 542 38 38",
+        img: rektor,
+      },
+      {
+        label: "O'quv ishlari bo'yicha prorektor",
+        value: "oquv",
+        lavozim: "O'quv ishlari bo'yicha prorektor",
+        qabul: "Dushanba-Shanba, 10:00 - 18:00",
+        ism: "Nargiza Muzaffarovna Babayeva",
+        tel: "+998 91 323 04 77",
+        img: oquv,
+      },
+      {
+        label: "Ilmiy ishlar bo'yicha prorektor",
+        value: "ilmiy",
+        lavozim: "Ilmiy ishlar bo'yicha prorektor",
+        qabul: "Dushanba-Shanba, 10:00 - 18:00",
+        ism: "Nurbek Jo’rayev Sa’dullayevich",
+        tel: "+998 88 941 28 28",
+        img: ilmiy,
+      },
+      {
+        label: "Moliya va iqtisod bo'yicha prorektor",
+        value: "moliya",
+        lavozim: "Moliya va iqtisod bo'yicha prorektor",
+        qabul: "Dushanba-Shanba, 10:00 - 18:00",
+        ism: "Jasurbek Azamov Murodovich",
+        tel: "+998 90 588 61 27",
+        img: moliya,
+      },
+      {
+        label:
+          "Yoshlar masalalari va ma'naviy-ma'rifiy ishlar bo'yicha prorektor",
+        value: "yoshlar",
+        lavozim:
+          "Yoshlar masalalari va ma'naviy-ma'rifiy ishlar bo'yicha prorektor",
+        qabul: "Dushanba-Shanba, 10:00 - 18:00",
+        ism: "Oxunov Isroiljon Islomovich",
+        tel: "+998 90 317 82 10",
+        img: yoshlar,
+      },
+      {
+        label: "Xalqaro hamkorlik masalalari bo'yicha prorektor",
+        value: "xalqaro",
+        lavozim: "Xalqaro hamkorlik masalalari bo'yicha prorektor",
+        qabul: "Dushanba-Shanba, 10:00 - 18:00",
+        ism: "Kadirova Nigora Abdurashidovna",
+        tel: "+998 97 309 86 68",
+        img: xalqaro,
+      },
+    ],
+    []
+  );
 
-  const [filteredData, setFilteredData] = useState(data)
+  const [filteredData, setFilteredData] = useState(data);
 
-  const links = useMemo(() => [
-    {
-      value: "xalqaro",
-      link: "/rektorat/xalqaro",
-    },
-    {
-      value: "yoshlar",
-      link: "/rektorat/yoshlar-masalalari",
-    },
-    {
-      value: "moliya",
-      link: "/rektorat/moliya",
-    },
-    {
-      value: "ilmiy",
-      link: "/rektorat/ilmiy-ishlar",
-    },
-    {
-      value: "oquv",
-      link: "/rektorat/oquv-ishlari",
-    },
-    {
-      value: "rektor",
-      link: "/rektorat/rektor",
-    },
-  ], []);
-
+  const links = useMemo(
+    () => [
+      {
+        value: "xalqaro",
+        link: "/rektorat/xalqaro",
+      },
+      {
+        value: "yoshlar",
+        link: "/rektorat/yoshlar-masalalari",
+      },
+      {
+        value: "moliya",
+        link: "/rektorat/moliya",
+      },
+      {
+        value: "ilmiy",
+        link: "/rektorat/ilmiy-ishlar",
+      },
+      {
+        value: "oquv",
+        link: "/rektorat/oquv-ishlari",
+      },
+      {
+        value: "rektor",
+        link: "/rektorat/rektor",
+      },
+    ],
+    []
+  );
 
   useEffect(() => {
-    const allData = data.map(item => {
-      const link = links.find(linkItem => linkItem.value === item.value);
+    const allData = data.map((item) => {
+      const link = links.find((linkItem) => linkItem.value === item.value);
       return { ...item, link: link ? link.link : "" };
     });
     setFilteredData(allData);
   }, [links, data]);
-  
 
   useEffect(() => {
     const a = document.getElementById("0");
@@ -159,7 +163,11 @@ const RektoratCom = () => {
             <TabsBody className="p-0">
               {filteredData.map(
                 ({ value, lavozim, img = "", ism, qabul, tel, link }) => (
-                  <TabPanel key={value} value={value} className="py-0">
+                  <TabPanel
+                    key={value}
+                    value={value}
+                    className="py-0"
+                  >
                     <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-80 md:w-96 lg:w-[600px]">
                       <div className="relative h-56 lg:w-80 lg:h-80 xl:w-80 -mt-6 lg:my-auto lg:py-5 mx-4 overflow-hidden rounded-xl">
                         <img
