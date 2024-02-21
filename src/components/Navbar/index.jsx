@@ -22,6 +22,8 @@ function Navbar() {
 
     const [isFocusedSearInp, setFocusedSearInp] = useState(false);
     const [isActiveMenu, setIsActiveMenu] = useState(false);
+    const [scrollY, setScrollY] = useState(false);
+    console.log(scrollY);
     // search
     const formik = useFormik({
         initialValues: {
@@ -44,7 +46,7 @@ function Navbar() {
     };
     // Change Language log
     const handleClickLang = (lang) => {
-          switch (lang) {
+        switch (lang) {
             case "uz":
                 dispatch(setLangUz());
                 break;
@@ -68,13 +70,23 @@ function Navbar() {
         }
     }, [isActiveMenu]);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (Math.floor(window.scrollY) >= 100) {
+                setScrollY(true);
+            } else {
+                setScrollY(false);
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <div
-            className={`${
-                location.pathname === "/"
-                    ? "absolute"
-                    : "sticky bg-white shadow-xl"
-            } flex flex-col justify-between  top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
+            className={`${location.pathname === "/" ? "absolute" : "bg-white shadow-xl"} flex flex-col justify-between  top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
         >
             <nav className="flex justify-between">
                 {/* Doimo bor */}
@@ -608,37 +620,27 @@ function Navbar() {
                                     </div>
                                     <div className="collapse-content">
                                         <ul>
-                                            <li
-                                                className="text-[#004269] dark:text-white"
-                                            >
+                                            <li className="text-[#004269] dark:text-white">
                                                 <Link to="/institut-kengashi">
                                                     <TextTranslate id="navDropInstitut_1" />
                                                 </Link>
                                             </li>
-                                            <li
-                                                className="text-[#004269] dark:text-white"
-                                            >
+                                            <li className="text-[#004269] dark:text-white">
                                                 <Link to="/institut-haqida">
                                                     <TextTranslate id="navDropInstitut_2" />
                                                 </Link>
                                             </li>
-                                            <li
-                                                className="text-[#004269] dark:text-white"
-                                            >
+                                            <li className="text-[#004269] dark:text-white">
                                                 <Link to="/institut-tuzilma">
                                                     <TextTranslate id="navDropInstitut_3" />
                                                 </Link>
                                             </li>
-                                            <li
-                                                className="text-[#004269] dark:text-white"
-                                            >
+                                            <li className="text-[#004269] dark:text-white">
                                                 <Link to="/rekvizitlar">
                                                     <TextTranslate id="navDropInstitut_4" />
                                                 </Link>
                                             </li>
-                                            <li
-                                                className="text-[#004269] dark:text-white"
-                                            >
+                                            <li className="text-[#004269] dark:text-white">
                                                 <Link to="/qabulxona">
                                                     <TextTranslate id="navDropInstitut_5" />
                                                 </Link>
