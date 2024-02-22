@@ -104,7 +104,7 @@ const MarkazlarCom = () => {
       },
       {
         value: "energetik",
-        link: "/markazlar/energtik",
+        link: "/markazlar/energetik",
       },
       {
         value: "rekYordamchi",

@@ -21,102 +21,142 @@ import XalqaroHamkorlik from "../pages/Tuzilma/Rektorat/XalqaroHamkorlik";
 import YoshlarMasalalariMvaM from "../pages/Tuzilma/Rektorat/YoshlarMasalalariMvaM";
 import Kafedralar from "../pages/Tuzilma/Kafedralar";
 import Markazlar from "../pages/Tuzilma/Markazlar";
+import RaqamliTalim from "../pages/Tuzilma/Markazlar/RaqamliTalim";
+import AxborotResurs from "../pages/Tuzilma/Markazlar/AxborotResurs";
+import BoshMuhandis from "../pages/Tuzilma/Markazlar/BoshMuhandis";
+import BoshEnergetik from "../pages/Tuzilma/Markazlar/BoshEnergetik";
+import RektorYordamchisi from "../pages/Tuzilma/Markazlar/RektorYordamchisi";
+import MatbuotKotibi from "../pages/Tuzilma/Markazlar/MatbuotKotibi";
+import Yuristkonsolt from "../pages/Tuzilma/Markazlar/Yuristkonsolt";
+import BoshAuditor from "../pages/Tuzilma/Markazlar/BoshAuditor";
 import Fakultetlar from "../pages/Tuzilma/Fakultetlar";
 import Bolimlar from "../pages/Tuzilma/Bolimlar";
 
 export const routes = [
-    {
-        element: <Root />,
-        path: '/',
-        children: [
-            {
-                element: <Main />,
-                path: '/'
-            },
-            {
-                element: <News />,
-                path: '/yangiliklar'
-            },
-            {
-                element: <New />,
-                path: '/yangiliklar/:id',
-            },
-            {
-                element: <VirQabulxona />,
-                path: '/qabulxona'
-            },
-            {
-                element: <VideoMaruzalar />,
-                path: '/videomaruza'
-            },
-            {
-                element: <Qabul />,
-                path: '/qabul'
-            },
-            {
-                element: <OnlineKuzatish />,
-                path: '/kuzatish'
-            },
-            {
-                element: <Rekvizitlar />,
-                path: '/rekvizitlar'
-            },
-            {
-                element: <InstitutTuzilmasi />,
-                path: '/institut-tuzilma'
-            },
-            {
-                element: <InstitutKengashi />,
-                path: '/institut-kengashi'
-            },
-            {
-                element: <InstitutHaqida />,
-                path: '/institut-haqida'
-            },
-            {
-                element: <Rektorat />,
-                path: '/rektorat'
-            },
-            {
-                element: <Markazlar />,
-                path: '/markazlar'
-            },
-            {
-                element: <Kafedralar />,
-                path: '/kafedralar'
-            },
-            {
-                element: <Fakultetlar />,
-                path: '/fakultetlar'
-            },
-            {
-                element: <Bolimlar />,
-                path: '/bolimlar'
-            },
-            {
-                element: <Rektor />,
-                path: '/rektorat/rektor'
-            },
-            {
-                element: <IlmiyIshlar />,
-                path: '/rektorat/ilmiy-ishlar'
-            },
-            {
-                element: <OquvIshlarBoyicha />,
-                path: '/rektorat/oquv-ishlari'
-            },
-            {
-                element: <MoliyaVaIqtisod />,
-                path: '/rektorat/moliya'
-            },
-            {
-                element: <XalqaroHamkorlik />,
-                path: '/rektorat/xalqaro'
-            },
-            {
-                element: <YoshlarMasalalariMvaM />,
-                path: '/rektorat/yoshlar-masalalari'
-            },
-        ],
-    },
+  {
+    element: <Root />,
+    path: "/",
+    children: [
+      {
+        element: <Main />,
+        path: "/",
+      },
+      {
+        element: <News />,
+        path: "/yangiliklar",
+      },
+      {
+        element: <New />,
+        path: "/yangiliklar/:id",
+      },
+      {
+        element: <VirQabulxona />,
+        path: "/qabulxona",
+      },
+      {
+        element: <VideoMaruzalar />,
+        path: "/videomaruza",
+      },
+      {
+        element: <Qabul />,
+        path: "/qabul",
+      },
+      {
+        element: <OnlineKuzatish />,
+        path: "/kuzatish",
+      },
+      {
+        element: <Rekvizitlar />,
+        path: "/rekvizitlar",
+      },
+      {
+        element: <InstitutTuzilmasi />,
+        path: "/institut-tuzilma",
+      },
+      {
+        element: <InstitutKengashi />,
+        path: "/institut-kengashi",
+      },
+      {
+        element: <InstitutHaqida />,
+        path: "/institut-haqida",
+      },
+      {
+        element: <Rektorat />,
+        path: "/rektorat",
+      },
+      {
+        element: <Markazlar />,
+        path: "/markazlar",
+      },
+      {
+        element: <Kafedralar />,
+        path: "/kafedralar",
+      },
+      {
+        element: <Fakultetlar />,
+        path: "/fakultetlar",
+      },
+      {
+        element: <Bolimlar />,
+        path: "/bolimlar",
+      },
+      {
+        element: <Rektor />,
+        path: "/rektorat/rektor",
+      },
+      {
+        element: <IlmiyIshlar />,
+        path: "/rektorat/ilmiy-ishlar",
+      },
+      {
+        element: <OquvIshlarBoyicha />,
+        path: "/rektorat/oquv-ishlari",
+      },
+      {
+        element: <MoliyaVaIqtisod />,
+        path: "/rektorat/moliya",
+      },
+      {
+        element: <XalqaroHamkorlik />,
+        path: "/rektorat/xalqaro",
+      },
+      {
+        element: <YoshlarMasalalariMvaM />,
+        path: "/rektorat/yoshlar-masalalari",
+      },
+      {
+        element: <RaqamliTalim />,
+        path: "/markazlar/raqamli-talim",
+      },
+      {
+        element: <AxborotResurs />,
+        path: "/markazlar/axborot",
+      },
+      {
+        element: <BoshMuhandis />,
+        path: "/markazlar/muhandis",
+      },
+      {
+        element: <BoshEnergetik />,
+        path: "/markazlar/energetik",
+      },
+      {
+        element: <RektorYordamchisi />,
+        path: "/markazlar/rektor-yordamchisi",
+      },
+      {
+        element: <MatbuotKotibi />,
+        path: "/markazlar/matbuot-kotib",
+      },
+      {
+        element: <Yuristkonsolt />,
+        path: "/markazlar/yuriskonsolt",
+      },
+      {
+        element: <BoshAuditor />,
+        path: "/markazlar/auditor",
+      },
+    ],
+  },
 ];

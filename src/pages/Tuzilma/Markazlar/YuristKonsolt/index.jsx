@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../../../components/Navbar'
-import YurisKonsoltCom from '../../../../components/YurisKonsoltCom'
+import YurisKonsoltCom from '../../../../components/YuristkonsoltCom'
 import Footer from "../../../../components/Footer"
 
 function YurisKonsolt() {
