@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../../../../components/Navbar'
+import BoshMuhandisCom from '../../../../components/BoshMuhandisCom'
+import Footer from "../../../../components/Footer"
 
 function BoshMuhandis() {
   return (
-    <div>BoshMuhandis</div>
+    <div>
+      <Navbar />
+      <BoshMuhandisCom />
+      <Footer />
+    </div>
   )
 }
 
-export default BoshMuhandis
+export default BoshMuhandis;

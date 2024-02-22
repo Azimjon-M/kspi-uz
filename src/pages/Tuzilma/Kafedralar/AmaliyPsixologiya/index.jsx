@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../../../../components/Navbar'
+import AmaliyPsixologiyaCom from '../../../../components/AmaliyPsixologiyaCom'
+import Footer from "../../../../components/Footer"
 
 function AmaliyPsixologiya() {
-    return (
-        <div>AmaliyPsixologiya</div>
-    )
+  return (
+    <div>
+      <Navbar />
+      <AmaliyPsixologiyaCom />
+      <Footer />
+    </div>
+  )
 }
 
-export default AmaliyPsixologiya
+export default AmaliyPsixologiya;

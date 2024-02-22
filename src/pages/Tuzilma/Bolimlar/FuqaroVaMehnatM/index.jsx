@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../../../../components/Navbar'
+import FuqaroVaMehnatMCom from '../../../../components/FuqaroVaMehnatMCom'
+import Footer from "../../../../components/Footer"
 
 function FuqaroVaMehnatM() {
-    return (
-        <div>FuqaroVaMehnatM</div>
-    )
+  return (
+    <div>
+      <Navbar />
+      <FuqaroVaMehnatMCom />
+      <Footer />
+    </div>
+  )
 }
 
-export default FuqaroVaMehnatM
+export default FuqaroVaMehnatM;

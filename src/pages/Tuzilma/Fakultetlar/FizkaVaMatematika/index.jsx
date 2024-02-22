@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../../../../components/Navbar'
+import FizikaVaMatematikaCom from '../../../../components/FizikaVaMatematikaCom'
+import Footer from "../../../../components/Footer"
 
-function FizkaVaMatematika() {
-    return (
-        <div>FizkaVaMatematika</div>
-    )
+function FizikaVaMatematika() {
+  return (
+    <div>
+      <Navbar />
+      <FizikaVaMatematikaCom />
+      <Footer />
+    </div>
+  )
 }
 
-export default FizkaVaMatematika
+export default FizikaVaMatematika;
