@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../../../../components/Navbar'
+import MaktabMenejmentCom from '../../../../components/MaktabMenejmentCom'
+import Footer from "../../../../components/Footer"
 
 function MaktabMenejment() {
   return (
-    <div>MaktabMenejment</div>
+    <div>
+      <Navbar />
+      <MaktabMenejmentCom />
+      <Footer />
+    </div>
   )
 }
 
-export default MaktabMenejment
+export default MaktabMenejment;

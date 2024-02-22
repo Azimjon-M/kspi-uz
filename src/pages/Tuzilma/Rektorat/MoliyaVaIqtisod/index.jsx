@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../../../../components/Navbar'
+import MoliyaVaIqtisodCom from '../../../../components/MoliyaVaIqtisodCom'
+import Footer from "../../../../components/Footer"
 
 function MoliyaVaIqtisod() {
   return (
-    <div>MoliyaVaIqtisod</div>
+    <div>
+      <Navbar />
+      <MoliyaVaIqtisodCom />
+      <Footer />
+    </div>
   )
 }
 
-export default MoliyaVaIqtisod
+export default MoliyaVaIqtisod;

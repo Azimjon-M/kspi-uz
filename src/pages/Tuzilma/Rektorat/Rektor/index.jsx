@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../../../../components/Navbar";
+import RektorCom from "../../../../components/RektorCom";
+import Footer from "../../../../components/Footer";
 
 function Rektor() {
   return (
-    <div>Rektor</div>
-  )
+    <div>
+      <Navbar />
+      <RektorCom />
+      <Footer />
+    </div>
+  );
 }
 
-export default Rektor
+export default Rektor;

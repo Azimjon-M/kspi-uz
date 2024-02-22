@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../../../../components/Navbar'
+import OzbekTiliCom from '../../../../components/OzbekTiliCom'
+import Footer from "../../../../components/Footer"
 
-function Ozbektili() {
+function OzbekTili() {
   return (
-    <div>Ozbektili</div>
+    <div>
+      <Navbar />
+      <OzbekTiliCom />
+      <Footer />
+    </div>
   )
 }
 
-export default Ozbektili
+export default OzbekTili;

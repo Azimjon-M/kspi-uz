@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-// import Aos from "aos";
-// import "aos/dist/aos.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import TextTranslate from "../TextTranslate";
 
@@ -10,7 +10,7 @@ const NewsHome = () => {
   const [firstNews, setFirstNews] = useState(null);
   const [news, setNews] = useState(null);
   useEffect(() => {
-    // Aos.init();
+    Aos.init();
     const loadPost = async () => {
       try {
         await axios
@@ -29,7 +29,7 @@ const NewsHome = () => {
     loadPost();
   }, []);
   return (
-    <div className="px-5 py-3 md:px-10 lg:px-20">
+    <div className="px-5 py-3 md:px-10 lg:px-20 xl:px-0 max-w-7xl mx-auto">
       <div className="md:flex md:items-center justify-between">
         {/* News heading */}
         <div className="mx-auto my-1 md:my-3">
@@ -72,7 +72,7 @@ const NewsHome = () => {
                   </div>
                   {/* News title */}
                   <div className="flex flex-col justify-between flex-grow px-2">
-                    <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-5 text-base text-[#004269] text-center dark:text-gray-300">
+                    <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-5 text-base lg:text-lg text-[#004269] text-center dark:text-gray-300">
                       {item.title}
                     </h2>
                     <div className="flex justify-center items-center">
@@ -99,7 +99,7 @@ const NewsHome = () => {
                   <div className="flex rounded-lg h-full dark:bg-gray-800 shadow-md hover:shadow-lg flex-col group/edit">
                     <div className="flex items-center mb-3 relative overflow-hidden">
                       <img
-                        className="w-full rounded group-hover/item:scale-105 ease-in duration-300 ..."
+                        className="w-full md:h-56 lg:h-40 xl:h-44 object-cover rounded group-hover/item:scale-105 ease-in duration-300 ..."
                         src={item.rasm}
                         alt="Sunset in the mountains"
                       />

@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../../../../components/Navbar'
+import BuhgalteryaCom from '../../../../components/BuhgalteryaCom'
+import Footer from "../../../../components/Footer"
 
 function Buhgalterya() {
-    return (
-        <div>Buhgalterya</div>
-    )
+  return (
+    <div>
+      <Navbar />
+      <BuhgalteryaCom />
+      <Footer />
+    </div>
+  )
 }
 
-export default Buhgalterya
+export default Buhgalterya;

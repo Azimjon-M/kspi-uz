@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../../../../components/Navbar'
+import RaqamliTalimCom from '../../../../components/RaqamliTalimCom'
+import Footer from "../../../../components/Footer"
 
 function RaqamliTalim() {
   return (
-    <div>RaqamliTalim</div>
+    <div>
+      <Navbar />
+      <RaqamliTalimCom />
+      <Footer />
+    </div>
   )
 }
 
-export default RaqamliTalim
+export default RaqamliTalim;
