@@ -142,7 +142,7 @@ function WarmThoughts() {
             {videos &&
               videos.map((video) => {
                 return (
-                  <SwiperSlide className="flex items-center justify-center relative group" key={video.id}>
+                  <SwiperSlide className="relative group w-64" key={video.id}>
                     <div className="before:content-[' ']  group-hover:before:opacity-100 before:opacity-0 before:transition-opacity before:duration-[350] before:z-[2] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:pointer-events-none before:bg-gradient-to-t from-black via-transparent to-transparent ">
                       <div className="w-full h-full group-hover:opacity-0 object-contain">
                         <img
