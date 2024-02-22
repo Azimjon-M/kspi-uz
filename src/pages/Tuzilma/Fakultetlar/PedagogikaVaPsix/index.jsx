@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../../../components/Navbar'
-import PedagogikaVaPsixCom from '../../../../components/PedagogikaVaPsixCom'
+import PedagogikaVaPsixFakCom from '../../../../components/PedagogikaVaPsixFakCom'
 import Footer from "../../../../components/Footer"
 
 function PedagogikaVaPsix() {
   return (
     <div>
       <Navbar />
-      <PedagogikaVaPsixCom />
+      <PedagogikaVaPsixFakCom />
       <Footer />
     </div>
   )

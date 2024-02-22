@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../../../../components/Navbar'
-import TabiyFanlarCom from '../../../../components/TabiyFanlarCom'
+import RusTiliVaAdabiyotiFakCom from '../../../../components/RusTiliVaAdabiyotiFakCom'
 import Footer from "../../../../components/Footer"
 
-function TabiyFanlar() {
+function RusTiliVaAdabiyoti() {
   return (
     <div>
       <Navbar />
-      <TabiyFanlarCom />
+      <RusTiliVaAdabiyotiFakCom />
       <Footer />
     </div>
   )
 }
 
-export default TabiyFanlar;
+export default RusTiliVaAdabiyoti;

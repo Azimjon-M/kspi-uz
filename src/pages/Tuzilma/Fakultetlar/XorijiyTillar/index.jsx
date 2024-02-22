@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../../../components/Navbar'
-import XorijiyTillarCom from '../../../../components/XorijiyTillarCom'
+import XorijiyTillarFakCom from '../../../../components/XorijiyTillarFakCom'
 import Footer from "../../../../components/Footer"
 
 function XorijiyTillar() {
   return (
     <div>
       <Navbar />
-      <XorijiyTillarCom />
+      <XorijiyTillarFakCom />
       <Footer />
     </div>
   )

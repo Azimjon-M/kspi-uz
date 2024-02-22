@@ -30,6 +30,17 @@ import MatbuotKotibi from "../pages/Tuzilma/Markazlar/MatbuotKotibi";
 import Yuristkonsolt from "../pages/Tuzilma/Markazlar/Yuristkonsolt";
 import BoshAuditor from "../pages/Tuzilma/Markazlar/BoshAuditor";
 import Fakultetlar from "../pages/Tuzilma/Fakultetlar";
+import BoshlangichTalim from "../pages/Tuzilma/Fakultetlar/BoshlangichTalim";
+import FizkaVaMatematika from "../pages/Tuzilma/Fakultetlar/FizkaVaMatematika";
+import JismoniyMadanyat from "../pages/Tuzilma/Fakultetlar/JismoniyMadanyat";
+import MaktabgachaTalim from "../pages/Tuzilma/Fakultetlar/MaktabgachaTalim";
+import MilliyHunarmand from "../pages/Tuzilma/Fakultetlar/MilliyHunarmand";
+import OzbekTiliAdabiyoti from "../pages/Tuzilma/Fakultetlar/OzbekTiliAdabiyoti";
+import PedagogikaVaPsix from "../pages/Tuzilma/Fakultetlar/PedagogikaVaPsix";
+import RusTiliVaAdabiyoti from "../pages/Tuzilma/Fakultetlar/RusTiliVaAdabiyoti";
+import TabiyFanlar from "../pages/Tuzilma/Fakultetlar/TabiyFanlar";
+import Tarix from "../pages/Tuzilma/Fakultetlar/Tarix";
+import XorijiyTillar from "../pages/Tuzilma/Fakultetlar/XorijiyTillar";
 import Bolimlar from "../pages/Tuzilma/Bolimlar";
 
 export const routes = [
@@ -156,6 +167,50 @@ export const routes = [
       {
         element: <BoshAuditor />,
         path: "/markazlar/auditor",
+      },
+      {
+        element: <FizkaVaMatematika />,
+        path: "/fakultetlar/fizika-matematika",
+      },
+      {
+        element: <BoshlangichTalim />,
+        path: "/fakultetlar/boshlangich",
+      },
+      {
+        element: <OzbekTiliAdabiyoti />,
+        path: "/fakultetlar/ozbek-tili",
+      },
+      {
+        element: <PedagogikaVaPsix />,
+        path: "/fakultetlar/pedagogika-psixologiya",
+      },
+      {
+        element: <JismoniyMadanyat />,
+        path: "/fakultetlar/jismoniy-madaniyat",
+      },
+      {
+        element: <MaktabgachaTalim />,
+        path: "/fakultetlar/maktabgacha-talim",
+      },
+      {
+        element: <MilliyHunarmand />,
+        path: "/fakultetlar/milliy-hunarmandchilik",
+      },
+      {
+        element: <XorijiyTillar />,
+        path: "/fakultetlar/xorijiy-tillar",
+      },
+      {
+        element: <TabiyFanlar />,
+        path: "/fakultetlar/tabiiy-fanlar",
+      },
+      {
+        element: <RusTiliVaAdabiyoti />,
+        path: "/fakultetlar/rus-tili",
+      },
+      {
+        element: <Tarix />,
+        path: "/fakultetlar/tarix",
       },
     ],
   },

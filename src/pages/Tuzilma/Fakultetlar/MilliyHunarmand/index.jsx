@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../../../components/Navbar'
-import MilliyHunarmandCom from '../../../../components/MilliyHunarmandCom'
+import MilliyHunarmandFakCom from '../../../../components/MilliyHunarmandFakCom'
 import Footer from "../../../../components/Footer"
 
 function MilliyHunarmand() {
   return (
     <div>
       <Navbar />
-      <MilliyHunarmandCom />
+      <MilliyHunarmandFakCom />
       <Footer />
     </div>
   )

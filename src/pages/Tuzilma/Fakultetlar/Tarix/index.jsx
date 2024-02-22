@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../../../components/Navbar'
-import TarixCom from '../../../../components/TarixCom'
+import TarixFakCom from '../../../../components/TarixFakCom'
 import Footer from "../../../../components/Footer"
 
 function Tarix() {
   return (
     <div>
       <Navbar />
-      <TarixCom />
+      <TarixFakCom />
       <Footer />
     </div>
   )

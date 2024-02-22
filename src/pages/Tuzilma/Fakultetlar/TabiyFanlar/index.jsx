@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../../../components/Navbar'
-import TabiyFanlarCom from '../../../../components/TabiyFanlarCom'
+import TabiyFanlarFakCom from '../../../../components/TabiyFanlarFakCom'
 import Footer from "../../../../components/Footer"
 
 function TabiyFanlar() {
   return (
     <div>
       <Navbar />
-      <TabiyFanlarCom />
+      <TabiyFanlarFakCom />
       <Footer />
     </div>
   )

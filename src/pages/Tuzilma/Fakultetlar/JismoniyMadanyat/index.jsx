@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../../../components/Navbar'
-import JismoniyMadaniyatCom from '../../../../components/JismoniyMadaniyatCom'
+import JismoniyMadaniyatFakCom from '../../../../components/JismoniyMadaniyatFakCom'
 import Footer from "../../../../components/Footer"
 
 function JismoniyMadaniyat() {
   return (
     <div>
       <Navbar />
-      <JismoniyMadaniyatCom />
+      <JismoniyMadaniyatFakCom />
       <Footer />
     </div>
   )

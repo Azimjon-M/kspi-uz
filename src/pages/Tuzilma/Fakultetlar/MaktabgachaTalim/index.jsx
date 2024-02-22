@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../../../components/Navbar'
-import MaktabgachaTalimCom from '../../../../components/MaktabgachaTalimCom'
+import MaktabgachaTalimFakCom from '../../../../components/MaktabgachaTalimFakCom'
 import Footer from "../../../../components/Footer"
 
 function MaktabgachaTalim() {
   return (
     <div>
       <Navbar />
-      <MaktabgachaTalimCom />
+      <MaktabgachaTalimFakCom />
       <Footer />
     </div>
   )
