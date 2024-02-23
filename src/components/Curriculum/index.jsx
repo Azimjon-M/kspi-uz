@@ -5,10 +5,10 @@ function Curriculum() {
   return (
     <div className="bg-slate-100">
       <div className="max-w-xs md:max-w-6xl mx-auto md:py-20 py-10">
-        <h1 className="md:text-3xl font-bold text-gray-600 text-center">
+        <h1 className="text-xl md:text-4xl font-bold text-[#004269] text-center">
           O'quv dasturlari
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:mx-10 lg:mx-0 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:mx-10 lg:mx-0 mt-6">
           <div className="flex w-full h-[140px] bg-white p-3 rounded-2xl duration-200 hover:scale-105 shadow-md hover:shadow-lg">
             <div className="w-[200px]">
               <img
@@ -18,9 +18,20 @@ function Curriculum() {
               />
             </div>
             <div className="pl-3 w-full">
-              <h2 className="text-md md:text-xl font-medium text-slate-600">Fanlar katalogi</h2>
-              <p className="text-sm flex items-center"><span><FaRegCalendarAlt className="mr-1"/></span>12.12.2023</p>
-              <div className="text-end"><button className="text-sm bg-[#004269] text-white mt-11 px-2 py-1 rounded-md">Batafsil</button></div>
+              <h2 className="text-md md:text-xl font-medium text-slate-600">
+                Fanlar katalogi
+              </h2>
+              <p className="text-sm flex items-center">
+                <span>
+                  <FaRegCalendarAlt className="mr-1" />
+                </span>
+                12.12.2023
+              </p>
+              <div className="text-end">
+                <button className="text-sm bg-[#004269] text-white mt-11 px-2 py-1 rounded-md">
+                  Batafsil
+                </button>
+              </div>
             </div>
           </div>
           <div className="flex h-[140px] bg-white p-3 rounded-2xl duration-200 hover:scale-105 shadow-md hover:shadow-lg">
@@ -32,9 +43,20 @@ function Curriculum() {
               />
             </div>
             <div className="pl-3 w-full">
-              <h2 className="text-md md:text-xl font-medium text-slate-600">Bakalavr malaka talablari</h2>
-              <p className="text-sm flex items-center"><span><FaRegCalendarAlt className="mr-1"/></span>12.12.2023</p>
-              <div className="text-end"><button className="text-sm bg-[#004269] text-white mt-5 md:mt-4 lg:mt-4 px-2 py-1 rounded-md">Batafsil</button></div>
+              <h2 className="text-md md:text-xl font-medium text-slate-600">
+                Bakalavr malaka talablari
+              </h2>
+              <p className="text-sm flex items-center">
+                <span>
+                  <FaRegCalendarAlt className="mr-1" />
+                </span>
+                12.12.2023
+              </p>
+              <div className="text-end">
+                <button className="text-sm bg-[#004269] text-white mt-5 md:mt-4 lg:mt-4 px-2 py-1 rounded-md">
+                  Batafsil
+                </button>
+              </div>
             </div>
           </div>
           <div className="flex h-[140px] bg-white bg p-3 rounded-2xl duration-200 hover:scale-105 shadow-md hover:shadow-lg">
@@ -46,9 +68,20 @@ function Curriculum() {
               />
             </div>
             <div className="pl-3 w-full">
-              <h2 className="text-md md:text-xl font-medium text-slate-600">Magistr malaka talablari</h2>
-              <p className="text-sm flex items-center"><span><FaRegCalendarAlt className="mr-1"/></span>12.12.2023</p>
-              <div className="text-end"><button className="text-sm bg-[#004269] text-white mt-5 md:mt-4 lg:mt-4 px-2 py-1 rounded-md">Batafsil</button></div>
+              <h2 className="text-md md:text-xl font-medium text-slate-600">
+                Magistr malaka talablari
+              </h2>
+              <p className="text-sm flex items-center">
+                <span>
+                  <FaRegCalendarAlt className="mr-1" />
+                </span>
+                12.12.2023
+              </p>
+              <div className="text-end">
+                <button className="text-sm bg-[#004269] text-white mt-5 md:mt-4 lg:mt-4 px-2 py-1 rounded-md">
+                  Batafsil
+                </button>
+              </div>
             </div>
           </div>
         </div>

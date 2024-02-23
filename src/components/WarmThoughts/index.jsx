@@ -137,14 +137,14 @@ function WarmThoughts() {
             effect={"cards"}
             grabCursor={true}
             modules={[EffectCards]}
-            className="h-[500px] max-w-72"
+            className="h-[439px] max-w-[246px] mt-5"
           >
             {videos &&
               videos.map((video) => {
                 return (
-                  <SwiperSlide className="relative group w-64" key={video.id}>
+                  <SwiperSlide className="relative group w-full" key={video.id}>
                     <div className="before:content-[' ']  group-hover:before:opacity-100 before:opacity-0 before:transition-opacity before:duration-[350] before:z-[2] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:pointer-events-none before:bg-gradient-to-t from-black via-transparent to-transparent ">
-                      <div className="w-full h-full group-hover:opacity-0 object-contain">
+                      <div className="w-full h-full group-hover:opacity-0">
                         <img
                           src={img1}
                           alt="Aquielle"
@@ -163,7 +163,7 @@ function WarmThoughts() {
                     </video>
                     <Link
                       onClick={() => handleClick(video.id)}
-                      className="w-full group absolute bottom-0 left-0 z-[4] px-5 py-6 "
+                      className="w-full group absolute bottom-0 left-0 z-[4] px-5 py-6"
                     >
                       <span
                         onClick={() => handleClick(video.id)}
