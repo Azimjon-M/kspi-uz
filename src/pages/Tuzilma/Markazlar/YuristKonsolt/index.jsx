@@ -7,7 +7,7 @@ function YurisKonsolt() {
   return (
     <div>
       <Navbar />
-      <YurisKonsoltCom />
+        <YurisKonsoltCom />
       <Footer />
     </div>
   )
