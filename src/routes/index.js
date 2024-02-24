@@ -42,6 +42,7 @@ import TabiyFanlar from "../pages/Tuzilma/Fakultetlar/TabiyFanlar";
 import Tarix from "../pages/Tuzilma/Fakultetlar/Tarix";
 import XorijiyTillar from "../pages/Tuzilma/Fakultetlar/XorijiyTillar";
 import Bolimlar from "../pages/Tuzilma/Bolimlar";
+import Bakalavriyat from "../pages/Talabalar/Bakalavriyat"
 
 export const routes = [
   {
@@ -212,6 +213,10 @@ export const routes = [
         element: <Tarix />,
         path: "/fakultetlar/tarix",
       },
+      {
+        element: <Bakalavriyat/>,
+        path: "/bakalavriyat",
+      }
     ],
   },
 ];
