@@ -24,6 +24,10 @@ const FakultetlarCom = () => {
         lavozim: "Fizika va matemtika fakulteti dekani",
         ism: "Poʻlatov Sharifjon Yigitaliyevich",
         tel: "+998 99 998 00 57",
+        mutahasisligi: "Texnika fanlari doktori, dotsent.",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: raqamliImg,
       },
       {
@@ -32,6 +36,10 @@ const FakultetlarCom = () => {
         lavozim: "Boshlang'ich ta'lim fakulteti dekani",
         ism: "Jamoliddinova Dilnoza Mirxojiddinovna",
         tel: "+998 91 323 04 77",
+        mutahasisligi: "Professor, Filoligiya fanlari doktori (DcS)",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi.",
         img: oquv,
       },
       {
@@ -40,6 +48,10 @@ const FakultetlarCom = () => {
         lavozim: "O'zbek tili va adabiyoti fakulteti dekani",
         ism: "Hasanova Barnoxon Yusupovna",
         tel: "+998 97 334 25 52",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: muhandis,
       },
       {
@@ -48,6 +60,10 @@ const FakultetlarCom = () => {
         lavozim: "Pedagogika va psixologiya fakulteti dekani",
         ism: "Erkaboyeva Nigora Shermatovna",
         tel: "+998 94 495 00 93",
+        mutahasisligi: "Pedagogika fanlar doctori, Professor",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: energetik,
       },
       {
@@ -56,6 +72,10 @@ const FakultetlarCom = () => {
         lavozim: "Jismoniy madaniyat fakulteti dekani",
         ism: "Talipjanov Alijon Akramovich",
         tel: "+998 97 309 86 68",
+        mutahasisligi: "Pedagogika fanlar nomzodi, dotsent",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti!",
         img: xalqaro,
       },
       {
@@ -64,6 +84,10 @@ const FakultetlarCom = () => {
         lavozim: "Maktabgacha ta'lim fakulteti dekani",
         ism: "Abdullayev Oybek Qurbonovich",
         tel: "+998 97 309 86 68",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat",
         img: xalqaro,
       },
       {
@@ -72,6 +96,10 @@ const FakultetlarCom = () => {
         lavozim: "Milliy hunarmandchilik va amaliy san'at fakulteti dekani",
         ism: "Umrzaqov Behzod Bo‘ronovich",
         tel: "+998 91 201 98 73",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: xalqaro,
       },
       {
@@ -80,6 +108,10 @@ const FakultetlarCom = () => {
         lavozim: "Xorijiy tillar fakulteti dekani",
         ism: "Karimova Vasila Vahobovna",
         tel: "+998 94 440 83 31",
+        mutahasisligi: "Filologiya fanlari bo‘yicha falsafa doktori (PhD)",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: xalqaro,
       },
       {
@@ -88,6 +120,10 @@ const FakultetlarCom = () => {
         lavozim: "Tabiiy tillar fakulteti dekani",
         ism: "Xo‘jayev Vaxobjon Umarovich",
         tel: "+998 94 440 83 31",
+        mutahasisligi: "Kimyo fanlari doktori, professor.",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti!",
         img: xalqaro,
       },
       {
@@ -96,6 +132,10 @@ const FakultetlarCom = () => {
         lavozim: "Rus tili va adabiyoti fakulteti dekani",
         ism: "Rasulova Matlubaxon Xamzayevna",
         tel: "+998 94 440 83 31",
+        mutahasisligi: "Filologiya fanlari nomzodi, dotsent",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat la",
         img: xalqaro,
       },
       {
@@ -104,6 +144,10 @@ const FakultetlarCom = () => {
         lavozim: "Tarix fakulteti dekani",
         ism: "O‘rinboyev Davlatjon Baxtiyorovich",
         tel: "+998 94 440 83 31",
+        mutahasisligi: "Falsafa fanlari bo‘yicha falsafa doktori (PhD)",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: xalqaro,
       },
     ],
@@ -210,39 +254,64 @@ const FakultetlarCom = () => {
             </TabsHeader>
           </div>
 
-          <div>
-            <TabsBody className="p-0 lg:w-[600px] xl:w-[800px]">
+          <div className="lg:w-[600px] xl:w-[800px]">
+            <TabsBody className="p-0 mb-3">
               {filteredData.map(
-                ({ value, lavozim, img = "", ism, tel, link }) => (
+                ({
+                  value,
+                  lavozim,
+                  img = "",
+                  ism,
+                  tel,
+                  link,
+                  qabul,
+                  mutahasisligi,
+                  vazifasi,
+                }) => (
                   <TabPanel key={value} value={value} className="py-0">
-                    <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl max-w-96 lg:max-w-full">
-                      <div className="relative -mt-6 px-3 lg:px-0 md:h-56 lg:h-auto lg:my-auto lg:overflow-hidden rounded-xl">
-                        <img
-                          src={img}
-                          alt={lavozim}
-                          className="w-full mb-3 lg:mb-0 h-56 lg:w-[320px] lg:h-[340px] xl:w-[300px] xl:h-[340px] object-cover rounded"
-                        />
+                    <div className="bg-white shadow-md bg-clip-border rounded-xl px-3">
+                      <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 max-w-96 lg:max-w-full border-b-2 border-[#004269] py-3">
+                        <div className="relative -mt-6 px-3 lg:px-0 md:h-56 lg:h-auto lg:my-auto lg:overflow-hidden rounded-xl md:mb-3 lg:mb-0">
+                          <img
+                            src={img}
+                            alt={lavozim}
+                            className="w-full mb-3 lg:mb-0 h-56 lg:w-[240px] lg:h-[270px] xl:w-[250px] xl:h-[280px] object-cover rounded"
+                          />
+                        </div>
+                        <div className="flex flex-col justify-between xl:py-5 xl:mr-5">
+                          <div className="px-3">
+                            <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start">
+                              {lavozim}
+                            </h3>
+                            <h4 className="block mb-2 font-sans text-lg xl:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center lg:text-start">
+                              {ism}
+                            </h4>
+                            <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                              {mutahasisligi}
+                            </h4>
+                            <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                              Qabul kunlari: {qabul}
+                            </h4>
+                            <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                              Telefon: {tel}
+                            </h4>
+                          </div>
+                          <div className="p-3 pt-0 lg:place-items-end text-center lg:text-start">
+                            <Link
+                              to={link}
+                              className="btn align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-[#004269] text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:bg-[#004269]/90 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                            >
+                              Batafsil ...
+                            </Link>
+                          </div>
+                        </div>
                       </div>
-                      <div className="flex flex-col justify-between xl:py-5 xl:mr-5">
-                        <div className="px-3">
-                          <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start">
-                            {lavozim}
-                          </h3>
-                          <h4 className="block mb-2 font-sans text-lg xl:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center lg:text-start">
-                            {ism}
-                          </h4>
-                          <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                            Telefon: {tel}
-                          </h4>
+                      <div className="m-3 max-w-96 lg:max-w-full">
+                        <div className="line-clamp-5 md:line-clamp-3">
+                          <b>{lavozim} vazifasi: </b>
+                          <span>{vazifasi}</span>
                         </div>
-                        <div className="p-3 pt-0 lg:place-items-end text-center lg:text-start">
-                          <Link
-                            to={link}
-                            className="btn align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-[#004269] text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:bg-[#004269]/90 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
-                          >
-                            Batafsil ...
-                          </Link>
-                        </div>
+                        <b className="cursor-pointer ">Batafsil ... </b>
                       </div>
                     </div>
                   </TabPanel>
