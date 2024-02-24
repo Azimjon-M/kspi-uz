@@ -14,8 +14,16 @@ import xalqaro from "../../assets/images/xalqaro.jpg";
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { FaAngleDown } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa";
 
 const KafedralarCom = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const toggleShowAll = () => {
+    setShowAll(!showAll);
+  };
+
   const data = useMemo(
     () => [
       {
@@ -480,20 +488,31 @@ const KafedralarCom = () => {
         >
           <div>
             <TabsHeader className="max-w-96 md:max-w-80 lg:w-96 border-2 border-[#004269] p-5 mb-5">
-              {filteredData.map(({ label, value }, idx) => (
-                <Tab
-                  className="flex flex-col items-start text-start font-semibold"
-                  key={value}
-                  value={value}
-                >
-                  <div id={idx} className="flex items-center">
-                    <div className="text-[#004269] mr-3">
-                      <IoIosArrowForward />
+              {filteredData
+                .slice(0, showAll ? filteredData.length : 8)
+                .map(({ label, value }, idx) => (
+                  <Tab
+                    className="flex flex-col items-start text-start font-semibold"
+                    key={value}
+                    value={value}
+                  >
+                    <div id={idx} className="flex items-center">
+                      <div className="text-[#004269] mr-3">
+                        <IoIosArrowForward />
+                      </div>
+                      {label}
                     </div>
-                    {label}
-                  </div>
-                </Tab>
-              ))}
+                  </Tab>
+                ))}
+              <div className="flex items-center justify-between px-2">
+                <h2 className="text-xl font-semibold">Kafedralar</h2>
+                <button
+                  onClick={toggleShowAll}
+                  className="text-[#004269] focus:outline-none"
+                >
+                  {!showAll ? <FaAngleDown /> : <FaAngleUp />}
+                </button>
+              </div>
             </TabsHeader>
           </div>
 
