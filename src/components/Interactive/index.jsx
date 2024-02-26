@@ -18,7 +18,7 @@ function Interactive() {
                 to="/qabulxona"
                 className="flex flex-col justify-center items-center group md:my-9 my-3 sm:border-r border-[#ebebeb] text-center"
               >
-                <RiComputerLine className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+                <RiComputerLine className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-200 ease-linear" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                   <TextTranslate id="intVertualQabulxona" />
                 </h2>
@@ -30,7 +30,7 @@ function Interactive() {
                 target="blank"
                 className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center"
               >
-                <GiBookshelf className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+                <GiBookshelf className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-200 ease-linear" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                   <TextTranslate id="intEKutubxona" />
                 </h2>
@@ -41,7 +41,7 @@ function Interactive() {
                 to="http://moodle.kspi.uz/doc/page/login.asp?_1707299150792"
                 className="flex flex-col justify-center items-center group md:my-9 my-3 w-full sm:border-r border-[#ebebeb] text-center"
               >
-                <PiChalkboardTeacherFill className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+                <PiChalkboardTeacherFill className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-200 ease-linear" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                   <TextTranslate id="intMasofaviyTalim" />
                 </h2>
@@ -52,7 +52,7 @@ function Interactive() {
                 to="/videomaruza"
                 className="flex flex-col justify-center items-center group md:my-9 my-3 w-full md:border-r border-[#ebebeb] text-center"
               >
-                <MdOutlineLiveTv className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+                <MdOutlineLiveTv className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-200 ease-linear" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                   <TextTranslate id="intVideoMaruzalar" />
                 </h2>
@@ -63,7 +63,7 @@ function Interactive() {
                 to="/qabul"
                 className="flex flex-col justify-center items-center group md:my-9 my-3 w-full sm:border-r border-[#ebebeb] text-center"
               >
-                <FaRegCalendarCheck className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+                <FaRegCalendarCheck className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-200 ease-linear" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                   <TextTranslate id="intQabul" />
                 </h2>
@@ -74,7 +74,7 @@ function Interactive() {
                 to="/kuzatish"
                 className="flex flex-col justify-center items-center group md:my-9 my-3 w-full text-center"
               >
-                <FaRegEye className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-75 ease-in-out" />
+                <FaRegEye className="text-[40px] md:text-[50px] text-[#a3a1a2] group-hover:scale-125 group-hover:text-[#004269] transition-all duration-200 ease-linear" />
                 <h2 className="uppercase text-xs md:text-base mt-2 text-[#004269] font-bold">
                   <TextTranslate id="intImtixonlarniKuzatish" />
                 </h2>
