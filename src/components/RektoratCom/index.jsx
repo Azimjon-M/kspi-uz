@@ -230,11 +230,10 @@ const RektoratCom = () => {
                         </div>
                       </div>
                       <div className="m-3 max-w-96 lg:max-w-full">
-                        <div className="line-clamp-5 md:line-clamp-3">
+                        <div>
                           <b>{lavozim} vazifasi: </b>
                           <span>{vazifasi}</span>
                         </div>
-                        <b className="cursor-pointer ">Batafsil ... </b>
                       </div>
                     </div>
                   </TabPanel>
