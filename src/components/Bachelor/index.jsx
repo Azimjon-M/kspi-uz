@@ -4,6 +4,7 @@ import { BsJournalCheck } from "react-icons/bs";
 import { GiMaterialsScience } from "react-icons/gi";
 import { GrCatalog } from "react-icons/gr";
 import bachlorImg from "../../assets/images/bachelor.jpg";
+import { Link } from "react-router-dom";
 
 function Bachelor() {
   return (
@@ -32,38 +33,38 @@ function Bachelor() {
         <img src={bachlorImg} className="w-full h-full" alt="" />
       </div>
       <div className="max-w-7xl mx-5 xl:mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-5 -mt-8 sm:-mt-10 lg:-mt-28 mb-16">
-        <div className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform">
+        <Link to="/dtsvaMalaka" className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform">
           <div>
             <MdOutlineLibraryBooks className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
               DTS va malaka talablari
             </p>
           </div>
-        </div>
-        <div className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform">
+        </Link>
+        <Link to="/oquvRejalari" className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform">
           <div>
             <BsJournalCheck className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
               O'quv rejalar
             </p>
           </div>
-        </div>
-        <div className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform">
+        </Link>
+        <Link to="/fanDasturlari" className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform">
           <div>
             <GiMaterialsScience className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
               Fan dasturlari
             </p>
           </div>
-        </div>
-        <div className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform">
+        </Link>
+        <Link to="/fanKatalogi" className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform">
           <div>
             <GrCatalog className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
               Fanlar katalogi
             </p>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

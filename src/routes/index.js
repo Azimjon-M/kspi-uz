@@ -43,6 +43,10 @@ import Tarix from "../pages/Tuzilma/Fakultetlar/Tarix";
 import XorijiyTillar from "../pages/Tuzilma/Fakultetlar/XorijiyTillar";
 import Bolimlar from "../pages/Tuzilma/Bolimlar";
 import Bakalavriyat from "../pages/Talabalar/Bakalavriyat"
+import DTSvaMalaka from "../pages/Talabalar/Bakalavriyat/DTSvaMalaka";
+import OquvRejalari from "../pages/Talabalar/Bakalavriyat/OquvRejalari";
+import FanDasturlari from "../pages/Talabalar/Bakalavriyat/FanDasturlari";
+import FanKatalogi from "../pages/Talabalar/Bakalavriyat/FanKatalogi";
 
 export const routes = [
   {
@@ -213,10 +217,28 @@ export const routes = [
         element: <Tarix />,
         path: "/fakultetlar/tarix",
       },
+
+      //-------Talabalar---------
       {
         element: <Bakalavriyat/>,
         path: "/bakalavriyat",
-      }
+      },
+      {
+        element: <DTSvaMalaka/>,
+        path: "/dtsvaMalaka",
+      },
+      {
+        element: <OquvRejalari/>,
+        path: "/oquvRejalari",
+      },
+      {
+        element: <FanDasturlari/>,
+        path: "/fanDasturlari",
+      },
+      {
+        element: <FanKatalogi/>,
+        path: "/fanKatalogi",
+      },
     ],
   },
 ];
