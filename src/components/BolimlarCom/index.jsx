@@ -416,7 +416,7 @@ const Bolimlar = () => {
                   onClick={toggleShowAll}
                   className="text-[#004269] focus:outline-none"
                 >
-                  {!showAll ? <FaAngleDown /> : <FaAngleUp />}
+                  {!showAll ? <FaAngleDown className="border-2 border-[#004269] rounded-full" /> : <FaAngleUp className="border-2 border-[#004269] rounded-full" />}
                 </button>
               </div>
             </TabsHeader>
