@@ -402,7 +402,7 @@ function Navbar() {
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/magistratura">
                                                 <TextTranslate id="navDropTalabalar_2" />
                                             </Link>
                                         </li>

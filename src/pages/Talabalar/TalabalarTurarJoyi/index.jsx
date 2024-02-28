@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from '../../../components/Navbar'
+import Footer from '../../../components/Footer'
 
 function TalabalarTurarJoyi() {
     return (
-        <div>TalabalarTurarJoyi</div>
+        <div>
+            <Navbar/>
+            <Footer/>
+        </div>
     )
 }
 

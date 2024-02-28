@@ -1,5 +1,154 @@
 import React, { useState } from "react";
-// import { PiStudentFill } from "react-icons/pi";
+import { PiStudentFill } from "react-icons/pi";
+import { LuDownload } from "react-icons/lu";
+import DTSvaMalakaPDF from "../../assets/pdf/DTSvaMalaka2020.pdf";
+
+const data1PDF = [
+  {
+    id: 1,
+    sana: "07.09.2023",
+    name: "Oliy ta'limning davlat ta'lim standarti 2020",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 2,
+    sana: "07.09.2023",
+    name: "Oliy ta'limning davlat ta'lim standarti 2021",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 3,
+    sana: "07.09.2023",
+    name: "60110300-Maktabgacha ta'lim psixologiyasi va pedagogikasi malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 4,
+    sana: "07.09.2023",
+    name: "60112000-Chaqiriqqacha harbiy ta'lim malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 5,
+    sana: "07.09.2023",
+    name: "60110100-Pedagogika(Qo'shimcha tarbiya fani o'qituvchisi) malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 6,
+    sana: "07.09.2023",
+    name: "60110200-Maktabgacha ta'lim malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 7,
+    sana: "07.09.2023",
+    name: "60110600-Matematika va informatika malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 8,
+    sana: "07.09.2023",
+    name: "60110700-Fizika va astronomiya malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 9,
+    sana: "07.09.2023",
+    name: "60110800-Kimyo malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 10,
+    sana: "07.09.2023",
+    name: "60110300-Biologiya malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 11,
+    sana: "07.09.2023",
+    name: "60111000-Geografiya va iqtisodiy bilim asoslari malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 12,
+    sana: "07.09.2023",
+    name: "60111100-Tarix malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 13,
+    sana: "07.09.2023",
+    name: "60111200-Tasviriy san'at va muxandislik grafikasi malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 14,
+    sana: "07.09.2023",
+    name: "60111300-Musiqa ta'lim malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 15,
+    sana: "07.09.2023",
+    name: "60111400-O'zbek tili adabiyoti malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+];
+
+const data2PDF = [
+  {
+    id: 1,
+    sana: "07.09.2023",
+    name: "Oliy ta'limning davlat ta'lim standarti 2020",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 2,
+    sana: "07.09.2023",
+    name: "Oliy ta'limning davlat ta'lim standarti 2021",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 3,
+    sana: "07.09.2023",
+    name: "60110300-Maktabgacha ta'lim psixologiyasi va pedagogikasi malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+];
+
+const data3PDF = [
+  {
+    id: 1,
+    sana: "07.09.2023",
+    name: "Oliy ta'limning davlat ta'lim standarti 2020",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 2,
+    sana: "07.09.2023",
+    name: "Oliy ta'limning davlat ta'lim standarti 2021",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 3,
+    sana: "07.09.2023",
+    name: "60110300-Maktabgacha ta'lim psixologiyasi va pedagogikasi malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 4,
+    sana: "07.09.2023",
+    name: "60110300-Maktabgacha ta'lim psixologiyasi va pedagogikasi malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+  {
+    id: 5,
+    sana: "07.09.2023",
+    name: "60110300-Maktabgacha ta'lim psixologiyasi va pedagogikasi malaka talablari",
+    pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
+  },
+];
 
 function OquvRejalariCom() {
   const [showContent, setShowContent] = useState(1);
@@ -9,41 +158,43 @@ function OquvRejalariCom() {
   };
 
   return (
-    <div className="max-w-7xl xl:mx-auto py-20 mx-4">
-      <div className="md:flex">
+    <div className="max-w-7xl xl:mx-auto py-10 mx-4 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
+      <h1 className="text-md text-4xl font-bold text-[#004269] text-center">
+        O'quv rejalari
+      </h1>
+      <div className="md:flex mt-4 md:mt-8">
         <ul className="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
           <li>
             <button
               onClick={() => handleClick(1)}
-              className="inline-flex items-center px-4 py-3 text-white bg-blue-700 rounded-lg w-full dark:bg-blue-600"
+              className={`${
+                showContent === 1 ? "bg-blue-500 text-white" : ""
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
-              <svg
-                className="w-4 h-4 me-2 text-white"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
-              </svg>
-              Profile
+              <PiStudentFill className="w-4 h-4 me-2" />
+              2-kurs o'quv rejasi
             </button>
           </li>
           <li>
             <button
               onClick={() => handleClick(2)}
-              className={`${ showContent === 2 ? "bg-orange-700" : ""} inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+              className={`${
+                showContent === 2 ? "bg-blue-500 text-white" : ""
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
-              <svg
-                className="w-4 h-4 me-2 text-gray-500 dark:text-gray-400"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 18 18"
-              >
-                <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
-              </svg>
-              Dashboard
+              <PiStudentFill className="w-4 h-4 me-2" />
+              3-kurs o'quv rejasi
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 3 ? "bg-blue-500 text-white" : ""
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              4-kurs o'quv rejasi
             </button>
           </li>
         </ul>
@@ -53,32 +204,183 @@ function OquvRejalariCom() {
               showContent === 1 ? "" : "hidden"
             } p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full`}
           >
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-              Profile Tab
-            </h3>
-            <p className="mb-2">
-              This is some placeholder content the Profile tab's associated
-              content, clicking another tab will toggle the visibility of this
-              one for the next.
-            </p>
-            <p>
-              The tab JavaScript swaps classes to control the content visibility
-              and styling.
-            </p>
+            <div className="relative shadow-md overflow-x-auto rounded-lg">
+              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead className="md:text-base text-white uppercase bg-blue-500 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                    <th scope="col" className="pl-2 md:pl-6 py-4">
+                      №
+                    </th>
+                    <th scope="col" className="px-2 md:px-6 py-4">
+                      Hujjat nomi
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-2 md:px-6 py-4 hidden md:block"
+                    >
+                      Sana
+                    </th>
+                    <th scope="col" className="px-2 md:px-6 py-4">
+                      Batafsil
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="text-base">
+                  {data1PDF &&
+                    data1PDF.map((item) => {
+                      const { id, sana, name } = item;
+                      return (
+                        <tr
+                          key={id}
+                          className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-200"
+                        >
+                          <th
+                            scope="row"
+                            className="pl-2 md:pl-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            {id}
+                          </th>
+                          <td className="px-2 md:px-6 py-4">{name}</td>
+                          <td className="px-2 md:px-6 py-4 hidden md:block">
+                            {sana}
+                          </td>
+                          <td className="px-2 md:px-6 py-41">
+                            <a
+                              href={DTSvaMalakaPDF}
+                              className="text-blue-600 dark:text-blue-500"
+                              target="blank"
+                            >
+                              <LuDownload className="text-xl" />
+                            </a>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                </tbody>
+              </table>
+            </div>
           </div>
           <div
             className={`${
               showContent === 2 ? "" : "hidden"
             } p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full`}
           >
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-              Dashboard
-            </h3>
-            <p className="mb-2">
-              This is some placeholder content the Profile tab's associated
-              content, clicking another tab will toggle the visibility of this
-              one for the next.
-            </p>
+            <div className="relative shadow-md overflow-x-auto rounded-lg">
+              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead className="md:text-base text-white uppercase bg-blue-500 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                    <th scope="col" className="pl-2 md:pl-6 py-4">
+                      №
+                    </th>
+                    <th scope="col" className="px-2 md:px-6 py-4">
+                      Hujjat nomi
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-2 md:px-6 py-4 hidden md:block"
+                    >
+                      Sana
+                    </th>
+                    <th scope="col" className="px-2 md:px-6 py-4">
+                      Batafsil
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="text-base">
+                  {data2PDF &&
+                    data2PDF.map((item) => {
+                      const { id, sana, name } = item;
+                      return (
+                        <tr
+                          key={id}
+                          className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-200"
+                        >
+                          <th
+                            scope="row"
+                            className="pl-2 md:pl-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            {id}
+                          </th>
+                          <td className="px-2 md:px-6 py-4">{name}</td>
+                          <td className="px-2 md:px-6 py-4 hidden md:block">
+                            {sana}
+                          </td>
+                          <td className="px-2 md:px-6 py-41">
+                            <a
+                              href={DTSvaMalakaPDF}
+                              className="text-blue-600 dark:text-blue-500"
+                              target="blank"
+                            >
+                              <LuDownload className="text-xl" />
+                            </a>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            className={`${
+              showContent === 3 ? "" : "hidden"
+            } p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full`}
+          >
+            <div className="relative shadow-md overflow-x-auto rounded-lg">
+              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead className="md:text-base text-white uppercase bg-blue-500 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                    <th scope="col" className="pl-2 md:pl-6 py-4">
+                      №
+                    </th>
+                    <th scope="col" className="px-2 md:px-6 py-4">
+                      Hujjat nomi
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-2 md:px-6 py-4 hidden md:block"
+                    >
+                      Sana
+                    </th>
+                    <th scope="col" className="px-2 md:px-6 py-4">
+                      Batafsil
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="text-base">
+                  {data3PDF &&
+                    data3PDF.map((item) => {
+                      const { id, sana, name } = item;
+                      return (
+                        <tr
+                          key={id}
+                          className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-200"
+                        >
+                          <th
+                            scope="row"
+                            className="pl-2 md:pl-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            {id}
+                          </th>
+                          <td className="px-2 md:px-6 py-4">{name}</td>
+                          <td className="px-2 md:px-6 py-4 hidden md:block">
+                            {sana}
+                          </td>
+                          <td className="px-2 md:px-6 py-41">
+                            <a
+                              href={DTSvaMalakaPDF}
+                              className="text-blue-600 dark:text-blue-500"
+                              target="blank"
+                            >
+                              <LuDownload className="text-xl" />
+                            </a>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
