@@ -58,7 +58,7 @@ function AbiturientXorijiyCom() {
         </h1>
         <div className="relative shadow-md overflow-x-auto sm:rounded-lg mx-5 mt-10">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead className="md:text-base text-white uppercase bg-[#377DFF] dark:bg-gray-700 dark:text-gray-400">
+            <thead className="md:text-base text-white uppercase bg-[#004269] dark:bg-gray-700 dark:text-gray-400">
               <tr>
                 <th scope="col" className="pl-2 md:pl-6 py-4">
                   №
@@ -93,7 +93,7 @@ function AbiturientXorijiyCom() {
                       <td className="px-2 md:px-6 py-4 mx-auto flex justify-center items-center">
                         <a
                           href={doc}
-                          className="text-blue-600 dark:text-blue-500"
+                          className="text-[#004269] dark:text-blue-500"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
