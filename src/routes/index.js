@@ -47,6 +47,11 @@ import DTSvaMalaka from "../pages/Talabalar/Bakalavriyat/DTSvaMalaka";
 import OquvRejalari from "../pages/Talabalar/Bakalavriyat/OquvRejalari";
 import FanDasturlari from "../pages/Talabalar/Bakalavriyat/FanDasturlari";
 import FanKatalogi from "../pages/Talabalar/Bakalavriyat/FanKatalogi";
+import AbiturientBakalavriat from "../pages/Abiturient/Bakalavryat"
+import AbiturientMagistratura from "../pages/Abiturient/Magistratura"
+import AbiturientCallMarkaz from "../pages/Abiturient/CallMarkaz"
+import AbiturientXorijiyTalaba from "../pages/Abiturient/HorijiyTalabalarQabul"
+import AbiturientMeyoriy from "../pages/Abiturient/MeyyoriyHuquqiyHuj"
 
 export const routes = [
   {
@@ -65,6 +70,8 @@ export const routes = [
         element: <New />,
         path: "/yangiliklar/:id",
       },
+
+      // Home Interactive xizmatlar
       {
         element: <VirQabulxona />,
         path: "/qabulxona",
@@ -85,6 +92,8 @@ export const routes = [
         element: <Rekvizitlar />,
         path: "/rekvizitlar",
       },
+
+      // Navbar Institut
       {
         element: <InstitutTuzilmasi />,
         path: "/institut-tuzilma",
@@ -97,6 +106,8 @@ export const routes = [
         element: <InstitutHaqida />,
         path: "/institut-haqida",
       },
+
+      // Navbar Tuzilma
       {
         element: <Rektorat />,
         path: "/rektorat",
@@ -238,6 +249,28 @@ export const routes = [
       {
         element: <FanKatalogi/>,
         path: "/fanKatalogi",
+      },
+
+      // Navbar Abiturient
+      {
+        element: <AbiturientBakalavriat/>,
+        path: "/abiturient-bakalavriat",
+      },
+      {
+        element: <AbiturientMagistratura/>,
+        path: "/abiturient-magistratura",
+      },
+      {
+        element: <AbiturientCallMarkaz/>,
+        path: "/call-markaz",
+      },
+      {
+        element: <AbiturientMeyoriy/>,
+        path: "/abiturient-meyoriy",
+      },
+      {
+        element: <AbiturientXorijiyTalaba/>,
+        path: "/abiturient-xorijiy-talabalar",
       },
     ],
   },
