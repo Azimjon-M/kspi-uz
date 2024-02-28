@@ -21,13 +21,7 @@ function AbiturientBakalavrCom() {
             className="text-gray-100 text-2xl text-center hidden md:block md:px-12 lg:px-32 xl:px-44 mt-5 leading-10 text-shadaw"
             style={{ textShadow: "0 0 30px rgba(0,0,0, 1)" }}
           >
-            Bakalavriat talabalaridan QDPIni nimadan ajratib turishini so'rang
-            va siz 9560 xil javob olasiz. Buning sababi, hech qanday tajriba
-            QDPI ta'limini aniqlamaydi. Buning o'rniga, keng ko'lamli ta'lim
-            innovatsion imkoniyatlar va tajribalar bitiruvchilarni yetuk
-            liderlar, mustaqil fikrlovchilar va ta'sir ko'rsatishga
-            bag'ishlangan faol global fuqarolar sifatida rivojlanishiga
-            tayyorlaydi.
+            QDPI turli xil qarashlar, tajribalar va istiqbollarga hissa qo'shadigan iqtidorli, yuqori natijalarga erishgan talabalarni qabul qiladi. Biz sizni ushbu faol akademik hamjamiyatga qanday qo'shilish haqida ko'proq ma'lumot olishga taklif qilamiz.
           </p>
         </div>
         <img src={bachlorImg} className="w-full h-full" alt="" />
