@@ -434,32 +434,32 @@ function Navbar() {
                                         className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/abiturient-bakalavriat">
                                                 <TextTranslate id="navDropAbiturient_1" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/abiturient-magistratura">
                                                 <TextTranslate id="navDropAbiturient_2" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/abiturient-xorijiy-talabalar">
                                                 <TextTranslate id="navDropAbiturient_3" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/call-markaz">
                                                 <TextTranslate id="navDropAbiturient_4" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="/abiturient-meyoriy">
                                                 <TextTranslate id="navDropAbiturient_5" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="">
+                                            <Link to="https://my.uzbmb.uz/" target="blank">
                                                 <TextTranslate id="navDropAbiturient_6" />
                                             </Link>
                                         </li>
@@ -780,32 +780,32 @@ function Navbar() {
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="">
+                                                <Link to="/abiturient-bakalavriat">
                                                     <TextTranslate id="navDropAbiturient_1" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="">
+                                                <Link to="/abiturient-magistratura">
                                                     <TextTranslate id="navDropAbiturient_2" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="">
+                                                <Link to="/abiturient-xorijiy-talabalar">
                                                     <TextTranslate id="navDropAbiturient_3" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="">
+                                                <Link to="/call-markaz">
                                                     <TextTranslate id="navDropAbiturient_4" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="">
+                                                <Link to="/abiturient-meyoriy">
                                                     <TextTranslate id="navDropAbiturient_5" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="">
+                                                <Link to="https://my.uzbmb.uz/" target="blank">
                                                     <TextTranslate id="navDropAbiturient_6" />
                                                 </Link>
                                             </li>
