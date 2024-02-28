@@ -52,6 +52,7 @@ import AbiturientMagistratura from "../pages/Abiturient/Magistratura"
 import AbiturientCallMarkaz from "../pages/Abiturient/CallMarkaz"
 import AbiturientXorijiyTalaba from "../pages/Abiturient/HorijiyTalabalarQabul"
 import AbiturientMeyoriy from "../pages/Abiturient/MeyyoriyHuquqiyHuj"
+import Magistratura from "../pages/Talabalar/Magistratura";
 
 export const routes = [
   {
@@ -233,6 +234,10 @@ export const routes = [
       {
         element: <Bakalavriyat/>,
         path: "/bakalavriyat",
+      },
+      {
+        element: <Magistratura/>,
+        path: "/magistratura",
       },
       {
         element: <DTSvaMalaka/>,

@@ -3,10 +3,10 @@ import { MdOutlineLibraryBooks } from "react-icons/md";
 import { BsJournalCheck } from "react-icons/bs";
 import { GiMaterialsScience } from "react-icons/gi";
 import { GrCatalog } from "react-icons/gr";
-import bachlorImg from "../../assets/images/bachelor.jpg";
+import bachlorImg from "../../assets/images/magister2.jpg";
 import { Link } from "react-router-dom";
 
-function Bachelor() {
+function MagistraturaCom() {
   return (
     <div className="md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="max-h-vh">
@@ -15,13 +15,13 @@ function Bachelor() {
             className="text-center text-3xl sm:text-5xl md:text-7xl font-bold text-gray-100 text-shadow"
             style={{ textShadow: "0 0 20px rgba(0,0,0, 1)" }}
           >
-            Bakalavr ta'limi
+            Magistratura ta'limi
           </div>
           <p
             className="text-gray-100 text-2xl text-center hidden md:block md:px-12 lg:px-32 xl:px-44 mt-5 leading-10 text-shadaw"
             style={{ textShadow: "0 0 30px rgba(0,0,0, 1)" }}
           >
-            Bakalavriat talabalaridan QDPIni nimadan ajratib turishini so'rang
+            Magistratura talabalaridan QDPIni nimadan ajratib turishini so'rang
             va siz 9560 xil javob olasiz. Buning sababi, hech qanday tajriba
             QDPI ta'limini aniqlamaydi. Buning o'rniga, keng ko'lamli ta'lim
             innovatsion imkoniyatlar va tajribalar bitiruvchilarni yetuk
@@ -30,11 +30,7 @@ function Bachelor() {
             tayyorlaydi.
           </p>
         </div>
-        <img
-          src={bachlorImg}
-          className="w-full max-h-[1333px]"
-          alt="Bakalavrimage"
-        />
+        <img src={bachlorImg} className="w-full max-h-[1333px]" alt="" />
       </div>
       <div className="max-w-7xl mx-5 xl:mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-5 -mt-8 sm:-mt-10 lg:-mt-28 mb-16">
         <Link
@@ -86,4 +82,4 @@ function Bachelor() {
   );
 }
 
-export default Bachelor;
+export default MagistraturaCom;
