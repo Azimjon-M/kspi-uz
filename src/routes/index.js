@@ -53,6 +53,11 @@ import AbiturientCallMarkaz from "../pages/Abiturient/CallMarkaz"
 import AbiturientXorijiyTalaba from "../pages/Abiturient/HorijiyTalabalarQabul"
 import AbiturientMeyoriy from "../pages/Abiturient/MeyyoriyHuquqiyHuj"
 import Magistratura from "../pages/Talabalar/Magistratura";
+import MagistrDTSvaMalaka from "../pages/Talabalar/Magistratura/MagistrDTSvaMalaka";
+import MagistrOquvRejalari from "../pages/Talabalar/Magistratura/MagistrOquvRejalari";
+import MagistrFanDasturlari from "../pages/Talabalar/Magistratura/MagistrFanDasturlari";
+import MagistrFanKatalogi from "../pages/Talabalar/Magistratura/MagistrFanKatalogi";
+import TalabalarTurarJoyi from "../pages/Talabalar/TalabalarTurarJoyi";
 
 export const routes = [
   {
@@ -236,10 +241,6 @@ export const routes = [
         path: "/bakalavriyat",
       },
       {
-        element: <Magistratura/>,
-        path: "/magistratura",
-      },
-      {
         element: <DTSvaMalaka/>,
         path: "/dtsvaMalaka",
       },
@@ -255,7 +256,32 @@ export const routes = [
         element: <FanKatalogi/>,
         path: "/fanKatalogi",
       },
-
+      {
+        element: <Magistratura/>,
+        path: "/magistratura",
+      },
+      {
+        element: <MagistrDTSvaMalaka/>,
+        path: "/magistrDTSvaMalaka",
+      },
+      {
+        element: <MagistrOquvRejalari/>,
+        path: "/magistrOquvRejalari",
+      },
+      {
+        element: <MagistrFanDasturlari/>,
+        path: "/magistrFanDasturlari",
+      },
+      {
+        element: <MagistrFanKatalogi/>,
+        path: "/magistrFanKatalogi",
+      },
+      {
+        element: <TalabalarTurarJoyi/>,
+        path: "/talabalarTurarJoyi",
+      },
+      
+      
       // Navbar Abiturient
       {
         element: <AbiturientBakalavriat/>,
