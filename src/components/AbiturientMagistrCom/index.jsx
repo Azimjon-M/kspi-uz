@@ -1,9 +1,9 @@
 import React from "react";
-import { MdOutlineLibraryBooks } from "react-icons/md";
-import { BsJournalCheck } from "react-icons/bs";
-import { GiMaterialsScience } from "react-icons/gi";
+import { MdOutlineSubject } from "react-icons/md";
+import { RiNumbersFill } from "react-icons/ri";
+import { MdOutlineCreditScore } from "react-icons/md";
 import { GrCatalog } from "react-icons/gr";
-import bachlorImg from "../../assets/images/bachelor.jpg";
+import masterImg from "../../assets/images/master.jpg";
 import { Link } from "react-router-dom";
 
 function AbiturientMagistrCom() {
@@ -30,15 +30,15 @@ function AbiturientMagistrCom() {
             tayyorlaydi.
           </p>
         </div>
-        <img src={bachlorImg} className="w-full h-full" alt="" />
+        <img src={masterImg} className="w-full h-full" alt="" />
       </div>
       <div className="max-w-7xl mx-5 xl:mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-5 -mt-8 sm:-mt-10 lg:-mt-28 mb-16">
         <Link
           to="/dtsvaMalaka"
-          className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform"
+          className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 ease-in-out duration-300"
         >
           <div>
-            <MdOutlineLibraryBooks className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
+            <MdOutlineCreditScore className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
               O'tish ballari
             </p>
@@ -46,10 +46,10 @@ function AbiturientMagistrCom() {
         </Link>
         <Link
           to="/oquvRejalari"
-          className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform"
+          className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 ease-in-out duration-300"
         >
           <div>
-            <BsJournalCheck className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
+            <MdOutlineSubject className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
               Fanlar majmuasi
             </p>
@@ -57,10 +57,10 @@ function AbiturientMagistrCom() {
         </Link>
         <Link
           to="/fanDasturlari"
-          className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform"
+          className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 ease-in-out duration-300"
         >
           <div>
-            <GiMaterialsScience className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
+            <RiNumbersFill className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
               Qabul kvotasi
             </p>
@@ -68,7 +68,7 @@ function AbiturientMagistrCom() {
         </Link>
         <Link
           to="/fanKatalogi"
-          className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform"
+          className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 ease-in-out duration-300"
         >
           <div>
             <GrCatalog className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
