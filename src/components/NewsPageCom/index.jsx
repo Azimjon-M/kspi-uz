@@ -54,7 +54,7 @@ const NewsPage = () => {
       </div>
 
       <div
-        className="grid md:grid-cols-3 lg:grid-cols-4 3xl:grid-cols-6"
+        className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-7xl mx-auto"
         data-aos="zoom-in-down"
       >
         {newsOne &&
@@ -65,7 +65,7 @@ const NewsPage = () => {
                   <div className="flex rounded-lg h-full dark:bg-gray-800 shadow-md hover:shadow-lg flex-col group/edit">
                     <div className="flex items-center mb-3 relative overflow-hidden">
                       <img
-                        className="w-full rounded group-hover/item:scale-105 ease-in duration-300 ..."
+                        className="w-full h-48 md:h-48 object-cover rounded group-hover/item:scale-105 ease-in duration-300 ..."
                         src={item.rasm}
                         alt="Sunset in the mountains"
                       />
