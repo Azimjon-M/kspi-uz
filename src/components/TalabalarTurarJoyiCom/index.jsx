@@ -25,13 +25,15 @@ function TalabalarTurarJoyiCom() {
           />
         </div>
         <div className="md:pr-20 text-center md:text-start">
-          <RiDoubleQuotesL className="text-7xl text-gray-300" />
+          <RiDoubleQuotesL className="text-6xl text-gray-300" />
           <p className="text-lg text-gray-600 font-bold mt-3">
             Talabalar shaharchasida yashash yangi odamlar bilan tanishish va
             doimiy do'stlikni rivojlantirish uchun son-sanoqsiz imkoniyatlarni
             taqdim etadi.
           </p>
-          <p className="mt-2 text-">Zohid Isroilov TTJ raxbari</p>
+          <p className="mt-2 text-amber-800 italic">
+            Zohid Isroilov TTJ raxbari
+          </p>
         </div>
       </div>
       <div className="bg-[#F2F2F2]">
