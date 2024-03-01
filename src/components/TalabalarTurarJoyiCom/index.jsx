@@ -1,4 +1,5 @@
 import React from "react";
+import { RiDoubleQuotesL } from "react-icons/ri";
 import StudentsHouse from "../../assets/images/StudentsHouse.jpg";
 import TTJRaxbari from "../../assets/images/TTJRaxbari.png";
 
@@ -15,7 +16,7 @@ function TalabalarTurarJoyiCom() {
       <h1 className="text-2xl md:text-4xl font-bold text-center text-[#004269] mt-5 md:mt-12">
         Talabalar turar joyiga xush kelibsiz
       </h1>
-      <div className="max-w-4xl mx-auto grid grid-cols-2 mt-5 md:mt-12">
+      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-5 md:mt-12">
         <div className="flex justify-center">
           <img
             src={TTJRaxbari}
@@ -23,12 +24,14 @@ function TalabalarTurarJoyiCom() {
             alt=""
           />
         </div>
-        <div className="pr-20">
-          <p className="text-lg font-bold">
+        <div className="md:pr-20 text-center md:text-start">
+          <RiDoubleQuotesL className="text-7xl text-gray-300" />
+          <p className="text-lg text-gray-600 font-bold mt-3">
             Talabalar shaharchasida yashash yangi odamlar bilan tanishish va
             doimiy do'stlikni rivojlantirish uchun son-sanoqsiz imkoniyatlarni
             taqdim etadi.
           </p>
+          <p className="mt-2 text-">Zohid Isroilov TTJ raxbari</p>
         </div>
       </div>
       <div className="bg-[#F2F2F2]">
