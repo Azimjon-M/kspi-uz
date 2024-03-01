@@ -58,6 +58,12 @@ import MagistrOquvRejalari from "../pages/Talabalar/Magistratura/MagistrOquvReja
 import MagistrFanDasturlari from "../pages/Talabalar/Magistratura/MagistrFanDasturlari";
 import MagistrFanKatalogi from "../pages/Talabalar/Magistratura/MagistrFanKatalogi";
 import TalabalarTurarJoyi from "../pages/Talabalar/TalabalarTurarJoyi";
+import AkademikLitsey from "../pages/Faoliyat/AkademikLitsey";
+import IlmiyFaolyat from "../pages/Faoliyat/IlmiyFaolyat";
+import JamoatchilikKengashiFaol from "../pages/Faoliyat/JamoatchilikKengashiFaol";
+import MadMarFaolyat from "../pages/Faoliyat/MadMarFaolyat";
+import OquvUslubiyFaolyat from "../pages/Faoliyat/OquvUslubiyFaolyat";
+import YoshlarBnIshlashMvaM from "../pages/Faoliyat/YoshlarBnIshlashMvaM";
 
 export const routes = [
   {
