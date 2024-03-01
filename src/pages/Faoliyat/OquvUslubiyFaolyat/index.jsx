@@ -1,8 +1,15 @@
 import React from 'react'
+import Navbar from "../../../components/Navbar"
+import OquvUslubiyFaolyatCom from '../../../components/OquvUslubiyFaolyatCom'
+import Footer from "../../../components/Footer"
 
 function OquvUslubiyFaolyat() {
     return (
-        <div>OquvUslubiyFaolyat</div>
+        <div>
+            <Navbar />
+            <OquvUslubiyFaolyatCom />
+            <Footer />
+        </div>
     )
 }
 
