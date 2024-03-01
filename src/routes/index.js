@@ -53,6 +53,12 @@ import AbiturientCallMarkaz from "../pages/Abiturient/CallMarkaz"
 import AbiturientXorijiyTalaba from "../pages/Abiturient/HorijiyTalabalarQabul"
 import AbiturientMeyoriy from "../pages/Abiturient/MeyyoriyHuquqiyHuj"
 import Magistratura from "../pages/Talabalar/Magistratura";
+import AkademikLitsey from "../pages/Faoliyat/AkademikLitsey";
+import IlmiyFaolyat from "../pages/Faoliyat/IlmiyFaolyat";
+import JamoatchilikKengashiFaol from "../pages/Faoliyat/JamoatchilikKengashiFaol";
+import MadMarFaolyat from "../pages/Faoliyat/MadMarFaolyat";
+import OquvUslubiyFaolyat from "../pages/Faoliyat/OquvUslubiyFaolyat";
+import YoshlarBnIshlashMvaM from "../pages/Faoliyat/YoshlarBnIshlashMvaM";
 
 export const routes = [
   {
@@ -276,6 +282,32 @@ export const routes = [
       {
         element: <AbiturientXorijiyTalaba/>,
         path: "/abiturient-xorijiy-talabalar",
+      },
+
+      // Navbar Faoliyat
+      {
+        element: <AkademikLitsey/>,
+        path: "/akademik-litsey",
+      },
+      {
+        element: <IlmiyFaolyat/>,
+        path: "/ilmiy-faoliyat",
+      },
+      {
+        element: <JamoatchilikKengashiFaol/>,
+        path: "/jamoatchilik",
+      },
+      {
+        element: <MadMarFaolyat/>,
+        path: "/madaniy",
+      },
+      {
+        element: <OquvUslubiyFaolyat/>,
+        path: "/oquv-uslubiy",
+      },
+      {
+        element: <YoshlarBnIshlashMvaM/>,
+        path: "/yoshlar-ishlash",
       },
     ],
   },
