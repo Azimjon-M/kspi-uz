@@ -34,7 +34,7 @@ function MagistraturaCom() {
       </div>
       <div className="max-w-7xl mx-5 xl:mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-5 -mt-8 sm:-mt-10 lg:-mt-28 mb-16">
         <Link
-          to="/dtsvaMalaka"
+          to="/magistrDTSvaMalaka"
           className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform"
         >
           <div>
@@ -45,7 +45,7 @@ function MagistraturaCom() {
           </div>
         </Link>
         <Link
-          to="/oquvRejalari"
+          to="/magistrOquvRejalari"
           className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform"
         >
           <div>
@@ -56,7 +56,7 @@ function MagistraturaCom() {
           </div>
         </Link>
         <Link
-          to="/fanDasturlari"
+          to="/magistrFanDasturlari"
           className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform"
         >
           <div>
@@ -67,7 +67,7 @@ function MagistraturaCom() {
           </div>
         </Link>
         <Link
-          to="/fanKatalogi"
+          to="/magistrFanKatalogi"
           className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 transition-transform"
         >
           <div>

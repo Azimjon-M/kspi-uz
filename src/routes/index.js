@@ -53,12 +53,6 @@ import AbiturientCallMarkaz from "../pages/Abiturient/CallMarkaz"
 import AbiturientXorijiyTalaba from "../pages/Abiturient/HorijiyTalabalarQabul"
 import AbiturientMeyoriy from "../pages/Abiturient/MeyyoriyHuquqiyHuj"
 import Magistratura from "../pages/Talabalar/Magistratura";
-import AkademikLitsey from "../pages/Faoliyat/AkademikLitsey";
-import IlmiyFaolyat from "../pages/Faoliyat/IlmiyFaolyat";
-import JamoatchilikKengashiFaol from "../pages/Faoliyat/JamoatchilikKengashiFaol";
-import MadMarFaolyat from "../pages/Faoliyat/MadMarFaolyat";
-import OquvUslubiyFaolyat from "../pages/Faoliyat/OquvUslubiyFaolyat";
-import YoshlarBnIshlashMvaM from "../pages/Faoliyat/YoshlarBnIshlashMvaM";
 
 export const routes = [
   {
@@ -242,10 +236,6 @@ export const routes = [
         path: "/bakalavriyat",
       },
       {
-        element: <Magistratura/>,
-        path: "/magistratura",
-      },
-      {
         element: <DTSvaMalaka/>,
         path: "/dtsvaMalaka",
       },
@@ -261,7 +251,32 @@ export const routes = [
         element: <FanKatalogi/>,
         path: "/fanKatalogi",
       },
-
+      {
+        element: <Magistratura/>,
+        path: "/magistratura",
+      },
+      {
+        element: <MagistrDTSvaMalaka/>,
+        path: "/magistrDTSvaMalaka",
+      },
+      {
+        element: <MagistrOquvRejalari/>,
+        path: "/magistrOquvRejalari",
+      },
+      {
+        element: <MagistrFanDasturlari/>,
+        path: "/magistrFanDasturlari",
+      },
+      {
+        element: <MagistrFanKatalogi/>,
+        path: "/magistrFanKatalogi",
+      },
+      {
+        element: <TalabalarTurarJoyi/>,
+        path: "/talabalarTurarJoyi",
+      },
+      
+      
       // Navbar Abiturient
       {
         element: <AbiturientBakalavriat/>,

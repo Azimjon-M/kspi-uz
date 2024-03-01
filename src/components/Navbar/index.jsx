@@ -5,9 +5,9 @@ import { AiOutlineSearch, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useFormik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import {
-    setLangUz,
-    setLangRu,
-    setLangEn,
+  setLangUz,
+  setLangRu,
+  setLangEn,
 } from "../../redux/moduls/language/action/";
 
 import flag_1 from "../../assets/icons/flag-uz.png";
@@ -16,73 +16,73 @@ import flag_3 from "../../assets/icons/flag-en.png";
 import TextTranslate from "../TextTranslate/index";
 
 function Navbar() {
-    const location = useLocation();
-    const dispatch = useDispatch();
-    const isLang = useSelector((state) => state.reducerLang.isLang);
+  const location = useLocation();
+  const dispatch = useDispatch();
+  const isLang = useSelector((state) => state.reducerLang.isLang);
 
-    const [isFocusedSearInp, setFocusedSearInp] = useState(false);
-    const [isActiveMenu, setIsActiveMenu] = useState(false);
-    const [scrollY, setScrollY] = useState(false);
-    console.log(scrollY);
-    // search
-    const formik = useFormik({
-        initialValues: {
-            searchText: "",
-        },
-        onSubmit: (values) => {
-            alert(JSON.stringify(values, null, 2));
-            formik.resetForm();
-        },
-    });
-    const handleClickSearch = () => {
-        if (isFocusedSearInp && formik.values.searchText) {
-            formik.handleSubmit();
-        } else {
-            setFocusedSearInp(!isFocusedSearInp);
-        }
-    };
-    const handleClickClose = () => {
-        setFocusedSearInp(false);
-    };
-    // Change Language log
-    const handleClickLang = (lang) => {
-        switch (lang) {
-            case "uz":
-                dispatch(setLangUz());
-                break;
-            case "ru":
-                dispatch(setLangRu());
-                break;
-            case "en":
-                dispatch(setLangEn());
-                break;
-            default:
-                dispatch(setLangUz());
-                break;
-        }
-    };
-    // Mobile Handler main no scroll
-    useEffect(() => {
-        if (isActiveMenu) {
-            document.body.classList.add("overflow-hidden");
-        } else {
-            document.body.classList.remove("overflow-hidden");
-        }
-    }, [isActiveMenu]);
+  const [isFocusedSearInp, setFocusedSearInp] = useState(false);
+  const [isActiveMenu, setIsActiveMenu] = useState(false);
+  const [scrollY, setScrollY] = useState(false);
+  console.log(scrollY);
+  // search
+  const formik = useFormik({
+    initialValues: {
+      searchText: "",
+    },
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2));
+      formik.resetForm();
+    },
+  });
+  const handleClickSearch = () => {
+    if (isFocusedSearInp && formik.values.searchText) {
+      formik.handleSubmit();
+    } else {
+      setFocusedSearInp(!isFocusedSearInp);
+    }
+  };
+  const handleClickClose = () => {
+    setFocusedSearInp(false);
+  };
+  // Change Language log
+  const handleClickLang = (lang) => {
+    switch (lang) {
+      case "uz":
+        dispatch(setLangUz());
+        break;
+      case "ru":
+        dispatch(setLangRu());
+        break;
+      case "en":
+        dispatch(setLangEn());
+        break;
+      default:
+        dispatch(setLangUz());
+        break;
+    }
+  };
+  // Mobile Handler main no scroll
+  useEffect(() => {
+    if (isActiveMenu) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isActiveMenu]);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (Math.floor(window.scrollY) >= 100) {
-                setScrollY(true);
-            } else {
-                setScrollY(false);
-            }
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (Math.floor(window.scrollY) >= 100) {
+        setScrollY(true);
+      } else {
+        setScrollY(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
     return (
         <div
@@ -298,32 +298,32 @@ function Navbar() {
                                         className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                                     >
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="/jamoatchilik">
+                                            <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_1" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="/madaniy">
+                                            <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_2" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="/oquv-uslubiy">
+                                            <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_3" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="/akademik-litsey">
+                                            <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_4" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="/ilmiy-faoliyat">
+                                            <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_5" />
                                             </Link>
                                         </li>
                                         <li className="text-[#004269] dark:text-white">
-                                            <Link to="/yoshlar-ishlash">
+                                            <Link to="">
                                                 <TextTranslate id="navDropFaoliyat_6" />
                                             </Link>
                                         </li>
@@ -662,32 +662,32 @@ function Navbar() {
                                     <div className="collapse-content max-w-[280px]">
                                         <ul>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="/jamoatchilik">
+                                                <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_1" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="/madaniy">
+                                                <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_2" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="/oquv-uslubiy">
+                                                <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_3" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="/akademik-litsey">
+                                                <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_4" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="/ilmiy-faoliyat">
+                                                <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_5" />
                                                 </Link>
                                             </li>
                                             <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                                                <Link to="/yoshlar-ishlash">
+                                                <Link to="">
                                                     <TextTranslate id="navDropFaoliyat_6" />
                                                 </Link>
                                             </li>

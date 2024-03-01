@@ -150,7 +150,7 @@ const data3PDF = [
   },
 ];
 
-function FanDasturlariCom() {
+function MagistrFanDasturlariCom() {
   const [showContent, setShowContent] = useState(1);
 
   const handleClick = (idx) => {
@@ -168,7 +168,7 @@ function FanDasturlariCom() {
             <button
               onClick={() => handleClick(1)}
               className={`${
-                showContent === 1 ? "bg-blue-500 text-white" : "bg-gray-50"
+                showContent === 1 ? "bg-blue-500 text-white" : ""
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
@@ -179,7 +179,7 @@ function FanDasturlariCom() {
             <button
               onClick={() => handleClick(2)}
               className={`${
-                showContent === 2 ? "bg-blue-500 text-white" : ""
+                showContent === 2 ? "bg-blue-500 text-white" : "bg-gray-50"
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
@@ -388,4 +388,4 @@ function FanDasturlariCom() {
   );
 }
 
-export default FanDasturlariCom;
+export default MagistrFanDasturlariCom;
