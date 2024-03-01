@@ -36,11 +36,43 @@ function TalabalarTurarJoyiCom() {
           </p>
         </div>
       </div>
-      <div className="bg-[#F2F2F2]">
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
+      <div className="bg-[#F2F2F2] py-14 mt-10">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="border-b-4 md:border-r-4 border-[#004269] p-7">
+              <div className="bg-[#004269] text-center">
+                <p className="text-2xl text-white font-bold py-2">
+                  Bizning TTJ da
+                </p>
+              </div>
+              <p className="text-5xl font-bold text-center text-[#EB7D46] mt-4">
+                1800
+              </p>
+              <p className="text-xl text-center font-bold mt-3">Talaba</p>
+            </div>
+            <div className="border-b-4 md:border-r-4 border-[#004269] p-7">
+              <div className="bg-[#004269] text-center">
+                <p className="text-2xl text-white font-bold py-2">
+                  Bizning TTJ da
+                </p>
+              </div>
+              <p className="text-5xl font-bold text-center text-[#EB7D46] mt-4">
+                1800
+              </p>
+              <p className="text-xl text-center font-bold mt-3">Talaba</p>
+            </div>
+            <div className="p-7">
+              <div className="bg-[#004269] text-center">
+                <p className="text-2xl text-white font-bold py-2">
+                  Bizning TTJ da
+                </p>
+              </div>
+              <p className="text-5xl font-bold text-center text-[#EB7D46] mt-4">
+                1800
+              </p>
+              <p className="text-xl text-center font-bold mt-3">Talaba</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

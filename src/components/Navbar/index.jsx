@@ -377,7 +377,7 @@ function Navbar() {
                       </Link>
                     </li>
                     <li className="text-[#004269] dark:text-white">
-                      <Link to="">
+                      <Link to="/talabalarTurarJoyi">
                         <TextTranslate id="navDropTalabalar_3" />
                       </Link>
                     </li>
@@ -718,7 +718,7 @@ function Navbar() {
                         </Link>
                       </li>
                       <li className="my-4 leading-4 text-[#004269] dark:text-white">
-                        <Link to="">
+                        <Link to="/talabalarTurarJoyi">
                           <TextTranslate id="navDropTalabalar_3" />
                         </Link>
                       </li>
