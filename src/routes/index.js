@@ -53,6 +53,11 @@ import AbiturientCallMarkaz from "../pages/Abiturient/CallMarkaz"
 import AbiturientXorijiyTalaba from "../pages/Abiturient/HorijiyTalabalarQabul"
 import AbiturientMeyoriy from "../pages/Abiturient/MeyyoriyHuquqiyHuj"
 import Magistratura from "../pages/Talabalar/Magistratura";
+import MagistrDTSvaMalaka from "../pages/Talabalar/Magistratura/MagistrDTSvaMalaka";
+import MagistrOquvRejalari from "../pages/Talabalar/Magistratura/MagistrOquvRejalari";
+import MagistrFanDasturlari from "../pages/Talabalar/Magistratura/MagistrFanDasturlari";
+import MagistrFanKatalogi from "../pages/Talabalar/Magistratura/MagistrFanKatalogi";
+import TalabalarTurarJoyi from "../pages/Talabalar/TalabalarTurarJoyi";
 
 export const routes = [
   {
