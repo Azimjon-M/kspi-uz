@@ -14,6 +14,9 @@ import xalqaro from "../../assets/images/xalqaro.jpg";
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { FaTelegramPlane } from "react-icons/fa";
+import { BsTelephoneFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 const MarkazlarCom = () => {
   const data = useMemo(
@@ -239,6 +242,139 @@ const MarkazlarCom = () => {
             </TabsBody>
           </div>
         </Tabs>
+      </div>
+
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#004269]">
+          Bizning jamoa
+        </h2>
+        <div className="mt-10 flex flex-wrap justify-center -m-4">
+          {/* ITEM */}
+          <div className="m-4 max-w-xs w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
+                <img
+                  src="https://i.pinimg.com/736x/a6/90/85/a690855540103e58b1e07c3f855cee51.jpg"
+                  alt=""
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-lg font-semibold text-gray-800">
+                Palonchiyeva Pistonchi
+              </p>
+              <p className="text-sm text-blue-500">Katta o'qituvchi</p>
+              <div className="mt-4 flex justify-center">
+                <a
+                  href="https://t.me/nodirjon0927"
+                  target="blank"
+                  className="mr-2"
+                >
+                  <FaTelegramPlane />
+                </a>
+                <a href="tel:+998992226660" target="blank" className="mr-2">
+                  <BsTelephoneFill />
+                </a>
+                <a href="mailto:nodirbek0927@mail.ru" target="blank">
+                  <MdEmail />
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* ITEM */}
+          <div className="m-4 max-w-xs w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
+                <img
+                  src="https://i.pinimg.com/736x/a6/90/85/a690855540103e58b1e07c3f855cee51.jpg"
+                  alt=""
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-lg font-semibold text-gray-800">
+                Palonchiyeva Pistonchi
+              </p>
+              <p className="text-sm text-blue-500">Katta o'qituvchi</p>
+              <div className="mt-4 flex justify-center">
+                <a
+                  href="https://t.me/nodirjon0927"
+                  target="blank"
+                  className="mr-2"
+                >
+                  <FaTelegramPlane />
+                </a>
+                <a href="tel:+998992226660" target="blank" className="mr-2">
+                  <BsTelephoneFill />
+                </a>
+                <a href="mailto:nodirbek0927@mail.ru" target="blank">
+                  <MdEmail />
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* ITEM */}
+          <div className="m-4 max-w-xs w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto ">
+                <img
+                  src="https://i.pinimg.com/736x/a6/90/85/a690855540103e58b1e07c3f855cee51.jpg"
+                  alt=""
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-lg font-semibold text-gray-800">
+                Palonchiyeva Pistonchi
+              </p>
+              <p className="text-sm text-blue-500">Katta o'qituvchi</p>
+              <div className="mt-4 flex justify-center">
+                <a
+                  href="https://t.me/nodirjon0927"
+                  target="blank"
+                  className="mr-2"
+                >
+                  <FaTelegramPlane />
+                </a>
+                <a href="tel:+998992226660" target="blank" className="mr-2">
+                  <BsTelephoneFill />
+                </a>
+                <a href="mailto:nodirbek0927@mail.ru" target="blank">
+                  <MdEmail />
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* ITEM */}
+          <div className="m-4 max-w-xs w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
+                <img
+                  src="https://i.pinimg.com/736x/a6/90/85/a690855540103e58b1e07c3f855cee51.jpg"
+                  alt=""
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-lg font-semibold text-gray-800">
+                Palonchiyeva Pistonchi
+              </p>
+              <p className="text-sm text-blue-500">Katta o'qituvchi</p>
+              <div className="mt-4 flex justify-center">
+                <a
+                  href="https://t.me/nodirjon0927"
+                  target="blank"
+                  className="mr-2"
+                >
+                  <FaTelegramPlane />
+                </a>
+                <a href="tel:+998992226660" target="blank" className="mr-2">
+                  <BsTelephoneFill />
+                </a>
+                <a href="mailto:nodirbek0927@mail.ru" target="blank">
+                  <MdEmail />
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Repeat the above structure for other instructors */}
+        </div>
       </div>
     </div>
   );
