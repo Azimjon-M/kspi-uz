@@ -103,10 +103,13 @@ const Footer = () => {
           <h1 className="font-bold mb-3">Foydali linklar</h1>
           <ul>
             <li>
-              <Link to="yangiliklar">Yangiliklar</Link>
+              <Link to="/yangiliklar">Yangiliklar</Link>
             </li>
             <li>
-              <Link to="qabulxona">Virtual qabulxona</Link>
+              <Link to="/qabulxona">Virtual qabulxona</Link>
+            </li>
+            <li>
+              <Link to="/vakansiyalar">Bo'sh ish o'rinlari</Link>
             </li>
             <li>
               <Link>RSS</Link>
