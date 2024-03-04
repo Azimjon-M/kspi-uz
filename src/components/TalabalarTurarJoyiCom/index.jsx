@@ -1,7 +1,11 @@
 import React from "react";
 import { RiDoubleQuotesL } from "react-icons/ri";
+import { LuCopyCheck } from "react-icons/lu";
+import { GoChecklist } from "react-icons/go";
 import StudentsHouse from "../../assets/images/StudentsHouse.jpg";
 import TTJRaxbari from "../../assets/images/TTJRaxbari.png";
+import TTJStudents from "../../assets/images/TTJstudents.jpg";
+import { Link } from "react-router-dom";
 
 function TalabalarTurarJoyiCom() {
   return (
@@ -146,8 +150,35 @@ function TalabalarTurarJoyiCom() {
       </div>
 
       {/* Image students  */}
+      <div className="max-full my-20 md:mt-32">
+        <img
+          className="w-full max-h-[600px]"
+          src={TTJStudents}
+          alt="TTJ Talabalari"
+        />
+      </div>
       <div>
-        <img src="" alt="" />
+        <h1 className="text-2xl md:text-4xl font-bold text-center text-[#004269] mt-5">
+          TTJ uchun ariza topshirish
+        </h1>
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 my-16">
+          <div className="text-center">
+            <Link className="inline-block bg-[#F2F2F2] rounded-full p-5 shadow-lg border border-sky-700 group hover:bg-sky-700">
+              <LuCopyCheck className="text-5xl text-sky-700 group-hover:text-sky-50" />
+            </Link>
+            <p className="text-xl font-bold text-gray-600 mt-5">
+              Boshlang'ich(1) kurs uchun
+            </p>
+          </div>
+          <div className="text-center">
+            <Link className="inline-block bg-[#F2F2F2] rounded-full p-5 shadow-lg border border-sky-700 group hover:bg-sky-700">
+              <GoChecklist className="text-5xl text-sky-700 group-hover:text-sky-50" />
+            </Link>
+            <p className="text-xl font-bold text-gray-600 mt-5">
+              Yuqori kusrlar uchun
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
