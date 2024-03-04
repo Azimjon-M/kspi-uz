@@ -64,6 +64,7 @@ import JamoatchilikKengashiFaol from "../pages/Faoliyat/JamoatchilikKengashiFaol
 import MadMarFaolyat from "../pages/Faoliyat/MadMarFaolyat";
 import OquvUslubiyFaolyat from "../pages/Faoliyat/OquvUslubiyFaolyat";
 import YoshlarBnIshlashMvaM from "../pages/Faoliyat/YoshlarBnIshlashMvaM";
+import Vakansiyalar from "../pages/Vakansiyalar";
 
 export const routes = [
   {
@@ -334,6 +335,10 @@ export const routes = [
       {
         element: <YoshlarBnIshlashMvaM/>,
         path: "/yoshlar-ishlash",
+      },
+      {
+        element: <Vakansiyalar/>,
+        path: "/vakansiyalar",
       },
     ],
   },
