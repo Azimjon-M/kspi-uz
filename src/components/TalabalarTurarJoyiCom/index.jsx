@@ -170,7 +170,7 @@ function TalabalarTurarJoyiCom() {
               Boshlang'ich(1) kurs uchun
             </p>
           </div>
-          <div className="text-center">
+          <div className="text-center mt-10 md:mt-0">
             <Link className="inline-block bg-[#F2F2F2] rounded-full p-5 shadow-lg border border-sky-700 group hover:bg-sky-700">
               <GoChecklist className="text-5xl text-sky-700 group-hover:text-sky-50" />
             </Link>
