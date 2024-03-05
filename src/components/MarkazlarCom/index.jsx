@@ -142,6 +142,10 @@ const MarkazlarCom = () => {
     a.click();
   }, []);
 
+  // const tabClick = (idx) => {
+  //   // console.log(idx);
+  // }
+
   return (
     <div className="px-5 py-3 md:px-10 mb-3 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="border-b-2 border-[#004269] block w-full">
@@ -165,8 +169,10 @@ const MarkazlarCom = () => {
                   className="flex flex-col items-start text-start font-semibold"
                   key={value}
                   value={value}
+                  id={idx}
+                  // onClick={() => tabClick(idx)}
                 >
-                  <div id={idx} className="flex items-center">
+                  <div className="flex items-center">
                     <div className="text-[#004269] mr-3">
                       <IoIosArrowForward />
                     </div>
@@ -254,7 +260,7 @@ const MarkazlarCom = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
                 <img
-                  src="https://i.pinimg.com/736x/a6/90/85/a690855540103e58b1e07c3f855cee51.jpg"
+                  src="	https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
                   alt=""
                   className="w-full object-cover"
                 />
@@ -285,7 +291,7 @@ const MarkazlarCom = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
                 <img
-                  src="https://i.pinimg.com/736x/a6/90/85/a690855540103e58b1e07c3f855cee51.jpg"
+                  src="	https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
                   alt=""
                   className="w-full object-cover"
                 />
@@ -316,7 +322,7 @@ const MarkazlarCom = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto ">
                 <img
-                  src="https://i.pinimg.com/736x/a6/90/85/a690855540103e58b1e07c3f855cee51.jpg"
+                  src="	https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
                   alt=""
                   className="w-full object-cover"
                 />
@@ -347,7 +353,7 @@ const MarkazlarCom = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
                 <img
-                  src="https://i.pinimg.com/736x/a6/90/85/a690855540103e58b1e07c3f855cee51.jpg"
+                  src="	https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
                   alt=""
                   className="w-full object-cover"
                 />

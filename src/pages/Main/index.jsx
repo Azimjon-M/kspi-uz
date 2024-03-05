@@ -10,6 +10,7 @@ import Footer from "../../components/Footer";
 import Partners from "../../components/Partners";
 import WarmThoughts from "../../components/WarmThoughts";
 import ChatIcon from "../../components/Chat";
+import Gallery from "../../components/Gallery";
 
 function Main() {
   return (
@@ -21,6 +22,7 @@ function Main() {
       <StudentOpinion />
       <WarmThoughts />
       <Curriculum />
+      <Gallery />
       <Partners />
       <ContactUs />
       <Footer />
