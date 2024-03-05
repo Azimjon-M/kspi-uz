@@ -27,7 +27,7 @@ import BoshMuhandis from "../pages/Tuzilma/Markazlar/BoshMuhandis";
 import BoshEnergetik from "../pages/Tuzilma/Markazlar/BoshEnergetik";
 import RektorYordamchisi from "../pages/Tuzilma/Markazlar/RektorYordamchisi";
 import MatbuotKotibi from "../pages/Tuzilma/Markazlar/MatbuotKotibi";
-import Yuristkonsolt from "../pages/Tuzilma/Markazlar/Yuristkonsolt";
+import YuristKonsolt from "../pages/Tuzilma/Markazlar/YuristKonsolt";
 import BoshAuditor from "../pages/Tuzilma/Markazlar/BoshAuditor";
 import Fakultetlar from "../pages/Tuzilma/Fakultetlar";
 import BoshlangichTalim from "../pages/Tuzilma/Fakultetlar/BoshlangichTalim";
@@ -190,7 +190,7 @@ export const routes = [
         path: "/markazlar/matbuot-kotib",
       },
       {
-        element: <Yuristkonsolt />,
+        element: <YuristKonsolt />,
         path: "/markazlar/yuriskonsolt",
       },
       {
