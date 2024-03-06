@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Gallery = () => {
-  const [id, setId] = useState(false);
+  const [id, setId] = useState(0);
+  const [isContent, setIsContent] = useState([]);
 
-  const handleClick = (id) => {
-    setId(id);
+  const data = [
+    { id: 0, name: "Institut", content: [111111, 111111, 11111, 11111] },
+    { id: 1, name: "Tadbirlar", content: [222222, 222222, 22222, 22222] },
+    { id: 2, name: "Seminarlar", content: [333333, 333333, 33333, 33333] },
+  ];
+
+  const handleClick = (clickedId) => {
+    setId(id === clickedId ? 0 : clickedId);
+    const selectedItem = data.find((item) => item.id === clickedId);
+    setIsContent(selectedItem && selectedItem.content);
   };
+
+  useEffect(() => {
+    const a = document.getElementById("0");
+    a.click();
+  }, []);
 
   return (
     <div className="max-w-7xl mx-auto my-5">
@@ -20,23 +34,22 @@ const Gallery = () => {
       </div>
       <div className="mt-10 grid grid-cols-3">
         <ul className="col-span-1">
-          <li onClick={() => handleClick(1)}>Institut</li>
-          <li onClick={() => handleClick(2)}>Tadbirlar</li>
-          <li onClick={() => handleClick(3)}>Seminarlar</li>
+          {data.map((item) => (
+            <li
+              id={item.id}
+              key={item.id}
+              onClick={() => handleClick(item.id)}
+              className="cursor-pointer"
+            >
+              {item.name}
+            </li>
+          ))}
         </ul>
         <div className="col-span-2">
-          <div className={`${id === 1 ? "" : "hidden"} grid grid-cols-3`}>
-            <p>11111</p>
-            <p>11111</p>
-            <p>11111</p>
-            <p>11111</p>
-            <p>11111</p>
-          </div>
-          <div className={`${id === 2 ? "" : "hidden"} grid grid-cols-3`}>
-            22222
-          </div>
-          <div className={`${id === 3 ? "" : "hidden"} grid grid-cols-3`}>
-            33333
+          <div className={`${id === null ? "hidden" : ""} grid grid-cols-3`}>
+            {isContent.map((contentItem, index) => (
+              <p key={index}>{contentItem}</p>
+            ))}
           </div>
         </div>
       </div>

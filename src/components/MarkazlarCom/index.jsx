@@ -142,9 +142,6 @@ const MarkazlarCom = () => {
     a.click();
   }, []);
 
-  // const tabClick = (idx) => {
-  //   // console.log(idx);
-  // }
 
   return (
     <div className="px-5 py-3 md:px-10 mb-3 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
@@ -170,7 +167,6 @@ const MarkazlarCom = () => {
                   key={value}
                   value={value}
                   id={idx}
-                  // onClick={() => tabClick(idx)}
                 >
                   <div className="flex items-center">
                     <div className="text-[#004269] mr-3">
