@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { LuCopyCheck } from "react-icons/lu";
 import { GoChecklist } from "react-icons/go";
@@ -8,6 +8,28 @@ import TTJStudents from "../../assets/images/TTJstudents.jpg";
 import { Link } from "react-router-dom";
 
 function TalabalarTurarJoyiCom() {
+  let valueDisplays = document.querySelectorAll(".num");
+  let interval = 5000;
+
+  useEffect(() => {
+    valueDisplays.forEach((valueDisplay) => {
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function () {
+        startValue += 1;
+        valueDisplay.textContent = startValue;
+        if (startValue === endValue) {
+          clearInterval(counter);
+        }
+      }, duration);
+    });
+  });
+
+  const handleScroll = () => {
+    console.log("scroled");
+  };
+
   return (
     <div>
       {/* video about the institute */}
@@ -45,7 +67,7 @@ function TalabalarTurarJoyiCom() {
       </div>
 
       {/* TTJ statistics */}
-      <div className="bg-[#F2F2F2] py-14 mt-20">
+      <div onScroll={handleScroll} className="bg-[#F2F2F2] overflow-y-scroll py-14 mt-20">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 px-5 md:mx-0">
             <div className="border-b-4 md:border-b-0 md:border-r-4 border-[#004269] p-7">
@@ -54,8 +76,11 @@ function TalabalarTurarJoyiCom() {
                   Bizning TTJ da
                 </p>
               </div>
-              <p className="text-5xl font-bold text-center text-[#EB7D46] mt-4">
-                1942
+              <p
+                data-val="1942"
+                className="num text-5xl font-bold text-center text-[#EB7D46] mt-4"
+              >
+                0
               </p>
               <p className="text-xl text-center font-bold mt-3">Talaba</p>
             </div>
@@ -65,8 +90,12 @@ function TalabalarTurarJoyiCom() {
                   Bizning TTJ da
                 </p>
               </div>
-              <p className="text-5xl font-bold text-center text-[#EB7D46] mt-4">
-                500
+              <p
+                id="counter"
+                data-val="500"
+                className="num text-5xl font-bold text-center text-[#EB7D46] mt-4"
+              >
+                0
               </p>
               <p className="text-xl text-center font-bold mt-3">Talaba</p>
             </div>
@@ -76,8 +105,11 @@ function TalabalarTurarJoyiCom() {
                   Bizning TTJ da
                 </p>
               </div>
-              <p className="text-5xl font-bold text-center text-[#EB7D46] mt-4">
-                4
+              <p
+                data-val="4"
+                className="num text-5xl font-bold text-center text-[#EB7D46] mt-4"
+              >
+                0
               </p>
               <p className="text-xl text-center font-bold mt-3">Talaba</p>
             </div>
