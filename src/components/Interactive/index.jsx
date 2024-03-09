@@ -6,6 +6,7 @@ import { MdOutlineLiveTv } from "react-icons/md";
 import { PiChalkboardTeacherFill } from "react-icons/pi";
 import TextTranslate from "../TextTranslate";
 import { FaRegCalendarCheck, FaRegEye } from "react-icons/fa";
+import CountUp from "react-countup";
 
 function Interactive() {
   return (
@@ -100,7 +101,8 @@ function Interactive() {
                   <TextTranslate id="intStatisTalabalar" />
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
-                  15k+
+                  <CountUp end={15} duration={3} />
+                  k+
                 </dd>
               </div>
               <div className="flex flex-col bg-slate-400 p-8">
@@ -108,7 +110,7 @@ function Interactive() {
                   <TextTranslate id="intStatisPhd" />
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
-                  171
+                  <CountUp end={171} duration={3} />
                 </dd>
               </div>
               <div className="flex flex-col bg-slate-400 p-8">
@@ -116,7 +118,7 @@ function Interactive() {
                   <TextTranslate id="intStatisOqituvchilar" />
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
-                  517
+                  <CountUp end={517} duration={3} />
                 </dd>
               </div>
               <div className="flex flex-col bg-slate-400 p-8">
@@ -124,7 +126,7 @@ function Interactive() {
                   <TextTranslate id="intStatisFanDoktorlar" />
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-white">
-                  10
+                  <CountUp end={10} duration={3} />
                 </dd>
               </div>
             </dl>
