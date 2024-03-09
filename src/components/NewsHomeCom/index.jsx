@@ -29,19 +29,19 @@ const NewsHome = () => {
     loadPost();
   }, []);
   return (
-    <div className="px-5 py-3 md:px-10 lg:px-20 xl:px-0 max-w-7xl mx-auto">
+    <div className="px-5 py-16 md:px-10 lg:px-20 xl:px-0 max-w-7xl mx-auto">
       <div className="md:flex md:items-center justify-between">
         {/* News heading */}
         <div className="mx-auto my-1 md:my-3">
-          <h2 className="text-xl md:text-3xl font-bold my-2 text-[#004269]">
+          <h2 className="text-xl md:text-4xl font-bold text-[#004269]">
             <TextTranslate id="newsHeading" />
           </h2>
         </div>
       </div>
-
       {/* News items */}
+
       {/* First news */}
-      <div className="grid md:grid-cols-1 xl:grid-cols-2 overflow-hidden">
+      <div className="grid md:grid-cols-1 xl:grid-cols-2 overflow-hidden my-10">
         {firstNews &&
           firstNews.map((item, idx) => (
             <Link

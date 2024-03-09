@@ -4,11 +4,11 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 function Curriculum() {
   return (
     <div className="bg-slate-100">
-      <div className="max-w-xs md:max-w-6xl mx-auto md:py-20 py-10">
-        <h1 className="text-xl md:text-4xl font-bold text-[#004269] text-center">
+      <div className="max-w-xs md:max-w-6xl mx-auto md:py-16 py-10">
+        <h1 className="text-2xl md:text-4xl font-bold text-[#004269] text-center">
           O'quv dasturlari
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:mx-10 lg:mx-0 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:mx-10 lg:mx-0 mt-12">
           <div className="flex w-full h-[140px] bg-white p-3 rounded-2xl duration-200 hover:scale-105 shadow-md hover:shadow-lg">
             <div className="w-[200px]">
               <img

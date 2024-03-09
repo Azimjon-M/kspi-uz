@@ -83,19 +83,19 @@ function Interactive() {
           </ul>
         </div>
       </div>
-      <div className="bg-gray-900 py-16">
+      <div className="bg-slate-100 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-[#004269] sm:text-4xl">
                 <TextTranslate id="intStatistika" />
               </h2>
-              <p className="text-lg leading-8 text-gray-300">
+              <p className="text-lg md:text-xl leading-8 text-gray-600">
                 <TextTranslate id="intStatisTaytil" />
               </p>
             </div>
             <dl className="mt-8 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-              <div className="flex flex-col bg-white/5 p-8">
+              <div className="flex flex-col bg-slate-400 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
                   <TextTranslate id="intStatisTalabalar" />
                 </dt>
@@ -103,7 +103,7 @@ function Interactive() {
                   15k+
                 </dd>
               </div>
-              <div className="flex flex-col bg-white/5 p-8">
+              <div className="flex flex-col bg-slate-400 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
                   <TextTranslate id="intStatisPhd" />
                 </dt>
@@ -111,7 +111,7 @@ function Interactive() {
                   171
                 </dd>
               </div>
-              <div className="flex flex-col bg-white/5 p-8">
+              <div className="flex flex-col bg-slate-400 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
                   <TextTranslate id="intStatisOqituvchilar" />
                 </dt>
@@ -119,7 +119,7 @@ function Interactive() {
                   517
                 </dd>
               </div>
-              <div className="flex flex-col bg-white/5 p-8">
+              <div className="flex flex-col bg-slate-400 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-300">
                   <TextTranslate id="intStatisFanDoktorlar" />
                 </dt>

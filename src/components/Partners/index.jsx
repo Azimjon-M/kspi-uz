@@ -9,30 +9,30 @@ import hamkor5 from "../../assets/images/hamkor4.png";
 function Partners() {
   const row = [hamkor1, hamkor2, hamkor3, hamkor4, hamkor5];
   return (
-    <div className="max-w-8xl mx-auto py-10 md:py-20">
+    <div className="max-w-8xl mx-auto py-10 bg-slate-100">
       <h1 className="text-xl lg:text-4xl font-bold text-[#004269] text-center">
         Hamkorlarimiz
       </h1>
-      <div>
+      <div className="md:my-10">
         <Marquee>
           <MarqueeGroup>
             {row.map((el, idx) => (
               <ImageGroup className="w-[100px]" key={idx}>
-                <Image className="w-[100px] h-[100px]" src={el} />
+                <Image className="w-[100px] h-[100px] bg-white" src={el} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
             {row.map((el, idx) => (
               <ImageGroup className="w-[100px]" key={idx}>
-                <Image className="w-[100px] h-[100px]" src={el} />
+                <Image className="w-[100px] h-[100px] bg-white" src={el} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
             {row.map((el, idx) => (
               <ImageGroup className="w-[100px]" key={idx}>
-                <Image className="w-[100px] h-[100px]" src={el} />
+                <Image className="w-[100px] h-[100px] bg-white" src={el} />
               </ImageGroup>
             ))}
           </MarqueeGroup>

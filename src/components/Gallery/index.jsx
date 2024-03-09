@@ -53,20 +53,20 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto my-5">
-      <div className="p-2 md:flex mb-5 md:justify-between">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold text-[#004269] md:text-start mb-5 md:mb-0 lg:mx-5 xl:mx-10 md:border-r-4 border-[#004269] pr-10 lg:pr-44">
+    <div className="max-w-7xl mx-auto my-5 md:my-16">
+      <div className="p-4 md:flex mb-5 md:justify-between">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold text-[#004269] md:text-start mb-5 md:mb-0 lg:mx-5 xl:mx-10 md:border-r-8 border-[#004269] lg:pr-44">
           Institut <br className="hidden md:block" />
           galleriyasi
         </h2>
-        <div className="md:ml-10 italic lg:mx-5 xl:mx-10 lg:max-w-[700px] text-center md:text-start">
+        <div className="md:mx-5 italic lg:max-w-[700px] text-center md:text-start">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
           laborum, quidem nostrum ex distinctio qui vero nobis aperiam
           accusantium, repellat quasi modi error magni? Obcaecati alias
           consequatur sit facere perferendis.
         </div>
       </div>
-      <Tabs id="custom-animation" value="institut" className="-z-10">
+      <Tabs id="custom-animation" value="institut" className="-z-10 md:py-10">
         <TabsHeader className="bg-[#eaf3ffa2] mx-2">
           {data.map(({ label, value }) => (
             <Tab
