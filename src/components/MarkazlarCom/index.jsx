@@ -7,10 +7,13 @@ import {
 } from "@material-tailwind/react";
 import Breadcrumb from "../Breadcrumb";
 import raqamliImg from "../../assets/images/raqamli.JPG";
-import oquv from "../../assets/images/oquv.jpg";
+import axborot from "../../assets/images/oquv.jpg";
 import muhandis from "../../assets/images/muhandis.jpg";
-import energetik from "../../assets/images/energetik.png";
-import xalqaro from "../../assets/images/xalqaro.jpg";
+import energetik from "../../assets/images/energetik/boshliq.JPG";
+import yordamchi from "../../assets/images/xalqaro.jpg";
+import yuriskonsolt from "../../assets/images/yurist/boshliq.JPG";
+import matbuot from "../../assets/images/xalqaro.jpg";
+import auditor from "../../assets/images/auditor/boshliq.JPG";
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
@@ -35,7 +38,7 @@ const MarkazlarCom = () => {
         lavozim: "Axborot resurs markazi boshlig'i",
         ism: "Meliqo'ziyev Dadaqo'zi Jo'raqo'zi o'g'li",
         tel: "+998 91 323 04 77",
-        img: oquv,
+        img: axborot,
       },
       {
         label: "Bosh muhandis",
@@ -59,7 +62,7 @@ const MarkazlarCom = () => {
         lavozim: "Rektor yordamchisi",
         ism: "Kadirova Nigora Abdurashidovna",
         tel: "+998 97 309 86 68",
-        img: xalqaro,
+        img: yordamchi,
       },
       {
         label: "Matbuot kotibi",
@@ -67,7 +70,7 @@ const MarkazlarCom = () => {
         lavozim: "Matbuot kotibi",
         ism: "Kadirova Nigora Abdurashidovna",
         tel: "+998 97 309 86 68",
-        img: xalqaro,
+        img: matbuot,
       },
       {
         label: "Yuriskonsolt",
@@ -75,7 +78,7 @@ const MarkazlarCom = () => {
         lavozim: "Yuriskonsolt",
         ism: "Hazratqulov Hayrullo",
         tel: "+998 91 201 98 73",
-        img: xalqaro,
+        img: yuriskonsolt,
       },
       {
         label: "Bosh auditor",
@@ -83,7 +86,7 @@ const MarkazlarCom = () => {
         lavozim: "Bosh auditor",
         ism: "Alimov Elyor Akramovich",
         tel: "+998 94 440 83 31",
-        img: xalqaro,
+        img: auditor,
       },
     ],
     []
@@ -141,7 +144,6 @@ const MarkazlarCom = () => {
     const a = document.getElementById("0");
     a.click();
   }, []);
-
 
   return (
     <div className="px-5 py-3 md:px-10 mb-3 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">

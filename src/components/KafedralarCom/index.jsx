@@ -9,7 +9,6 @@ import Breadcrumb from "../Breadcrumb";
 import raqamliImg from "../../assets/images/raqamli.JPG";
 import oquv from "../../assets/images/oquv.jpg";
 import muhandis from "../../assets/images/muhandis.jpg";
-import energetik from "../../assets/images/energetik.png";
 import xalqaro from "../../assets/images/xalqaro.jpg";
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
@@ -72,7 +71,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: energetik,
+        img: xalqaro,
       },
       {
         label: "Tarix",

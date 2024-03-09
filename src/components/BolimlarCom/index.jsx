@@ -6,12 +6,26 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 import Breadcrumb from "../Breadcrumb";
-import raqamliImg from "../../assets/images/raqamli.JPG";
-import oquv from "../../assets/images/oquv.jpg";
-import muhandis from "../../assets/images/muhandis.jpg";
-import energetik from "../../assets/images/energetik.png";
-import xalqaro from "../../assets/images/xalqaro.jpg";
-import { Link } from "react-router-dom";
+import reja from "../../assets/images/rejaMoliya/boshliq.JPG"
+import oquv from "../../assets/images/oquvBolimi/boshliq.JPG"
+import korrupsiya from "../../assets/images/korrupsiya/boshliq.JPG"
+// import talimSifat from "../../assets/images/nazorat"
+import nazorat from "../../assets/images/ichkiNazorat/boshliq.JPG"
+import xodimlar from "../../assets/images/xodimlar/boshliq.jpg"
+import xalqaro from "../../assets/images/xalqaroHamkorlik/boshliq.JPG"
+import talabaAmaliyot from "../../assets/images/marketingTalabaAmaliyot/boshliq.JPG"
+import sirtqi from "../../assets/images/sirtqi/boshliq.JPG"
+import yoshlarBilan from "../../assets/images/yoshlarBilanIshlash/boshliq.JPG"
+import ilmiyTadqiqot from "../../assets/images/ilmiyTadqiqotlar/boshliq.JPG"
+import ilmiyInnovatsion from "../../assets/images/tijoratlashtirish/boshliq.JPG"
+import iqtidorliTalabalar from "../../assets/images/iqtidorliTalabalar/boshliq.JPG"
+import magistratura from "../../assets/images/magistratura/boshliq.JPG"
+import QoshmaTalim from "../../assets/images/qoshma/boshliq.JPG"
+import buxgalteriya from "../../assets/images/buxgalter.jpg"
+import texnikFoydalanish from "../../assets/images/xojalik/boshliq.JPG"
+import fuqaroMehnat from "../../assets/images/mehnatMuhofazasi/boshliq.JPG"
+import devonxona from "../../assets/images/devonxona/boshliq.JPG"
+import turarJoy from "../../assets/images/turarJoy/boshliq.JPG"
 import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa";
@@ -36,7 +50,7 @@ const Bolimlar = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: raqamliImg,
+        img: reja,
       },
       {
         label: "O'quv uslubiy boshqarma",
@@ -61,7 +75,7 @@ const Bolimlar = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: muhandis,
+        img: korrupsiya,
       },
       {
         label: "Ta'lim sifatini nazorat qilish ",
@@ -73,7 +87,7 @@ const Bolimlar = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: energetik,
+        // img: talimSifat,
       },
       {
         label:
@@ -87,7 +101,7 @@ const Bolimlar = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti!",
-        img: xalqaro,
+        img: nazorat,
       },
       {
         label: "Xodimlar bo'limi",
@@ -99,7 +113,7 @@ const Bolimlar = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat",
-        img: xalqaro,
+        img: xodimlar,
       },
       {
         label: "Xalqaro hamkorlik",
@@ -123,7 +137,7 @@ const Bolimlar = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: talabaAmaliyot,
       },
       {
         label: "Sirtqi",
@@ -135,7 +149,7 @@ const Bolimlar = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti!",
-        img: xalqaro,
+        img: sirtqi,
       },
       {
         label: "Yoshlar bilan ishlash, ma'naviyat va marifat",
@@ -148,228 +162,139 @@ const Bolimlar = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat la",
-        img: xalqaro,
+        img: yoshlarBilan,
       },
       {
-        label: "Biologiya",
-        value: "Biologiya",
-        lavozim: "Biologiya kafedirasi mudiri",
-        ism: "Madumarov Maqsadjon Jumanovich",
-        tel: "+998 94 440 83 31",
-        mutahasisligi: "Biyalogiya fanlari bo’yicha falsafa doctori (PhD)",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
-        vazifasi:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
-      },
-      {
-        label: "Amaliy psixologiya",
-        value: "AmaliyPsixologiya",
-        lavozim: "Amaliy psixologiya kafedrasi mudiri",
-        ism: "Saliyeva Dilorom Abdullayevna",
-        tel: "+998 90 292 35 47",
-        mutahasisligi: "Psixologiya fanlar nomzodi, dosent",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
-        vazifasi:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
-      },
-      {
-        label: "Kimyo",
-        value: "Kimyo",
-        lavozim: "Kimyo kafedirasi mudiri",
-        ism: "Ochilov G’olibjon Mamayunusovich",
-        tel: "+998 90 292 35 47",
-        mutahasisligi: "Kimyo fanlari doktori, professor.",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
-        vazifasi:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
-      },
-      {
-        label: "Jismoniy madaniyat metodikasi",
-        value: "JismoniyMadaniyat",
-        lavozim: "Jismoniy madaniyat metodikasi kafedrasi mudiri",
-        ism: "Arabboyev Qaxramon Toxirovich",
-        tel: "+998 90 292 35 47",
-        mutahasisligi: "-",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
-        vazifasi:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
-      },
-      {
-        label: "Sport va harakatli o'yinlar",
-        value: "sportVaHarakatli",
-        lavozim: "Sport va harakatli o'yinlar kafedrasi mudiri",
-        ism: "Arabboyev Qaxramon Toxirovich",
-        tel: "+998 90 292 35 47",
-        mutahasisligi: "-",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
-        vazifasi:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
-      },
-      {
-        label: "Maktab menejmenti",
-        value: "MaktabMenejmenti",
-        lavozim: "Maktab menejmenti kafedirasi mudiri",
-        ism: "Ustadjalilova Xurshida Aliyevna",
-        tel: "+998 97 555 52 52",
-        mutahasisligi: "-",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
-        vazifasi:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
-      },
-      {
-        label: "Matematika",
-        value: "Matematika",
-        lavozim: "Matematika kafedirasi mudiri",
-        ism: "Aroyev Dilshod Davronovich",
-        tel: "+998 97 555 52 52",
-        mutahasisligi: "-",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
-        vazifasi:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
-      },
-      {
-        label: "Pedagogika",
-        value: "Pedagogika",
-        lavozim: "Pedagogika kafedirasi mudiri",
-        ism: "Xolmatova Ziroat Anvarovna",
-        tel: "+998 97 555 52 52",
-        mutahasisligi: "-",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
-        vazifasi:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
-      },
-      {
-        label: "Ingliz tili va adabiyoti",
-        value: "InglizTiliVaAdabiyoti",
-        lavozim: "Ingliz tili va adabiyoti kafedrasi mudiri",
-        ism: "Bektoshev Otabek Qodiraliyevich",
-        tel: "+998 97 555 52 52",
-        mutahasisligi: "-",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
-        vazifasi:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
-      },
-      {
-        label: "Maktabgacha va boshlang’ich ta’limda ingiliz tili",
-        value: "MaktabgachaVaBoshlangich",
+        label:
+          "Ilmiy-tadqiqotlar, innovatsiyalar va ilmiy pedagogik kadrlarni tayyorlash",
+        value: "ilmiy-tadqiqot",
         lavozim:
-          "Maktabgacha va boshlang’ich ta’limda ingiliz tili kafedrasi mudiri",
-        ism: "Ergashev Muhammadjon Rahmonovich",
-        tel: "+998 99 991 60 83",
-        mutahasisligi: "(PHD) Filologiya fanlar bo’yicha falsafa doktori",
+          "Ilmiy-tadqiqotlar, innovatsiyalar va ilmiy pedagogik kadrlarni tayyorlash bo'limi boshlig'i",
+        ism: "Rasulov Inomjon Mo'ydinovich",
+        tel: "+998 90 155 50 00",
+        mutahasisligi: "-",
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: ilmiyTadqiqot,
+      },
+      {
+        label: "Ilmiy - innovatsion ishlanmalarni tijoratlashtirish",
+        value: "IlmiyInnovatsion",
+        lavozim:
+          "Ilmiy - innovatsion ishlanmalarni tijoratlashtirish bo'limi boshlig'i",
+        ism: "Xo'jamberdiyev Sherzod Mirziyodovich",
+        tel: "+998 90 121 76 81",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: ilmiyInnovatsion,
+      },
+      {
+        label:
+          "Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish",
+        value: "Iqtidorli",
+        lavozim:
+          "Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo'limi boshlig'i",
+        ism: "Jo'rayev Muhammadrizo Mamurovich",
+        tel: "+998 90 507 60 36",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: iqtidorliTalabalar,
+      },
+      {
+        label: "Magistratura",
+        value: "Magistratura",
+        lavozim: "Magistratura bo'limi boshlig'i",
+        ism: "Bazarov Otabek Odilovich",
+        tel: "+998 90 974 17 65",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: magistratura,
+      },
+      {
+        label: "Qo'shma ta'lim dasturlarini muvofiqlashtirish",
+        value: "QoshmaTalim",
+        lavozim:
+          "Qo'shma ta'lim dasturlarini muvofiqlashtirish bo'limi boshlig'i",
+        ism: "Qarshiyeva Shaxnoza Valiyevna",
+        tel: "+998 91 694 01 55",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: QoshmaTalim,
+      },
+      {
+        label: "Buxgalteriya",
+        value: "Buxgalteriya",
+        lavozim: "Buxgalteriya bo’limi bo'limi boshlig'i",
+        ism: "Abduraximov Abdurashid Abdumalikovich",
+        tel: "+998 93 972 44 01",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: buxgalteriya,
+      },
+      {
+        label: "Texnik foydalanish va xo'jalik",
+        value: "TexnikFoydalanish",
+        lavozim: "Texnik foydalanish va xo'jalik bo'limi boshlig'i",
+        ism: "Hamidov Mansurxon",
+        tel: "+998 91 154 30 03",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: texnikFoydalanish,
+      },
+      {
+        label: "Fuqaro va mehnat muhofazasi",
+        value: "FuqaroMehnat",
+        lavozim: "Fuqaro va mehnat muhofazasi bo'limi boshlig'i",
+        ism: "Ayubjonov Inomjon Alijonovich",
+        tel: "+998 91 141 26 14",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: fuqaroMehnat,
+      },
+      {
+        label: "Devonxona va arxiv",
+        value: "Devonxona",
+        lavozim: "Devonxona va arxiv bo'limi boshlig'i",
+        ism: "Ahmadaliyev Bahrom Alisherovich",
+        tel: "+998 94 557 20 79",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: devonxona,
+      },
+      {
+        label:
+          "Talabalarni turar joy bilan ta'minlash ishlarini muvofiqlashtirish",
+        value: "TurarJoy",
+        lavozim:
+          "Talabalarni turar joy bilan ta'minlash ishlarini muvofiqlashtirish bo'limi boshlig'i",
+        ism: "Ergashev Muhammadjon Rahmonovich",
+        tel: "+998 94 448 23 03",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: turarJoy,
       },
     ],
     []
   );
-
-  const [filteredData, setFilteredData] = useState(data);
-
-  const links = useMemo(
-    () => [
-      {
-        value: "ozbek-adabiyoti",
-        link: "/bolimlar/ozbek-adabiyoti",
-      },
-      {
-        value: "ozbek-tili",
-        link: "/bolimlar/ozbek-tili",
-      },
-      {
-        value: "informatika",
-        link: "/bolimlar/informatika",
-      },
-      {
-        value: "geografiyaIqtisodAsoslari",
-        link: "/bolimlar/geografiyaIqtisodAsoslari",
-      },
-      {
-        value: "tarixKafedrasi",
-        link: "/bolimlar/tarixKafedrasi",
-      },
-      {
-        value: "MilliyGoyaMvaH",
-        link: "/bolimlar/MilliyGoyaMvaH",
-      },
-      {
-        value: "fizikaVaAstronomiya",
-        link: "/bolimlar/fizikaVaAstronomiya",
-      },
-      {
-        value: "MaxsusPedagogika",
-        link: "/bolimlar/MaxsusPedagogika",
-      },
-      {
-        value: "Boshlang’ichTalimKafedra",
-        link: "/bolimlar/Boshlang’ichTalimKafedra",
-      },
-      {
-        value: "fakultetlararo",
-        link: "/bolimlar/fakultetlararo",
-      },
-      {
-        value: "Biologiya",
-        link: "/bolimlar/biologiya",
-      },
-      {
-        value: "AmaliyPsixologiya",
-        link: "/bolimlar/AmaliyPsixologiya",
-      },
-      {
-        value: "Kimyo",
-        link: "/bolimlar/Kimyo",
-      },
-      {
-        value: "sportVaHarakatli",
-        link: "/bolimlar/sportVaHarakatli",
-      },
-      {
-        value: "Maktabgacha",
-        link: "/bolimlar/Maktabgacha",
-      },
-      {
-        value: "MaktabMenejmenti",
-        link: "/bolimlar/MaktabMenejmenti",
-      },
-      {
-        value: "Matematika",
-        link: "/bolimlar/Matematika",
-      },
-      {
-        value: "Pedagogika",
-        link: "/bolimlar/Pedagogika",
-      },
-      {
-        value: "InglizTiliVaAdabiyoti",
-        link: "/bolimlar/InglizTiliVaAdabiyoti",
-      },
-      {
-        value: "MaktabgachaVaBoshlangich",
-        link: "/bolimlar/MaktabgachaVaBoshlangich",
-      },
-    ],
-    []
-  );
-
-  useEffect(() => {
-    const allData = data.map((item) => {
-      const link = links.find((linkItem) => linkItem.value === item.value);
-      return { ...item, link: link ? link.link : "" };
-    });
-    setFilteredData(allData);
-  }, [links, data]);
 
   useEffect(() => {
     const a = document.getElementById("0");
@@ -394,8 +319,8 @@ const Bolimlar = () => {
         >
           <div>
             <TabsHeader className="max-w-96 md:max-w-80 lg:w-96 border-2 border-[#004269] p-5 mb-5">
-              {filteredData
-                .slice(0, showAll ? filteredData.length : 8)
+              {data
+                .slice(0, showAll ? data.length : 8)
                 .map(({ label, value }, idx) => (
                   <Tab
                     className="flex flex-col items-start text-start font-semibold"
@@ -416,7 +341,11 @@ const Bolimlar = () => {
                   onClick={toggleShowAll}
                   className="text-[#004269] focus:outline-none"
                 >
-                  {!showAll ? <FaAngleDown className="border-2 border-[#004269] rounded-full" /> : <FaAngleUp className="border-2 border-[#004269] rounded-full" />}
+                  {!showAll ? (
+                    <FaAngleDown className="border-2 border-[#004269] rounded-full" />
+                  ) : (
+                    <FaAngleUp className="border-2 border-[#004269] rounded-full" />
+                  )}
                 </button>
               </div>
             </TabsHeader>
@@ -424,14 +353,13 @@ const Bolimlar = () => {
 
           <div className="lg:w-[600px] xl:w-[800px]">
             <TabsBody className="p-0 mb-3">
-              {filteredData.map(
+              {data.map(
                 ({
                   value,
                   lavozim,
                   img = "",
                   ism,
                   tel,
-                  link,
                   qabul,
                   mutahasisligi,
                   vazifasi,
@@ -448,7 +376,7 @@ const Bolimlar = () => {
                         </div>
                         <div className="flex flex-col justify-between xl:py-5 xl:mr-5">
                           <div className="px-3">
-                            <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start">
+                            <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start max-w-[400px]">
                               {lavozim}
                             </h3>
                             <h4 className="block mb-2 font-sans text-lg xl:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center lg:text-start">
@@ -463,14 +391,6 @@ const Bolimlar = () => {
                             <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                               Telefon: {tel}
                             </h4>
-                          </div>
-                          <div className="p-3 pt-0 lg:place-items-end text-center lg:text-start">
-                            <Link
-                              to={link}
-                              className="btn align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-[#004269] text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:bg-[#004269]/90 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
-                            >
-                              Batafsil ...
-                            </Link>
                           </div>
                         </div>
                       </div>
