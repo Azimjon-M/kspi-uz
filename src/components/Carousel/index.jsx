@@ -1,41 +1,31 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Autoplay, Navigation } from "swiper/modules";
-
-import img1 from "../../assets/images/kspi-img-1.jpg";
-import img2 from "../../assets/images/kspi-img2.jpg";
-import img3 from "../../assets/images/kspi-img-3.jpg";
+import React, { useEffect, useRef } from "react";
+import mainVid from "../../assets/video/asosiy.mp4";
 
 const Carousel = () => {
-  const images = [img1, img2, img3];
+  const mainRef = useRef(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (mainRef.current) {
+        mainRef.current.play();
+      }
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <Swiper
-      slidesPerView={1}
-      spaceBetween={30}
-      autoplay={{
-        delay: 6000,
-        disableOnInteraction: false,
-      }}
-      loop={true}
-      modules={[Autoplay, Navigation]}
-      className="mySwiper w-full h-[70vh] object-cover md:h-[90vh] transition-all duration-2000 ease-in-out z-0"
-    >
-      {images.map((img, index) => (
-        <SwiperSlide key={index}>
-          <div className="relative h-full">
-            <div className="absolute inset-0 bg-gradient-to-b from-[#000] to-transparent opacity-60" />
-            <img
-              className="block w-full h-full object-cover transition-all duration-3000 ease-linear"
-              src={img}
-              alt="Institut rasmi"
-            />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="relative">
+      <video
+        ref={mainRef}
+        id="mainVideo"
+        className="h-[50vh] md:h-[80vh] lg:h-[100vh] object-cover object-center w-full -z-1"
+        src={mainVid}
+        autoPlay
+        loop
+      ></video>
+      <div className="absolute top-0 left-0 w-full h-full z-0 bg-black opacity-35"></div>
+    </div>
   );
 };
 
