@@ -92,7 +92,7 @@ const Gallery = () => {
               value={value}
               className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             >
-              {content.slice(0, 6).map((imageUrl, index) => (
+              {content.slice(0, 8).map((imageUrl, index) => (
                 <img
                   key={index}
                   className="block h-full w-full object-cover object-center p-2 rounded-2xl hover:scale-105 ease-linear duration-300"
