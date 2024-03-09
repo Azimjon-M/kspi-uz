@@ -9,11 +9,11 @@ import hamkor5 from "../../assets/images/hamkor4.png";
 function Partners() {
   const row = [hamkor1, hamkor2, hamkor3, hamkor4, hamkor5];
   return (
-    <div className="max-w-8xl mx-auto py-10 md:py-20">
+    <div className="max-w-8xl mx-auto py-10 md:py-10">
       <h1 className="text-xl lg:text-4xl font-bold text-[#004269] text-center">
         Hamkorlarimiz
       </h1>
-      <div>
+      <div className="md:my-10">
         <Marquee>
           <MarqueeGroup>
             {row.map((el, idx) => (

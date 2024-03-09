@@ -55,14 +55,14 @@ function WarmThoughts() {
 
   return (
     <div>
-      <div className="max-w-7xl mx-auto my-10">
-        <div className="text-center font-bold md:text-4xl text-teal-700">
+      <div className="max-w-7xl mx-auto my-8 md:my-16">
+        <div className="text-2xl md:text-4xl text-center font-bold text-teal-700">
           QDPI
         </div>
-        <h1 className="text-xl md:text-4xl font-bold text-[#004269] text-center">
+        <h1 className="text-xl md:text-3xl font-bold text-[#004269] text-center my-4">
           Ularning so'zlarida
         </h1>
-        <div className="hidden md:block p-5">
+        <div className="hidden md:block p-5 my-12">
           <div className="grid grid-cols-3 gap-2">
             {videos &&
               videos.map((video) => {
