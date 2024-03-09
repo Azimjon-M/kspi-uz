@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import Breadcrumb from "../Breadcrumb";
 import raqamliImg from "../../assets/images/raqamli.JPG";
-import axborot from "../../assets/images/oquv.jpg";
+import axborot from "../../assets/images/arm.jpg";
 import muhandis from "../../assets/images/muhandis.jpg";
 import energetik from "../../assets/images/energetik/boshliq.JPG";
 import yordamchi from "../../assets/images/xalqaro.jpg";
@@ -44,8 +44,8 @@ const MarkazlarCom = () => {
         label: "Bosh muhandis",
         value: "muhandis",
         lavozim: "Bosh muhandis",
-        ism: "Boybekov Muhiddin Madaminovich",
-        tel: "+998 97 334 25 52",
+        ism: "",
+        tel: "+998 9",
         img: muhandis,
       },
       {
@@ -60,16 +60,16 @@ const MarkazlarCom = () => {
         label: "Rektor yordamchisi",
         value: "rekYordamchi",
         lavozim: "Rektor yordamchisi",
-        ism: "Kadirova Nigora Abdurashidovna",
-        tel: "+998 97 309 86 68",
+        ism: "Hoshimov Murodjon",
+        tel: "+998 91 695 15 15",
         img: yordamchi,
       },
       {
         label: "Matbuot kotibi",
         value: "kotib",
         lavozim: "Matbuot kotibi",
-        ism: "Kadirova Nigora Abdurashidovna",
-        tel: "+998 97 309 86 68",
+        ism: "Begmatov Oybek Rustamovich",
+        tel: "+998 90 556 30 01",
         img: matbuot,
       },
       {
