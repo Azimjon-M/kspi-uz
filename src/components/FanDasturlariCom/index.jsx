@@ -160,7 +160,7 @@ function FanDasturlariCom() {
   return (
     <div className="max-w-7xl xl:mx-auto py-10 mx-4 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <h1 className="text-md text-4xl font-bold text-[#004269] text-center">
-        O'quv rejalari
+        Fan dasturlari
       </h1>
       <div className="md:flex mt-4 md:mt-8">
         <ul className="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
@@ -172,29 +172,293 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              2-kurs o'quv rejasi
+              Pedagogika
             </button>
           </li>
           <li>
             <button
               onClick={() => handleClick(2)}
               className={`${
-                showContent === 2 ? "bg-blue-500 text-white" : ""
+                showContent === 2 ? "bg-blue-500 text-white" : "bg-gray-50"
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              3-kurs o'quv rejasi
+              Maktabgacha ta'lim
             </button>
           </li>
           <li>
             <button
               onClick={() => handleClick(3)}
               className={`${
-                showContent === 3 ? "bg-blue-500 text-white" : ""
+                showContent === 3 ? "bg-blue-500 text-white" : "bg-gray-50"
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              4-kurs o'quv rejasi
+              Maktabgacha TPP
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 4 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Boshlang'ich ta'lim
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 5 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Matematika va Informatika
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 6 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Fizika va Astronomiya
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 7 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Kimyo
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 8 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Biologiya
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 9 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Geografiya va IBA
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 10 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Tarix
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 11 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Tasviriy san'at va MG
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 11 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Musiqa ta'limi
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 11 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              O'zbek tili va Adabiyoti
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 12 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Родной язик
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 13 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Русский язик в ИГ
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 14 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Xorijiy til va adabiyoti
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 15 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Milliy g'oya va HA
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 16 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Jismoniy madaniyat
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 17 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Jismoniy madaniyat
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 18 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Texnologik ta'lim
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 19 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Maktab menejmenti
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 20 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Maktabgacha va BTXT
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 21 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              MP (Logopediya)
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 22 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              MP (Oligofrenopedagogika)
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 23 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              MP (Surdopedagogika)
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 24 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Amaliy psixologiya
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleClick(3)}
+              className={`${
+                showContent === 25 ? "bg-blue-500 text-white" : "bg-gray-50"
+              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
+            >
+              <PiStudentFill className="w-4 h-4 me-2" />
+              Fakultetlararo
             </button>
           </li>
         </ul>

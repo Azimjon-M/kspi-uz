@@ -122,7 +122,7 @@ function DTSvaMalakaCom() {
           <tbody className="text-base">
             {dataPDF &&
               dataPDF.map((item) => {
-                const { id, sana, name } = item;
+                const { id, sana, name} = item;
                 return (
                   <tr
                     key={id}

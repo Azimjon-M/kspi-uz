@@ -26,10 +26,6 @@ function TalabalarTurarJoyiCom() {
     });
   });
 
-  const handleScroll = () => {
-    console.log("scroled");
-  };
-
   return (
     <div>
       {/* video about the institute */}
@@ -67,7 +63,7 @@ function TalabalarTurarJoyiCom() {
       </div>
 
       {/* TTJ statistics */}
-      <div onScroll={handleScroll} className="bg-[#F2F2F2] overflow-y-scroll py-14 mt-20">
+      <div className="bg-[#F2F2F2] overflow-y-scroll py-14 mt-20">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 px-5 md:mx-0">
             <div className="border-b-4 md:border-b-0 md:border-r-4 border-[#004269] p-7">
