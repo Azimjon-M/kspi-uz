@@ -1,18 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import mainVid from "../../assets/video/asosiy.mp4";
 
 const Carousel = () => {
   const mainRef = useRef(null);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (mainRef.current) {
-        mainRef.current.play();
-      }
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className="relative">
@@ -23,6 +13,7 @@ const Carousel = () => {
         src={mainVid}
         autoPlay
         loop
+        muted
       ></video>
       <div className="absolute top-0 left-0 w-full h-full z-0 bg-black opacity-35"></div>
     </div>
