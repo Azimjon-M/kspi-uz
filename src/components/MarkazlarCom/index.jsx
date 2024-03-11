@@ -60,7 +60,7 @@ const MarkazlarCom = () => {
         label: "Rektor yordamchisi",
         value: "rekYordamchi",
         lavozim: "Rektor yordamchisi",
-        ism: "Hoshimov Murodjon",
+        ism: "Hoshimov Murodjon Solijonovich",
         tel: "+998 91 695 15 15",
         img: yordamchi,
       },

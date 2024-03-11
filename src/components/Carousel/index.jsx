@@ -1,18 +1,18 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import mainVid from "../../assets/video/asosiy.mp4";
 
 const Carousel = () => {
   const mainRef = useRef(null);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (mainRef.current) {
-        mainRef.current.play();
-      }
-    }, 2000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     if (mainRef.current) {
+  //       mainRef.current.play();
+  //     }
+  //   }, 2000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <div className="relative">

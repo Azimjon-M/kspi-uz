@@ -6,15 +6,40 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 import Breadcrumb from "../Breadcrumb";
-import raqamliImg from "../../assets/images/raqamli.JPG";
-import oquv from "../../assets/images/oquv.jpg";
-import muhandis from "../../assets/images/muhandis.jpg";
-import xalqaro from "../../assets/images/xalqaro.jpg";
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
+import uzbekTili from "../../assets/images/kafedra/kaf_uzbek_tili.jpg";
+import uzbekTiliAdabiyot from "../../assets/images/kafedra/kaf_uzbek_adabiyoti.jpg";
+import informatika from "../../assets/images/kafedra/kaf_informatika.jpg";
+import geografiya from "../../assets/images/kafedra/kaf_geografiya.jpg";
+import tarix from "../../assets/images/kafedra/kaf_tarix.jpg";
+import milliy from "../../assets/images/kafedra/kaf_milliy_goya.jpg";
+import fizika from "../../assets/images/kafedra/kaf_fizika.jpg";
+import maxsusPed from "../../assets/images/kafedra/kaf_maxsus_pedagogika.jpg";
+import boshMetodika from "../../assets/images/kafedra/kaf_boshlangich.jpg";
+import boshNazariya from "../../assets/images/kafedra/kaf_boshlangich_nazariya.jpg";
+import fakPed from "../../assets/images/kafedra/kaf_fakultetlararo_pedagogika.jpg";
+import biologiya from "../../assets/images/kafedra/kaf_biologiya.jpg";
+import kimyo from "../../assets/images/kafedra/kaf_kimyo.jpg";
+import amaliyPsix from "../../assets/images/kafedra/kaf_amaliy_psixologiya.jpg";
+import jismoniyMad from "../../assets/images/kafedra/kaf_jismoniy.jpg";
+import sport from "../../assets/images/kafedra/kaf_sport_harakatli.jpg";
+import menejment from "../../assets/images/kafedra/kaf_maktab_menejmenti.jpg";
+import matematika from "../../assets/images/kafedra/kaf_matematika.jpg";
+import pedagogika from "../../assets/images/kafedra/kaf_pedagogika.jpg";
+import ingliz from "../../assets/images/kafedra/kaf_ingliz.jpg";
+import maktabgachaIngliz from "../../assets/images/kafedra/kaf_maktabgacha_ingliz.jpg";
+import rus from "../../assets/images/kafedra/kaf_rus_tili.jpg";
+import fakultetlararoTillar from "../../assets/images/kafedra/kaf_fakultetlararo_tillar.jpg";
+import tasviriy from "../../assets/images/kafedra/kaf_tasviriy_sanat.jpg";
+import musiqa from "../../assets/images/kafedra/kaf_musiqiy_talim.jpg";
+import texnologik from "../../assets/images/kafedra/kaf_texnologik_talim.jpg";
+import maktabgachaTalim from "../../assets/images/kafedra/kaf_maktabgacha.jpg";
+import inklyuziv from "../../assets/images/kafedra/kaf_inklyuziv.jpg";
+import maktabgachaTPP from "../../assets/images/kafedra/kaf_maktabgacha_tpp.jpg";
 
 const KafedralarCom = () => {
   const [showAll, setShowAll] = useState(false);
@@ -29,13 +54,13 @@ const KafedralarCom = () => {
         label: "O'zbek tili",
         value: "ozbek-tili",
         lavozim: "O’zbek tili va adabiyoti kafedrasi mudiri",
-        ism: "Madraximov Ilxomjon Sobirovich",
-        tel: "+998 99 998 00 57",
+        ism: "To'xtasinova Odinaxon Yusupovna",
+        tel: "+998 ",
         mutahasisligi: "Filologiya fanlar nomzodi, dotsent.",
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: raqamliImg,
+        img: uzbekTili,
       },
       {
         label: "O’zbek adabiyoti",
@@ -47,7 +72,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi.",
-        img: oquv,
+        img: uzbekTiliAdabiyot,
       },
       {
         label: "Informatika",
@@ -59,7 +84,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: muhandis,
+        img: informatika,
       },
       {
         label: "Geografiya va iqtisodiy bilim asoslari ",
@@ -71,7 +96,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: geografiya,
       },
       {
         label: "Tarix",
@@ -83,7 +108,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti!",
-        img: xalqaro,
+        img: tarix,
       },
       {
         label: "Milliya g’oya, ma’naviyat asoslari huquq va ta’lim",
@@ -96,19 +121,19 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat",
-        img: xalqaro,
+        img: milliy,
       },
       {
         label: "Fizika va astranomiya",
         value: "fizikaVaAstronomiya",
         lavozim: "Fizika kafedrasi mudiri",
-        ism: "Bozorov Nosirjon Sodiqovich",
-        tel: "+998 91 201 98 73",
+        ism: "Qo'chqorov Mavzurjon Xursanboyevich",
+        tel: "+998 91 685 17 90",
         mutahasisligi: "Fizika-matematika fanlari nomzodi, dotsent.",
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: fizika,
       },
       {
         label: "Maxsus pedagogika",
@@ -120,31 +145,43 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: maxsusPed,
       },
       {
-        label: "Boshlang’ich ta’lim",
-        value: "Boshlang’ichTalimKafedra",
+        label: "Boshlang’ich ta’lim metodikasi",
+        value: "Boshlang’ichTalimMetodika",
         lavozim: "Boshlang’ich ta’lim metodikasi kafedrasi mudiri",
-        ism: "Qalandarov Shuhratjon Shokirjonovich",
-        tel: "+998 99 696 33 77",
+        ism: "Nizomova Shaxnoza Ubaydullayevna",
+        tel: "+998 91 324 15 84",
         mutahasisligi: "Pedagogika fanlari boyicha falsafa doktori (PhD)",
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti!",
-        img: xalqaro,
+        img: boshMetodika,
+      },
+      {
+        label: "Boshlang’ich ta’lim nazariyasi",
+        value: "Boshlang’ichTalimNazariya",
+        lavozim: "Boshlang’ich ta’lim nazariyasi kafedrasi mudiri",
+        ism: "Xamidova Kamola Mamirovna",
+        tel: "+998 90 564 19 21",
+        mutahasisligi: "Pedagogika fanlari boyicha falsafa doktori (PhD)",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti!",
+        img: boshNazariya,
       },
       {
         label: "Fakultetlararo pedagogika va psixologiya",
         value: "fakultetlararo",
         lavozim: "Fakultetlararo pedagogika va psixologiya kafedrasi mudiri",
-        ism: "Rasulova Matlubaxon Xamzayevna",
-        tel: "+998 94 440 83 31",
+        ism: "Xaydarova Marg'uba Inomovna",
+        tel: "+998 90 550 10 26",
         mutahasisligi: "-",
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat la",
-        img: xalqaro,
+        img: fakPed,
       },
       {
         label: "Biologiya",
@@ -156,7 +193,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: biologiya,
       },
       {
         label: "Amaliy psixologiya",
@@ -168,7 +205,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: amaliyPsix,
       },
       {
         label: "Kimyo",
@@ -180,19 +217,19 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: kimyo,
       },
       {
         label: "Jismoniy madaniyat metodikasi",
         value: "JismoniyMadaniyat",
         lavozim: "Jismoniy madaniyat metodikasi kafedrasi mudiri",
         ism: "Arabboyev Qaxramon Toxirovich",
-        tel: "+998 90 292 35 47",
+        tel: "+998 91 201 58 70",
         mutahasisligi: "-",
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: jismoniyMad,
       },
       {
         label: "Sport va harakatli o'yinlar",
@@ -200,11 +237,11 @@ const KafedralarCom = () => {
         lavozim: "Sport va harakatli o'yinlar kafedrasi mudiri",
         ism: "Arabboyev Qaxramon Toxirovich",
         tel: "+998 90 292 35 47",
-        mutahasisligi: "-",
+        mutahasisligi: "Pedagogika fanlari boʻyicha falsafa doktori(PhD)",
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: sport,
       },
       {
         label: "Maktab menejmenti",
@@ -216,7 +253,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: menejment,
       },
       {
         label: "Matematika",
@@ -228,7 +265,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: matematika,
       },
       {
         label: "Pedagogika",
@@ -240,7 +277,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: pedagogika,
       },
       {
         label: "Ingliz tili va adabiyoti",
@@ -252,7 +289,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: ingliz,
       },
       {
         label: "Maktabgacha va boshlang’ich ta’limda ingiliz tili",
@@ -265,7 +302,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: maktabgachaIngliz,
       },
       {
         label: "Rus tili va adabiyoti",
@@ -277,7 +314,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: rus,
       },
       {
         label: "Fakultetlararo tillar",
@@ -289,7 +326,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: fakultetlararoTillar,
       },
       {
         label: "Tasviriy san’at va muhandislik grafikasi",
@@ -301,7 +338,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: tasviriy,
       },
       {
         label: "Musiqa ta'limi",
@@ -313,7 +350,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: musiqa,
       },
       {
         label: "Texnologik ta'lim",
@@ -325,7 +362,7 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: texnologik,
       },
       {
         label: "Maktabgacha ta'lim",
@@ -338,7 +375,32 @@ const KafedralarCom = () => {
         qabul: "Dushanba-shanba, 10:00 - 18:00",
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
-        img: xalqaro,
+        img: maktabgachaTalim,
+      },
+      {
+        label: "Maktabgacha ta'limda pedagogika va psixologiya",
+        value: "MaktabgachaPedagogikaPsix",
+        lavozim:
+          "Maktabgacha ta'limda pedagogika va psixologiya kafedira mudiri",
+        ism: "Xo'janazarova Nargizaxon Mirzamahmudovna",
+        tel: "+998 90 058 25 57",
+        mutahasisligi: "-",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: maktabgachaTPP,
+      },
+      {
+        label: "Inklyuziv ta'lim",
+        value: "Inklyuziv",
+        lavozim: "Maktabgacha ta'lim kafedira mudiri",
+        ism: "Raximova Xurshidaxon Sodiqovna",
+        tel: "+998 91 695 82 12",
+        mutahasisligi: "PhD dotsent",
+        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        vazifasi:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
+        img: inklyuziv,
       },
     ],
     []
@@ -545,7 +607,7 @@ const KafedralarCom = () => {
                         </div>
                         <div className="flex flex-col justify-between xl:py-5 xl:mr-5">
                           <div className="px-3">
-                            <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start">
+                            <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start max-w-[450px]">
                               {lavozim}
                             </h3>
                             <h4 className="block mb-2 font-sans text-lg xl:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center lg:text-start">

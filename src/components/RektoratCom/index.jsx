@@ -203,7 +203,7 @@ const RektoratCom = () => {
                         </div>
                         <div className="flex flex-col justify-between xl:py-5 xl:mr-5">
                           <div className="px-3">
-                            <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start">
+                            <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start max-w-[450px]">
                               {lavozim}
                             </h3>
                             <h4 className="block mb-2 font-sans text-lg xl:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center lg:text-start">
