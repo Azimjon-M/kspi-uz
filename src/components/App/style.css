@@ -21,6 +21,10 @@
     color: #333;
 }
 
+body {
+    font-family: "Barlow", "Roboto Condensed", sans-serif;
+}
+
 
 @keyframes animate {
     0%{
