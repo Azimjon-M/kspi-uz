@@ -34,7 +34,7 @@ function StudentOpinion() {
             etakchiga aylanaman.
           </p>
           <div className="mt-4 md:mt-10">
-            <h3 className="font-bold md:text-lg uppercase text-right text-blue-700 ">
+            <h3 className="font-bold md:text-lg uppercase text-right text-[#3786b4] ">
               Muxlisa Karimova
             </h3>
             <p className="text-sm text-gray-500 font-bold text-right">
