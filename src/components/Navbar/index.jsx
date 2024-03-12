@@ -106,7 +106,7 @@ function Navbar() {
             <p
               className={`${
                 location.pathname === "/" ? "text-white" : "text-[#004269]"
-              } hidden sm:inline-block text-[11px] leading-4  font-bold sm:text-[13px] md:text-[15px] xl:leading-6 3xl:text-[22px] xl:text-[18px] `}
+              } hidden sm:inline-block text-[11px] leading-4  font-bold sm:text-[13px] md:text-[32px] xl:leading-6 lg:text-[36px] xl:text-[42px] 3xl:text-[48px] `}
             >
               <TextTranslate id="navLogo" />
             </p>
@@ -210,7 +210,7 @@ function Navbar() {
             <ul
               className={`${
                 location.pathname === "/" ? "text-white" : "text-[#004269]"
-              } flex items-center gap-x-8 font-semibold 2xl:text-[18px] 3xl:gap-x-12 3xl:text-[20px]`}
+              } flex items-center gap-x-8 font-semibold xl:text-[18px] 2xl:text-[20px] 3xl:gap-x-12 3xl:text-[21px]`}
             >
               <li className="-mr-2">
                 <Link to="/yangiliklar">

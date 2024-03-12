@@ -27,7 +27,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Barlow";
   src: url("../../assets/fonts/Barlow/Barlow-SemiBold.ttf") format("truetype");
   font-weight: normal;
@@ -40,9 +40,14 @@
   font-style: normal;
 }
 
-
 body {
   font-family: "Barlow", sans-serif;
+} */
+
+@import url(https://fonts.googleapis.com/css2?family=Signika+Negative:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+  font-family: 'Signika Negative', sans-serif;
 }
 
 @keyframes animate {
