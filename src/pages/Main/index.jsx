@@ -11,6 +11,8 @@ import Partners from "../../components/Partners";
 import WarmThoughts from "../../components/WarmThoughts";
 import ChatIcon from "../../components/Chat";
 import Gallery from "../../components/Gallery";
+import Statistics from "../../components/Statistics";
+import AboutUs from "../../components/AboutUs";
 
 function Main() {
   return (
@@ -18,6 +20,8 @@ function Main() {
       <Navbar />
       <Carousel />
       <Interactive />
+      <AboutUs/>
+      <Statistics/>
       <NewsHome />
       <StudentOpinion />
       <WarmThoughts />
