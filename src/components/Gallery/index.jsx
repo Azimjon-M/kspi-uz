@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Tabs,
   TabsHeader,
@@ -7,6 +8,8 @@ import {
 } from "@material-tailwind/react";
 
 const Gallery = () => {
+  const [activeTab, setActiveTab] = useState("institut");
+
   const data = [
     {
       label: "Tadbirlar",
@@ -66,13 +69,16 @@ const Gallery = () => {
           consequatur sit facere perferendis.
         </div>
       </div>
-      <Tabs id="custom-animation" value="institut" className="-z-10 md:py-10">
+      <Tabs id="custom-animation" value={activeTab} className="-z-10 md:py-10">
         <TabsHeader className="bg-[#eaf3ffa2] mx-2">
           {data.map(({ label, value }) => (
             <Tab
-              className="text-xl font-semibold text-[#004269]"
+              className={`text-xl font-semibold text-[#004269] ${
+                activeTab === value ? "bg-white rounded" : ""
+              }`}
               key={value}
               value={value}
+              onClick={() => setActiveTab(value)}
             >
               {label}
             </Tab>
