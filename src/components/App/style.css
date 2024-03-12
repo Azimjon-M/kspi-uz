@@ -21,6 +21,12 @@
   color: #333;
 }
 
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.font_source {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 @font-face {
   font-family: "Barlow";
   src: url("../../assets/fonts/Barlow/Barlow-SemiBold.ttf") format("truetype");
@@ -33,6 +39,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 body {
   font-family: "Barlow", sans-serif;
