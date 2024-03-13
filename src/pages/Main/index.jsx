@@ -13,6 +13,7 @@ import ChatIcon from "../../components/Chat";
 import Gallery from "../../components/Gallery";
 import Statistics from "../../components/Statistics";
 import AboutUs from "../../components/AboutUs";
+import ExploreProgram from "../../components/ExploreProgram";
 
 function Main() {
   return (
@@ -26,6 +27,7 @@ function Main() {
       <StudentOpinion />
       <WarmThoughts />
       <Curriculum />
+      <ExploreProgram />
       <Gallery />
       <Partners />
       <ContactUs />
