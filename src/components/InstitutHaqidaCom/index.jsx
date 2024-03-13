@@ -5,7 +5,7 @@ const InstitutHaqidaCom = () => {
   return (
     <div className="max-w-7xl mx-auto my-20 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div>
-        <h1 className="text-3xl md:text-5xl font-bold font-source text-center text-[#004269]">
+        <h1 className="text-3xl md:text-4xl font-bold font-source text-center text-[#004269]">
           Biz haqimizda
         </h1>
       </div>
@@ -26,14 +26,76 @@ const InstitutHaqidaCom = () => {
       <div className="px-4 xl:px-0 md:py-20">
         <img
           src={institutImage}
-          className="w-full max-h-[547px] shadow-2xl rounded-xl opacity-70"
+          className="w-full max-h-[547px] shadow-2xl rounded-xl opacity-75"
           alt=""
         />
       </div>
       <div>
-        <h1 className="text-3xl md:text-5xl font-bold font-source text-center text-[#004269]">
-          Tadqiqot, o'qitish va tibbiy <br/>yordam sohasidagi mukammallik
+        <h1 className="text-3xl md:text-4xl font-bold font-source text-center text-[#004269]">
+          Tadqiqot, o'qitish va tibbiy yordam <br /> sohasidagi mukammallik
         </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 px-6 my-20">
+          <div className="bg-red-300 z-10 mx-6 md:mx-0 shadow-2xl max-h-96">
+            <img src={institutImage} className="object-cover" alt="" />
+          </div>
+          <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-20 md:py-20 -mt-6 md:mt-0 md:-ml-16">
+            <h3 className="text-2xl md:text-3xl font-medium">Tadbirlar</h3>
+            <p className="text-md md:text-xl mt-3">
+              Fakultetimiz, talabalarimiz va xodimlarimizni harakatga
+              keltiradigan narsa bu imkoniyatlar ruhi, boshqa odamlarning
+              farzandlariga foyda keltirish uchun yagona farzandi xotirasiga
+              Stenfordda biz o'tmishimizdan saboq olamiz, lekin kelajakka
+              e'tibor qaratamiz va doimiy ravishda dunyoni yaxshiroq joyga
+              aylantirishning yangi usullarini qidiramiz. Biz oliy ta’lim
+              gullab-yashnayotgan jamiyatni qo‘llab-quvvatlashda muhim rol
+              o‘ynashiga qattiq ishonamiz. Institutimiz nafaqat talabalarni
+              o'zlari tanlagan yo'lga tayyorlaydilar, balki ular fuqarolar
+              rahbarlari va muammolarni hal qiluvchilarning keyingi avlodini
+              yaratishga yordam beradi. Oliy ta’lim muassasalari jamiyatimizda
+              faqat bilimlarni yaratish va tarqatishga bag‘ishlangan o‘ziga xos
+              va doimiy vazifani bajaradi.
+            </p>
+          </div>
+        </div>
+        <div className="grid items-center grid-cols-1 md:grid-cols-2 px-6 my-20 md:my-32">
+          <div className="bg-red-300 z-10 mx-6 md:mx-0 shadow-2xl md:order-last md:h-4/5">
+            <img src={institutImage} className="object-cover h-full" alt="" />
+          </div>
+          <div className="bg-[#F2F2F2] p-10 md:pl-20 md:pr-28 md:py-20 -mt-6 md:mt-0 md:-mr-16">
+            <h3 className="text-2xl md:text-3xl font-medium">
+              Qo'shma hamkorlar
+            </h3>
+            <p className="text-md md:text-xl mt-3">
+              Institutimizda 4 ta xorijiy oliy ta’lim muassalalari bilan
+              hamkorlikda bakalavriat va magistratura mutaxassisliklari bo‘yicha
+              qo‘shma ta’lim dasturlari asosida o‘qitish ham yo‘lga qo‘yilgan.
+              Rossiyaning Akmulla nomli Boshqird davlat pedagogika universiteti
+              (BDPU), Rossiya davlat kasb-hunar pedagogika universiteti
+              (RDKXPU), Qozon federal universiteti va Belarusning Yanka kupala
+              nomidagi Grodno davlat universitetilari (GrDU) bilan jami 168
+              nafar talaba qo‘shma ta’lim dasturlari asosida o‘qitilmoqda.
+            </p>
+          </div>
+        </div>
+        <div className="grid items-center grid-cols-1 md:grid-cols-2 px-6 my-20 md:my-32">
+          <div className="bg-red-300 z-10 mx-6 md:mx-0 shadow-2xl md:h-4/5">
+            <img src={institutImage} className="object-cover h-full" alt="" />
+          </div>
+          <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-20 md:py-20 -mt-6 md:mt-0 md:-ml-16">
+            <h3 className="text-2xl md:text-3xl font-medium">Sarlavha</h3>
+            <p className="text-md md:text-xl mt-3">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              voluptatum aut, nam totam rem sed explicabo autem consectetur
+              facere illo tenetur error cumque non a possimus eius maxime
+              adipisci veritatis! Excepturi quia est rerum porro perferendis,
+              illo ipsam ullam similique odit. Saepe culpa tempore aliquid
+              adipisci repudiandae ad. Excepturi quia est rerum porro
+              perferendis, illo ipsam ullam similique odit. Saepe culpa tempore
+              aliquid adipisci repudiandae ad. Excepturi quia est rerum porro
+              perferendis, illo ipsam ullam similique odit.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
