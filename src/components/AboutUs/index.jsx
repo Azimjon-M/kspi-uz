@@ -14,7 +14,7 @@ function AboutUs() {
         <p className="text-xl md:text-[2rem] font-light font_source md:leading-[3.5rem] text-center my-10">
           <Typewriter
             words={[
-              "QDPI deyarli 150 yil oldin ijtimoiy maqsadlar uchun asos solingan. Bizning vazifamiz talabalarni etakchilik hayotiga va halollik bilan hissa qo'shishga o'rgatish orqali dunyoga hissa qo'shishdir, fundamental bilimlarni rivojlantirish va ijodkorlikni rivojlantirish, samarali klinik davolash uchun kashshof tadqiqotlar yetakchi, va yechimlarni tezlashtirish va ularning ta'sirini kuchaytirish.",
+              "QDPI deyarli 93 yil oldin ijtimoiy maqsadlar uchun asos solingan. Bizning vazifamiz talabalarni etakchilik hayotiga va halollik bilan hissa qo'shishga o'rgatish orqali dunyoga hissa qo'shishdir, fundamental bilimlarni rivojlantirish va ijodkorlikni rivojlantirish, samarali klinik davolash uchun kashshof tadqiqotlar yetakchi, va yechimlarni tezlashtirish va ularning ta'sirini kuchaytirish.",
             ]}
             typeSpeed={50}
             delaySpeed={1000}
