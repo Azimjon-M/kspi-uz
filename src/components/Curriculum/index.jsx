@@ -4,7 +4,7 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 function Curriculum() {
   return (
     <div className="bg-slate-100">
-      <div className="max-w-xs md:max-w-6xl mx-auto md:py-16 py-10">
+      <div className="max-w-xs md:max-w-7xl mx-auto md:py-16 py-10">
         <h1 className="text-2xl md:text-4xl font-bold text-[#004269] text-center">
           O'quv dasturlari
         </h1>

@@ -35,8 +35,8 @@ const InstitutHaqidaCom = () => {
           Tadqiqot, o'qitish va tibbiy yordam <br /> sohasidagi mukammallik
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 px-6 my-20">
-          <div className="bg-red-300 z-10 mx-6 md:mx-0 shadow-2xl max-h-96">
-            <img src={institutImage} className="object-cover" alt="" />
+          <div className="bg-red-300 z-10 mx-6 md:mx-0 shadow-2xl max-h-96 mt-10">
+            <img src={institutImage} className="o object-contain" alt="" />
           </div>
           <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-20 md:py-20 -mt-6 md:mt-0 md:-ml-16">
             <h3 className="text-2xl md:text-3xl font-medium">Tadbirlar</h3>
