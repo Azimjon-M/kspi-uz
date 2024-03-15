@@ -14,6 +14,7 @@ const NewsPage = () => {
 
   const itemsPerPage = 12;
   const pagesVisited = pageNumber * itemsPerPage;
+  
 
   useEffect(() => {
     Aos.init();

@@ -1,53 +1,52 @@
 import React from "react";
-import Aos from "aos";
 import { Link } from "react-router-dom";
 import dasturUchun from "../../assets/images/dasturUchun.jpg";
+import dasturUchun1 from "../../assets/images/dasturUchun1.jpg";
+import abiturient from "../../assets/images/abiturient.jpg";
+import bakalavr from "../../assets/images/bakalavr.jpg";
 
 const ExploreProgram = () => {
-  Aos.init();
   const data = [
     {
       id: 0,
       title: "Yo'nalishingni tanla.!",
       content: "Lorem ipsum dhuycbcc  ewdbncnwiudcbnsi niwdc iuxdbhisnx",
       img: dasturUchun,
-      link: "",
+      link: "/fakultetlar",
     },
     {
       id: 1,
-      title: "QDPIga transfer.!",
-      content: "Lorem ipsum dhuycbcc  ewdbncnwiudcbnsi niwdc iuxdbhisnx",
-      img: dasturUchun,
-      link: "",
+      title: "QDPIda transfer",
+      content: "Ichki transferlar uchun online ariza topshirish",
+      img: dasturUchun1,
+      link: "https://transfer.edu.uz/uz",
     },
     {
       id: 2,
-      title: "Bitiruvchilar uchun dasturlar.!",
+      title: "Bakalavr bitiruvchilari",
       content: "Lorem ipsum dhuycbcc  ewdbncnwiudcbnsi niwdc iuxdbhisnx",
-      img: dasturUchun,
-      link: "",
+      img: bakalavr,
+      link: "/abiturient-magistratura",
     },
     {
       id: 3,
-      title: "Abiturientlar uchun kurslar",
+      title: "Abiturientlar",
       content: "Lorem ipsum dhuycbcc  ewdbncnwiudcbnsi niwdc iuxdbhisnx",
-      img: dasturUchun,
-      link: "",
+      img: abiturient,
+      link: "/abiturient-bakalavriat",
     },
   ];
 
   return (
     <div className="max-w-7xl mx-auto my-5 md:my-16">
       <h2 className="text-center text-4xl text-[#004269] mb-10 font-semibold">
-        Dasturlar
+        Bizning dasturlarimiz 
       </h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
         {data.map((item) => (
           <div
             className="card max-w-80 h-[450px] object-cover bg-base-100 shadow-md hover:shadow-xl hover:-translate-y-1 mx-auto transition-transform ease-in-out duration-300"
             key={item.id}
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
           >
             <figure className="relative">
               <img
