@@ -1,19 +1,31 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import hamkor1 from "../../assets/images/hamkor1.png";
-import hamkor2 from "../../assets/images/hamkor4.png";
-import hamkor3 from "../../assets/images/hamkor3.png";
-import hamkor4 from "../../assets/images/hamkor4.png";
-import hamkor5 from "../../assets/images/hamkor4.png";
+import hamkor1 from "../../assets/images/xalqaroHamkorlar/hamkor1.png";
+import hamkor2 from "../../assets/images/xalqaroHamkorlar/hamkor2.png";
+import hamkor3 from "../../assets/images/xalqaroHamkorlar/hamkor3.png";
+import hamkor4 from "../../assets/images/xalqaroHamkorlar/hamkor4.png";
+import hamkor5 from "../../assets/images/xalqaroHamkorlar/hamkor5.png";
+import hamkor6 from "../../assets/images/xalqaroHamkorlar/hamkor6.png";
+import hamkor7 from "../../assets/images/xalqaroHamkorlar/hamkor7.png";
+import hamkor8 from "../../assets/images/xalqaroHamkorlar/hamkor8.png";
 
 function Partners() {
-  const row = [hamkor1, hamkor2, hamkor3, hamkor4, hamkor5];
+  const row = [
+    hamkor1,
+    hamkor2,
+    hamkor3,
+    hamkor4,
+    hamkor5,
+    hamkor6,
+    hamkor7,
+    hamkor8,
+  ];
   return (
     <div className="max-w-8xl mx-auto py-10 bg-slate-100">
       <h1 className="text-xl lg:text-4xl font-bold text-[#004269] text-center">
         Hamkorlarimiz
       </h1>
-      <div className="md:my-10">
+      <div>
         <Marquee>
           <MarqueeGroup>
             {row.map((el, idx) => (
@@ -64,26 +76,22 @@ const MarqueeGroup = styled.div`
   align-items: center;
   justify-content: space-around;
   white-space: nowrap;
-  width: 55%;
+  width: 80%;
 
   @media (max-width: 1400px) {
-    width: 75%;
+    width: 110%;
   }
 
   @media (max-width: 1024px) {
-    width: 90%;
-  }
-
-  @media (max-width: 992px) {
-    width: 120%;
+    width: 150%;
   }
 
   @media (max-width: 767px) {
-    width: 130%;
+    width: 180%;
   }
 
   @media (max-width: 467px) {
-    width: 150%;
+    width: 220%;
   }
 
   animation: ${scrollX} 15s linear infinite;

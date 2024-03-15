@@ -170,7 +170,7 @@ const InstitutHaqidaCom = () => {
                 bilan birga o'qiyotganlarning ta'limini ham o'zgartiradi.
                 institutimiz magistrantlarining qariyb 70 foizi moliyaviy yordam
                 oladi, kam ta'minlangan oilalar esa o'qish uchun to'lov, xona va
-                ovqat bilan to'liq ta'minlanadi. Stenfordda bakalavr darajasini
+                ovqat bilan to'liq ta'minlanadi. QDPIda bakalavr darajasini
                 olganlarning 80 foizdan ortig'i qarzsiz bitiradi.
               </p>
             </div>
@@ -198,7 +198,7 @@ const InstitutHaqidaCom = () => {
               bilan birga o'qiyotganlarning ta'limini ham o'zgartiradi.
               institutimiz magistrantlarining qariyb 70 foizi moliyaviy yordam
               oladi, kam ta'minlangan oilalar esa o'qish uchun to'lov, xona va
-              ovqat bilan to'liq ta'minlanadi. Stenfordda bakalavr darajasini
+              ovqat bilan to'liq ta'minlanadi. Institutimizda bakalavr darajasini
               olganlarning 80 foizdan ortig'i qarzsiz bitiradi.
             </p>
           </div>
