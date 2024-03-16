@@ -3,6 +3,8 @@ import institutImage from "../../assets/images/institutImage.jpg";
 import qoshmaTalim from "../../assets/images/institutHaqidaCom/QoshmaTalim.jpg";
 import Talabalar from "../../assets/images/institutHaqidaCom/RivojlanayotganTalabalar.jpg";
 import XilmaXilTalabalar from "../../assets/images/institutHaqidaCom/XilmxXilTalabalar.jpg";
+import farqQiladiganMoliyav from "../../assets/images/institutHaqidaCom/farqQiladiganMoliyav.jpg";
+import sportBilanBirga from "../../assets/images/institutHaqidaCom/sportBilanBirga.jpg";
 
 const InstitutHaqidaCom = () => {
   return (
@@ -112,8 +114,7 @@ const InstitutHaqidaCom = () => {
                 600 dan ortiq talaba tashkilotlari orasidan diniy, etnik va
                 madaniy guruhlardan tortib, san'at va jamoat xizmatiga,
                 ijtimoiy, sport va ko'ngilochar tadbirlarga e'tibor qaratadigan
-                tashkilotlarga jalb qilishlari mumkin. Institutimiz bo'ylab 36
-                ta sport turlarini taklif etadi.
+                tashkilotlarga jalb qilishlari mumkin.
               </p>
             </div>
           </div>
@@ -154,7 +155,7 @@ const InstitutHaqidaCom = () => {
           <div className="grid items-center grid-cols-1 md:grid-cols-2 px-6 my-20 md:my-32">
             <div className="z-10 mx-6 md:mx-0 md:order-last">
               <img
-                src={qoshmaTalim}
+                src={farqQiladiganMoliyav}
                 className="w-full lg:max-h-96 xl:h-[460px] shadow-2xl"
                 alt=""
               />
@@ -182,27 +183,27 @@ const InstitutHaqidaCom = () => {
         <div className="grid items-center grid-cols-1 md:grid-cols-2 px-6 my-20 md:my-32">
           <div className="z-10 mx-6 md:mx-0">
             <img
-              src={institutImage}
+              src={sportBilanBirga}
               className="w-full lg:max-h-96 xl:h-[460px] shadow-2xl"
               alt=""
             />
           </div>
           <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
             <h3 className="text-2xl md:text-3xl font-medium">
-              Uning barcha shakllarida xilma-xillikka chuqur hurmat
+              Sport bilan birga
             </h3>
             <p className="text-md md:text-xl mt-3">
-              QDPI tajriba, qiziqishlar va istiqboldagi xilma-xillikni
-              qadrlaydi. Biz barcha talabalar bir-birining tajribasidan
-              o'rganish va o'z qarashlari va tasavvurlari haqida tanqidiy fikr
-              yuritish imkoniyatiga ega bo'lgan kampus muhitini yaratishga
-              harakat qilmoqdamiz. Institutimiz barcha talabalarga irqiy,
-              ijtimoiy-iqtisodiy, geografik va siyosiy yo'nalishlar bo'ylab
-              hamjamiyat va aloqa o'rnatish uchun imkoniyat va vositalarni
-              taqdim etishga intiladi, bu ko'pincha ko'proq tushunish, o'zaro
-              hurmat va haqiqiy do'stlikka to'sqinlik qiladi. Ijtimoiy
-              mas'uliyat va axloqni qadrlashni rivojlantirish imkoniyatlari
-              Institutimiz ta'lim tajribasining ajralmas qismidir.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Obcaecati veniam explicabo, blanditiis eius, inventore non
+              consequuntur quam similique consequatur ex impedit, tempore
+              tempora nesciunt aut vel soluta veritatis! Soluta deleniti
+              excepturi enim omnis, exercitationem reiciendis perspiciatis
+              temporibus a rem. Eaque repudiandae facere nostrum doloremque,
+              earum qui molestiae possimus quas fugiat minus voluptatem
+              architecto distinctio ullam reiciendis aliquam nam! Soluta, eos
+              eum quia qui minus molestias velit? Porro, illo exercitationem,
+              veritatis eum dolor nemo commodi perspiciatis quisquam, voluptatum
+              rerum eius autem?
             </p>
           </div>
         </div>
