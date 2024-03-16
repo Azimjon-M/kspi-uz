@@ -4,7 +4,10 @@ import { LuCopyCheck } from "react-icons/lu";
 import { GoChecklist } from "react-icons/go";
 import StudentsHouse from "../../assets/images/StudentsHouse.jpg";
 import TTJRaxbari from "../../assets/images/TTJRaxbari.png";
-import TTJStudents from "../../assets/images/TTJstudents.jpg";
+import ttjTalabalari from "../../assets/images/talabalarTurarJoyi/ttjTalabalari.jpg";
+import ttjKompus from "../../assets/images/talabalarTurarJoyi/ttjKompus.jpg";
+import ttjXona from "../../assets/images/talabalarTurarJoyi/ttjXona.jpg";
+
 import { Link } from "react-router-dom";
 
 function TalabalarTurarJoyiCom() {
@@ -118,12 +121,16 @@ function TalabalarTurarJoyiCom() {
         <h1 className="text-2xl md:text-4xl font-bold text-center text-[#004269] mt-5 md:mt-20">
           Bizning kompus
         </h1>
-        <div className="grid items-center grid-cols-1 md:grid-cols-2 px-6 my-20">
-          <div className="bg-red-300 z-10 mx-6 md:mx-0 shadow-2xl">
-            <img src={StudentsHouse} className="object-cover" alt="" />
+        <div className="grid items-center grid-cols-1 md:grid-cols-2 px-6 my-20 md:my-32">
+          <div className="z-10 mx-6 md:mx-0">
+            <img
+              src={ttjKompus}
+              className="w-full lg:max-h-96 xl:h-[460px] shadow-2xl"
+              alt=""
+            />
           </div>
-          <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-20 md:py-20 -mt-6 md:mt-0 md:-ml-16">
-            <h3 className="text-2xl md:text-3xl font-medium">Sarlavha</h3>
+          <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
+            <h3 className="text-2xl md:text-3xl font-medium">Kompus</h3>
             <p className="text-md md:text-xl mt-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
               voluptatum aut, nam totam rem sed explicabo autem consectetur
@@ -138,11 +145,17 @@ function TalabalarTurarJoyiCom() {
           </div>
         </div>
         <div className="grid items-center grid-cols-1 md:grid-cols-2 px-6 my-20 md:my-32">
-          <div className="bg-red-300 z-10 mx-6 md:mx-0 shadow-2xl md:order-last">
-            <img src={StudentsHouse} className="object-cover" alt="" />
+          <div className="z-10 mx-6 md:mx-0 md:order-last">
+            <img
+              src={ttjXona}
+              className="w-full lg:max-h-96 xl:h-[460px] shadow-2xl"
+              alt=""
+            />
           </div>
-          <div className="bg-[#F2F2F2] p-10 md:pl-20 md:pr-28 md:py-20 -mt-6 md:mt-0 md:-mr-16">
-            <h3 className="text-2xl md:text-3xl font-medium">Sarlavha</h3>
+          <div className="bg-[#F2F2F2] p-10 md:pl-16 md:pr-28 md:py-20 -mt-6 md:mt-0 md:-mr-16">
+            <h3 className="text-2xl md:text-3xl font-medium">
+              Bizning sharoitlarimiz
+            </h3>
             <p className="text-md md:text-xl mt-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
               voluptatum aut, nam totam rem sed explicabo autem consectetur
@@ -181,7 +194,7 @@ function TalabalarTurarJoyiCom() {
       <div className="max-full my-20 md:mt-32">
         <img
           className="w-full max-h-[600px]"
-          src={TTJStudents}
+          src={ttjTalabalari}
           alt="TTJ Talabalari"
         />
       </div>
