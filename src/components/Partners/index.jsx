@@ -10,15 +10,39 @@ import hamkor7 from "../../assets/images/xalqaroHamkorlar/hamkor7.png";
 import hamkor8 from "../../assets/images/xalqaroHamkorlar/hamkor8.png";
 
 function Partners() {
-  const row = [
-    hamkor1,
-    hamkor2,
-    hamkor3,
-    hamkor4,
-    hamkor5,
-    hamkor6,
-    hamkor7,
-    hamkor8,
+  const data = [
+    {
+      image: hamkor1,
+      url: "https://kpfu.ru/",
+    },
+    {
+      image: hamkor2,
+      url: "https://rsvpu.ru/",
+    },
+    {
+      image: hamkor3,
+      url: "https://kpfu.ru/elabuga",
+    },
+    {
+      image: hamkor4,
+      url: "https://bspu.ru/",
+    },
+    {
+      image: hamkor5,
+      url: "https://glazov.academica.ru/",
+    },
+    {
+      image: hamkor6,
+      url: "https://www.grsu.by/",
+    },
+    {
+      image: hamkor7,
+      url: "https://uzedu.uz/uz",
+    },
+    {
+      image: hamkor8,
+      url: "https://uzbmb.uz/",
+    },
   ];
   return (
     <div className="max-w-8xl mx-auto py-10 bg-slate-100">
@@ -28,23 +52,38 @@ function Partners() {
       <div>
         <Marquee>
           <MarqueeGroup>
-            {row.map((el, idx) => (
+            {data.map((item, idx) => (
               <ImageGroup className="w-[100px]" key={idx}>
-                <Image className="w-[100px] h-[100px] bg-white" src={el} />
+                <a href={item.url}>
+                  <Image
+                    className="w-[100px] h-[100px] bg-white"
+                    src={item.image}
+                  />
+                </a>
               </ImageGroup>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
-            {row.map((el, idx) => (
+            {data.map((item, idx) => (
               <ImageGroup className="w-[100px]" key={idx}>
-                <Image className="w-[100px] h-[100px] bg-white" src={el} />
+                <a href={item.url}>
+                  <Image
+                    className="w-[100px] h-[100px] bg-white"
+                    src={item.image}
+                  />
+                </a>
               </ImageGroup>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
-            {row.map((el, idx) => (
+            {data.map((item, idx) => (
               <ImageGroup className="w-[100px]" key={idx}>
-                <Image className="w-[100px] h-[100px] bg-white" src={el} />
+                <a href={item.url}>
+                  <Image
+                    className="w-[100px] h-[100px] bg-white"
+                    src={item.image}
+                  />
+                </a>
               </ImageGroup>
             ))}
           </MarqueeGroup>
