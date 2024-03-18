@@ -23,7 +23,6 @@ function Navbar() {
   const [isFocusedSearInp, setFocusedSearInp] = useState(false);
   const [isActiveMenu, setIsActiveMenu] = useState(false);
   const [scrollY, setScrollY] = useState(false);
-  console.log(scrollY);
   // search
   const formik = useFormik({
     initialValues: {
@@ -70,9 +69,10 @@ function Navbar() {
     }
   }, [isActiveMenu]);
 
+  // Scroll
   useEffect(() => {
     const handleScroll = () => {
-      if (Math.floor(window.scrollY) >= 100) {
+      if (Math.floor(window.scrollY) >= 200) {
         setScrollY(true);
       } else {
         setScrollY(false);
@@ -83,12 +83,16 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <div
       className={`${
-        location.pathname === "/" ? "absolute" : "bg-white shadow-xl"
-      } flex flex-col justify-between  top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
+        scrollY
+          ? `sticky bg-white shadow-xl`
+          : `${location.pathname === "/" ? "absolute" : "relative shadow-xl"} `
+      } ${
+        isActiveMenu && "bg-white"
+      }  top-0 left-0 flex flex-col justify-between w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
+      // className={`${ scrollY || location.pathname === "/" ? "absolute" : "relative bg-white shadow-xl"} flex flex-col justify-between top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
     >
       <nav className="flex justify-between">
         {/* Doimo bor */}
@@ -105,7 +109,17 @@ function Navbar() {
             />
             <p
               className={`${
-                location.pathname === "/" ? "text-white" : "text-[#004269]"
+                scrollY
+                  ? " text-[#004269]"
+                  : `${
+                      isActiveMenu
+                        ? " text-[#004269]"
+                        : `${
+                            location.pathname === "/"
+                              ? "text-white"
+                              : "text-[#004269]"
+                          }`
+                    } `
               } hidden sm:inline-block text-[11px] leading-4  font-bold sm:text-[13px] md:text-[32px] xl:leading-6 lg:text-[36px] xl:text-[42px] 3xl:text-[48px] `}
             >
               <TextTranslate id="navLogo" />
@@ -166,6 +180,7 @@ function Navbar() {
                 </Link>
               </li>
             </ul>
+            {/* HEADER SEARCH FORM */}
             <div className="flex items-center justify-center">
               <form onSubmit={formik.handleSubmit}>
                 <label
@@ -209,7 +224,13 @@ function Navbar() {
           <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
             <ul
               className={`${
-                location.pathname === "/" ? "text-white" : "text-[#004269]"
+                scrollY
+                  ? "text-[#004269]"
+                  : `${
+                      location.pathname === "/"
+                        ? "text-white"
+                        : "text-[#004269]"
+                    }`
               } flex items-center gap-x-8 font-semibold xl:text-[18px] 2xl:text-[20px] 3xl:gap-x-12 3xl:text-[21px]`}
             >
               <li className="-mr-2">
@@ -219,10 +240,14 @@ function Navbar() {
               </li>
               <li
                 className={`relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 ${
-                  location.pathname === "/"
-                    ? "after:border-white"
-                    : " after:border-[#004269]"
-                }  after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}
+                  scrollY
+                    ? "after:border-[#004269]"
+                    : `${
+                        location.pathname === "/"
+                          ? "after:border-white"
+                          : "after:border-[#004269]"
+                      }`
+                } after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}
               >
                 <div className="dropdown dropdown-hover">
                   <div tabIndex={2} role="button" className="text-inherit">
@@ -262,9 +287,13 @@ function Navbar() {
               </li>
               <li
                 className={`relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 ${
-                  location.pathname === "/"
-                    ? "after:border-white"
-                    : " after:border-[#004269]"
+                  scrollY
+                    ? "after:border-[#004269]"
+                    : `${
+                        location.pathname === "/"
+                          ? "after:border-white"
+                          : "after:border-[#004269]"
+                      }`
                 } after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}
               >
                 <div className="dropdown dropdown-hover">
@@ -310,9 +339,13 @@ function Navbar() {
               </li>
               <li
                 className={`relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 ${
-                  location.pathname === "/"
-                    ? "after:border-white"
-                    : " after:border-[#004269]"
+                  scrollY
+                    ? "after:border-[#004269]"
+                    : `${
+                        location.pathname === "/"
+                          ? "after:border-white"
+                          : "after:border-[#004269]"
+                      }`
                 } after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}
               >
                 <div className="dropdown dropdown-hover">
@@ -353,9 +386,13 @@ function Navbar() {
               </li>
               <li
                 className={`relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 ${
-                  location.pathname === "/"
-                    ? "after:border-white"
-                    : " after:border-[#004269]"
+                  scrollY
+                    ? "after:border-[#004269]"
+                    : `${
+                        location.pathname === "/"
+                          ? "after:border-white"
+                          : "after:border-[#004269]"
+                      }`
                 } after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}
               >
                 <div className="dropdown dropdown-hover">
@@ -386,9 +423,13 @@ function Navbar() {
               </li>
               <li
                 className={`relative after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[-15px] after:w-[8px] after:h-[8px] after:border-s-2 after:border-b-2 ${
-                  location.pathname === "/"
-                    ? "after:border-white"
-                    : " after:border-[#004269]"
+                  scrollY
+                    ? "after:border-[#004269]"
+                    : `${
+                        location.pathname === "/"
+                          ? "after:border-white"
+                          : "after:border-[#004269]"
+                      }`
                 } after:rotate-[-45deg] 3xl:after:w-[10px] 3xl:after:h-[10px]`}
               >
                 <div className="dropdown dropdown-hover">
@@ -437,7 +478,16 @@ function Navbar() {
                   <img
                     onClick={() => handleClickLang("uz")}
                     className={` ${
-                      isLang === "uz" && "border-b-[3px] border-[#004269]"
+                      isLang === "uz" &&
+                      `border-b-[3px] ${
+                        scrollY
+                          ? "border-[#004269]"
+                          : `${
+                              location.pathname === "/"
+                                ? "border-white"
+                                : "border-[#004269]"
+                            }`
+                      } `
                     } w-[30px] cursor-pointer 3xl:w-[35px]`}
                     src={flag_1}
                     alt="flag uz"
@@ -445,7 +495,16 @@ function Navbar() {
                   <img
                     onClick={() => handleClickLang("ru")}
                     className={` ${
-                      isLang === "ru" && "border-b-[3px] border-[#004269]"
+                      isLang === "ru" &&
+                      `border-b-[3px] ${
+                        scrollY
+                          ? "border-[#004269]"
+                          : `${
+                              location.pathname === "/"
+                                ? "border-white"
+                                : "border-[#004269]"
+                            }`
+                      } `
                     } w-[30px] cursor-pointer 3xl:w-[35px]`}
                     src={flag_2}
                     alt="flag ru"
@@ -453,7 +512,16 @@ function Navbar() {
                   <img
                     onClick={() => handleClickLang("en")}
                     className={` ${
-                      isLang === "en" && "border-b-[3px] border-[#004269]"
+                      isLang === "en" &&
+                      `border-b-[3px] ${
+                        scrollY
+                          ? "border-[#004269]"
+                          : `${
+                              location.pathname === "/"
+                                ? "border-white"
+                                : "border-[#004269]"
+                            }`
+                      } `
                     } w-[30px] cursor-pointer 3xl:w-[35px]`}
                     src={flag_3}
                     alt="flag en"
@@ -466,13 +534,14 @@ function Navbar() {
           <div className="flex items-center md:gap-x-4">
             {/* Search to lg */}
             <div className="hidden md:inline-block xl:hidden">
+              {/* MOBILE SEARCH FORM */}
               <form
                 className="flex items-center justify-center px-4 py-2"
                 onSubmit={formik.handleSubmit}
               >
                 <div className="join">
                   <input
-                    className="input join-item input-sm input-bordered border-[#004269] w-full max-w-xs text-white z-10 focus:border-[#004269] focus:outline-[#004269]"
+                    className="input join-item input-sm input-bordered border-[#004269] w-full max-w-xs text-[#004269] z-10 focus:border-[#004269] focus:outline-white"
                     placeholder="text..."
                     onChange={formik.handleChange}
                     value={formik.values.searchText}
@@ -486,11 +555,23 @@ function Navbar() {
                 </div>
               </form>
             </div>
-            {/* /Search to lg */}
+            {/* /Search to lg   */}
             {/* Menu */}
             <button
               onClick={() => setIsActiveMenu(!isActiveMenu)}
-              className="btn btn-sm btn-outline xl:hidden flex items-center gap-x-2 font-medium md:btn-md text-white"
+              className={` ${
+                location.pathname === "/"
+                  ? `${
+                      scrollY
+                        ? "border-[#004269] text-[#004269]"
+                        : `${
+                            isActiveMenu
+                              ? "border-[#004269] text-[#004269]"
+                              : "text-white border-white"
+                          } `
+                    }`
+                  : "border-[#004269] text-[#004269]"
+              } btn btn-sm btn-outline xl:hidden flex items-center gap-x-2 font-medium md:btn-md `}
             >
               {isActiveMenu ? <AiOutlineClose /> : <AiOutlineMenu />}
               MENU
@@ -539,12 +620,13 @@ function Navbar() {
         {/* /Language */}
         {/* Search */}
         <div className="md:hidden">
+          {/* MOBILE SEARCH FORM FROM DROPDON */}
           <form
             className="flex items-center justify-center px-4 py-2"
             onSubmit={formik.handleSubmit}
           >
             <input
-              className="input input-sm input-bordered input-accent w-full max-w-xs text-white"
+              className="input input-sm input-bordered text-[#004269] input-accent w-full max-w-xs"
               placeholder="text..."
               onChange={formik.handleChange}
               value={formik.values.searchText}
@@ -579,27 +661,27 @@ function Navbar() {
                   </div>
                   <div className="collapse-content">
                     <ul>
-                      <li className="text-[#004269] dark:text-white">
+                      <li className="text-white dark:text-white">
                         <Link to="/institut-kengashi">
                           <TextTranslate id="navDropInstitut_1" />
                         </Link>
                       </li>
-                      <li className="text-[#004269] dark:text-white">
+                      <li className="text-white dark:text-white">
                         <Link to="/institut-haqida">
                           <TextTranslate id="navDropInstitut_2" />
                         </Link>
                       </li>
-                      <li className="text-[#004269] dark:text-white">
+                      <li className="text-white dark:text-white">
                         <Link to="/institut-tuzilma">
                           <TextTranslate id="navDropInstitut_3" />
                         </Link>
                       </li>
-                      <li className="text-[#004269] dark:text-white">
+                      <li className="text-white dark:text-white">
                         <Link to="/rekvizitlar">
                           <TextTranslate id="navDropInstitut_4" />
                         </Link>
                       </li>
-                      <li className="text-[#004269] dark:text-white">
+                      <li className="text-white dark:text-white">
                         <Link to="/qabulxona">
                           <TextTranslate id="navDropInstitut_5" />
                         </Link>
@@ -620,32 +702,32 @@ function Navbar() {
                   </div>
                   <div className="collapse-content max-w-[280px]">
                     <ul>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/jamoatchilik">
                           <TextTranslate id="navDropFaoliyat_1" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/madaniy">
                           <TextTranslate id="navDropFaoliyat_2" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/oquv-uslubiy">
                           <TextTranslate id="navDropFaoliyat_3" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/akademik-litsey">
                           <TextTranslate id="navDropFaoliyat_4" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/ilmiy-faoliyat">
                           <TextTranslate id="navDropFaoliyat_5" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/yoshlar-ishlash">
                           <TextTranslate id="navDropFaoliyat_6" />
                         </Link>
@@ -666,27 +748,27 @@ function Navbar() {
                   </div>
                   <div className="collapse-content max-w-[280px]">
                     <ul>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/rektorat">
                           <TextTranslate id="navDropTuzilma_1" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/fakultetlar">
                           <TextTranslate id="navDropTuzilma_2" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/kafedralar">
                           <TextTranslate id="navDropTuzilma_3" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/bolimlar">
                           <TextTranslate id="navDropTuzilma_4" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/markazlar">
                           <TextTranslate id="navDropTuzilma_5" />
                         </Link>
@@ -707,17 +789,17 @@ function Navbar() {
                   </div>
                   <div className="collapse-content max-w-[280px]">
                     <ul>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/bakalavriyat">
                           <TextTranslate id="navDropTalabalar_1" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="">
                           <TextTranslate id="navDropTalabalar_2" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/talabalarTurarJoyi">
                           <TextTranslate id="navDropTalabalar_3" />
                         </Link>
@@ -738,32 +820,32 @@ function Navbar() {
                   </div>
                   <div className="collapse-content max-w-[280px]">
                     <ul>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/abiturient-bakalavriat">
                           <TextTranslate id="navDropAbiturient_1" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/abiturient-magistratura">
                           <TextTranslate id="navDropAbiturient_2" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/abiturient-xorijiy-talabalar">
                           <TextTranslate id="navDropAbiturient_3" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/call-markaz">
                           <TextTranslate id="navDropAbiturient_4" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="/abiturient-meyoriy">
                           <TextTranslate id="navDropAbiturient_5" />
                         </Link>
                       </li>
-                      <li className="my-4 leading-4 text-[#004269] dark:text-white">
+                      <li className="my-4 leading-4 text-white dark:text-white">
                         <Link to="https://my.uzbmb.uz/" target="blank">
                           <TextTranslate id="navDropAbiturient_6" />
                         </Link>
