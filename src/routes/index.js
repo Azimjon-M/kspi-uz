@@ -66,6 +66,7 @@ import OquvUslubiyFaolyat from "../pages/Faoliyat/OquvUslubiyFaolyat";
 import YoshlarBnIshlashMvaM from "../pages/Faoliyat/YoshlarBnIshlashMvaM";
 import Vakansiyalar from "../pages/Vakansiyalar";
 import BarchaElonlar from "../pages/BarchaElonlar";
+import ElonBatafsil from "../pages/ElonBatafsil";
 
 export const routes = [
   {
@@ -346,6 +347,12 @@ export const routes = [
         element: <BarchaElonlar />,
         path: "/barchaElonlar",
       },
+
+      // Elon Batafsil 
+      {
+        element: <ElonBatafsil/>,
+        path: "/elonBatafsil",
+      }
     ],
   },
 ];
