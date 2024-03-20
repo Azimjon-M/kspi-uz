@@ -22,9 +22,9 @@ function AboutUs() {
         </p>
       </div>
       <div className="flex justify-center">
-        <button className="text-lg md:text-2xl bg-slate-100 text-cyan-900 font-bold active:border border-slate-100 px-10 md:px-28 py-2 md:py-4 rounded-xl">
-          <Link to="/institut-haqida">Biz haqida ko'proq</Link>
-        </button>
+        <Link to="/institut-haqida" className="text-lg md:text-2xl bg-slate-100 text-cyan-900 font-bold active:border border-slate-100 px-10 md:px-28 py-2 md:py-4 rounded-xl">
+          Biz haqida ko'proq
+        </Link>
       </div>
     </div>
   );

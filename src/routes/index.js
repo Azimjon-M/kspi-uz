@@ -42,16 +42,16 @@ import TabiyFanlar from "../pages/Tuzilma/Fakultetlar/TabiyFanlar";
 import Tarix from "../pages/Tuzilma/Fakultetlar/Tarix";
 import XorijiyTillar from "../pages/Tuzilma/Fakultetlar/XorijiyTillar";
 import Bolimlar from "../pages/Tuzilma/Bolimlar";
-import Bakalavriyat from "../pages/Talabalar/Bakalavriyat"
+import Bakalavriyat from "../pages/Talabalar/Bakalavriyat";
 import DTSvaMalaka from "../pages/Talabalar/Bakalavriyat/DTSvaMalaka";
 import OquvRejalari from "../pages/Talabalar/Bakalavriyat/OquvRejalari";
 import FanDasturlari from "../pages/Talabalar/Bakalavriyat/FanDasturlari";
 import FanKatalogi from "../pages/Talabalar/Bakalavriyat/FanKatalogi";
-import AbiturientBakalavriat from "../pages/Abiturient/Bakalavryat"
-import AbiturientMagistratura from "../pages/Abiturient/Magistratura"
-import AbiturientCallMarkaz from "../pages/Abiturient/CallMarkaz"
-import AbiturientXorijiyTalaba from "../pages/Abiturient/HorijiyTalabalarQabul"
-import AbiturientMeyoriy from "../pages/Abiturient/MeyyoriyHuquqiyHuj"
+import AbiturientBakalavriat from "../pages/Abiturient/Bakalavryat";
+import AbiturientMagistratura from "../pages/Abiturient/Magistratura";
+import AbiturientCallMarkaz from "../pages/Abiturient/CallMarkaz";
+import AbiturientXorijiyTalaba from "../pages/Abiturient/HorijiyTalabalarQabul";
+import AbiturientMeyoriy from "../pages/Abiturient/MeyyoriyHuquqiyHuj";
 import Magistratura from "../pages/Talabalar/Magistratura";
 import MagistrDTSvaMalaka from "../pages/Talabalar/Magistratura/MagistrDTSvaMalaka";
 import MagistrOquvRejalari from "../pages/Talabalar/Magistratura/MagistrOquvRejalari";
@@ -65,6 +65,7 @@ import MadMarFaolyat from "../pages/Faoliyat/MadMarFaolyat";
 import OquvUslubiyFaolyat from "../pages/Faoliyat/OquvUslubiyFaolyat";
 import YoshlarBnIshlashMvaM from "../pages/Faoliyat/YoshlarBnIshlashMvaM";
 import Vakansiyalar from "../pages/Vakansiyalar";
+import BarchaElonlar from "../pages/BarchaElonlar";
 
 export const routes = [
   {
@@ -244,101 +245,106 @@ export const routes = [
 
       //-------Talabalar---------
       {
-        element: <Bakalavriyat/>,
+        element: <Bakalavriyat />,
         path: "/bakalavriyat",
       },
       {
-        element: <DTSvaMalaka/>,
+        element: <DTSvaMalaka />,
         path: "/dtsvaMalaka",
       },
       {
-        element: <OquvRejalari/>,
+        element: <OquvRejalari />,
         path: "/oquvRejalari",
       },
       {
-        element: <FanDasturlari/>,
+        element: <FanDasturlari />,
         path: "/fanDasturlari",
       },
       {
-        element: <FanKatalogi/>,
+        element: <FanKatalogi />,
         path: "/fanKatalogi",
       },
       {
-        element: <Magistratura/>,
+        element: <Magistratura />,
         path: "/magistratura",
       },
       {
-        element: <MagistrDTSvaMalaka/>,
+        element: <MagistrDTSvaMalaka />,
         path: "/magistrDTSvaMalaka",
       },
       {
-        element: <MagistrOquvRejalari/>,
+        element: <MagistrOquvRejalari />,
         path: "/magistrOquvRejalari",
       },
       {
-        element: <MagistrFanDasturlari/>,
+        element: <MagistrFanDasturlari />,
         path: "/magistrFanDasturlari",
       },
       {
-        element: <MagistrFanKatalogi/>,
+        element: <MagistrFanKatalogi />,
         path: "/magistrFanKatalogi",
       },
       {
-        element: <TalabalarTurarJoyi/>,
+        element: <TalabalarTurarJoyi />,
         path: "/talabalarTurarJoyi",
       },
-      
-      
+
       // Navbar Abiturient
       {
-        element: <AbiturientBakalavriat/>,
+        element: <AbiturientBakalavriat />,
         path: "/abiturient-bakalavriat",
       },
       {
-        element: <AbiturientMagistratura/>,
+        element: <AbiturientMagistratura />,
         path: "/abiturient-magistratura",
       },
       {
-        element: <AbiturientCallMarkaz/>,
+        element: <AbiturientCallMarkaz />,
         path: "/call-markaz",
       },
       {
-        element: <AbiturientMeyoriy/>,
+        element: <AbiturientMeyoriy />,
         path: "/abiturient-meyoriy",
       },
       {
-        element: <AbiturientXorijiyTalaba/>,
+        element: <AbiturientXorijiyTalaba />,
         path: "/abiturient-xorijiy-talabalar",
       },
 
       // Navbar Faoliyat
       {
-        element: <AkademikLitsey/>,
+        element: <AkademikLitsey />,
         path: "/akademik-litsey",
       },
       {
-        element: <IlmiyFaolyat/>,
+        element: <IlmiyFaolyat />,
         path: "/ilmiy-faoliyat",
       },
       {
-        element: <JamoatchilikKengashiFaol/>,
+        element: <JamoatchilikKengashiFaol />,
         path: "/jamoatchilik",
       },
       {
-        element: <MadMarFaolyat/>,
+        element: <MadMarFaolyat />,
         path: "/madaniy",
       },
       {
-        element: <OquvUslubiyFaolyat/>,
+        element: <OquvUslubiyFaolyat />,
         path: "/oquv-uslubiy",
       },
       {
-        element: <YoshlarBnIshlashMvaM/>,
+        element: <YoshlarBnIshlashMvaM />,
         path: "/yoshlar-ishlash",
       },
       {
-        element: <Vakansiyalar/>,
+        element: <Vakansiyalar />,
         path: "/vakansiyalar",
+      },
+
+      // Barcha Elonlar
+      {
+        element: <BarchaElonlar />,
+        path: "/barchaElonlar",
       },
     ],
   },
