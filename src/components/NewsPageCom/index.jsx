@@ -14,7 +14,6 @@ const NewsPage = () => {
 
   const itemsPerPage = 12;
   const pagesVisited = pageNumber * itemsPerPage;
-  
 
   useEffect(() => {
     Aos.init();
@@ -23,7 +22,8 @@ const NewsPage = () => {
         const response = await axios.get(
           "https://api.kspi.uz/v1/yangilik/yangilik/"
         );
-        setNews(response.data);
+        console.log(response.data);
+        setNews(response.data.reverse());
         setNewsOne(
           response.data.slice(pagesVisited, pagesVisited + itemsPerPage)
         );

@@ -16,7 +16,7 @@ const NewsHome = () => {
         await axios
           .get("https://api.kspi.uz/v1/yangilik/yangilik/")
           .then((res) => {
-            setFirstNews(res.data.slice(0, 1));
+            setFirstNews(res.data.reverse().slice(0, 1));
             setNews(res.data.slice(1, 5));
           })
           .catch((err) => {
@@ -72,7 +72,7 @@ const NewsHome = () => {
                   </div>
                   {/* News title */}
                   <div className="flex flex-col justify-between flex-grow px-2">
-                    <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-5 text-base lg:text-lg text-[#004269] text-center dark:text-gray-300">
+                    <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-5 text-base md:text-lg lg:text-xl xl:text-2xl text-[#004269] text-center dark:text-gray-300">
                       {item.title}
                     </h2>
                     <div className="flex justify-center items-center">
