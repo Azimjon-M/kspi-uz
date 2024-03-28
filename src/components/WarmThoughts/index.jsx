@@ -27,7 +27,6 @@ const videos = [
     name: "Jenifer",
     about: "What is Brown like for students of color?",
     url: "https://www.youtube-nocookie.com/embed/a5h3qtBHM6c?rel=0&controls=1&showinfo=0&autoplay=1&playsinline=1&enablejsapi=1",
-    // url: "https://www.youtube.com/embed/Twy8N5Tmf48?si=03OTvc0nr_cy06dg",
   },
   {
     id: 3,
