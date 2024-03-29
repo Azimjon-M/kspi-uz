@@ -1,67 +1,26 @@
-import React from "react";
-import proba from "../../assets/images/call.jpg";
+import React, { useEffect } from "react";
+// import proba from "../../assets/images/call.jpg";
 import { Link } from "react-router-dom";
-
- const Elonlar = [
-  {
-    id: "1",
-    img: { proba },
-    month: "Mart",
-    day: "18",
-    field: "Maruza/taqdimot/suxbat",
-    title:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and types",
-    time: "16:00 PM",
-  },
-  {
-    id: "1",
-    img: { proba },
-    month: "Mart",
-    day: "18",
-    field: "Maruza/taqdimot/suxbat",
-    title:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and types",
-    time: "16:00 PM",
-  },
-  {
-    id: "1",
-    img: { proba },
-    month: "Mart",
-    day: "18",
-    field: "Maruza/taqdimot/suxbat",
-    title:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and types",
-    time: "16:00 PM",
-  },
-  {
-    id: "1",
-    img: { proba },
-    month: "Mart",
-    day: "18",
-    field: "Maruza/taqdimot/suxbat",
-    title:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and types",
-    time: "16:00 PM",
-  },
-  {
-    id: "1",
-    img: { proba },
-    month: "Mart",
-    day: "18",
-    field: "Maruza/taqdimot/suxbat",
-    title:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and types",
-    time: "16:00 PM",
-  },
-];
+import APIElon from "../../services/elon";
 
 function Announcements() {
+  const getData = async () => {
+    const resp = await APIElon.get();
+    const data = resp.data;
+    console.log(data);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  console.log("65555");
   return (
     <div className="max-w-7xl mx-auto pb-20">
       <h1 className="text-xl md:text-4xl font-bold text-center text-[#004269]">
         Kelgusi voqealar
       </h1>
-      <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-4 px-5 md:px-10 lg:px-5 xl:px-0 gap-6 py-20">
+      {/* <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-4 px-5 md:px-10 lg:px-5 xl:px-0 gap-6 py-20">
         {Elonlar &&
           Elonlar.slice(0, 4).map((elon) => {
             const { id, month, day, field, title, time } = elon;
@@ -97,7 +56,7 @@ function Announcements() {
               </a>
             );
           })}
-      </div>
+      </div> */}
       <div className="text-center">
         <Link
           to="/barchaElonlar"
