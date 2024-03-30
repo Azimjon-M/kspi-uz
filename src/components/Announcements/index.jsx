@@ -1,20 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import proba from "../../assets/images/call.jpg";
 import { Link } from "react-router-dom";
 import APIElon from "../../services/elon";
 
 function Announcements() {
-  const getData = async () => {
-    const resp = await APIElon.get();
-    const data = resp.data;
-    console.log(data);
-  };
+  const [announcement, setAnnouncement] = useState([]);
 
   useEffect(() => {
+    const getData = async () => {
+      await APIElon.get()
+      .then((response) => {
+        console.log(response.data);
+        setAnnouncement(response.data)
+      })
+    };
     getData();
   }, []);
-
-  console.log("65555");
   return (
     <div className="max-w-7xl mx-auto pb-20">
       <h1 className="text-xl md:text-4xl font-bold text-center text-[#004269]">
