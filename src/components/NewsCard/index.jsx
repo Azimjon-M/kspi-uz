@@ -47,72 +47,7 @@ const NewsCard = () => {
           <h2 className="text-xl text-[#004269] xl:text-3xl 2xl:text-4xl font-bold text-center mb-5">
             {news?.title_uz}
           </h2>
-
-          <section className="home">
-            <Swiper
-              className="bg-slider"
-              spaceBetween={50}
-              slidesPerView={1}
-              navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }}
-              thumbs={{ swiper: thumbsSwiper }}
-            >
-              <SwiperSlide className="swiper-slide dark-layer">
-                <div className="swiper-slide-img">
-                  <img src={news?.rasm_1} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide dark-layer">
-                <div className="swiper-slide-img">
-                  <img src={news?.rasm_2} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide dark-layer">
-                <div className="swiper-slide-img">
-                  <img src={news?.rasm_3} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide dark-layer">
-                <div className="swiper-slide-img">
-                  <img src={news?.rasm_4} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide dark-layer">
-                <div className="swiper-slide-img">
-                  <img src={news?.rasm_5} alt="" />
-                </div>
-              </SwiperSlide>
-            </Swiper>
-            <div className="bg-slider-thumbs">
-              <Swiper
-                onSwiper={(swiper) => setThumbsSwiper(swiper)}
-                spaceBetween={10}
-                slidesPerView={4}
-                freeMode={true}
-                watchSlidesVisibility={true}
-                watchSlidesProgress={true}
-              >
-                <SwiperSlide>
-                  <img src={news?.rasm_1} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={news?.rasm_2} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={news?.rasm_3} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={news?.rasm_4} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={news?.rasm_5} alt="" />
-                </SwiperSlide>
-              </Swiper>
-            </div>
-          </section>
-
+          <img src={news?.rasm_1} alt="" />
           <div className="d-inline-block">
             <p className="d-inline-block text-3xl border-2 border-[#004269] px-5 py-3 float-left mr-3">
               {news && news.body_0_uz && news.body_0_uz.slice(0, 1)}
@@ -131,4 +66,3 @@ const NewsCard = () => {
 };
 
 export default NewsCard;
-
