@@ -1,6 +1,6 @@
 import axiosInstance from "./index";
 
-const endPoint = "home/elon/get/";
+const endPoint = "home/elon/";
 
 const get = () => axiosInstance.get(endPoint);
 
