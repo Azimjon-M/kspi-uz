@@ -13,7 +13,6 @@ const NewsCard = () => {
       try {
         const res = await APIYangilik.getById(id);
         setNews(res.data);
-        console.log(res.data);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching news data:", error);
@@ -47,7 +46,7 @@ const NewsCard = () => {
           </h2>
 
           {/* IMAGES */}
-          <img src={news?.rasm_1} alt="" />
+          <img className="mb-5" src={news?.rasm_1} alt="" />
 
           {/* SUBTITLE */}
           <h2
