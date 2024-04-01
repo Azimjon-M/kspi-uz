@@ -1,85 +1,26 @@
-import React from "react";
+import {React, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import APIElon from "../../services/elon";
+
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
-import rrr from "../../assets/images/call.jpg";
-import { Link } from "react-router-dom";
-
-const Elonlar = [
-  {
-    id: "1",
-    day: "Chorshanba",
-    theData: "18",
-    month: "Mart",
-    year: "2024",
-    startTime: "16:00 PM",
-    endTime: "21:00 PM",
-    address: "Qdpi musiqa markazi, Kempbell resital zali",
-    img: rrr,
-    field: "Maruza/taqdimot/suxbat",
-    title:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and types",
-  },
-  {
-    id: "1",
-    day: "Chorshanba",
-    theData: "18",
-    month: "Mart",
-    year: "2024",
-    startTime: "16:00 PM",
-    endTime: "21:00 PM",
-    address: "Qdpi musiqa markazi, Kempbell resital zali",
-    img: rrr,
-    field: "Maruza/taqdimot/suxbat",
-    title:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and types",
-  },
-  {
-    id: "1",
-    day: "Chorshanba",
-    theData: "18",
-    month: "Mart",
-    year: "2024",
-    startTime: "16:00 PM",
-    endTime: "21:00 PM",
-    address: "Qdpi musiqa markazi, Kempbell resital zali",
-    img: rrr,
-    field: "Maruza/taqdimot/suxbat",
-    title:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and types",
-  },
-  {
-    id: "1",
-    day: "Chorshanba",
-    theData: "18",
-    month: "Mart",
-    year: "2024",
-    startTime: "16:00 PM",
-    endTime: "21:00 PM",
-    address: "Qdpi musiqa markazi, Kempbell resital zali",
-    img: rrr,
-    field: "Maruza/taqdimot/suxbat",
-    title:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and types",
-  },
-  {
-    id: "1",
-    day: "Chorshanba",
-    theData: "18",
-    month: "Mart",
-    year: "2024",
-    startTime: "16:00 PM",
-    endTime: "21:00 PM",
-    address: "Qdpi musiqa markazi, Kempbell resital zali",
-    img: rrr,
-    field: "Maruza/taqdimot/suxbat",
-    title:
-      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and types",
-    detail:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  },
-];
 
 function BarchaElonlarCom() {
+  const [barchaElonlar, setBarchaElonlar] = useState([]);
+
+  useEffect(() => {
+    const fetchBarchaElonlar = async () => {
+      try {
+        const response = await APIElon.get();
+        setBarchaElonlar(response.data);
+      } catch (error) {
+        console.log("Error fetching announcements:", error);
+      }
+    };
+
+    fetchBarchaElonlar();
+  }, []);
+
   return (
     <div className="bg-[#f4f4f4]">
       <div className="max-w-5xl mx-auto md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)] py-20">
@@ -87,20 +28,18 @@ function BarchaElonlarCom() {
           Barcha elonlar
         </h1>
         <div className="grid gap-5 md:mt-10 px-5">
-          {Elonlar &&
-            Elonlar.map((elon) => {
+          {barchaElonlar &&
+            barchaElonlar.map((elon) => {
               const {
                 id,
-                day,
-                theDate,
-                month,
-                year,
-                startTime,
-                endTime,
-                address,
-                img,
-                field,
+                rasm,
                 title,
+                detail,
+                boshlanish_vaqti,
+                tugash_vaqti,
+                field,
+                adress,
+                sana
               } = elon;
               return (
                 <div
@@ -109,7 +48,7 @@ function BarchaElonlarCom() {
                 >
                   <div className="w-60 h-52 hidden md:block">
                     <img
-                      src={img}
+                      src={rasm}
                       className="w-full h-52 object-center"
                       alt=""
                     />
@@ -127,13 +66,13 @@ function BarchaElonlarCom() {
                     <p className="flex  text-base md:text-lg md:items-center mt-2">
                       <FaRegCalendarAlt />
                       <span className="pl-2">
-                        {day}, {year}-yil {theDate}-{month}, {startTime} dan{" "}
-                        {endTime}
+                        {/* {day}, {year}-yil {theDate}-{month}, {startTime} dan{" "}
+                        {endTime} */}
                       </span>
                     </p>
                     <p className="flex text-base md:text-lg md:items-center mt-2">
                       <IoLocationSharp />
-                      <span className="pl-2 text-blue-500">{address}</span>
+                      <span className="pl-2 text-blue-500">{adress}</span>
                     </p>
                   </div>
                 </div>

@@ -348,11 +348,11 @@ export const routes = [
         path: "/barchaElonlar",
       },
 
-      // Elon Batafsil 
+      // Elon Batafsil
       {
-        element: <ElonBatafsil/>,
-        path: "/elonBatafsil",
-      }
+        element: <ElonBatafsil />,
+        path: "/elonBatafsil/:id",
+      },
     ],
   },
 ];

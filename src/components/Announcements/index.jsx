@@ -73,9 +73,9 @@ function Announcements() {
             }
 
             return (
-              <a
+              <Link
                 key={id}
-                href="qwdqwqddwq"
+                to={`/elonBatafsil/${id}`}
                 className="flex md:block md:h-[580px] shadow-md hover:shadow-xl group overflow-hidden rounded-lg"
               >
                 <div className="h-1/2 hidden md:block">
@@ -104,7 +104,7 @@ function Announcements() {
                     {boshlanish_vaqti.slice(11, 16)}
                   </span>
                 </div>
-              </a>
+              </Link>
             );
           })}
       </div>

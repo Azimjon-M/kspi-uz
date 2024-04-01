@@ -1,9 +1,10 @@
 import axiosInstance from "./index";
 
-const endPoint = "home/elon/";
+const andPoint = "home/elon/";
 
-const get = () => axiosInstance.get(endPoint);
+const get = () => axiosInstance.get(andPoint);
+const getById = (id) => axiosInstance.get(`${andPoint}${id}/`);
 
-const APIElon = {get}
+const APIElon = { get, getById };
 
 export default APIElon;
