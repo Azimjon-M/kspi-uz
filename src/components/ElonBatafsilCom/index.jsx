@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router";
+import APIElon from "../../services/elon";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
@@ -8,15 +10,31 @@ import { TiSocialInstagram } from "react-icons/ti";
 import rrr from "../../assets/images/call.jpg";
 
 function ElonBatafsilCom() {
+  const { id } = useParams();
 
+  const [announcement, setAnnouncement] = useState(null);
+
+  useEffect(() => {
+    const fetchAnnouncement = async () => {
+      try {
+        const response = await APIElon.getById(id);
+        setAnnouncement(response.data);
+      } catch (error) {
+        console.error("Error fetching announcements:", error);
+      }
+    };
+
+    fetchAnnouncement();
+  }, [id]);
+
+  console.log(announcement);
+  
   return (
     <div className="bg-[#f4f4f4]">
       <div className="bg bg-[#2F2424] text-white py-10">
         <div className="max-w-7xl mx-auto pl-[24.5%]">
-          <p className="text-lg uppercase">Ishlash</p>
-          <h1 className="text-4xl">
-            Sent-Lorens va do'stlar: xayrli juma liturgik ijrosi
-          </h1>
+          <p className="text-lg uppercase">{announcement.detail}</p>
+          <h1 className="text-4xl">{announcement.title}</h1>
         </div>
       </div>
       <div className="max-w-7xl mx-auto grid grid-cols-3">
@@ -30,15 +48,15 @@ function ElonBatafsilCom() {
               <span className="pl-4 text-xl">
                 <span className="font-bold">2024-yil 28-mart, payshanba,</span>
                 <br />
-                <span className="font-light">13:30 dan 14:30 gacha PT</span>
+                <span className="font-light">
+                  {announcement.boshlanish_vaqti.slice(8, 10)} dan 14:30 gacha PT
+                </span>
               </span>
             </p>
             <p className="flex items-start mt-7">
               <FaLocationDot className="text-xl text-yellow-500 mt-1" />
               <span className="pl-4 text-xl">
-                <span className="font-bold">
-                  Qdpi musiqa markazi, Kempbell resital zali
-                </span>
+                <span className="font-bold">{announcement.adress}</span>
               </span>
             </p>
             <p className="flex items-start mt-7">
@@ -58,20 +76,7 @@ function ElonBatafsilCom() {
         </div>
         <div className="col-span-2 pt-7 pl-8">
           <h1 className="text-3xl font-bold">Tadbir tafsilotlari:</h1>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
-            adipisci beatae, eveniet commodi alias repudiandae omnis quidem enim
-            inventore, consectetur quia fuga atque illum et nisi odio earum
-            ipsum? Accusamus facilis tempore dolores consequatur eum
-            reprehenderit ea error voluptas reiciendis adipisci rerum suscipit
-            quaerat modi explicabo perspiciatis, totam hic tempora excepturi?
-            Doloremque explicabo, ratione recusandae sapiente eum voluptas unde
-            commodi nam dolorum, harum, quis iure molestiae dolore tempore sequi
-            autem ex non ullam perferendis adipisci! Odio commodi aspernatur quo
-            temporibus laborum numquam eveniet voluptas nostrum amet quis
-            doloribus vero natus accusamus nulla facilis fugit, modi minima at
-            ad cumque atque!
-          </p>
+          <p className="text-lg">{announcement.field}</p>
         </div>
       </div>
     </div>
