@@ -2,13 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Breadcrumb from "../Breadcrumb";
 import APIYangilik from "../../services/yangilik";
-import "swiper/css";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 const NewsCard = () => {
   const { id } = useParams();
   const [news, setNews] = useState(null);
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
