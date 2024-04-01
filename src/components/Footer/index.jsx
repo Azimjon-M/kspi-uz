@@ -67,10 +67,7 @@ const Footer = () => {
               </h1>
             </div>
             <p className="md:w-[250px] lg:w-[350px] xl:w-[450px]">
-              Qo'qon davlat pedagogika instituti 1931-yil yanvar oyida kechki
-              pedagogika instituti sifatida tashkil etilgan. Institut 1939-1940
-              o'quv yilidan boshlab kunduzgi davlat o'qituvchilar institutiga
-              aylantirilgan.
+              <TextTranslate id="footerTexts" />
             </p>
           </div>
         </div>
@@ -110,13 +107,19 @@ const Footer = () => {
           </h1>
           <ul>
             <li>
-              <Link to="/yangiliklar"><TextTranslate id="yangiliklar" /></Link>
+              <Link to="/yangiliklar">
+                <TextTranslate id="yangiliklar" />
+              </Link>
             </li>
             <li>
-              <Link to="/qabulxona"><TextTranslate id="virtualQabulxona" /></Link>
+              <Link to="/qabulxona">
+                <TextTranslate id="virtualQabulxona" />
+              </Link>
             </li>
             <li>
-              <Link to="/vakansiyalar"><TextTranslate id="vakansiyalar" /></Link>
+              <Link to="/vakansiyalar">
+                <TextTranslate id="vakansiyalar" />
+              </Link>
             </li>
             <li>
               <Link>RSS</Link>
@@ -126,7 +129,9 @@ const Footer = () => {
 
         {/* Saytga tashrif */}
         <div className="mb-3">
-          <h1 className="font-bold mb-3">Saytga tashriflar soni</h1>
+          <h1 className="font-bold mb-3">
+            <TextTranslate id="saytgaTashriflarSoni" />
+          </h1>
           <p className="lg:text-center font-bold text-3xl">5k+</p>
         </div>
       </div>
