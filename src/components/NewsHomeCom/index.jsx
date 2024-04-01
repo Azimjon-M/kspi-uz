@@ -128,14 +128,12 @@ const NewsHome = () => {
         </div>
       </div>
       {/* Barcha yangiliklarga o'tish */}
-      <div className="flex justify-end my-2">
+      <div className="text-center my-2">
         <Link
-          className="cursor-pointer md:text-xl hover:scale-105 ease-in-out duration-150 lg:pr-3"
           to="/yangiliklar"
+          className="text-lg md:text-2xl bg-slate-100 text-cyan-900 font-bold active:border border-slate-100 px-10 md:px-28 py-2 md:py-4 rounded-xl"
         >
-          <span className="flex items-center ease-in-out duration-200">
-            <TextTranslate id="newsToPage" /> »
-          </span>
+          <TextTranslate id="newsToPage" />
         </Link>
       </div>
     </div>

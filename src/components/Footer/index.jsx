@@ -4,6 +4,7 @@ import { FaTelegram } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { PiYoutubeLogoFill } from "react-icons/pi";
 import { FaSquareFacebook } from "react-icons/fa6";
+import TextTranslate from "../TextTranslate/index";
 import Logo from "../../assets/icons/logo_kspi.png";
 
 const Footer = () => {
@@ -76,8 +77,12 @@ const Footer = () => {
 
         {/* Manzil */}
         <div className="mb-3">
-          <h1 className="font-bold mb-3">Manzil va aloqa</h1>
-          <p>Qo'qon shaxri, Turon ko'chasi, 23-uy</p>
+          <h1 className="font-bold mb-3">
+            <TextTranslate id="location" />
+          </h1>
+          <p>
+            <TextTranslate id="address" />
+          </p>
           <ul>
             <li>
               <Link
@@ -92,7 +97,7 @@ const Footer = () => {
                 to="tel:+998 73 542 38 38"
                 className="transform hover:translate-x-2 transition duration-300 ease-in-out"
               >
-                +998 73 542 38 38
+                <TextTranslate id="ishonchTelefon" />: +998 73 542 38 38
               </Link>
             </li>
           </ul>
@@ -100,16 +105,18 @@ const Footer = () => {
 
         {/* Foydali */}
         <div className="mb-3">
-          <h1 className="font-bold mb-3">Foydali linklar</h1>
+          <h1 className="font-bold mb-3">
+            <TextTranslate id="foydaliLinklar" />
+          </h1>
           <ul>
             <li>
-              <Link to="/yangiliklar">Yangiliklar</Link>
+              <Link to="/yangiliklar"><TextTranslate id="yangiliklar" /></Link>
             </li>
             <li>
-              <Link to="/qabulxona">Virtual qabulxona</Link>
+              <Link to="/qabulxona"><TextTranslate id="virtualQabulxona" /></Link>
             </li>
             <li>
-              <Link to="/vakansiyalar">Bo'sh ish o'rinlari</Link>
+              <Link to="/vakansiyalar"><TextTranslate id="vakansiyalar" /></Link>
             </li>
             <li>
               <Link>RSS</Link>
