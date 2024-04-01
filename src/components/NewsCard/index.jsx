@@ -56,6 +56,9 @@ const NewsCard = () => {
           <div className="text-md lg:text-lg xl:text-xl">
             {news && news.body_1_uz}
           </div>
+          <div className="text-md lg:text-lg xl:text-xl">
+            {news && news.body_2_uz}
+          </div>
         </div>
       </div>
     </div>
