@@ -5,8 +5,12 @@ import "aos/dist/aos.css";
 
 import TextTranslate from "../TextTranslate";
 import APIYangilik from "../../services/yangilik";
+import { useSelector } from "react-redux";
 
 const NewsHome = () => {
+  const Lang = useSelector((state) => state.reducerLang.isLang);
+  const [title, setTitle] = useState("");
+
   const [firstNews, setFirstNews] = useState(null);
   const [news, setNews] = useState(null);
   useEffect(() => {
@@ -27,6 +31,25 @@ const NewsHome = () => {
     };
     loadPost();
   }, []);
+
+  useEffect(() => {
+    switch (Lang) {
+      case "uz":
+        setTitle("title_uz");
+
+        break;
+      case "ru":
+        setTitle("title_ru");
+        break;
+      case "en":
+        setTitle("title_en");
+        break;
+
+      default:
+        setTitle("title_uz");
+        break;
+    }
+  }, [Lang]);
   return (
     <div className="px-5 py-16 md:px-10 lg:px-20 xl:px-0 max-w-7xl mx-auto">
       <div className="md:flex md:items-center justify-between">
@@ -72,7 +95,8 @@ const NewsHome = () => {
                   {/* News title */}
                   <div className="flex flex-col justify-between flex-grow px-2">
                     <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-5 text-base md:text-lg lg:text-xl xl:text-2xl text-[#004269] text-center dark:text-gray-300">
-                      {item.title_uz}
+                      {/* {item.title_uz} */}
+                      {item[title]}
                     </h2>
                     <div className="flex justify-center items-center">
                       <div className="border-4 bg-[#004269] w-10 my-5"></div>
@@ -86,6 +110,7 @@ const NewsHome = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-2 overflow-hidden">
           {news &&
             news.map((item, idx) => (
+
               <Link
                 className="inline-block"
                 to={`/yangiliklar/${item.id}`}
@@ -115,7 +140,7 @@ const NewsHome = () => {
                     {/* News title */}
                     <div className="flex flex-col justify-between flex-grow px-2">
                       <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-2 text-base text-[#004269] text-center dark:text-gray-300 line">
-                        {item.title_uz}
+                        {item[title]}
                       </h2>
                       <div className="flex justify-center items-center">
                         <div className="border-4 bg-[#004269] w-10 my-5"></div>
@@ -128,14 +153,12 @@ const NewsHome = () => {
         </div>
       </div>
       {/* Barcha yangiliklarga o'tish */}
-      <div className="flex justify-end my-2">
+      <div className="text-center my-2">
         <Link
-          className="cursor-pointer md:text-xl hover:scale-105 ease-in-out duration-150 lg:pr-3"
           to="/yangiliklar"
+          className="text-lg md:text-2xl bg-slate-100 text-cyan-900 font-bold active:border border-slate-100 px-10 md:px-28 py-2 md:py-4 rounded-xl"
         >
-          <span className="flex items-center ease-in-out duration-200">
-            <TextTranslate id="newsToPage" /> »
-          </span>
+          <TextTranslate id="newsToPage" />
         </Link>
       </div>
     </div>

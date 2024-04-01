@@ -3,6 +3,7 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { FaSquarePhone } from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { Link } from "react-router-dom";
+import TextTranslate from "../TextTranslate";
 
 const ContactUs = () => {
   useEffect(() => {
@@ -15,25 +16,27 @@ const ContactUs = () => {
     <div className="p-5 lg:p-10 flex justify-center md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="w-[1000px]">
         <h2 className=" text-xl md:text-4xl font-bold text-center text-[#004269] dark:text-white">
-          Biz bilan bog'lanish
+          <TextTranslate id="contactUs" />
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 md:my-10">
           <div className="bg-white dark:bg-gray-900">
             <div className="py-2 lg:py-6 px-4 mx-auto max-w-screen-md">
               <h2 className="py-2 text-lg font-bold lg:mb-16 text-center text-[#004269] dark:text-gray-400 sm:text-xl">
-                Aloqa va joylashuv
+                <TextTranslate id="location" />
               </h2>
               <div>
                 <div className="flex items-center mb-5 md:mb-10">
                   <FaMapLocationDot className="w-[40px] md:w-[60px] h-auto mr-4" />
                   <p className="text-[#004269]">
-                    Qo'qon shaxri, Turon ko'chasi, 23-uy
+                    <TextTranslate id="address" />
                   </p>
                 </div>
                 <div className="flex items-center mb-5 md:mb-10">
                   <FaSquarePhone className="w-[40px] md:w-[60px] h-auto mr-4" />
                   <p className="text-[#004269]">
-                    <Link href="tel:+998735423838">+998 73 542 38 38</Link>
+                    <Link href="tel:+998735423838">
+                      <TextTranslate id="ishonchTelefon" />: +998 73 542 38 38
+                    </Link>
                   </p>
                 </div>
                 <div className="flex items-center">
