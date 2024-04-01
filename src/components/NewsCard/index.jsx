@@ -41,10 +41,24 @@ const NewsCard = () => {
 
       <div className="p-10 xl:px-0 max-w-7xl mx-auto">
         <div className="col-span-3 ...">
+          {/* TITLE */}
           <h2 className="text-xl text-[#004269] xl:text-3xl 2xl:text-4xl font-bold text-center mb-5">
             {news?.title_uz}
           </h2>
+
+          {/* IMAGES */}
           <img src={news?.rasm_1} alt="" />
+
+          {/* SUBTITLE */}
+          <h2
+            className={`${
+              news && news.subtitle_uz ? "" : "hidden"
+            } text-lg text-[#004269] xl:text-2xl 2xl:text-3xl font-bold text-center mb-5`}
+          >
+            {news?.subtitle_uz}
+          </h2>
+
+          {/* PARAGRAPH */}
           <div className="d-inline-block">
             <p className="d-inline-block text-3xl border-2 border-[#004269] px-5 py-3 float-left mr-3">
               {news && news.body_0_uz && news.body_0_uz.slice(0, 1)}
@@ -54,10 +68,76 @@ const NewsCard = () => {
             </span>
           </div>
           <div className="text-md lg:text-lg xl:text-xl">
-            {news && news.body_1_uz}
+            <p>
+              <span className={`${news && news.body_1_uz ? "ml-5" : "hidden"}`}>
+                {news && news.body_1_uz && news.body_1_uz.slice(0, 1)}
+              </span>
+              {news && news.body_1_uz && news.body_1_uz.slice(1)}
+            </p>
           </div>
           <div className="text-md lg:text-lg xl:text-xl">
-            {news && news.body_2_uz}
+            <p>
+              <span className={`${news && news.body_2_uz ? "ml-5" : "hidden"}`}>
+                {news && news.body_2_uz && news.body_2_uz.slice(0, 1)}
+              </span>
+              {news && news.body_2_uz && news.body_2_uz.slice(1)}
+            </p>
+          </div>
+          <div className="text-md lg:text-lg xl:text-xl">
+            <p>
+              <span className={`${news && news.body_3_uz ? "ml-5" : "hidden"}`}>
+                {news && news.body_3_uz && news.body_3_uz.slice(0, 1)}
+              </span>
+              {news && news.body_3_uz && news.body_3_uz.slice(1)}
+            </p>
+          </div>
+          <div className="text-md lg:text-lg xl:text-xl">
+            <p>
+              <span className={`${news && news.body_4_uz ? "ml-5" : "hidden"}`}>
+                {news && news.body_4_uz && news.body_4_uz.slice(0, 1)}
+              </span>
+              {news && news.body_4_uz && news.body_4_uz.slice(1)}
+            </p>
+          </div>
+          <div className="text-md lg:text-lg xl:text-xl">
+            <p>
+              <span className={`${news && news.body_5_uz ? "ml-5" : "hidden"}`}>
+                {news && news.body_5_uz && news.body_5_uz.slice(0, 1)}
+              </span>
+              {news && news.body_5_uz && news.body_5_uz.slice(1)}
+            </p>
+          </div>
+          <div className="text-md lg:text-lg xl:text-xl">
+            <p>
+              <span className={`${news && news.body_6_uz ? "ml-5" : "hidden"}`}>
+                {news && news.body_6_uz && news.body_6_uz.slice(0, 1)}
+              </span>
+              {news && news.body_6_uz && news.body_6_uz.slice(1)}
+            </p>
+          </div>
+          <div className="text-md lg:text-lg xl:text-xl">
+            <p>
+              <span className={`${news && news.body_7_uz ? "ml-5" : "hidden"}`}>
+                {news && news.body_7_uz && news.body_7_uz.slice(0, 1)}
+              </span>
+              {news && news.body_7_uz && news.body_7_uz.slice(1)}
+            </p>
+          </div>
+          <div className="text-md lg:text-lg xl:text-xl">
+            <p>
+              <span className={`${news && news.body_8_uz ? "ml-5" : "hidden"}`}>
+                {news && news.body_8_uz && news.body_8_uz.slice(0, 1)}
+              </span>
+              {news && news.body_8_uz && news.body_8_uz.slice(1)}
+            </p>
+          </div>
+          <div className="text-md lg:text-lg xl:text-xl">
+            <p>
+              <span className={`${news && news.body_9_uz ? "ml-5" : "hidden"}`}>
+                {news && news.body_9_uz && news.body_9_uz.slice(0, 1)}
+              </span>
+              {news && news.body_9_uz && news.body_9_uz.slice(1)}
+            </p>
           </div>
         </div>
       </div>
