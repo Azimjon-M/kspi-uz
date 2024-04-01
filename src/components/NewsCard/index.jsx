@@ -2,11 +2,22 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Breadcrumb from "../Breadcrumb";
 import APIYangilik from "../../services/yangilik";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 import { useSelector } from "react-redux";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import "./styles.css";
+// import required modules
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 const NewsCard = () => {
   const Lang = useSelector(state => state.reducerLang.isLang)
-
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { id } = useParams();
   const [news, setNews] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -49,7 +60,59 @@ const NewsCard = () => {
           </h2>
 
           {/* IMAGES */}
-          <img className="mb-5" src={news?.rasm_1} alt="" />
+          <img className="mb-5" src={news?.rasm_1} alt="news" />
+          <Swiper
+            style={{
+              "--swiper-navigation-color": "#fff",
+              "--swiper-pagination-color": "#fff",
+            }}
+            spaceBetween={10}
+            navigation={true}
+            thumbs={{ swiper: thumbsSwiper }}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper2"
+          >
+            <SwiperSlide>
+              <img src={news?.rasm_1} alt="news" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={news?.rasm_2} alt="news" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={news?.rasm_3} alt="news" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={news?.rasm_4} alt="news" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={news?.rasm_5} alt="news" />
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            spaceBetween={10}
+            slidesPerView={4}
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={news?.rasm_1} alt="news" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={news?.rasm_2} alt="news" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={news?.rasm_3} alt="news" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={news?.rasm_4} alt="news" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={news?.rasm_5} alt="news" />
+            </SwiperSlide>
+          </Swiper>
 
           {/* SUBTITLE */}
           <h2
@@ -105,7 +168,7 @@ const NewsCard = () => {
             <p>
               <span className={`${news && news[`body_5_${Lang}`] ? "ml-5" : "hidden"}`}>
 
-              {news && news[`body_5_${Lang}`] && news[`body_5_${Lang}`].slice(0, 1)}
+                {news && news[`body_5_${Lang}`] && news[`body_5_${Lang}`].slice(0, 1)}
               </span>
               {news && news[`body_5_${Lang}`] && news[`body_5_${Lang}`].slice(1)}
             </p>
@@ -149,3 +212,8 @@ const NewsCard = () => {
 };
 
 export default NewsCard;
+
+
+
+
+
