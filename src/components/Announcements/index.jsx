@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import APIElon from "../../services/elon";
+import { useSelector } from "react-redux";
 
 function Announcements() {
-  const [announcements, setAnnouncements] = useState([]);
+  const Lang = useSelector((state) => state.reducerLang.isLang);
+  const [data, setData] = useState([]);
+
+  const getData = async () => {
+    await APIElon.get()
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err));
+  };
 
   useEffect(() => {
-    const fetchAnnouncements = async () => {
-      try {
-        const response = await APIElon.get();
-        setAnnouncements(response.data);
-      } catch (error) {
-        console.error("Error fetching announcements:", error);
-      }
-    };
-
-    fetchAnnouncements();
+    getData();
   }, []);
 
   return (
@@ -24,13 +23,11 @@ function Announcements() {
         Kelgusi voqealar
       </h1>
       <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-4 px-5 md:px-10 lg:px-5 xl:px-0 gap-6 py-20">
-        {announcements &&
-          announcements.slice(0, 4).map((announcement) => {
-            const { id, rasm, field, title, boshlanish_vaqti } = announcement;
-
+        {data &&
+          data.slice(0, 4).map((item) => {
             let day;
 
-            switch (boshlanish_vaqti.slice(5, 7)) {
+            switch (item.boshlanish_vaqti?.slice(5, 7)) {
               case "01":
                 day = "Yanvar";
                 break;
@@ -74,13 +71,31 @@ function Announcements() {
 
             return (
               <Link
-                key={id}
-                to={`/elonBatafsil/${id}`}
+                key={item.id}
+                to={`/elonBatafsil/${item.id}`}
                 className="flex md:block md:h-[580px] shadow-md hover:shadow-xl group overflow-hidden rounded-lg"
               >
+                <div>
+                  <p>
+                    <b>Title: </b>
+                    {item && item[`title_${Lang}`]}
+                  </p>
+                  <p>
+                    <b>Detail: </b>
+                    {item && item[`detail_${Lang}`]}
+                  </p>
+                  <p>
+                    <b>Field: </b>
+                    {item && item[`field_${Lang}`]}
+                  </p>
+                  <p>
+                    <b>Adress: </b>
+                    {item && item[`adress_${Lang}`]}
+                  </p>
+                </div>
                 <div className="h-1/2 hidden md:block">
                   <img
-                    src={rasm}
+                    src={item.rasm}
                     className="h-full w-full object-caver object-center group-hover:scale-105 duration-300"
                     alt=""
                   />
@@ -89,19 +104,19 @@ function Announcements() {
                   <div className="md:inline-block bg-slate-600 px-2 md:px-4 py-2 text-slate-100 text-center uppercase relative md:-top-9 md:ml-6">
                     <p className="text-base">{day}</p>
                     <p className="text-2xl font-bold">
-                      {boshlanish_vaqti.slice(8, 10)}
+                      {item.boshlanish_vaqti.slice(8, 10)}
                     </p>
                   </div>
                 </div>
                 <div className="px-3 py-3 md:px-6 md:py-0">
                   <span className="text-base uppercase font-semibold text-red-800">
-                    {field}
+                    {item.field}
                   </span>
                   <h2 className="text-lg md:text-xl font-bold text-slate-600 line-clamp-4 md:my-2 group-hover:text-blue-500">
-                    {title}
+                    {item.title}
                   </h2>
                   <span className="text-lg font-extralight mt-5">
-                    {boshlanish_vaqti.slice(11, 16)}
+                    {item.boshlanish_vaqti.slice(11, 16)}
                   </span>
                 </div>
               </Link>
