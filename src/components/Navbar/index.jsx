@@ -305,32 +305,38 @@ function Navbar() {
                     className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                   >
                     <li className="text-[#004269] dark:text-white">
-                      <Link to="/jamoatchilik">
+                      {/* <Link to="/jamoatchilik"> */}
+                      <Link to="#">
                         <TextTranslate id="navDropFaoliyat_1" />
                       </Link>
                     </li>
                     <li className="text-[#004269] dark:text-white">
-                      <Link to="/madaniy">
+                      {/* <Link to="/madaniy"> */}
+                      <Link to="#">
                         <TextTranslate id="navDropFaoliyat_2" />
                       </Link>
                     </li>
                     <li className="text-[#004269] dark:text-white">
-                      <Link to="/oquv-uslubiy">
+                      {/* <Link to="/oquv-uslubiy"> */}
+                      <Link to="#">
                         <TextTranslate id="navDropFaoliyat_3" />
                       </Link>
                     </li>
                     <li className="text-[#004269] dark:text-white">
-                      <Link to="/akademik-litsey">
+                      {/* <Link to="/akademik-litsey"> */}
+                      <Link to="#">
                         <TextTranslate id="navDropFaoliyat_4" />
                       </Link>
                     </li>
                     <li className="text-[#004269] dark:text-white">
-                      <Link to="/ilmiy-faoliyat">
+                      {/* <Link to="/ilmiy-faoliyat"> */}
+                      <Link to="#">
                         <TextTranslate id="navDropFaoliyat_5" />
                       </Link>
                     </li>
                     <li className="text-[#004269] dark:text-white">
-                      <Link to="/yoshlar-ishlash">
+                      {/* <Link to="/yoshlar-ishlash"> */}
+                      <Link to="#">
                         <TextTranslate id="navDropFaoliyat_6" />
                       </Link>
                     </li>
