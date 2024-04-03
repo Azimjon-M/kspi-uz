@@ -9,13 +9,17 @@ import { useSelector } from "react-redux";
 function BarchaElonlarCom() {
   const Lang = useSelector((state) => state.reducerLang.isLang);
   const [data, setData] = useState([]);
-  const fetchdata = async () => {
-    await APIElon.get()
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
-  };
-
+  
   useEffect(() => {
+    const fetchdata = async () => {
+      try{
+        const response = await APIElon.get();
+        setData(response.data)
+      }catch(error){
+        console.log(error);
+      }
+        
+    };
     fetchdata();
   }, []);
 

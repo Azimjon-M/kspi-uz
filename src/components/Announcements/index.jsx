@@ -35,11 +35,21 @@ function Announcements() {
       "Dekabr",
     ];
 
-    const date = new Date(dateString);
-    const day = date.getDate();
-    const month = months[date.getMonth()];
+    const weekDays = [
+      "Dushanba",
+      "Sheshanba",
+      "Chorshanba",
+      "Payshanba",
+      "Juma",
+      "Shanba",
+      "Yakshanba",
+    ];
 
-    return `${day} ${month}`;
+    const date = new Date(dateString);
+    const month = months[date.getMonth()];
+    const day = weekDays[date.getDay()];
+
+    return `${month}`;
   };
 
   return (
@@ -50,49 +60,6 @@ function Announcements() {
       <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-4 px-5 md:px-10 lg:px-5 xl:px-0 gap-6 py-20">
         {data &&
           data.slice(0, 4).map((item) => {
-            // let day;
-            // switch (item.boshlanish_vaqti?.slice(5, 7)) {
-            //   case "01":
-            //     day = "Yanvar";
-            //     break;
-            //   case "02":
-            //     day = "Fevral";
-            //     break;
-            //   case "03":
-            //     day = "Mart";
-            //     break;
-            //   case "04":
-            //     day = "Aprel";
-            //     break;
-            //   case "05":
-            //     day = "May";
-            //     break;
-            //   case "06":
-            //     day = "Iyun";
-            //     break;
-            //   case "07":
-            //     day = "Iyul";
-            //     break;
-            //   case "08":
-            //     day = "Avgust";
-            //     break;
-            //   case "09":
-            //     day = "Sentyabr";
-            //     break;
-            //   case "10":
-            //     day = "Oktyabr";
-            //     break;
-            //   case "11":
-            //     day = "Noyabr";
-            //     break;
-            //   case "12":
-            //     day = "Dekabr";
-            //     break;
-            //   default:
-            //     day = "Noma'lum";
-            //     break;
-            // }
-
             return (
               <Link
                 key={item.id}
@@ -108,10 +75,11 @@ function Announcements() {
                 </div>
                 <div className="flex items-center bg-slate-600 md:bg-inherit">
                   <div className="md:inline-block bg-slate-600 px-2 md:px-4 py-2 text-slate-100 text-center uppercase relative md:-top-9 md:ml-6">
-                    {formatDate(item.boshlanish_vaqti).slice(1, 15)}
-                    <p className="text-base"></p>
+                    <p className="text-base">
+                      {formatDate(item.boshlanish_vaqti)}
+                    </p>
                     <p className="text-2xl font-bold">
-                      {formatDate(item.boshlanish_vaqti).slice(0, 1)}
+                      {item.boshlanish_vaqti.slice(8, 10)}
                     </p>
                   </div>
                 </div>
