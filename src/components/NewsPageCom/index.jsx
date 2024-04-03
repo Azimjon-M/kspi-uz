@@ -6,8 +6,10 @@ import ReactPaginate from "react-paginate";
 import TextTranslate from "../TextTranslate";
 import Breadcrumb from "../Breadcrumb";
 import APIYangilik from "../../services/yangilik";
+import { useSelector } from "react-redux";
 
 const NewsPage = () => {
+  const Lang = useSelector(state => state.reducerLang.isLang)
   const [news, setNews] = useState(null);
   const [newsOne, setNewsOne] = useState(null);
   const [pageNumber, setPageNumber] = useState(0);
@@ -15,19 +17,20 @@ const NewsPage = () => {
   const itemsPerPage = 12;
   const pagesVisited = pageNumber * itemsPerPage;
 
+  const getData = async () => {
+    try {
+      await APIYangilik.get().then((res) => {
+        setNews(res.data.reverse());
+        setNewsOne(res.data.slice(pagesVisited, pagesVisited + itemsPerPage));
+      });
+    } catch (error) {
+      console.error("Error fetching news:", error);
+    }
+  };
+
   useEffect(() => {
     Aos.init();
-    const fetchNews = async () => {
-      try {
-        await APIYangilik.get().then((res) => {
-          setNews(res.data.reverse());
-          setNewsOne(res.data.slice(pagesVisited, pagesVisited + itemsPerPage));
-        });
-      } catch (error) {
-        console.error("Error fetching news:", error);
-      }
-    };
-    fetchNews();
+    getData();
   }, [pagesVisited]);
 
   const pageCount = Math.ceil((news && news.length) / itemsPerPage);
@@ -115,4 +118,3 @@ const NewsPage = () => {
 };
 
 export default NewsPage;
-
