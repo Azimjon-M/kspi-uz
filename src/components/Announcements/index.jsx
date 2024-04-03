@@ -26,7 +26,6 @@ function Announcements() {
         {data &&
           data.slice(0, 4).map((item) => {
             let day;
-
             switch (item.boshlanish_vaqti?.slice(5, 7)) {
               case "01":
                 day = "Yanvar";
