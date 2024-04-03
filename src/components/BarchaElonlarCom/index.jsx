@@ -30,26 +30,8 @@ function BarchaElonlarCom() {
             data.map((item) => (
               <div
                 key={item.id}
-                className="flex flex-col p-4 md:p-5 shadow-md bg-white hover:-translate-y-2 duration-150 hover:shadow-2xl"
+                className="flex p-4 md:p-5 shadow-md bg-white hover:-translate-y-2 duration-150 hover:shadow-2xl"
               >
-                <div>
-                  <p>
-                    <b>Title: </b>
-                    {item && item[`title_${Lang}`]}
-                  </p>
-                  <p>
-                    <b>Detail: </b>
-                    {item && item[`detail_${Lang}`]}
-                  </p>
-                  <p>
-                    <b>Field: </b>
-                    {item && item[`field_${Lang}`]}
-                  </p>
-                  <p>
-                    <b>Adress: </b>
-                    {item && item[`adress_${Lang}`]}
-                  </p>
-                </div>
                 <div className="w-60 h-52 hidden md:block">
                   <img
                     src={item.rasm}
@@ -59,13 +41,13 @@ function BarchaElonlarCom() {
                 </div>
                 <div className="md:pl-5">
                   <h3 className="text-base uppercase font-semibold text-red-800">
-                    {item.field}
+                    {item && item[`field_${Lang}`]}
                   </h3>
                   <Link
                     to="/elonBatafsil"
                     className="text-lg md:text-2xl font-bold text-slate-600 line-clamp-2 md:my-2 hover:text-red-700 hover:underline"
                   >
-                    {item.title}
+                    {item && item[`title_${Lang}`]}
                   </Link>
                   <p className="flex  text-base md:text-lg md:items-center mt-2">
                     <FaRegCalendarAlt />
@@ -88,3 +70,24 @@ function BarchaElonlarCom() {
 }
 
 export default BarchaElonlarCom;
+
+{
+  /* <div>
+  <p>
+    <b>Title: </b>
+    {item && item[`title_${Lang}`]}
+  </p>
+  <p>
+    <b>Detail: </b>
+    {item && item[`detail_${Lang}`]}
+  </p>
+  <p>
+    <b>Field: </b>
+    {item && item[`field_${Lang}`]}
+  </p>
+  <p>
+    <b>Adress: </b>
+    {item && item[`adress_${Lang}`]}
+  </p>
+</div> */
+}
