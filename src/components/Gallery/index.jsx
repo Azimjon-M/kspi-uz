@@ -6,11 +6,28 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
+// import APIGallery from "../../services/gallery";
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("institut");
+  // const [data, setData] = useState(null);
+  // const [dataTur, setDataTur] = useState(null);
+  // console.log(dataTur);
+  // console.log(data);
 
-  const data = [
+  // GET
+  // const getTur = async () => {
+  //   await APIGallery.getTur().then((res) => setDataTur(res.data));
+  // };
+  // const getData = async () => {
+  //   await APIGallery.get().then((res) => setData(res.data));
+  // };
+  // useEffect(() => {
+    // getTur();
+    // getData();
+  // });
+
+  const pictures = [
     {
       label: "Tadbirlar",
       value: "tadbirlar",
@@ -59,7 +76,7 @@ const Gallery = () => {
       </div>
       <Tabs id="custom-animation" value={activeTab} className="-z-10 md:py-10">
         <TabsHeader className="bg-[#eaf3ffa2] mx-2">
-          {data.map(({ label, value }) => (
+          {pictures?.map(({ label, value }) => (
             <Tab
               className={`text-xl font-semibold text-[#004269] ${
                 activeTab === value ? "bg-white rounded" : ""
@@ -80,7 +97,7 @@ const Gallery = () => {
             unmount: { y: 250 },
           }}
         >
-          {data.map(({ value, content }) => (
+          {pictures?.map(({ value, content }) => (
             <TabPanel
               key={value}
               value={value}
