@@ -35,19 +35,8 @@ function Announcements() {
       "Dekabr",
     ];
 
-    const weekDays = [
-      "Dushanba",
-      "Sheshanba",
-      "Chorshanba",
-      "Payshanba",
-      "Juma",
-      "Shanba",
-      "Yakshanba",
-    ];
-
     const date = new Date(dateString);
     const month = months[date.getMonth()];
-    const day = weekDays[date.getDay()];
 
     return `${month}`;
   };
