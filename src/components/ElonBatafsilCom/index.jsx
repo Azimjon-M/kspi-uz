@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import APIElon from "../../services/elon";
@@ -19,19 +18,63 @@ function ElonBatafsilCom() {
 
   useEffect(() => {
     const getData = async () => {
-      await APIElon.getById(id)
-        .then((res) => setData(res.data))
-        .catch((err) => console.log(err));
+      try {
+        const response = await APIElon.getById(id);
+        setData(response.data);
+        console.log(response.data);
+      } catch (error) {
+        console.log(error);
+      }
     };
     getData();
   }, [id]);
 
+  const formatDate = (dateString) => {
+    const months = [
+      "Yanvar",
+      "Fevral",
+      "Mart",
+      "Aprel",
+      "May",
+      "Iyun",
+      "Iyul",
+      "Avgust",
+      "Sentyabr",
+      "Oktyabr",
+      "Noyabr",
+      "Dekabr",
+    ];
+
+    const weekDays = [
+      "Dushanba",
+      "Sheshanba",
+      "Chorshanba",
+      "Payshanba",
+      "Juma",
+      "Shanba",
+      "Yakshanba",
+    ];
+
+    const date = new Date(dateString);
+    const time = date.toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    });
+    const day = date.getDate();
+    const weekDay = weekDays[date.getDay()];
+    const month = months[date.getMonth()];
+    const year = date.getFullYear();
+
+    return `${weekDay}, ${year}-yil ${day}-${month}`;
+  };
+
   return (
     <div className="bg-[#f4f4f4]">
       <div className="bg bg-[#2F2424] text-white py-10">
-        <div className="max-w-7xl mx-auto pl-[24.5%]">
-          <p className="text-lg uppercase">{data?.detail}</p>
-          <h1 className="text-4xl">{data?.title}</h1>
+        <div className="max-w-7xl mx-auto pl-[460px]">
+          <p className="text-lg uppercase">{data && data[`field_${Lang}`]}</p>
+          <h1 className="text-4xl">{data && data[`title_${Lang}`]}</h1>
         </div>
       </div>
       <div className="max-w-7xl mx-auto grid grid-cols-3">
@@ -40,34 +83,24 @@ function ElonBatafsilCom() {
             <img src={rrr} className="w-full h-full" alt="" />
           </div>
           <div className="p-8 bg-white">
-            <div>
-              <p>
-                <b>Title:</b> {data && data[`title_${Lang}`]}
-              </p>
-              <p>
-                <b>Field:</b> {data && data[`field_${Lang}`]}
-              </p>
-              <p>
-                <b>Detail:</b> {data && data[`detail_${Lang}`]}
-              </p>
-              <p>
-                <b>Adress:</b> {data && data[`adress_${Lang}`]}
-              </p>
-            </div>
             <p className="flex items-start">
               <FaCalendarAlt className="text-xl text-red-800 mt-1" />
               <span className="pl-4 text-xl">
-                <span className="font-bold">2024-yil 28-mart, payshanba,</span>
+                <span className="font-bold">
+                  {formatDate(data.boshlanish_vaqti)}
+                </span>
                 <br />
                 <span className="font-light">
-                  {data?.boshlanish_vaqti.slice(8, 10)} dan 14:30 gacha PT
+                  {data?.boshlanish_vaqti.slice(11, 16)} da
                 </span>
               </span>
             </p>
             <p className="flex items-start mt-7">
               <FaLocationDot className="text-xl text-yellow-500 mt-1" />
               <span className="pl-4 text-xl">
-                <span className="font-bold">{data?.adress}</span>
+                <span className="font-bold">
+                  {data && data[`adress_${Lang}`]}
+                </span>
               </span>
             </p>
             <p className="flex items-start mt-7">
@@ -87,7 +120,7 @@ function ElonBatafsilCom() {
         </div>
         <div className="col-span-2 pt-7 pl-8">
           <h1 className="text-3xl font-bold">Tadbir tafsilotlari:</h1>
-          <p className="text-lg">{data?.field}</p>
+          <p className="text-lg">{data && data[`detail_${Lang}`]}</p>
         </div>
       </div>
     </div>

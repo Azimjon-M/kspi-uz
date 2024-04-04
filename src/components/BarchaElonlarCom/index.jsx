@@ -49,13 +49,13 @@ function BarchaElonlarCom() {
     ];
 
     const date = new Date(dateString);
-    const time = date.toLocaleTimeString("en-US", { hour12: false })
+    const time = date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false });
     const day = date.getDate();
     const weekDay = weekDays[date.getDay()];
     const month = months[date.getMonth()];
     const year = date.getFullYear();
 
-    return `${weekDay} ${year} ${day} ${month} ${time}`
+    return `${weekDay}, ${year}-yil ${day}-${month}, ${time} da`;
   };
 
   return (
@@ -84,7 +84,7 @@ function BarchaElonlarCom() {
                       {item && item[`field_${Lang}`]}
                     </h3>
                     <Link
-                      to="/elonBatafsil"
+                      to={`/elonBatafsil/${item.id}`}
                       className="text-lg md:text-2xl font-bold text-slate-600 line-clamp-2 md:my-2 hover:text-red-700 hover:underline"
                     >
                       {item && item[`title_${Lang}`]}
@@ -93,8 +93,6 @@ function BarchaElonlarCom() {
                       <FaRegCalendarAlt />
                       <span className="pl-2">
                         {formatDate(item.boshlanish_vaqti)}
-                        {/* {day}, {year}-yil {theDate}-{month}, {startTime} dan{" "}
-                        {endTime} */}
                       </span>
                     </p>
                     <p className="flex text-base md:text-lg md:items-center mt-2">
