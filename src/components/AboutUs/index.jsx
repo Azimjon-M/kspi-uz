@@ -26,7 +26,7 @@ function AboutUs() {
           to="/institut-haqida"
           className="text-lg md:text-2xl bg-slate-100 text-cyan-900 font-bold active:border border-slate-100 px-10 md:px-28 py-2 md:py-4 rounded-xl"
         >
-          Biz haqida ko'proq
+          Biz haqida
         </Link>
       </div>
     </div>
