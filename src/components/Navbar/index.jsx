@@ -97,7 +97,7 @@ function Navbar() {
     >
       <Marquee
         velocity={25}
-        className="mx-auto text-red-600 font-semibold italic w-full bg-slate-500"
+        className="mx-auto text-red-600 font-semibold italic w-full bg-slate-300"
       >
         <div className="text-lg text-center">
           Sayt test rejimida ishlamoqda.!
