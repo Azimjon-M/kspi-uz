@@ -12,7 +12,7 @@ import ilmiy from "../../assets/images/ilmiy.jpg";
 import moliya from "../../assets/images/moliya.jpg";
 import xalqaro from "../../assets/images/xalqaro.jpg";
 import yoshlar from "../../assets/images/yoshlar.jpg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -219,14 +219,14 @@ const RektoratCom = () => {
                               Telefon: {tel}
                             </h4>
                           </div>
-                          <div className="p-3 pt-0 lg:place-items-end text-center lg:text-start">
+                          {/* <div className="p-3 pt-0 lg:place-items-end text-center lg:text-start">
                             <Link
                               to={link}
                               className="btn align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-[#004269] text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:bg-[#004269]/90 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
                             >
                               Batafsil ...
                             </Link>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                       <div className="m-3 max-w-96 lg:max-w-full">

@@ -31,7 +31,8 @@ function AbiturientBakalavrCom() {
       </div>
       <div className="max-w-7xl mx-5 xl:mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-5 -mt-8 sm:-mt-10 lg:-mt-28 mb-16">
         <Link
-          to="/dtsvaMalaka"
+          // to="/dtsvaMalaka"
+          to="#"
           className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 ease-in-out duration-300"
         >
           <div>
@@ -42,7 +43,8 @@ function AbiturientBakalavrCom() {
           </div>
         </Link>
         <Link
-          to="/oquvRejalari"
+          // to="/oquvRejalari"
+          to="#"
           className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 ease-in-out duration-300"
         >
           <div>
@@ -53,7 +55,8 @@ function AbiturientBakalavrCom() {
           </div>
         </Link>
         <Link
-          to="/fanDasturlari"
+          // to="/fanDasturlari"
+          to="#"
           className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 ease-in-out duration-300"
         >
           <div>
@@ -64,7 +67,8 @@ function AbiturientBakalavrCom() {
           </div>
         </Link>
         <Link
-          to="/fanKatalogi"
+          // to="/fanKatalogi"
+          to="#"
           className="shadow-xl flex justify-center items-center md:h-60 py-5 rounded-lg bg-slate-200 group hover:bg-[#2A4D64] hover:scale-105 ease-in-out duration-300"
         >
           <div>
