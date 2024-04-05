@@ -18,7 +18,7 @@ import tadbir4 from "../../assets/images/gallery/tadbir4.jpg"
 import ilmiy1 from "../../assets/images/gallery/ilmiy1.JPG"
 import ilmiy2 from "../../assets/images/gallery/ilmiy2.JPG"
 import ilmiy3 from "../../assets/images/gallery/ilmiy3.JPG"
-import ilmiy4 from "../../assets/images/gallery/ilmiy4.JPG"
+import ilmiy4 from "../../assets/images/gallery/ilmiy4.jpg"
 
 
 const Gallery = () => {
