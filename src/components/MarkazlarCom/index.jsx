@@ -14,7 +14,7 @@ import yordamchi from "../../assets/images/xalqaro.jpg";
 import yuriskonsolt from "../../assets/images/yurist/boshliq.JPG";
 import matbuot from "../../assets/images/xalqaro.jpg";
 import auditor from "../../assets/images/auditor/boshliq.JPG";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaTelegramPlane } from "react-icons/fa";
@@ -223,14 +223,14 @@ const MarkazlarCom = () => {
                               Telefon: {tel}
                             </h4>
                           </div>
-                          <div className="p-3 pt-0 lg:place-items-end text-center lg:text-start">
+                          {/* <div className="p-3 pt-0 lg:place-items-end text-center lg:text-start">
                             <Link
                               to={link}
                               className="btn align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-[#004269] text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:bg-[#004269]/90 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
                             >
                               Batafsil ...
                             </Link>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                       <div className="m-3 max-w-96 lg:max-w-full">
@@ -258,7 +258,7 @@ const MarkazlarCom = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
                 <img
-                  src="	https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
+                  src="https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
                   alt=""
                   className="w-full object-cover"
                 />
@@ -289,7 +289,7 @@ const MarkazlarCom = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
                 <img
-                  src="	https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
+                  src="https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
                   alt=""
                   className="w-full object-cover"
                 />
@@ -320,7 +320,7 @@ const MarkazlarCom = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto ">
                 <img
-                  src="	https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
+                  src="https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
                   alt=""
                   className="w-full object-cover"
                 />
@@ -351,7 +351,7 @@ const MarkazlarCom = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
                 <img
-                  src="	https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
+                  src="https://i.pinimg.com/736x/cf/43/ae/cf43ae96ec7f5badf1113a09f71ce3d3.jpg"
                   alt=""
                   className="w-full object-cover"
                 />
