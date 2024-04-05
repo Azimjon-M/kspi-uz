@@ -2,8 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import TextTranslate from "../TextTranslate";
+import data from "../../languages/index.json";
+import { useSelector } from "react-redux";
+
 
 function AboutUs() {
+  const id = ""
+  const lang = useSelector((state) => state.reducerLang.isLang);
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-0 my-24">
       <div>
@@ -14,7 +19,7 @@ function AboutUs() {
       <div className="px-2 md:px-10 xl:px-0">
         <p className="text-xl md:text-[2rem] font-light font_source md:leading-[3.5rem] text-center my-10">
           <Typewriter
-            words={[<TextTranslate id="bizningMaqsadimiz"/>]}
+            words={data[lang][id]}
             typeSpeed={50}
             delaySpeed={1000}
           />
