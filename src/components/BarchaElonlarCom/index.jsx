@@ -112,24 +112,3 @@ function BarchaElonlarCom() {
 }
 
 export default BarchaElonlarCom;
-
-{
-  /* <div>
-  <p>
-    <b>Title: </b>
-    {item && item[`title_${Lang}`]}
-  </p>
-  <p>
-    <b>Detail: </b>
-    {item && item[`detail_${Lang}`]}
-  </p>
-  <p>
-    <b>Field: </b>
-    {item && item[`field_${Lang}`]}
-  </p>
-  <p>
-    <b>Adress: </b>
-    {item && item[`adress_${Lang}`]}
-  </p>
-</div> */
-}
