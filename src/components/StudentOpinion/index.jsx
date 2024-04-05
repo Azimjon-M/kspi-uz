@@ -3,6 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import fikr from "../../assets/images/fikr.jpg"
+import TextTranslate from "../TextTranslate/index";
 
 function StudentOpinion() {
   useEffect(() => {
@@ -28,18 +29,14 @@ function StudentOpinion() {
           data-aos="fade-left"
         >
           <p className="text-md md:text-xl lg:text-2xl text-[#004269]">
-            QDPI - da men muloqot qobiliyatimni rivojlantira oldim va mustaqil
-            ravishda va jamoada qanday qilib yaxshi ishlashni o'rgandim.
-            Professorlarimning ko'magi bilan men kampusda va undan tashqarida
-            qimmatli martaba tajribasiga ega bo'ldim. Oxir oqibat, men kuchliroq
-            etakchiga aylanaman.
+          <TextTranslate id="talabaFikri" />
           </p>
           <div className="mt-4 md:mt-10">
             <h3 className="font-bold md:text-lg uppercase text-right text-[#3786b4] ">
-            Nozanin Ikromova
+            <TextTranslate id="talabaFikriIsm" />
             </h3>
             <p className="text-sm text-gray-500 font-bold text-right">
-              Qo'qon davlat pedagogika instituti 2-bosqich taqlabasi
+            <TextTranslate id="talabaFikriNomzodligi" />
             </p>
           </div>
         </div>
