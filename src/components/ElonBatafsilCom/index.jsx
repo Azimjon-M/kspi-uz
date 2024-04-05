@@ -56,11 +56,11 @@ function ElonBatafsilCom() {
     ];
 
     const date = new Date(dateString);
-    const time = date.toLocaleTimeString([], {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: false,
-    });
+    // const time = date.toLocaleTimeString([], {
+    //   hour: "2-digit",
+    //   minute: "2-digit",
+    //   hour12: false,
+    // });
     const day = date.getDate();
     const weekDay = weekDays[date.getDay()];
     const month = months[date.getMonth()];
@@ -70,15 +70,16 @@ function ElonBatafsilCom() {
   };
 
   return (
-    <div className="bg-[#f4f4f4]">
-      <div className="bg bg-[#2F2424] text-white py-10">
-        <div className="max-w-7xl mx-auto pl-[460px]">
+    <div className="bg-[#f4f4f4] pb-10">
+      <div className="grid md:grid-cols-3 bg-[#2F2424] text-white py-10">
+        <div></div>
+        <div className="col-span-2 pl-8 xl:pl-20 2xl:pl-32">
           <p className="text-lg uppercase">{data && data[`field_${Lang}`]}</p>
           <h1 className="text-4xl">{data && data[`title_${Lang}`]}</h1>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto grid grid-cols-3">
-        <div className="relative -top-28 shadow-xl">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3">
+        <div className="relative md:-top-28 shadow-xl">
           <div className="h-96 border border-white">
             <img src={rrr} className="w-full h-full" alt="" />
           </div>
@@ -87,7 +88,7 @@ function ElonBatafsilCom() {
               <FaCalendarAlt className="text-xl text-red-800 mt-1" />
               <span className="pl-4 text-xl">
                 <span className="font-bold">
-                  {formatDate(data.boshlanish_vaqti)}
+                  {data && formatDate(data.boshlanish_vaqti)}
                 </span>
                 <br />
                 <span className="font-light">
@@ -118,7 +119,7 @@ function ElonBatafsilCom() {
             </p>
           </div>
         </div>
-        <div className="col-span-2 pt-7 pl-8">
+        <div className="md:col-span-2 pt-7 px-8 md:pl-8">
           <h1 className="text-3xl font-bold">Tadbir tafsilotlari:</h1>
           <p className="text-lg">{data && data[`detail_${Lang}`]}</p>
         </div>
