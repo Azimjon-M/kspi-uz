@@ -7,9 +7,17 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 // import APIGallery from "../../services/gallery";
+import thayot1 from "../../assets/images/gallery/thayot1.JPG"
+import thayot2 from "../../assets/images/gallery/thayot2.JPG"
+import thayot3 from "../../assets/images/gallery/thayot3.JPG"
+import thayot4 from "../../assets/images/gallery/thayot4.JPG"
+import tadbir1 from "../../assets/images/gallery/tadbir.JPG"
+import tadbir2 from "../../assets/images/gallery/tadbir2.jpg"
+import tadbir3 from "../../assets/images/gallery/tadbir3.jpg"
+import tadbir4 from "../../assets/images/gallery/tadbir4.jpg"
 
 const Gallery = () => {
-  const [activeTab, setActiveTab] = useState("institut");
+  const [activeTab, setActiveTab] = useState("ilmiy");
   // const [data, setData] = useState(null);
   // const [dataTur, setDataTur] = useState(null);
   // console.log(dataTur);
@@ -32,15 +40,15 @@ const Gallery = () => {
       label: "Tadbirlar",
       value: "tadbirlar",
       content: [
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp",
+        tadbir1,
+        tadbir2,
+        tadbir3,
+        tadbir4,
       ],
     },
     {
-      label: "Institut",
-      value: "institut",
+      label: "Ilmiy",
+      value: "ilmiy",
       content: [
         "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
         "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp",
@@ -49,13 +57,13 @@ const Gallery = () => {
       ],
     },
     {
-      label: "Seminarlar",
-      value: "seminarlar",
+      label: "Talabalar hayoti",
+      value: "talabalar_hayoti",
       content: [
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp",
+        thayot1,
+        thayot2,
+        thayot3,
+        thayot4,
       ],
     },
   ];
