@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
+import fikr from "../../assets/images/fikr.jpg"
 
 function StudentOpinion() {
   useEffect(() => {
@@ -18,7 +19,7 @@ function StudentOpinion() {
         >
           <img
             className="w-full h-full object-cover md:rounded-2xl rounded-t-2xl"
-            src="https://www.alverno.edu/get/files/image/galleries/testimonial-0001.png"
+            src={fikr}
             alt=""
           />
         </div>
@@ -35,7 +36,7 @@ function StudentOpinion() {
           </p>
           <div className="mt-4 md:mt-10">
             <h3 className="font-bold md:text-lg uppercase text-right text-[#3786b4] ">
-              Muxlisa Karimova
+            Nozanin Ikromova
             </h3>
             <p className="text-sm text-gray-500 font-bold text-right">
               Qo'qon davlat pedagogika instituti 2-bosqich taqlabasi

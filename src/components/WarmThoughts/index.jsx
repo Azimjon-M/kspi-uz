@@ -4,8 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import { FaPlay } from "react-icons/fa";
 import { IoPlayOutline, IoClose } from "react-icons/io5";
 
-import video1 from "../../assets/video/cccccc.mp4";
-import img1 from "../../assets/images/Aquielle.jpg";
+import video1 from "../../assets/video/Durdona.mp4";
+import video2 from "../../assets/video/Xurshidbek.mp4";
+import video3 from "../../assets/video/Madina.mp4";
+import img1 from "../../assets/images/durdona.jpg";
+import img2 from "../../assets/images/fikrVid.jpg";
+import img3 from "../../assets/images/madina.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -18,21 +22,27 @@ import { Link } from "react-router-dom";
 const videos = [
   {
     id: 1,
-    name: "Aquielle Person",
-    about: "What is Brown like for students of color?",
+    name: "Durdona",
+    about: "Nima uchun QDPIni tanlagansiz?",
     url: "https://www.youtube-nocookie.com/embed/3d3hmqjjsos?rel=0&controls=1&showinfo=0&autoplay=1&playsinline=1&enablejsapi=1",
+    rasm: img1,
+    vid: video1,
   },
   {
     id: 2,
-    name: "Jenifer",
-    about: "What is Brown like for students of color?",
+    name: "Xurshidbek",
+    about: "Nima uchun QDPIni tanlagansiz?",
     url: "https://www.youtube-nocookie.com/embed/a5h3qtBHM6c?rel=0&controls=1&showinfo=0&autoplay=1&playsinline=1&enablejsapi=1",
+    rasm: img2,
+    vid: video2,
   },
   {
     id: 3,
-    name: "Kim Kardashian",
-    about: "What is Brown like for students of color?",
+    name: "Madina",
+    about: "Nima uchun QDPIni tanlagansiz?",
     url: "https://www.youtube-nocookie.com/embed/QE9ziawYNvU?rel=0&controls=1&showinfo=0&autoplay=1&playsinline=1&enablejsapi=1",
+    rasm: img3,
+    vid: video3,
   },
 ];
 
@@ -71,7 +81,7 @@ function WarmThoughts() {
                     <div className="before:content-[' ']  group-hover:before:opacity-100 before:opacity-0 before:transition-opacity before:duration-[350] before:z-[2] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:pointer-events-none before:bg-gradient-to-t from-black via-transparent to-transparent after:content-[' '] after:w-[calc(100%-20px)] after:h-[calc(100%-20px)] group-hover:after:opacity-100 after:opacity-0 after:z-[2] after:absolute after:top-[1.5%] after:left-[2.5%] after:border-solid after:border after:border-gray-400 after:pointer-events-none after:transition-opacity after:duration-[350]">
                       <div className="w-full h-full group-hover:opacity-0 object-contain">
                         <img
-                          src={img1}
+                          src={video.rasm}
                           alt="Aquielle"
                           className="w-full h-full"
                         />
@@ -84,7 +94,7 @@ function WarmThoughts() {
                       muted
                       autoPlay
                     >
-                      <source src={video1} type="video/mp4" />
+                      <source src={video.vid} type="video/mp4" />
                     </video>
                     <Link
                       onClick={() => handleClick(video.id)}

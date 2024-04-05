@@ -15,6 +15,11 @@ import tadbir1 from "../../assets/images/gallery/tadbir.JPG"
 import tadbir2 from "../../assets/images/gallery/tadbir2.jpg"
 import tadbir3 from "../../assets/images/gallery/tadbir3.jpg"
 import tadbir4 from "../../assets/images/gallery/tadbir4.jpg"
+import ilmiy1 from "../../assets/images/gallery/ilmiy1.JPG"
+import ilmiy2 from "../../assets/images/gallery/ilmiy2.JPG"
+import ilmiy3 from "../../assets/images/gallery/ilmiy3.JPG"
+import ilmiy4 from "../../assets/images/gallery/ilmiy4.JPG"
+
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("ilmiy");
@@ -50,10 +55,10 @@ const Gallery = () => {
       label: "Ilmiy",
       value: "ilmiy",
       content: [
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
+        ilmiy1,
+        ilmiy2,
+        ilmiy3,
+        ilmiy4,
       ],
     },
     {
