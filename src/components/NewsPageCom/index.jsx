@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -9,7 +9,9 @@ import APIYangilik from "../../services/yangilik";
 import { useSelector } from "react-redux";
 
 const NewsPage = () => {
-  const Lang = useSelector(state => state.reducerLang.isLang)
+  const Lang = useSelector((state) => state.reducerLang.isLang);
+  const [title, setTitle] = useState("");
+
   const [news, setNews] = useState(null);
   const [newsOne, setNewsOne] = useState(null);
   const [pageNumber, setPageNumber] = useState(0);
@@ -17,7 +19,7 @@ const NewsPage = () => {
   const itemsPerPage = 12;
   const pagesVisited = pageNumber * itemsPerPage;
 
-  const getData = async () => {
+  const getData = useCallback(async () => {
     try {
       await APIYangilik.get().then((res) => {
         setNews(res.data.reverse());
@@ -26,12 +28,32 @@ const NewsPage = () => {
     } catch (error) {
       console.error("Error fetching news:", error);
     }
-  };
+  }, [pagesVisited, setNews, setNewsOne]);
+  
 
   useEffect(() => {
     Aos.init();
     getData();
-  }, [pagesVisited]);
+  }, [pagesVisited, getData]);
+
+  useEffect(() => {
+    switch (Lang) {
+      case "uz":
+        setTitle("title_uz");
+
+        break;
+      case "ru":
+        setTitle("title_ru");
+        break;
+      case "en":
+        setTitle("title_en");
+        break;
+
+      default:
+        setTitle("title_uz");
+        break;
+    }
+  }, [Lang]);
 
   const pageCount = Math.ceil((news && news.length) / itemsPerPage);
 
@@ -86,7 +108,7 @@ const NewsPage = () => {
 
                     <div className="flex flex-col justify-between flex-grow px-2">
                       <h2 className="leading-relaxed font-bold line-clamp-3 xl:line-clamp-2 text-base text-[#004269] text-center dark:text-gray-300 line">
-                        {item.title_uz}
+                        {item[title]}
                       </h2>
                       <div className="flex justify-center items-center">
                         <div className="border-4 bg-[#004269] w-10 my-5"></div>

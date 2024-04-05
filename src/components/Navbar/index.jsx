@@ -9,6 +9,7 @@ import {
   setLangRu,
   setLangEn,
 } from "../../redux/moduls/language/action/";
+import Marquee from "react-fast-marquee";
 
 import flag_1 from "../../assets/icons/flag-uz.png";
 import flag_2 from "../../assets/icons/flag-ru.png";
@@ -94,6 +95,14 @@ function Navbar() {
       }  top-0 left-0 flex flex-col justify-between w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
       // className={`${ scrollY || location.pathname === "/" ? "absolute" : "relative bg-white shadow-xl"} flex flex-col justify-between top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
     >
+      <Marquee
+        velocity={25}
+        className="mx-auto text-red-600 font-semibold italic w-full bg-slate-300"
+      >
+        <div className="text-lg text-center">
+          Sayt test rejimida ishlamoqda.!
+        </div>
+      </Marquee>
       <nav className="flex justify-between">
         {/* Doimo bor */}
         <Link to="/">
