@@ -5,8 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { IoPlayOutline, IoClose } from "react-icons/io5";
 
 import video1 from "../../assets/video/Durdona.mp4";
-import video2 from "../../assets/video/Durdona.mp4";
-import video3 from "../../assets/video/Durdona.mp4";
+import video2 from "../../assets/video/Xurshidbek.mp4";
+import video3 from "../../assets/video/Madina.mp4";
 import img1 from "../../assets/images/durdona.jpg";
 import img2 from "../../assets/images/fikrVid.jpg";
 import img3 from "../../assets/images/madina.jpg";
