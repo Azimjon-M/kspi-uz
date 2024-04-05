@@ -10,16 +10,14 @@ import raqamliImg from "../../assets/images/raqamli.JPG";
 import axborot from "../../assets/images/arm.jpg";
 import muhandis from "../../assets/images/muhandis.jpg";
 import energetik from "../../assets/images/energetik/boshliq.JPG";
-import yordamchi from "../../assets/images/xalqaro.jpg";
 import yuriskonsolt from "../../assets/images/yurist/boshliq.JPG";
-import matbuot from "../../assets/images/xalqaro.jpg";
 import auditor from "../../assets/images/auditor/boshliq.JPG";
 // import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import { FaTelegramPlane } from "react-icons/fa";
-import { BsTelephoneFill } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+// import { FaTelegramPlane } from "react-icons/fa";
+// import { BsTelephoneFill } from "react-icons/bs";
+// import { MdEmail } from "react-icons/md";
 
 const MarkazlarCom = () => {
   const data = useMemo(
@@ -62,7 +60,7 @@ const MarkazlarCom = () => {
         lavozim: "Rektor yordamchisi",
         ism: "Hoshimov Murodjon Solijonovich",
         tel: "+998 91 695 15 15",
-        img: yordamchi,
+        img: "",
       },
       {
         label: "Matbuot kotibi",
@@ -70,7 +68,7 @@ const MarkazlarCom = () => {
         lavozim: "Matbuot kotibi",
         ism: "Begmatov Oybek Rustamovich",
         tel: "+998 90 556 30 01",
-        img: matbuot,
+        img: "",
       },
       {
         label: "Yuriskonsolt",
@@ -247,13 +245,13 @@ const MarkazlarCom = () => {
           </div>
         </Tabs>
       </div>
-
+{/* 
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#004269]">
           Bizning jamoa
         </h2>
         <div className="mt-10 flex flex-wrap justify-center -m-4">
-          {/* ITEM */}
+          
           <div className="m-4 max-w-xs w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
@@ -284,7 +282,7 @@ const MarkazlarCom = () => {
               </div>
             </div>
           </div>
-          {/* ITEM */}
+          
           <div className="m-4 max-w-xs w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
@@ -315,7 +313,7 @@ const MarkazlarCom = () => {
               </div>
             </div>
           </div>
-          {/* ITEM */}
+          
           <div className="m-4 max-w-xs w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto ">
@@ -346,7 +344,7 @@ const MarkazlarCom = () => {
               </div>
             </div>
           </div>
-          {/* ITEM */}
+          
           <div className="m-4 max-w-xs w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="mb-4 w-48 h-48 rounded-full overflow-hidden mx-auto">
@@ -377,9 +375,9 @@ const MarkazlarCom = () => {
               </div>
             </div>
           </div>
-          {/* Repeat the above structure for other instructors */}
+          
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
