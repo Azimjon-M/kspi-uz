@@ -5,6 +5,7 @@ import APIYangilik from "../../services/yangilik";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSelector } from "react-redux";
+import TextTranslate from "../TextTranslate";
 
 // Import Swiper styles
 import "swiper/css";
@@ -46,9 +47,9 @@ const NewsCard = () => {
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
           steps={[
-            { text: "Bosh sahifa", link: "/" },
-            { text: "Yangiliklar", link: "/yangiliklar" },
-            { text: "Yangilik" },
+            { text: <TextTranslate id="boshSahifa" />, link: "/" },
+            { text: <TextTranslate id="news" />, link: "/yangiliklar" },
+            { text: <TextTranslate id="new" /> },
           ]}
         />
       </div>
