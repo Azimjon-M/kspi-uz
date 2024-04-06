@@ -58,6 +58,9 @@
     "intStatisOqituvchilar": "O'qituvchilar",
     "intStatisFanDoktorlar": "Fan doktorlar",
 
+    "elonTitle": "Elonlar",
+    "barchaElonlarBtn": "Barcha elonlar",
+
     "navDropInstitut_1": "Institut kengashi",
     "navDropInstitut_2": "Institut haqida",
     "navDropInstitut_3": "Institut tuzilmasi",
@@ -131,7 +134,6 @@
     "bizningDastur": "Наши программы",
     "batafsil": "Более",
 
-
     "talabaFikri": "Мне нравятся все аспекты учебного процесса в Кокандском государственном педагогическом институте, качество образования и организация занятий в соответствии с квалификацией студентов.",
     "talabaFikriIsm": "Нозанин Икромова",
     "talabaFikriNomzodligi": "Студентка факультета русского языка и литературы, лауреат государственной стипендии имени Навои.",
@@ -153,6 +155,9 @@
     "intStatisPhd": "кандидат наук",
     "intStatisOqituvchilar": "Учителя",
     "intStatisFanDoktorlar": "Доктора наук",
+
+    "elonTitle": "Oбъявления",
+    "barchaElonlarBtn": "Все объявления",
 
     "navDropInstitut_1": "СОВЕТ ИНСТИТУТА",
     "navDropInstitut_2": "ОБ ИНСТИТУТЕ",
@@ -248,6 +253,9 @@
     "intStatisPhd": "phd",
     "intStatisOqituvchilar": "Teachers",
     "intStatisFanDoktorlar": "Doctors of science",
+
+    "elonTitle": "Announcements",
+    "barchaElonlarBtn": "All announcements",
 
     "navDropInstitut_1": "Council of the institute",
     "navDropInstitut_2": "About the institute",
