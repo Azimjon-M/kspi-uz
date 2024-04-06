@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import TextTranslate from "../TextTranslate";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { FaPlay } from "react-icons/fa";
 import { IoPlayOutline, IoClose } from "react-icons/io5";
@@ -22,8 +23,8 @@ import { Link } from "react-router-dom";
 const videos = [
   {
     id: 1,
-    name: "Durdona",
-    about: "Nima uchun QDPIni tanlagansiz?",
+    name: "Durdona",    
+    about: `${<TextTranslate id="warmThoughtsTitile" />}`,
     url: "https://www.youtube-nocookie.com/embed/3d3hmqjjsos?rel=0&controls=1&showinfo=0&autoplay=1&playsinline=1&enablejsapi=1",
     rasm: img1,
     vid: video1,
@@ -67,10 +68,10 @@ function WarmThoughts() {
     <div>
       <div className="max-w-7xl mx-auto my-8 md:my-16">
         <div className="text-2xl md:text-4xl text-center font-bold text-teal-700">
-          QDPI
+          <TextTranslate id="warmThoughtsLogo" />
         </div>
         <h1 className="text-xl md:text-3xl font-bold text-[#004269] text-center my-4">
-          Ularning so'zlarida
+          <TextTranslate id="warmThoughtsTitile" />
         </h1>
         <div className="hidden md:block p-5 my-12">
           <div className="grid grid-cols-3 gap-2">
