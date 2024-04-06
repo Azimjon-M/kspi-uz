@@ -81,7 +81,7 @@ const Gallery = () => {
         <h2 className="text-2xl md:text-3xl lg:text-4xl max-w-56 mx-auto text-center font-bold text-[#004269] md:text-start mb-5 md:mb-0 lg:mx-5 xl:mx-10 md:border-r-8 border-[#004269] lg:pr-44">
           <TextTranslate id="gallerynomi" />
         </h2>
-        <div className="md:mx-5 italic text-[18px] md:text-[25px] lg:text-[30px] lg:max-w-[500px] text-center md:text-start">
+        <div className="md:mx-5 italic text-[18px] md:text-[25px] lg:text-[30px] lg:max-w-[700px] text-center md:text-start">
           <TextTranslate id="galleryIqtibos" />
         </div>
       </div>
