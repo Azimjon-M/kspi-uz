@@ -145,9 +145,9 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="bg-[#113246] text-center md:flex md:justify-center px-2 py-2">
-        <p className="mr-3">QDPI ©2024</p>
+        <p className="mr-3"><TextTranslate id="copyright" /></p>
         <Link to="/yangiliklar" className="cursor-pointer">
-          <TextTranslate id="saytIshlabChiquvchi" />: <b>QDPI IT Park</b>
+          <TextTranslate id="saytIshlabChiquvchi" />: <b><TextTranslate id="copyrightPlace" /></b>
         </Link>
       </div>
     </footer>

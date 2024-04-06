@@ -78,10 +78,10 @@ const Gallery = () => {
   return (
     <div className="max-w-7xl mx-auto my-5 md:my-16">
       <div className="p-4 md:flex mb-5 md:justify-between">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold text-[#004269] md:text-start mb-5 md:mb-0 lg:mx-5 xl:mx-10 md:border-r-8 border-[#004269] lg:pr-44">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl max-w-56 mx-auto text-center font-bold text-[#004269] md:text-start mb-5 md:mb-0 lg:mx-5 xl:mx-10 md:border-r-8 border-[#004269] lg:pr-44">
           <TextTranslate id="gallerynomi" />
         </h2>
-        <div className="md:mx-5 italic lg:max-w-[700px] text-center md:text-start">
+        <div className="md:mx-5 italic text-[18px] md:text-[25px] lg:text-[30px] lg:max-w-[500px] text-center md:text-start">
           <TextTranslate id="galleryIqtibos" />
         </div>
       </div>
