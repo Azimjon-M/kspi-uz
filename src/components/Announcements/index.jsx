@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import APIElon from "../../services/elon";
 import { useSelector } from "react-redux";
+import TextTranslate from "../TextTranslate";
 
 function Announcements() {
   const Lang = useSelector((state) => state.reducerLang.isLang);
@@ -44,7 +45,7 @@ function Announcements() {
   return (
     <div className="max-w-7xl mx-auto pb-20">
       <h1 className="text-xl md:text-4xl font-bold text-center text-[#004269]">
-        Kelgusi voqealar
+        <TextTranslate id="elonTitle"/>
       </h1>
       <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-4 px-5 md:px-10 lg:px-5 xl:px-0 gap-6 py-20">
         {data &&
@@ -92,7 +93,7 @@ function Announcements() {
           to="/barchaElonlar"
           className="text-lg md:text-2xl bg-slate-100 text-cyan-900 font-bold active:border border-slate-100 px-10 md:px-28 py-2 md:py-4 rounded-xl"
         >
-          Barcha elonlar
+          <TextTranslate id="barchaElonlarBtn"/>
         </Link>
       </div>
     </div>
