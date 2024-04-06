@@ -4,6 +4,7 @@ import dasturUchun from "../../assets/images/dasturUchun.jpg";
 import dasturUchun1 from "../../assets/images/dasturUchun1.jpg";
 import abiturient from "../../assets/images/abiturient.jpg";
 import bakalavr from "../../assets/images/bakalavr.jpg";
+import TextTranslate from "../TextTranslate/index";
 
 const ExploreProgram = () => {
   const data = [
@@ -40,7 +41,7 @@ const ExploreProgram = () => {
   return (
     <div className="max-w-7xl mx-auto my-5 md:my-16">
       <h2 className="text-center text-4xl text-[#004269] mb-10 font-semibold">
-        Bizning dasturlarimiz 
+        <TextTranslate id="bizningDastur"/>
       </h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
         {data.map((item) => (
@@ -64,7 +65,7 @@ const ExploreProgram = () => {
                   to={item.link}
                   className="border-[#004269] px-6 py-2 rounded-2xl text-white bg-[#004269]"
                 >
-                  Batafsil
+                  <TextTranslate id="batafsil" />
                 </Link>
               </div>
             </div>

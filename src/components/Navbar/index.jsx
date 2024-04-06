@@ -100,7 +100,7 @@ function Navbar() {
         className="mx-auto text-red-600 font-semibold italic w-full bg-slate-300"
       >
         <div className="text-lg text-center">
-          Sayt test rejimida ishlamoqda.!
+          <TextTranslate id="saytTestRejimida" />
         </div>
       </Marquee>
       <nav className="flex justify-between">
@@ -108,7 +108,7 @@ function Navbar() {
         <Link to="/">
           <div
             className={
-              "sm:w-[250px] xl:w-[300px] 3xl:w-[400px] w-[150px] flex items-center gap-x-[10px] md:gap-x-[15px] xl:my-[15px] xl:ms-[40px]"
+              `${isLang === "ru" ? "sm:w-[270px] md:w-[330px] lg:w-[380px] xl:w-[380px] 2xl:w-[450px] 3xl:w-[500px] w-[150px]" : "sm:w-[250px] xl:w-[330px] 2xl:w-[340px] 3xl:w-[350px] w-[150px]"}  flex items-center gap-x-[10px] md:gap-x-[15px] xl:my-[15px] xl:ms-[40px]`
             }
           >
             <img
@@ -129,7 +129,7 @@ function Navbar() {
                               : "text-[#004269]"
                           }`
                     } `
-              } hidden sm:inline-block text-[11px] leading-4  font-bold sm:text-[13px] md:text-[32px] xl:leading-6 lg:text-[36px] xl:text-[42px] 3xl:text-[48px] `}
+              } hidden sm:inline-block text-[11px] leading-4  font-bold sm:text-[13px] md:text-[18px] xl:leading-6 lg:text-[20px] xl:text-[24px] 3xl:text-[28px] `}
             >
               <TextTranslate id="navLogo" />
             </p>
@@ -230,7 +230,7 @@ function Navbar() {
           </div>
           {/* /Header */}
           {/* Navigations institut */}
-          <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10">
+          <div className="hidden w-full h-full xl:flex xl:items-center xl:justify-end px-10 xl:pl-3 2xl:pl-10">
             <ul
               className={`${
                 scrollY

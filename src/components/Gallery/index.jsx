@@ -20,6 +20,8 @@ import ilmiy2 from "../../assets/images/gallery/ilmiy2.JPG"
 import ilmiy3 from "../../assets/images/gallery/ilmiy3.JPG"
 import ilmiy4 from "../../assets/images/gallery/ilmiy4.jpg"
 
+import TextTranslate from "../TextTranslate/index";
+
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("ilmiy");
@@ -42,7 +44,7 @@ const Gallery = () => {
 
   const pictures = [
     {
-      label: "Tadbirlar",
+      label: <TextTranslate id="galleryTadbir" />,
       value: "tadbirlar",
       content: [
         tadbir1,
@@ -52,7 +54,7 @@ const Gallery = () => {
       ],
     },
     {
-      label: "Ilmiy",
+      label: <TextTranslate id="galleryIlmiy" />,
       value: "ilmiy",
       content: [
         ilmiy1,
@@ -62,7 +64,7 @@ const Gallery = () => {
       ],
     },
     {
-      label: "Talabalar hayoti",
+      label: <TextTranslate id="galleryTalaba" />,
       value: "talabalar_hayoti",
       content: [
         thayot1,
@@ -77,14 +79,10 @@ const Gallery = () => {
     <div className="max-w-7xl mx-auto my-5 md:my-16">
       <div className="p-4 md:flex mb-5 md:justify-between">
         <h2 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold text-[#004269] md:text-start mb-5 md:mb-0 lg:mx-5 xl:mx-10 md:border-r-8 border-[#004269] lg:pr-44">
-          Institut <br className="hidden md:block" />
-          galleriyasi
+          <TextTranslate id="gallerynomi" />
         </h2>
         <div className="md:mx-5 italic lg:max-w-[700px] text-center md:text-start">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-          laborum, quidem nostrum ex distinctio qui vero nobis aperiam
-          accusantium, repellat quasi modi error magni? Obcaecati alias
-          consequatur sit facere perferendis.
+          <TextTranslate id="galleryIqtibos" />
         </div>
       </div>
       <Tabs id="custom-animation" value={activeTab} className="-z-10 md:py-10">
