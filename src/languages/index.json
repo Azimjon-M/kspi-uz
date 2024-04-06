@@ -1,5 +1,6 @@
 {
   "uz": {
+    "saytTestRejimida": "Sayt test rejimida ishlamoqda.!",
     "X_ID": "Id kiritilmagan!",
     "hedHemis-tizimi": "HEMIS tizimi",
     "hedInstitut-jurnali": "Institut jurnali",
@@ -8,7 +9,7 @@
     "hedOchiq-malumotlar": "Ochiq manbalar",
     "hedDropInstitut-jurnali_1": "Qo'qon DPI. Ilmiy xabarlar",
     "hedDropInstitut-jurnali_2": "Jahon ilmiy tadqiqot jurnali",
-    "navLogo": "QDPI",
+    "navLogo": "Qo'qon davlat pedagogika instituti",
     "navInstitut": "Institut",
     "navFaoliyat": "Faoliyat",
     "navTuzilma": "Tuzilma",
@@ -22,12 +23,19 @@
     "location": "Manzil va aloqa",
     "address": "Qo'qon shaxri, Turon ko'chasi, 23-uy",
     "ishonchTelefon": "Ishonch telefoni",
+
     "footerTexts": "Qo'qon davlat pedagogika instituti 1931-yil yanvar oyida kechki pedagogika instituti sifatida tashkil etilgan. Institut 1939-1940 o'quv yilidan boshlab kunduzgi davlat o'qituvchilar institutiga aylantirilgan.",
     "foydaliLinklar": "Foydali linklar",
     "yangiliklar": "Yangiliklar",
     "virtualQabulxona": "Virtual qabulxona",
     "vakansiyalar": "Bo'sh ish o'rinlari",
     "saytgaTashriflarSoni": "Saytga tashriflar soni",
+    "saytIshlabChiquvchi": "Sayt ishlab chiquvchisi",
+
+    "bizningDastur": "Bizning dasturlarimiz",
+    "batafsil": "Batafsil",
+
+
     "talabaFikri": "Qo‘qon davlat pedagogika institutida dars jarayonlarining borishi, ta’lim sifati va talabalar bilimiga qo‘yilgan malaka talablariga muvofiq darslarning tashkil etilishi bo‘yicha barcha jihatlar menga yoqadi. ",
     "talabaFikriIsm": "Nozanin Ikromova",
     "talabaFikriNomzodligi": "Rus tili va adabiyoti fakulteti talabasi, Navoiy nomli davlat stipendiyasi sovrindori.",
@@ -78,9 +86,16 @@
     "navDropAbiturient_3": "Xorijiy talabalarni qabul qilish hujjatlari",
     "navDropAbiturient_4": "Call markazi",
     "navDropAbiturient_5": "Me'yoriy-huquqiy hujjatlar",
-    "navDropAbiturient_6": "Xorijiy abiturient hujjatlarini elektron qabul qilish"
+    "navDropAbiturient_6": "Xorijiy abiturient hujjatlarini elektron qabul qilish",
+
+    "gallerynomi": "Institut galleriyasi",
+    "galleryIqtibos": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis laborum, quidem nostrum ex distinctio qui vero nobis aperiam accusantium, repellat quasi modi error magni? Obcaecati alias consequatur sit facere perferendis.",
+    "galleryTadbir": "Tadbirlar",
+    "galleryIlmiy": "Ilmiy",
+    "galleryTalaba": "Talabalar hayoti"
   },
   "ru": {
+    "saytTestRejimida": "Сайт находится в тестовом режиме.!",
     "X_ID": "Id kiritilmagan!",
     "hedHemis-tizimi": "Система ХЕМИС",
     "hedInstitut-jurnali": "Журнал института",
@@ -89,7 +104,7 @@
     "hedOchiq-malumotlar": "Открытые источники",
     "hedDropInstitut-jurnali_1": "Кокан ДПИ. Научные новости",
     "hedDropInstitut-jurnali_2": "Всемирный журнал научных исследований",
-    "navLogo": "КГПИ",
+    "navLogo": "Кокандский государственный Педагогический институт",
     "navInstitut": "Институт",
     "navFaoliyat": "Активностъ",
     "navTuzilma": "Состав",
@@ -103,12 +118,20 @@
     "location": "Адрес и контакты",
     "address": "г. Коканд, улица Турон, 23",
     "ishonchTelefon": "Телефон доверия",
+
+
     "footerTexts": "Коканский государственный педагогический институт был основан в январе 1931 года как вечерний педагогический институт. С 1939-1940 учебного года институт преобразован в очный государственный педагогический институт.",
     "foydaliLinklar": "Полезные ссылки",
     "yangiliklar": "Новости",
     "virtualQabulxona": "Виртуальный прием",
     "vakansiyalar": "Вакансии",
     "saytgaTashriflarSoni": "Количество посещений сайта",
+    "saytIshlabChiquvchi": "Разработчик сайта",
+
+    "bizningDastur": "Наши программы",
+    "batafsil": "Более",
+
+
     "talabaFikri": "Мне нравятся все аспекты учебного процесса в Кокандском государственном педагогическом институте, качество образования и организация занятий в соответствии с квалификацией студентов.",
     "talabaFikriIsm": "Нозанин Икромова",
     "talabaFikriNomzodligi": "Студентка факультета русского языка и литературы, лауреат государственной стипендии имени Навои.",
@@ -159,9 +182,16 @@
     "navDropAbiturient_3": "ДОКУМЕНТЫ ДЛЯ ПРИЕМА ИНОСТРАННЫХ СТУДЕНТОВ",
     "navDropAbiturient_4": "КОЛЛ-ЦЕНТР",
     "navDropAbiturient_5": "НОРМАТИВНО-ПРАВОВЫЕ ДОКУМЕНТЫ",
-    "navDropAbiturient_6": "ЭЛЕКТРОННЫЙ ПРИЕМ ДОКУМЕНТОВ ИНОСТРАННЫХ ЗАЯВИТЕЛЕЙ"
+    "navDropAbiturient_6": "ЭЛЕКТРОННЫЙ ПРИЕМ ДОКУМЕНТОВ ИНОСТРАННЫХ ЗАЯВИТЕЛЕЙ",
+
+    "gallerynomi": "Галерея Института",
+    "galleryIqtibos": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis laborum, quidem nostrum ex distinctio qui vero nobis aperiam accusantium, repellat quasi modi error magni? Obcaecati alias consequatur sit facere perferendis.",
+    "galleryTadbir": "События",
+    "galleryIlmiy": "Научный",
+    "galleryTalaba": "Студенческая жизнь"
   },
   "en": {
+    "saytTestRejimida": "The site is in test mode.!",
     "X_ID": "Id kiritilmagan!",
     "hedHemis-tizimi": "HEMIS systems",
     "hedInstitut-jurnali": "Journal of the institute",
@@ -170,7 +200,7 @@
     "hedOchiq-malumotlar": "Open sources",
     "hedDropInstitut-jurnali_1": "Kokan DPI. Scientific news",
     "hedDropInstitut-jurnali_2": "World Journal of Scientific Research",
-    "navLogo": "KSPI",
+    "navLogo": "Kokand state Pedagogical Institute",
     "navInstitut": "Institute",
     "navFaoliyat": "Activity",
     "navTuzilma": "Structure",
@@ -183,6 +213,8 @@
     "contactUs": "Contact us",
     "location": "Address and contact",
     "address": "Kokand city, Turon street, 23",
+
+
     "ishonchTelefon": "Hotline",
     "footerTexts": "Kokand State Pedagogical Institute was established in January 1931 as an evening pedagogic institute. The institute was transformed into a full-time state teachers' institute from the 1939-1940 academic year.",
     "foydaliLinklar": "Useful links",
@@ -190,6 +222,11 @@
     "virtualQabulxona": "Virtual reception",
     "vakansiyalar": "Vacancies",
     "saytgaTashriflarSoni": "Number of visits to the site",
+    "saytIshlabChiquvchi": "Site developer",
+
+    "bizningDastur": "Our programs",
+    "batafsil": "More",
+
     "talabaFikri": "I like all aspects of the course of lessons at the Kokand State Pedagogical Institute, the quality of education and the organization of classes in accordance with the students' qualifications.",
     "talabaFikriIsm": "Nozanin Ikromova",
     "talabaFikriNomzodligi": "A student of the Faculty of Russian Language and Literature, a laureate of the state scholarship named after Navoi.",
@@ -240,6 +277,12 @@
     "navDropAbiturient_3": "Admission documents foreign students",
     "navDropAbiturient_4": "Call center",
     "navDropAbiturient_5": "Regulatory and legal documents",
-    "navDropAbiturient_6": "Electronic acceptance of foreign applicants' documents"
+    "navDropAbiturient_6": "Electronic acceptance of foreign applicants' documents",
+
+    "gallerynomi": "Institute gallery",
+    "galleryIqtibos": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis laborum, quidem nostrum ex distinctio qui vero nobis aperiam accusantium, repellat quasi modi error magni? Obcaecati alias consequatur sit facere perferendis.",
+    "galleryTadbir": "Events",
+    "galleryIlmiy": "Scientific",
+    "galleryTalaba": "Student Life"
   }
 }

@@ -6,8 +6,11 @@ import { PiYoutubeLogoFill } from "react-icons/pi";
 import { FaSquareFacebook } from "react-icons/fa6";
 import TextTranslate from "../TextTranslate/index";
 import Logo from "../../assets/icons/logo_kspi.png";
+import { useSelector } from "react-redux";
 
 const Footer = () => {
+  const isLang = useSelector((state) => state.reducerLang.isLang);
+
   return (
     <footer className="w-full h-auto relative flex flex-col text-white pt-3">
       <div className="absolute top-0 left-0 w-full h-full">
@@ -62,8 +65,12 @@ const Footer = () => {
           <div className="mb-3">
             <div className="flex items-end mb-3">
               <img className="w-10 mr-3" src={Logo} alt="" />
-              <h1 className="font-bold">
-                Qo'qon davlat <br /> pedagogika instituti
+              <h1
+                className={`${isLang === "ru"
+                  ? "w-[240px]"
+                  : "w-[150px]"} font-bold`}
+              >
+                <TextTranslate id="navLogo" />
               </h1>
             </div>
             <p className="md:w-[250px] lg:w-[350px] xl:w-[450px]">
@@ -139,9 +146,9 @@ const Footer = () => {
       {/* Copyright */}
       <div className="bg-[#113246] text-center md:flex md:justify-center px-2 py-2">
         <p className="mr-3">QDPI ©2024</p>
-        <p>
-          Sayt ishlab chiquvchisi: <b>QDPI IT Park</b>
-        </p>
+        <Link to="/yangiliklar" className="cursor-pointer">
+          <TextTranslate id="saytIshlabChiquvchi" />: <b>QDPI IT Park</b>
+        </Link>
       </div>
     </footer>
   );
