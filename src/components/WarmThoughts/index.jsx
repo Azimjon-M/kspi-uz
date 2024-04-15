@@ -24,7 +24,7 @@ const videos = [
   {
     id: 1,
     name: "Durdona",    
-    about: `${<TextTranslate id="warmThoughtsTitile" />}`,
+    about: <TextTranslate id="warmThoughtsVideoTitle" />,
     url: "https://www.youtube-nocookie.com/embed/3d3hmqjjsos?rel=0&controls=1&showinfo=0&autoplay=1&playsinline=1&enablejsapi=1",
     rasm: img1,
     vid: video1,
@@ -32,7 +32,7 @@ const videos = [
   {
     id: 2,
     name: "Xurshidbek",
-    about: "Nima uchun QDPIni tanlagansiz?",
+    about: <TextTranslate id="warmThoughtsVideoTitle" />,
     url: "https://www.youtube-nocookie.com/embed/a5h3qtBHM6c?rel=0&controls=1&showinfo=0&autoplay=1&playsinline=1&enablejsapi=1",
     rasm: img2,
     vid: video2,
@@ -40,7 +40,7 @@ const videos = [
   {
     id: 3,
     name: "Madina",
-    about: "Nima uchun QDPIni tanlagansiz?",
+    about: <TextTranslate id="warmThoughtsVideoTitle" />,
     url: "https://www.youtube-nocookie.com/embed/QE9ziawYNvU?rel=0&controls=1&showinfo=0&autoplay=1&playsinline=1&enablejsapi=1",
     rasm: img3,
     vid: video3,
