@@ -217,13 +217,13 @@
     "saytTestRejimida": "The site is in test mode.!",
     "X_ID": "Id kiritilmagan!",
     "hedHemis-tizimi": "HEMIS systems",
-    "hedInstitut-jurnali": "Journal of the institute",
+    "hedInstitut-jurnali": "Institute journal",
     "hedKonferensyalar": "Conferences",
-    "hedIkkinchi-talim": "Second lesson",
+    "hedIkkinchi-talim": "Second education",
     "hedOchiq-malumotlar": "Open sources",
-    "hedDropInstitut-jurnali_1": "Kokan DPI. Scientific news",
+    "hedDropInstitut-jurnali_1": "Kokand SPI. Scientific news",
     "hedDropInstitut-jurnali_2": "World Journal of Scientific Research",
-    "navLogo": "Kokand state Pedagogical Institute",
+    "navLogo": "Kokand State Pedagogical Institute",
     "navInstitut": "Institute",
     "navFaoliyat": "Activity",
     "navTuzilma": "Structure",
@@ -262,18 +262,18 @@
     "intVertualQabulxona": "virtual lobby",
     "intEKutubxona": "e-library",
     "intMasofaviyTalim": "Distance education",
-    "intVideoMaruzalar": "Video exposure",
-    "intQabul": "Acceptance-2024",
+    "intVideoMaruzalar": "Video lessons",
+    "intQabul": "Admission-2024",
     "intImtixonlarniKuzatish": "Monitoring of exams",
 
     "bizningMaqsadimiz": "Our goal",
-    "bizHaqimizda": "QDPI was founded almost 93 years ago for social purposes. Our mission is to contribute to the world by educating students to lead lives of leadership and to contribute with integrity, develop fundamental knowledge and foster creativity, lead pioneering research for effective clinical treatment, and accelerate solutions and amplify their impact.",
+    "bizHaqimizda": "KSPI was founded almost 93 years ago for social purposes. Our mission is to contribute to the world by educating students to lead lives of leadership and to contribute with integrity, develop fundamental knowledge and foster creativity, lead pioneering research for effective clinical treatment, and accelerate solutions and amplify their impact.",
     "bizHaqimizdaKoproq": "More about us",
 
     "intStatistika": "Statistics",
     "intStatisTaytil": "We conquer the skies. . .",
     "intStatisTalabalar": "Students",
-    "intStatisPhd": "phd",
+    "intStatisPhd": "Phd",
     "intStatisOqituvchilar": "Teachers",
     "intStatisFanDoktorlar": "Doctors of science",
 
@@ -294,7 +294,7 @@
     "navDropFaoliyat_2": "Cultural and educational activity",
     "navDropFaoliyat_3": "Educational activity",
     "navDropFaoliyat_4": "Academic lyceum",
-    "navDropFaoliyat_5": "Scientefic activity",
+    "navDropFaoliyat_5": "Scientific activity",
     "navDropFaoliyat_6": "Work with youth, spiritual and educational direction",
 
     "navDropTuzilma_1": "Rectorate",
@@ -304,12 +304,12 @@
     "navDropTuzilma_5": "Centers",
 
     "navDropTalabalar_1": "Bachelor's degree",
-    "navDropTalabalar_2": "Master",
+    "navDropTalabalar_2": "Master's degree",
     "navDropTalabalar_3": "Student residence",
 
     "navDropAbiturient_1": "Bachelor's degree",
-    "navDropAbiturient_2": "Master",
-    "navDropAbiturient_3": "Admission documents foreign students",
+    "navDropAbiturient_2": "Master's degree",
+    "navDropAbiturient_3": "Admission documents of foreign students",
     "navDropAbiturient_4": "Call center",
     "navDropAbiturient_5": "Regulatory and legal documents",
     "navDropAbiturient_6": "Electronic acceptance of foreign applicants' documents",
@@ -318,6 +318,6 @@
     "galleryIqtibos": "Life of Kokand State Pedagogical Institute in photos",
     "galleryTadbir": "Events",
     "galleryIlmiy": "Scientific",
-    "galleryTalaba": "Student Life"
+    "galleryTalaba": "Students Life"
   }
 }
