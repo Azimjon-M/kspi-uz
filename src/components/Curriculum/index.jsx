@@ -1,4 +1,5 @@
 import React from "react";
+import TextTranslate from "../TextTranslate";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 function Curriculum() {
@@ -6,7 +7,7 @@ function Curriculum() {
     <div className="bg-slate-100">
       <div className="max-w-xs md:max-w-7xl mx-auto md:py-16 py-10">
         <h1 className="text-2xl md:text-4xl font-bold text-[#004269] text-center">
-          O'quv dasturlari
+          <TextTranslate id="oquvDasturlari"/>
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:mx-10 lg:mx-0 mt-12">
           <div className="flex w-full h-[140px] bg-white p-3 rounded-2xl duration-200 hover:scale-105 shadow-md hover:shadow-lg">
@@ -19,7 +20,7 @@ function Curriculum() {
             </div>
             <div className="pl-3 w-full">
               <h2 className="text-md md:text-xl font-medium text-slate-600">
-                Fanlar katalogi
+                <TextTranslate id="fanlarKatalog"/>
               </h2>
               <p className="text-sm flex items-center">
                 <span>
@@ -29,7 +30,7 @@ function Curriculum() {
               </p>
               <div className="text-end">
                 <button className="text-sm bg-[#004269] text-white mt-11 px-2 py-1 rounded-md">
-                  Batafsil
+                <TextTranslate id="oquvDasturlariBatafsil"/>
                 </button>
               </div>
             </div>
@@ -44,7 +45,7 @@ function Curriculum() {
             </div>
             <div className="pl-3 w-full">
               <h2 className="text-md md:text-xl font-medium text-slate-600">
-                Bakalavr malaka talablari
+              <TextTranslate id="bakalavrMalakaTalablari"/>
               </h2>
               <p className="text-sm flex items-center">
                 <span>
@@ -54,7 +55,7 @@ function Curriculum() {
               </p>
               <div className="text-end">
                 <button className="text-sm bg-[#004269] text-white mt-5 md:mt-4 lg:mt-4 px-2 py-1 rounded-md">
-                  Batafsil
+                <TextTranslate id="oquvDasturlariBatafsil"/>
                 </button>
               </div>
             </div>
@@ -69,7 +70,7 @@ function Curriculum() {
             </div>
             <div className="pl-3 w-full">
               <h2 className="text-md md:text-xl font-medium text-slate-600">
-                Magistr malaka talablari
+              <TextTranslate id="magistrMalakaTalablari"/>
               </h2>
               <p className="text-sm flex items-center">
                 <span>
@@ -79,7 +80,7 @@ function Curriculum() {
               </p>
               <div className="text-end">
                 <button className="text-sm bg-[#004269] text-white mt-5 md:mt-4 lg:mt-4 px-2 py-1 rounded-md">
-                  Batafsil
+                  <TextTranslate id="oquvDasturlariBatafsil"/>
                 </button>
               </div>
             </div>

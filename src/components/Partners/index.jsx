@@ -1,4 +1,5 @@
 import React from "react";
+import TextTranslate from "../TextTranslate";
 import styled, { keyframes } from "styled-components";
 import hamkor1 from "../../assets/images/xalqaroHamkorlar/hamkor1.png";
 import hamkor2 from "../../assets/images/xalqaroHamkorlar/hamkor2.png";
@@ -47,7 +48,7 @@ function Partners() {
   return (
     <div className="max-w-8xl mx-auto py-10 bg-slate-100">
       <h1 className="text-xl lg:text-4xl font-bold text-[#004269] text-center">
-        Hamkorlarimiz
+        <TextTranslate id="hamkorlarimizTitle"/>
       </h1>
       <div>
         <Marquee>
