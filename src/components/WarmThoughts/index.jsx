@@ -4,6 +4,7 @@ import TextTranslate from "../TextTranslate";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { IoPlayOutline, IoClose } from "react-icons/io5";
 import APIFikr from "../../services/fikr";
+import { useSelector } from "react-redux";
 
 // Import Swiper styles
 import "swiper/css";
@@ -14,6 +15,7 @@ import { EffectCards } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 function WarmThoughts() {
+  const Lang = useSelector((state) => state.reducerLang.isLang);
   const [isVideoVisible, setIsVideoVisible] = useState(false);
   const [isVideoPlay, setIsVideoPlay] = useState(false);
   const [selectedVideoId, setSelectedVideoId] = useState(null);
@@ -93,10 +95,10 @@ function WarmThoughts() {
                         <IoPlayOutline />
                       </span>
                       <span className="block text-white text-[1.18rem] leading-[1.2] font-normal text-center mt-5">
-                        {fikr.text_uz}
+                        {fikr[`text_${Lang}`]}
                       </span>
                       <span className="block text-white text-[0.875rem] leading-[1.26] font-normal text-center mt-3">
-                        {fikr.talaba_uz}
+                        {fikr[`talaba_${Lang}`]}
                       </span>
                     </Link>
                     {selectedVideoId === fikr.id && (
@@ -168,7 +170,7 @@ function WarmThoughts() {
                         <IoPlayOutline />
                       </span>
                       <span className="block text-white text-[1rem] leading-[1.2] font-normal text-center mt-5">
-                        {fikr.text_uz}
+                        {fikr[`text_${Lang}`]}
                       </span>
                       <span className="block text-white text-[0.875rem] leading-[1.31] font-normal text-center mt-3">
                         {fikr.name}
