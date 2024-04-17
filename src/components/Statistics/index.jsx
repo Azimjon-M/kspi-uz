@@ -15,7 +15,7 @@ function Statistics() {
   return (
     <div className="">
       <VisibilitySensor onChange={handleVisibilityChange}>
-        <div className="g bg-[#A3CCCB] py-16">
+        <div className="g bg-[#F1F5F9] py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <div className="text-center space-y-4">
@@ -27,7 +27,7 @@ function Statistics() {
                 </p>
               </div>
               <dl className="mt-8 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-                <div className="flex flex-col bg-[#7EACB0] p-8">
+                <div className="flex flex-col bg-[#1b4769] p-8">
                   <dt className="text-sm font-semibold leading-6 text-gray-300">
                     <TextTranslate id="intStatisTalabalar" />
                   </dt>
@@ -35,7 +35,7 @@ function Statistics() {
                     {isVisible && <CountUp end={16} duration={3} />}k+
                   </dd>
                 </div>
-                <div className="flex flex-col bg-[#7EACB0] p-8">
+                <div className="flex flex-col bg-[#1b4769] p-8">
                   <dt className="text-sm font-semibold leading-6 text-gray-300">
                     <TextTranslate id="intStatisPhd" />
                   </dt>
@@ -43,7 +43,7 @@ function Statistics() {
                     {isVisible && <CountUp end={171} duration={3} />}
                   </dd>
                 </div>
-                <div className="flex flex-col bg-[#7EACB0] p-8">
+                <div className="flex flex-col bg-[#1b4769] p-8">
                   <dt className="text-sm font-semibold leading-6 text-gray-300">
                     <TextTranslate id="intStatisOqituvchilar" />
                   </dt>
@@ -51,7 +51,7 @@ function Statistics() {
                     {isVisible && <CountUp end={517} duration={3} />}
                   </dd>
                 </div>
-                <div className="flex flex-col bg-[#7EACB0] p-8">
+                <div className="flex flex-col bg-[#1b4769] p-8">
                   <dt className="text-sm font-semibold leading-6 text-gray-300">
                     <TextTranslate id="intStatisFanDoktorlar" />
                   </dt>
