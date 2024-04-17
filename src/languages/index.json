@@ -313,7 +313,7 @@
     "barchaElonlarBtn": "All announcements",
 
     "warmThoughtsLogo": "KSPI",
-    "warmThoughtsTitile": "In their words",
+    "warmThoughtsTitile": "What do the students think?",
 
     "oquvDasturlari": "Educational programs",
     "fanlarKatalog": "Catalog of sciences",
@@ -321,14 +321,14 @@
     "magistrMalakaTalablari": "Master's degree students",
     "oquvDasturlariBatafsil": "More",
 
-    "qoshma": "Qo'shma ta'lim",
-    "qoshmaTavsif": "Qoʻshma taʼlim dasturlariga oid zarur maʼlumotlar, qabul parametrlari va boshqalar",
-    "oqish": "O'qishni ko'chirish",
-    "oqishTavsif": "Oʻqishni koʻchirish, chetlatish va tiklash",
-    "magistratura": "Magistratura haqida",
-    "magistraturaTavsif": "Mutaxassisliklar, qabul kvotalari va boshqalar",
-    "abiturient": "Abiturientlar uchun",
-    "abiturientTavsif": "Qoʻqon davlat pedagogika institutiga oʻqishga qabul qilishning davlat buyurtmasi parametrlari",
+    "qoshma": "Co-education",
+    "qoshmaTavsif": "Necessary information about co-educational programs, admission criteria and more",
+    "oqish": "Transfer education",
+    "oqishTavsif": "Transfer education, exclude, and restore education",
+    "magistratura": "About the master's degree",
+    "magistraturaTavsif": "Specialties, admission quotas, etc",
+    "abiturient": "For applicants",
+    "abiturientTavsif": "Parameters of the state order for admission to the Kokand State Pedagogical Institute",
 
     "hamkorlarimizTitle": "Our partners",
 
