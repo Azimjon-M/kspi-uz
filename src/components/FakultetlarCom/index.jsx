@@ -241,8 +241,8 @@ const FakultetlarCom = () => {
           value="html"
           orientation="vertical"
         >
-          <div>
-            <TabsHeader className="max-w-96 md:max-w-80 lg:w-96 border-2 border-[#004269] p-5 mb-5">
+          <div className="overflow-hidden p-1 border-2 border-[#004269] rounded-lg">
+            <TabsHeader className="w-full md:max-w-80 lg:w-96 overflow-y-scroll max-h-[320px] md:max-h-[500px] lg:max-h-[320px] p-5">
               {filteredData.map(({ label, value }, idx) => (
                 <Tab
                   className="flex flex-col items-start text-start font-semibold"
@@ -276,7 +276,7 @@ const FakultetlarCom = () => {
                 }) => (
                   <TabPanel key={value} value={value} className="py-0">
                     <div className="bg-white shadow-md bg-clip-border rounded-xl px-3">
-                      <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 max-w-96 lg:max-w-full border-b-2 border-[#004269] py-3">
+                      <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 max-w-96 lg:max-w-full py-3">
                         <div className="relative -mt-6 px-3 lg:px-0 md:h-56 lg:h-auto lg:my-auto lg:overflow-hidden rounded-xl md:mb-3 lg:mb-0">
                           <img
                             src={img}
@@ -310,12 +310,6 @@ const FakultetlarCom = () => {
                               Batafsil ...
                             </Link>
                           </div> */}
-                        </div>
-                      </div>
-                      <div className="m-3 max-w-96 lg:max-w-full">
-                        <div>
-                          <b>{lavozim} vazifasi: </b>
-                          <span>{vazifasi}</span>
                         </div>
                       </div>
                     </div>
