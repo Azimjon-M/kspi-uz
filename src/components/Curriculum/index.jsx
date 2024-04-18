@@ -29,7 +29,7 @@ function Curriculum() {
                 12.12.2023
               </p>
               <div className="text-end">
-                <button className="text-sm bg-[#004269] text-white mt-11 px-2 py-1 rounded-md">
+                <button className="text-sm bg-[#004269] text-white mt-5 md:mt-4 px-2 py-1 rounded-md">
                 <TextTranslate id="oquvDasturlariBatafsil"/>
                 </button>
               </div>

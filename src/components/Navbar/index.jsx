@@ -89,7 +89,11 @@ function Navbar() {
       className={`${
         scrollY
           ? `sticky bg-white shadow-xl`
-          : `${location.pathname === "/" ? "absolute" : "relative shadow-xl"} `
+          : `${
+              location.pathname === "/" || "talabalarTurarJoyi"
+                ? "absolute"
+                : "relative shadow-xl"
+            } `
       } ${
         isActiveMenu && "bg-white"
       }  top-0 left-0 flex flex-col justify-between w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
@@ -107,9 +111,11 @@ function Navbar() {
         {/* Doimo bor */}
         <Link to="/">
           <div
-            className={
-              `${isLang === "ru" ? "sm:w-[270px] md:w-[330px] lg:w-[380px] xl:w-[380px] 2xl:w-[450px] 3xl:w-[500px] w-[150px]" : "sm:w-[250px] xl:w-[330px] 2xl:w-[340px] 3xl:w-[350px] w-[150px]"}  flex items-center gap-x-[10px] md:gap-x-[15px] xl:my-[15px] xl:ms-[40px]`
-            }
+            className={`${
+              isLang === "ru"
+                ? "sm:w-[270px] md:w-[330px] lg:w-[380px] xl:w-[380px] 2xl:w-[450px] 3xl:w-[500px] w-[150px]"
+                : "sm:w-[250px] xl:w-[330px] 2xl:w-[340px] 3xl:w-[350px] w-[150px]"
+            }  flex items-center gap-x-[10px] md:gap-x-[15px] xl:my-[15px] xl:ms-[40px]`}
           >
             <img
               className="w-[32px] sm:w-[36px] md:w-[45px] xl:w-[60px] 3xl:w-[70px] h-auto"
@@ -124,7 +130,7 @@ function Navbar() {
                       isActiveMenu
                         ? " text-[#004269]"
                         : `${
-                            location.pathname === "/"
+                            location.pathname === "/" || "talabalarTurarJoyi"
                               ? "text-white"
                               : "text-[#004269]"
                           }`
@@ -236,7 +242,7 @@ function Navbar() {
                 scrollY
                   ? "text-[#004269]"
                   : `${
-                      location.pathname === "/"
+                      location.pathname === "/" || "talabalarTurarJoyi"
                         ? "text-white"
                         : "text-[#004269]"
                     }`
@@ -252,7 +258,7 @@ function Navbar() {
                   scrollY
                     ? "after:border-[#004269]"
                     : `${
-                        location.pathname === "/"
+                        location.pathname === "/" || "talabalarTurarJoyi"
                           ? "after:border-white"
                           : "after:border-[#004269]"
                       }`
@@ -299,7 +305,7 @@ function Navbar() {
                   scrollY
                     ? "after:border-[#004269]"
                     : `${
-                        location.pathname === "/"
+                        location.pathname === "/" || "talabalarTurarJoyi"
                           ? "after:border-white"
                           : "after:border-[#004269]"
                       }`
@@ -357,7 +363,7 @@ function Navbar() {
                   scrollY
                     ? "after:border-[#004269]"
                     : `${
-                        location.pathname === "/"
+                        location.pathname === "/" || "talabalarTurarJoyi"
                           ? "after:border-white"
                           : "after:border-[#004269]"
                       }`
@@ -404,7 +410,7 @@ function Navbar() {
                   scrollY
                     ? "after:border-[#004269]"
                     : `${
-                        location.pathname === "/"
+                        location.pathname === "/" || "talabalarTurarJoyi"
                           ? "after:border-white"
                           : "after:border-[#004269]"
                       }`
@@ -441,7 +447,7 @@ function Navbar() {
                   scrollY
                     ? "after:border-[#004269]"
                     : `${
-                        location.pathname === "/"
+                        location.pathname === "/" || "talabalarTurarJoyi"
                           ? "after:border-white"
                           : "after:border-[#004269]"
                       }`
