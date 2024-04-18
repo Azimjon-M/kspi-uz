@@ -40,7 +40,6 @@
     "bizningDastur": "Bizning dasturlarimiz",
     "batafsil": "Batafsil",
 
-
     "talabaFikri": "Qo‘qon davlat pedagogika institutida dars jarayonlarining borishi, ta’lim sifati va talabalar bilimiga qo‘yilgan malaka talablariga muvofiq darslarning tashkil etilishi bo‘yicha barcha jihatlar menga yoqadi. ",
     "talabaFikriIsm": "Nozanin Ikromova",
     "talabaFikriNomzodligi": "Rus tili va adabiyoti fakulteti talabasi, Navoiy nomli davlat stipendiyasi sovrindori.",
@@ -74,7 +73,7 @@
     "bakalavrMalakaTalablari": "Bakalavr malaka talabalar",
     "magistrMalakaTalablari": "Magistr malaka talabalar",
     "oquvDasturlariBatafsil": "Batafsil",
-    
+
     "qoshma": "Qo'shma ta'lim",
     "qoshmaTavsif": "Qoʻshma taʼlim dasturlariga oid zarur maʼlumotlar, qabul parametrlari va boshqalar",
     "oqish": "O'qishni ko'chirish",
@@ -120,7 +119,36 @@
     "galleryIqtibos": "Qoʻqon davlat pedagogika instituti hayotiga fotonigoh",
     "galleryTadbir": "Tadbirlar",
     "galleryIlmiy": "Ilmiy hayot",
-    "galleryTalaba": "Talabalar hayoti"
+    "galleryTalaba": "Talabalar hayoti",
+
+    "kengash": "Institut kengashi",
+    "kengashKotib": "Kengash kotibi",
+    "kengashKotibIsm": "Rahmonov Xusan Tojiyevich",
+    "kengashKotibBoglanish": "Bog'lanish uchun:",
+    "kengashKotibTelefon": "Telefon",
+    "kengashKotibEmail": "Email",
+    "kengashKotibMaqsad": "Kengashning maqsad va vazifalari",
+    "kengashKotibMaqsadTavsif": "Kengashning maqsadi – institut jamoasining intellektual salohiyati va boshqa barcha imkoniyatlarini O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi qonuni va “Kadrlar tayyorlash milliy dasturi”da belgilangan vazifalarning bajarilishini ta’minlash, oliy ta’limning davlat ta’lim standarti talablari darajasida mukammal bilim, malaka, ko‘nikmalarga ega bo‘lgan professional mutaxassislar tayyorlashga yo‘naltirishdan iborat.",
+    "kengashKotibKengash": "Institut Kengashi",
+    "kengashKotibTavsif1": "- Kadrlar tayyorlash milliy dasturiga muvofiq davlat ta’lim standartlari, o‘quv rejalari va dasturlarining qat’iy bajarilishini o‘rganib chiqadi hamda ustivor masalalar bo‘yicha tavsiya va topshiriqlar belgilaydi;",
+    "kengashKotibTavsif2": "- fakultetlarning o‘quv, ilmiy tadqiqot va ma’naviy-ma’rifiy ishlari to‘g‘risidagi, akademik litseylar, oliy ta’lim muassasasi qoshidagi ilmiy jamiyatlarning faoliyati to‘g‘risidagi, qabul komissiyasining qabul natijalari to‘g‘risidagi, shuningdek, marketing xizmatining xalq xo‘jaligining bitiruvchi mutaxassislarga bo‘lgan ehtiyoji, buyurtmachi tashkilotlar bilan hamkorlik aloqalari to‘g‘risidagi hisobotlarini eshitadi hamda tegishli qarorlar qabul qiladi;",
+    "kengashKotibTavsif3": "- Ilmiy tadqiqot, ma’naviy-ma’rifiy ishlar rejalarining ijrosi, professor-o‘qituvchilar tarkibining malaka oshirish va qayta tayyorlash masalalarini muhokama qiladi hamda tegishli qarorlarni qabul qiladi;",
+    "kengashKotibTavsif4": "- institut rivojlanishining yillik va istiqboliy rejalarini tasdiqlaydi, moddiy-texnik ta’minot va moliyaviy-xo‘jalik faoliyati natijalarini muhokama qiladi hamda tegishli qarorlarni qabul qiladi;",
+    "kengashKotibTavsif5": "- fakultet va kafedralarni ochish, tugatish, o‘zgartirish, shuningdek, marketing xizmati takliflarini hisobga olgan holda yangi bakalavriat yo‘nalishlari va magistratura mutaxassisliklari bo‘yicha kadrlar tayyorlashni yo‘lga qo‘yish yoki to‘xtatish bilan bog‘liq masalalar bo‘yicha qaror qabul qiladi;",
+    "kengashKotibTavsif6": "- “Oliy ta’lim muassasalariga pedagog-xodimlarni tanlov asosida ishga qabul qilish tartibi to‘g‘risida”gi Nizomga muvofiq professor-o‘qituvchilar lavozimlarini egallashi uchun tanlovlar o‘tkazadi;",
+    "kengashKotibTavsif7": "- professor, dotsent ilmiy unvonini olishga intilayotgan izlanuvchilarning hujjatlarini ko‘rib chiqadi va belgilangan tartibda ilmiy unvonga tasdiqlashga taqdim etadi;",
+    "kengashKotibTavsif8": "- ta’lim muassasasi bitiruvchilari hamda professor-o‘qituvchilarining ingliz tilini bilishlarini ta’minlash va komputer texnologiyalari, internetdan foydalana olishlari bo‘yicha tayanch ko‘nikmalarni shakllantirish masalalarini muhokama qiladi va chora-tadbirlarini belgilaydi;",
+    "kengashKotibTavsif9": "- ta’lim jarayonining o‘quv adabiyotlari bilan ta’minlanganligi, yangi avlod darsliklari, shuningdek innovatsion ta’lim texnologiyalarini qo‘llashga asoslangan o‘quv-uslubiy majmualarni tayyorlash va nashr etish masalalarini muhokama qiladi;",
+    "kengashKotibTavsif10": "- mustaqil-tadqiqotchi-izlanuvchi va katta ilmiy xodim-izlanuvchi institutlariga nomzodlarni tavsiya etadi, ularning shaxsiy rejalari va dissertatsiyalari mavzularini tasdiqlaydi;",
+    "kengashKotibTavsif11": "- iqtidorli talabalar va professor-o‘qituvchilarni “Iste’dod” jamg‘armasi orqali xorijiy oliy ta’lim muassasalarida stajirovka o‘tishga tavsiya etadi;",
+    "kengashKotibTavsif12": "- institutning iqtidorli talabalari va tadqiqotchi-izlanuvchilaridan munosiblarini O‘zbekiston Respublikasi Prezidenti Davlat stipendiyasi va boshqa nomdor davlat stependiyalar tanlovida ishtirok etishga nomzodlarni tavsiya etadi;",
+    "kengashKotibTavsif13": "- “Sog‘lom avlod uchun” jamg‘armasi bilan hamkorlikda talabalarning jismoniy tarbiyasi va ularning sog‘liqlarini yanada yaxshilash bo‘yicha tadbirlar ishlab chiqadi;",
+    "kengashKotibTavsif14": "- asosiy buyurtmachi tashkilot, korxona va muassasalar bilan korporativ hamkorlikni rivojlantirish, moddiy-texnik bazani mustahkamlash hamda talabalarning malakaviy amaliyoti samaradorligini oshirish masalalarini muhokama qiladi va ularni yaxshilash bo‘yicha tavsiyalar ishlab chiqadi;",
+    "kengashKotibTavsif15": "- xorijiy mamlakatlarning oliy ta’lim muassasalari bilan hamkorlik aloqalarini o‘rnatish bo‘yicha qarorlar qabul qiladi;",
+    "kengashKotibTavsif16": "- Ta’lim xizmatlari bilan shug‘ullanuvchi kichik korxonalar, firma va kurslar faoliyati haqida rahbarlarning hisobotlarini eshitadi hamda tegishli qaror qabul qiladi;",
+    "kengashKotibTavsif17": "- Institut talabalari va xodimlarining texnika xavfsizligi va mehnat muhofazasini takomillashtirish bo‘yicha tadbirlarni belgilaydi;",
+    "kengashKotibTavsif18": "- institut faoliyatiga oid boshqa vazifalarni hal qiladi.",
+    "kengashKotibTavsif19": "Kengash tarkibi institut rektori, prorektorlari, dekanlari, kafedra mudirlari, bo‘lim boshliqlari, shuningdek institut Kasaba uyushmasi qo‘mitasi raisi, institut Xotin-qizlar qo‘mitasi Kengashi raisi hamda «Kamolot» YoIH IBT raisidan iborat."
   },
   "ru": {
     "saytTestRejimida": "Сайт находится в тестовом режиме!",
@@ -149,7 +177,6 @@
     "location": "Адрес и контакты",
     "address": "г. Коканд, улица Турон, 23",
     "ishonchTelefon": "Телефон доверия",
-
 
     "footerTexts": "Коканский государственный педагогический институт был основан в январе 1931 года как вечерний педагогический институт. С 1939-1940 учебного года институт преобразован в государственный педагогический институт дневной формы обучения.",
     "foydaliLinklar": "Полезные ссылки",
@@ -197,7 +224,7 @@
     "bakalavrMalakaTalablari": "Квалификационные требования бакалавриата",
     "magistrMalakaTalablari": "Квалификационные требования магистратуры",
     "oquvDasturlariBatafsil": "Подробно",
-    
+
     "qoshma": "Совместное образование",
     "qoshmaTavsif": "Необходимая информация о программах совместного обучения, критериях поступления и многом другом.",
     "oqish": "Перевод учёбы",
@@ -243,7 +270,36 @@
     "galleryIqtibos": "Фотогалерея жизни Кокандского государственного педагогического института",
     "galleryTadbir": "События",
     "galleryIlmiy": "Научная жизнь",
-    "galleryTalaba": "Студенческая жизнь"
+    "galleryTalaba": "Студенческая жизнь",
+
+    "kengash": "Institut kengashi",
+    "kengashKotib": "Kengash kotibi",
+    "kengashKotibIsm": "Rahmonov Xusan Tojiyevich",
+    "kengashKotibBoglanish": "Bog'lanish uchun:",
+    "kengashKotibTelefon": "Telefon",
+    "kengashKotibEmail": "Email",
+    "kengashKotibMaqsad": "Kengashning maqsad va vazifalari",
+    "kengashKotibMaqsadTavsif": "Kengashning maqsadi – institut jamoasining intellektual salohiyati va boshqa barcha imkoniyatlarini O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi qonuni va “Kadrlar tayyorlash milliy dasturi”da belgilangan vazifalarning bajarilishini ta’minlash, oliy ta’limning davlat ta’lim standarti talablari darajasida mukammal bilim, malaka, ko‘nikmalarga ega bo‘lgan professional mutaxassislar tayyorlashga yo‘naltirishdan iborat.",
+    "kengashKotibKengash": "Institut Kengashi",
+    "kengashKotibTavsif1": "- Kadrlar tayyorlash milliy dasturiga muvofiq davlat ta’lim standartlari, o‘quv rejalari va dasturlarining qat’iy bajarilishini o‘rganib chiqadi hamda ustivor masalalar bo‘yicha tavsiya va topshiriqlar belgilaydi;",
+    "kengashKotibTavsif2": "- fakultetlarning o‘quv, ilmiy tadqiqot va ma’naviy-ma’rifiy ishlari to‘g‘risidagi, akademik litseylar, oliy ta’lim muassasasi qoshidagi ilmiy jamiyatlarning faoliyati to‘g‘risidagi, qabul komissiyasining qabul natijalari to‘g‘risidagi, shuningdek, marketing xizmatining xalq xo‘jaligining bitiruvchi mutaxassislarga bo‘lgan ehtiyoji, buyurtmachi tashkilotlar bilan hamkorlik aloqalari to‘g‘risidagi hisobotlarini eshitadi hamda tegishli qarorlar qabul qiladi;",
+    "kengashKotibTavsif3": "- Ilmiy tadqiqot, ma’naviy-ma’rifiy ishlar rejalarining ijrosi, professor-o‘qituvchilar tarkibining malaka oshirish va qayta tayyorlash masalalarini muhokama qiladi hamda tegishli qarorlarni qabul qiladi;",
+    "kengashKotibTavsif4": "- institut rivojlanishining yillik va istiqboliy rejalarini tasdiqlaydi, moddiy-texnik ta’minot va moliyaviy-xo‘jalik faoliyati natijalarini muhokama qiladi hamda tegishli qarorlarni qabul qiladi;",
+    "kengashKotibTavsif5": "- fakultet va kafedralarni ochish, tugatish, o‘zgartirish, shuningdek, marketing xizmati takliflarini hisobga olgan holda yangi bakalavriat yo‘nalishlari va magistratura mutaxassisliklari bo‘yicha kadrlar tayyorlashni yo‘lga qo‘yish yoki to‘xtatish bilan bog‘liq masalalar bo‘yicha qaror qabul qiladi;",
+    "kengashKotibTavsif6": "- “Oliy ta’lim muassasalariga pedagog-xodimlarni tanlov asosida ishga qabul qilish tartibi to‘g‘risida”gi Nizomga muvofiq professor-o‘qituvchilar lavozimlarini egallashi uchun tanlovlar o‘tkazadi;",
+    "kengashKotibTavsif7": "- professor, dotsent ilmiy unvonini olishga intilayotgan izlanuvchilarning hujjatlarini ko‘rib chiqadi va belgilangan tartibda ilmiy unvonga tasdiqlashga taqdim etadi;",
+    "kengashKotibTavsif8": "- ta’lim muassasasi bitiruvchilari hamda professor-o‘qituvchilarining ingliz tilini bilishlarini ta’minlash va komputer texnologiyalari, internetdan foydalana olishlari bo‘yicha tayanch ko‘nikmalarni shakllantirish masalalarini muhokama qiladi va chora-tadbirlarini belgilaydi;",
+    "kengashKotibTavsif9": "- ta’lim jarayonining o‘quv adabiyotlari bilan ta’minlanganligi, yangi avlod darsliklari, shuningdek innovatsion ta’lim texnologiyalarini qo‘llashga asoslangan o‘quv-uslubiy majmualarni tayyorlash va nashr etish masalalarini muhokama qiladi;",
+    "kengashKotibTavsif10": "- mustaqil-tadqiqotchi-izlanuvchi va katta ilmiy xodim-izlanuvchi institutlariga nomzodlarni tavsiya etadi, ularning shaxsiy rejalari va dissertatsiyalari mavzularini tasdiqlaydi;",
+    "kengashKotibTavsif11": "- iqtidorli talabalar va professor-o‘qituvchilarni “Iste’dod” jamg‘armasi orqali xorijiy oliy ta’lim muassasalarida stajirovka o‘tishga tavsiya etadi;",
+    "kengashKotibTavsif12": "- institutning iqtidorli talabalari va tadqiqotchi-izlanuvchilaridan munosiblarini O‘zbekiston Respublikasi Prezidenti Davlat stipendiyasi va boshqa nomdor davlat stependiyalar tanlovida ishtirok etishga nomzodlarni tavsiya etadi;",
+    "kengashKotibTavsif13": "- “Sog‘lom avlod uchun” jamg‘armasi bilan hamkorlikda talabalarning jismoniy tarbiyasi va ularning sog‘liqlarini yanada yaxshilash bo‘yicha tadbirlar ishlab chiqadi;",
+    "kengashKotibTavsif14": "- asosiy buyurtmachi tashkilot, korxona va muassasalar bilan korporativ hamkorlikni rivojlantirish, moddiy-texnik bazani mustahkamlash hamda talabalarning malakaviy amaliyoti samaradorligini oshirish masalalarini muhokama qiladi va ularni yaxshilash bo‘yicha tavsiyalar ishlab chiqadi;",
+    "kengashKotibTavsif15": "- xorijiy mamlakatlarning oliy ta’lim muassasalari bilan hamkorlik aloqalarini o‘rnatish bo‘yicha qarorlar qabul qiladi;",
+    "kengashKotibTavsif16": "- Ta’lim xizmatlari bilan shug‘ullanuvchi kichik korxonalar, firma va kurslar faoliyati haqida rahbarlarning hisobotlarini eshitadi hamda tegishli qaror qabul qiladi;",
+    "kengashKotibTavsif17": "- Institut talabalari va xodimlarining texnika xavfsizligi va mehnat muhofazasini takomillashtirish bo‘yicha tadbirlarni belgilaydi;",
+    "kengashKotibTavsif18": "- institut faoliyatiga oid boshqa vazifalarni hal qiladi.",
+    "kengashKotibTavsif19": "Kengash tarkibi institut rektori, prorektorlari, dekanlari, kafedra mudirlari, bo‘lim boshliqlari, shuningdek institut Kasaba uyushmasi qo‘mitasi raisi, institut Xotin-qizlar qo‘mitasi Kengashi raisi hamda «Kamolot» YoIH IBT raisidan iborat."
   },
   "en": {
     "saytTestRejimida": "The site is in test mode.!",
@@ -271,7 +327,6 @@
     "contactUs": "Contact us",
     "location": "Address and contact",
     "address": "Kokand city, Turon street, 23",
-
 
     "ishonchTelefon": "Hotline",
     "footerTexts": "Kokand State Pedagogical Institute was established in January 1931 as an evening pedagogic institute. The institute was transformed into a full-time state teachers' institute from the 1939-1940 academic year.",
@@ -366,6 +421,35 @@
     "galleryIqtibos": "Life of Kokand State Pedagogical Institute in photos",
     "galleryTadbir": "Events",
     "galleryIlmiy": "Scientific",
-    "galleryTalaba": "Students Life"
+    "galleryTalaba": "Students Life",
+
+    "kengash": "Institut kengashi",
+    "kengashKotib": "Kengash kotibi",
+    "kengashKotibIsm": "Rahmonov Xusan Tojiyevich",
+    "kengashKotibBoglanish": "Bog'lanish uchun:",
+    "kengashKotibTelefon": "Telefon",
+    "kengashKotibEmail": "Email",
+    "kengashKotibMaqsad": "Kengashning maqsad va vazifalari",
+    "kengashKotibMaqsadTavsif": "Kengashning maqsadi – institut jamoasining intellektual salohiyati va boshqa barcha imkoniyatlarini O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi qonuni va “Kadrlar tayyorlash milliy dasturi”da belgilangan vazifalarning bajarilishini ta’minlash, oliy ta’limning davlat ta’lim standarti talablari darajasida mukammal bilim, malaka, ko‘nikmalarga ega bo‘lgan professional mutaxassislar tayyorlashga yo‘naltirishdan iborat.",
+    "kengashKotibKengash": "Institut Kengashi",
+    "kengashKotibTavsif1": "- Kadrlar tayyorlash milliy dasturiga muvofiq davlat ta’lim standartlari, o‘quv rejalari va dasturlarining qat’iy bajarilishini o‘rganib chiqadi hamda ustivor masalalar bo‘yicha tavsiya va topshiriqlar belgilaydi;",
+    "kengashKotibTavsif2": "- fakultetlarning o‘quv, ilmiy tadqiqot va ma’naviy-ma’rifiy ishlari to‘g‘risidagi, akademik litseylar, oliy ta’lim muassasasi qoshidagi ilmiy jamiyatlarning faoliyati to‘g‘risidagi, qabul komissiyasining qabul natijalari to‘g‘risidagi, shuningdek, marketing xizmatining xalq xo‘jaligining bitiruvchi mutaxassislarga bo‘lgan ehtiyoji, buyurtmachi tashkilotlar bilan hamkorlik aloqalari to‘g‘risidagi hisobotlarini eshitadi hamda tegishli qarorlar qabul qiladi;",
+    "kengashKotibTavsif3": "- Ilmiy tadqiqot, ma’naviy-ma’rifiy ishlar rejalarining ijrosi, professor-o‘qituvchilar tarkibining malaka oshirish va qayta tayyorlash masalalarini muhokama qiladi hamda tegishli qarorlarni qabul qiladi;",
+    "kengashKotibTavsif4": "- institut rivojlanishining yillik va istiqboliy rejalarini tasdiqlaydi, moddiy-texnik ta’minot va moliyaviy-xo‘jalik faoliyati natijalarini muhokama qiladi hamda tegishli qarorlarni qabul qiladi;",
+    "kengashKotibTavsif5": "- fakultet va kafedralarni ochish, tugatish, o‘zgartirish, shuningdek, marketing xizmati takliflarini hisobga olgan holda yangi bakalavriat yo‘nalishlari va magistratura mutaxassisliklari bo‘yicha kadrlar tayyorlashni yo‘lga qo‘yish yoki to‘xtatish bilan bog‘liq masalalar bo‘yicha qaror qabul qiladi;",
+    "kengashKotibTavsif6": "- “Oliy ta’lim muassasalariga pedagog-xodimlarni tanlov asosida ishga qabul qilish tartibi to‘g‘risida”gi Nizomga muvofiq professor-o‘qituvchilar lavozimlarini egallashi uchun tanlovlar o‘tkazadi;",
+    "kengashKotibTavsif7": "- professor, dotsent ilmiy unvonini olishga intilayotgan izlanuvchilarning hujjatlarini ko‘rib chiqadi va belgilangan tartibda ilmiy unvonga tasdiqlashga taqdim etadi;",
+    "kengashKotibTavsif8": "- ta’lim muassasasi bitiruvchilari hamda professor-o‘qituvchilarining ingliz tilini bilishlarini ta’minlash va komputer texnologiyalari, internetdan foydalana olishlari bo‘yicha tayanch ko‘nikmalarni shakllantirish masalalarini muhokama qiladi va chora-tadbirlarini belgilaydi;",
+    "kengashKotibTavsif9": "- ta’lim jarayonining o‘quv adabiyotlari bilan ta’minlanganligi, yangi avlod darsliklari, shuningdek innovatsion ta’lim texnologiyalarini qo‘llashga asoslangan o‘quv-uslubiy majmualarni tayyorlash va nashr etish masalalarini muhokama qiladi;",
+    "kengashKotibTavsif10": "- mustaqil-tadqiqotchi-izlanuvchi va katta ilmiy xodim-izlanuvchi institutlariga nomzodlarni tavsiya etadi, ularning shaxsiy rejalari va dissertatsiyalari mavzularini tasdiqlaydi;",
+    "kengashKotibTavsif11": "- iqtidorli talabalar va professor-o‘qituvchilarni “Iste’dod” jamg‘armasi orqali xorijiy oliy ta’lim muassasalarida stajirovka o‘tishga tavsiya etadi;",
+    "kengashKotibTavsif12": "- institutning iqtidorli talabalari va tadqiqotchi-izlanuvchilaridan munosiblarini O‘zbekiston Respublikasi Prezidenti Davlat stipendiyasi va boshqa nomdor davlat stependiyalar tanlovida ishtirok etishga nomzodlarni tavsiya etadi;",
+    "kengashKotibTavsif13": "- “Sog‘lom avlod uchun” jamg‘armasi bilan hamkorlikda talabalarning jismoniy tarbiyasi va ularning sog‘liqlarini yanada yaxshilash bo‘yicha tadbirlar ishlab chiqadi;",
+    "kengashKotibTavsif14": "- asosiy buyurtmachi tashkilot, korxona va muassasalar bilan korporativ hamkorlikni rivojlantirish, moddiy-texnik bazani mustahkamlash hamda talabalarning malakaviy amaliyoti samaradorligini oshirish masalalarini muhokama qiladi va ularni yaxshilash bo‘yicha tavsiyalar ishlab chiqadi;",
+    "kengashKotibTavsif15": "- xorijiy mamlakatlarning oliy ta’lim muassasalari bilan hamkorlik aloqalarini o‘rnatish bo‘yicha qarorlar qabul qiladi;",
+    "kengashKotibTavsif16": "- Ta’lim xizmatlari bilan shug‘ullanuvchi kichik korxonalar, firma va kurslar faoliyati haqida rahbarlarning hisobotlarini eshitadi hamda tegishli qaror qabul qiladi;",
+    "kengashKotibTavsif17": "- Institut talabalari va xodimlarining texnika xavfsizligi va mehnat muhofazasini takomillashtirish bo‘yicha tadbirlarni belgilaydi;",
+    "kengashKotibTavsif18": "- institut faoliyatiga oid boshqa vazifalarni hal qiladi.",
+    "kengashKotibTavsif19": "Kengash tarkibi institut rektori, prorektorlari, dekanlari, kafedra mudirlari, bo‘lim boshliqlari, shuningdek institut Kasaba uyushmasi qo‘mitasi raisi, institut Xotin-qizlar qo‘mitasi Kengashi raisi hamda «Kamolot» YoIH IBT raisidan iborat."
   }
 }
