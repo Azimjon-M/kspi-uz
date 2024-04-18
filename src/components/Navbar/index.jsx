@@ -89,11 +89,7 @@ function Navbar() {
       className={`${
         scrollY
           ? `sticky bg-white shadow-xl`
-          : `${
-              location.pathname === "/" || "talabalarTurarJoyi"
-                ? "absolute"
-                : "relative shadow-xl"
-            } `
+          : `${location.pathname === "/" ? "absolute" : "relative shadow-xl"} `
       } ${
         isActiveMenu && "bg-white"
       }  top-0 left-0 flex flex-col justify-between w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
@@ -130,7 +126,7 @@ function Navbar() {
                       isActiveMenu
                         ? " text-[#004269]"
                         : `${
-                            location.pathname === "/" || "talabalarTurarJoyi"
+                            location.pathname === "/"
                               ? "text-white"
                               : "text-[#004269]"
                           }`
@@ -242,7 +238,7 @@ function Navbar() {
                 scrollY
                   ? "text-[#004269]"
                   : `${
-                      location.pathname === "/" || "talabalarTurarJoyi"
+                      location.pathname === "/"
                         ? "text-white"
                         : "text-[#004269]"
                     }`
@@ -258,7 +254,7 @@ function Navbar() {
                   scrollY
                     ? "after:border-[#004269]"
                     : `${
-                        location.pathname === "/" || "talabalarTurarJoyi"
+                        location.pathname === "/"
                           ? "after:border-white"
                           : "after:border-[#004269]"
                       }`
@@ -305,7 +301,7 @@ function Navbar() {
                   scrollY
                     ? "after:border-[#004269]"
                     : `${
-                        location.pathname === "/" || "talabalarTurarJoyi"
+                        location.pathname === "/"
                           ? "after:border-white"
                           : "after:border-[#004269]"
                       }`
@@ -363,7 +359,7 @@ function Navbar() {
                   scrollY
                     ? "after:border-[#004269]"
                     : `${
-                        location.pathname === "/" || "talabalarTurarJoyi"
+                        location.pathname === "/"
                           ? "after:border-white"
                           : "after:border-[#004269]"
                       }`
@@ -410,7 +406,7 @@ function Navbar() {
                   scrollY
                     ? "after:border-[#004269]"
                     : `${
-                        location.pathname === "/" || "talabalarTurarJoyi"
+                        location.pathname === "/"
                           ? "after:border-white"
                           : "after:border-[#004269]"
                       }`
@@ -447,7 +443,7 @@ function Navbar() {
                   scrollY
                     ? "after:border-[#004269]"
                     : `${
-                        location.pathname === "/" || "talabalarTurarJoyi"
+                        location.pathname === "/"
                           ? "after:border-white"
                           : "after:border-[#004269]"
                       }`
