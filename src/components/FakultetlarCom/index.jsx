@@ -241,8 +241,8 @@ const FakultetlarCom = () => {
           value="html"
           orientation="vertical"
         >
-          <div>
-            <TabsHeader className="max-w-96 md:max-w-80 lg:w-96 border-2 border-[#004269] p-5 mb-5">
+          <div className="overflow-hidden p-1 border-2 border-[#004269] rounded-lg max-h-[440px]">
+            <TabsHeader className="w-full md:max-w-80 lg:w-96 overflow-y-scroll max-h-[320px] md:max-h-[430px] lg:max-h-[320px] p-5">
               {filteredData.map(({ label, value }, idx) => (
                 <Tab
                   className="flex flex-col items-start text-start font-semibold"
@@ -276,7 +276,7 @@ const FakultetlarCom = () => {
                 }) => (
                   <TabPanel key={value} value={value} className="py-0">
                     <div className="bg-white shadow-md bg-clip-border rounded-xl px-3">
-                      <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 max-w-96 lg:max-w-full border-b-2 border-[#004269] py-3">
+                      <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 max-w-96 lg:max-w-full py-3">
                         <div className="relative -mt-6 px-3 lg:px-0 md:h-56 lg:h-auto lg:my-auto lg:overflow-hidden rounded-xl md:mb-3 lg:mb-0">
                           <img
                             src={img}
@@ -284,38 +284,24 @@ const FakultetlarCom = () => {
                             className="w-full mb-3 lg:mb-0 h-56 lg:w-[240px] lg:h-[270px] xl:w-[250px] xl:h-[280px] object-cover rounded"
                           />
                         </div>
-                        <div className="flex flex-col justify-between xl:py-5 xl:mr-5">
+                        <div className="flex flex-col justify-between lg:justify-center xl:py-5 xl:mr-5">
                           <div className="px-3">
-                            <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start max-w-[450px]">
+                            <h3 className="block mb-2 lg:mb-5 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start max-w-[450px]">
                               {lavozim}
                             </h3>
-                            <h4 className="block mb-2 font-sans text-lg xl:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center lg:text-start">
+                            <h4 className="block mb-2 lg:mb-4 font-sans text-lg xl:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center lg:text-start">
                               {ism}
                             </h4>
-                            <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            <h4 className="block mb-2 lg:mb-3 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                               {mutahasisligi}
                             </h4>
-                            <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            <h4 className="block mb-2 lg:mb-3 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                               Qabul kunlari: {qabul}
                             </h4>
                             <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                               Telefon: {tel}
                             </h4>
                           </div>
-                          {/* <div className="p-3 pt-0 lg:place-items-end text-center lg:text-start">
-                            <Link
-                              to={link}
-                              className="btn align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-[#004269] text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:bg-[#004269]/90 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
-                            >
-                              Batafsil ...
-                            </Link>
-                          </div> */}
-                        </div>
-                      </div>
-                      <div className="m-3 max-w-96 lg:max-w-full">
-                        <div>
-                          <b>{lavozim} vazifasi: </b>
-                          <span>{vazifasi}</span>
                         </div>
                       </div>
                     </div>
