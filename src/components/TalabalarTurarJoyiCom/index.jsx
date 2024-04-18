@@ -1,16 +1,17 @@
-import { Link } from "react-router-dom";
 import React, { useRef, useState } from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
+
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { LuCopyCheck } from "react-icons/lu";
 import { GoChecklist } from "react-icons/go";
+
 import mainVid from "../../assets/images/talabalarTurarJoyi/ttjHomeVideo.mp4";
 import ttjTalabalari from "../../assets/images/talabalarTurarJoyi/ttjTalabalari.jpg";
 import ttjKompus from "../../assets/images/talabalarTurarJoyi/ttjKompus.jpg";
 import ttjXona from "../../assets/images/talabalarTurarJoyi/ttjXona.jpg";
 import ttj8Mart from "../../assets/images/talabalarTurarJoyi/mart8.jpg";
-import AlisherAbduraximovTTJ from "../../assets/images/talabalarTurarJoyi/123.jpg";
+import AlisherAbduraximovTTJ from "../../assets/images/talabalarTurarJoyi/ttjRaxbari.jpg";
 
 function TalabalarTurarJoyiCom() {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,21 +22,6 @@ function TalabalarTurarJoyiCom() {
       setIsVisible(true);
     }
   };
-
-  // useEffect(() => {
-  //   valueDisplays.forEach((valueDisplay) => {
-  //     let startValue = 0;
-  //     let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-  //     let duration = Math.floor(interval / endValue);
-  //     let counter = setInterval(function () {
-  //       startValue += 1;
-  //       valueDisplay.textContent = startValue;
-  //       if (startValue === endValue) {
-  //         clearInterval(counter);
-  //       }
-  //     }, duration);
-  //   });
-  // });
 
   return (
     <div>
@@ -217,7 +203,10 @@ function TalabalarTurarJoyiCom() {
         </h1>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 my-16">
           <div className="text-center">
-            <a href="https://my.gov.uz/oz/service/870" className="inline-block bg-[#F2F2F2] rounded-full p-5 shadow-lg border border-sky-700 group hover:bg-sky-700">
+            <a
+              href="https://my.gov.uz/oz/service/870"
+              className="inline-block bg-[#F2F2F2] rounded-full p-5 shadow-lg border border-sky-700 group hover:bg-sky-700"
+            >
               <LuCopyCheck className="text-5xl text-sky-700 group-hover:text-sky-50" />
             </a>
             <p className="text-xl font-bold text-gray-600 mt-5">
@@ -225,7 +214,10 @@ function TalabalarTurarJoyiCom() {
             </p>
           </div>
           <div className="text-center mt-10 md:mt-0">
-            <a href="https://ttj.kspi.uz/" className="inline-block bg-[#F2F2F2] rounded-full p-5 shadow-lg border border-sky-700 group hover:bg-sky-700">
+            <a
+              href="https://ttj.kspi.uz/"
+              className="inline-block bg-[#F2F2F2] rounded-full p-5 shadow-lg border border-sky-700 group hover:bg-sky-700"
+            >
               <GoChecklist className="text-5xl text-sky-700 group-hover:text-sky-50" />
             </a>
             <p className="text-xl font-bold text-gray-600 mt-5">
