@@ -231,3 +231,7 @@ function TalabalarTurarJoyiCom() {
 }
 
 export default TalabalarTurarJoyiCom;
+
+// "ttjXushKelibsiz": "Talabalar turar joyiga xush kelibsiz",
+//     "ttjRaxbarText": "Talabalar shaharchasida yashash yangi odamlar bilan tanishish va doimiy do'stlikni rivojlantirish uchun son-sanoqsiz imkoniyatlarni taqdim etadi.",
+//     "ttjRaxbarName": "Alisher Abduraximov TTJ raxbari"

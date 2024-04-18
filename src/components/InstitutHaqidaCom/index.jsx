@@ -49,7 +49,7 @@ const InstitutHaqidaCom = () => {
                 alt=""
               />
             </div>
-            <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
+            <div className="bg-[#F1F5F9] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
               <h3 className="text-2xl md:text-3xl font-medium">Biz kimmiz</h3>
               <p className="text-md md:text-xl mt-3">
                 Fakultetimiz, talabalarimiz va xodimlarimizni harakatga
@@ -76,7 +76,7 @@ const InstitutHaqidaCom = () => {
                 alt=""
               />
             </div>
-            <div className="bg-[#F2F2F2] p-10 md:pl-16 md:pr-28 md:py-20 -mt-6 md:mt-0 md:-mr-16">
+            <div className="bg-[#F1F5F9] p-10 md:pl-16 md:pr-28 md:py-20 -mt-6 md:mt-0 md:-mr-16">
               <h3 className="text-2xl md:text-3xl font-medium">
                 Qo'shma hamkorlar
               </h3>
@@ -101,7 +101,7 @@ const InstitutHaqidaCom = () => {
                 alt=""
               />
             </div>
-            <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
+            <div className="bg-[#F1F5F9] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
               <h3 className="text-2xl md:text-3xl font-medium">
                 Rivojlanayotgan talabalik hayoti
               </h3>
@@ -120,7 +120,7 @@ const InstitutHaqidaCom = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#544948] py-20">
+      <div className="py-20 max-w-[1910px] mx-auto" style={{backgroundImage: `url(${require("../../assets/images/institutHaqidaCom/bacgroundSayt.png")})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold font-source text-center text-[#ffffff]">
             Kirish
@@ -133,7 +133,7 @@ const InstitutHaqidaCom = () => {
                 alt=""
               />
             </div>
-            <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
+            <div className="bg-[#F1F5F9] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
               <h3 className="text-2xl md:text-3xl font-medium">
                 Uning barcha shakllarida xilma-xillikka chuqur hurmat
               </h3>
@@ -160,7 +160,7 @@ const InstitutHaqidaCom = () => {
                 alt=""
               />
             </div>
-            <div className="bg-[#F2F2F2] p-10 md:pl-16 md:pr-28 md:py-20 -mt-6 md:mt-0 md:-mr-16">
+            <div className="bg-[#F1F5F9] p-10 md:pl-16 md:pr-28 md:py-20 -mt-6 md:mt-0 md:-mr-16">
               <h3 className="text-2xl md:text-3xl font-medium">
                 Farq qiladigan moliyaviy yordam
               </h3>
@@ -188,7 +188,7 @@ const InstitutHaqidaCom = () => {
               alt=""
             />
           </div>
-          <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
+          <div className="bg-[#F1F5F9] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
             <h3 className="text-2xl md:text-3xl font-medium">
               Sport bilan birga
             </h3>
@@ -213,3 +213,5 @@ const InstitutHaqidaCom = () => {
 };
 
 export default InstitutHaqidaCom;
+
+// style={{backgroundImage: `url("../../assets/images/institutHaqidaCom/bacgroundSayt.png")`}}
