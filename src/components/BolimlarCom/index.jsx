@@ -26,17 +26,10 @@ import texnikFoydalanish from "../../assets/images/xojalik/boshliq.JPG"
 import fuqaroMehnat from "../../assets/images/mehnatMuhofazasi/boshliq.JPG"
 import devonxona from "../../assets/images/devonxona/boshliq.JPG"
 import turarJoy from "../../assets/images/turarJoy/boshliq.JPG"
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import { FaAngleDown } from "react-icons/fa";
-import { FaAngleUp } from "react-icons/fa";
 
 const Bolimlar = () => {
-  const [showAll, setShowAll] = useState(false);
-
-  const toggleShowAll = () => {
-    setShowAll(!showAll);
-  };
 
   const data = useMemo(
     () => [
@@ -317,10 +310,9 @@ const Bolimlar = () => {
           value="html"
           orientation="vertical"
         >
-          <div>
-            <TabsHeader className="max-w-96 md:max-w-80 lg:w-96 border-2 border-[#004269] p-5 mb-5">
+          <div className="overflow-hidden p-1 border-2 border-[#004269] rounded-lg max-h-[440px]">
+            <TabsHeader className="w-full md:max-w-80 lg:w-96 overflow-y-scroll max-h-[320px] md:max-h-[430px] lg:max-h-[320px] p-5">
               {data
-                .slice(0, showAll ? data.length : 8)
                 .map(({ label, value }, idx) => (
                   <Tab
                     className="flex flex-col items-start text-start font-semibold"
@@ -335,19 +327,6 @@ const Bolimlar = () => {
                     </div>
                   </Tab>
                 ))}
-              <div className="flex items-center justify-between px-2">
-                <h2 className="text-xl font-semibold">Bo'limlar</h2>
-                <button
-                  onClick={toggleShowAll}
-                  className="text-[#004269] focus:outline-none"
-                >
-                  {!showAll ? (
-                    <FaAngleDown className="border-2 border-[#004269] rounded-full" />
-                  ) : (
-                    <FaAngleUp className="border-2 border-[#004269] rounded-full" />
-                  )}
-                </button>
-              </div>
             </TabsHeader>
           </div>
 
@@ -366,7 +345,7 @@ const Bolimlar = () => {
                 }) => (
                   <TabPanel key={value} value={value} className="py-0">
                     <div className="bg-white shadow-md bg-clip-border rounded-xl px-3">
-                      <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 max-w-96 lg:max-w-full border-b-2 border-[#004269] py-3">
+                      <div className="relative flex flex-col lg:flex-row mt-6 lg:mt-0 text-gray-700 max-w-96 lg:max-w-full py-3">
                         <div className="relative -mt-6 px-3 lg:px-0 md:h-56 lg:h-auto lg:my-auto lg:overflow-hidden rounded-xl md:mb-3 lg:mb-0">
                           <img
                             src={img}
@@ -376,28 +355,22 @@ const Bolimlar = () => {
                         </div>
                         <div className="flex flex-col justify-between xl:py-5 xl:mr-5">
                           <div className="px-3">
-                            <h3 className="block mb-2 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start max-w-[400px]">
+                            <h3 className="block mb-2 lg:mb-5 font-sans text-lg xl:text-2xl antialiased font-semibold leading-snug tracking-normal text-[#004269] text-center lg:text-start max-w-[400px]">
                               {lavozim}
                             </h3>
-                            <h4 className="block mb-2 font-sans text-lg xl:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center lg:text-start">
+                            <h4 className="block mb-2 lg:mb-4 font-sans text-lg xl:text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center lg:text-start">
                               {ism}
                             </h4>
-                            <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            <h4 className="block mb-2 lg:mb-3 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                               {mutahasisligi}
                             </h4>
-                            <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            <h4 className="block mb-2 lg:mb-3 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                               Qabul kunlari: {qabul}
                             </h4>
                             <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                               Telefon: {tel}
                             </h4>
                           </div>
-                        </div>
-                      </div>
-                      <div className="m-3 max-w-96 lg:max-w-full">
-                        <div>
-                          <b>{lavozim} vazifasi: </b>
-                          <span>{vazifasi}</span>
                         </div>
                       </div>
                     </div>
