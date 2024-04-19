@@ -5,6 +5,7 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
+import TextTranslate from "../TextTranslate";
 import Breadcrumb from "../Breadcrumb";
 import rektor from "../../assets/images/rektor.png";
 import oquv from "../../assets/images/oquv.jpg";
@@ -20,23 +21,23 @@ const RektoratCom = () => {
   const data = useMemo(
     () => [
       {
-        label: "Rektor",
+        label: <TextTranslate id="rektoratRektor" />,
         value: "rektor",
-        lavozim: "Rektor",
-        qabul: "Dushanba-Shanba, 10:00 - 18:00",
-        ism: "Xodjayeva Dilnoza Shavkatovna",
+        lavozim: <TextTranslate id="rektoratRektor" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
+        ism: <TextTranslate id="rektoratRektorIsm" />,
         tel: "+998 73 542 38 38",
-        mutahasisligi: "Filologiya fanlari nomzodi, dotsent.",
+        mutahasisligi: <TextTranslate id="rektoratRektorMutaxasis" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: rektor,
       },
       {
-        label: "O'quv ishlari bo'yicha prorektor",
+        label: <TextTranslate id="rektoratOquv" />,
         value: "oquv",
-        lavozim: "O'quv ishlari bo'yicha prorektor",
-        qabul: "Dushanba-Shanba, 10:00 - 18:00",
-        ism: "Nargiza Muzaffarovna Babayeva",
+        lavozim: <TextTranslate id="rektoratOquv" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
+        ism: <TextTranslate id="rektoratOquvIsm" />,
         tel: "+998 91 323 04 77",
         mutahasisligi: "",
         vazifasi:
@@ -44,11 +45,11 @@ const RektoratCom = () => {
         img: oquv,
       },
       {
-        label: "Ilmiy ishlar bo'yicha prorektor",
+        label: <TextTranslate id="rektoratIlmiy" />,
         value: "ilmiy",
-        lavozim: "Ilmiy ishlar bo'yicha prorektor",
-        qabul: "Dushanba-Shanba, 10:00 - 18:00",
-        ism: "Nurbek Jo’rayev Sa’dullayevich",
+        lavozim: <TextTranslate id="rektoratIlmiy" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
+        ism: <TextTranslate id="rektoratIlmiyIsm" />,
         tel: "+998 88 941 28 28",
         mutahasisligi: "",
         vazifasi:
@@ -56,11 +57,11 @@ const RektoratCom = () => {
         img: ilmiy,
       },
       {
-        label: "Moliya va iqtisod bo'yicha prorektor",
+        label: <TextTranslate id="rektoratMoliya" />,
         value: "moliya",
-        lavozim: "Moliya va iqtisod bo'yicha prorektor",
-        qabul: "Dushanba-Shanba, 10:00 - 18:00",
-        ism: "Jasurbek Azamov Murodovich",
+        lavozim: <TextTranslate id="rektoratMoliya" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
+        ism: <TextTranslate id="rektoratMoliyaIsm" />,
         tel: "+998 90 588 61 27",
         mutahasisligi: "",
         vazifasi:
@@ -69,12 +70,12 @@ const RektoratCom = () => {
       },
       {
         label:
-          "Yoshlar masalalari va ma'naviy-ma'rifiy ishlar bo'yicha prorektor",
+          <TextTranslate id="rektoratYoshlar" />,
         value: "yoshlar",
         lavozim:
-          "Yoshlar masalalari va ma'naviy-ma'rifiy ishlar bo'yicha prorektor",
-        qabul: "Dushanba-Shanba, 10:00 - 18:00",
-        ism: "Oxunov Isroiljon Islomovich",
+          <TextTranslate id="rektoratYoshlar" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
+        ism: <TextTranslate id="rektoratYoshlarIsm" />,
         tel: "+998 90 317 82 10",
         mutahasisligi: "",
         vazifasi:
@@ -82,11 +83,11 @@ const RektoratCom = () => {
         img: yoshlar,
       },
       {
-        label: "Xalqaro hamkorlik masalalari bo'yicha prorektor",
+        label: <TextTranslate id="rektoratXalqaro" />,
         value: "xalqaro",
-        lavozim: "Xalqaro hamkorlik masalalari bo'yicha prorektor",
-        qabul: "Dushanba-Shanba, 10:00 - 18:00",
-        ism: "Kadirova Nigora Abdurashidovna",
+        lavozim: <TextTranslate id="rektoratXalqaro" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
+        ism: <TextTranslate id="rektoratXalqaroIsm" />,
         tel: "+998 97 309 86 68",
         mutahasisligi: "",
         vazifasi:
@@ -146,11 +147,11 @@ const RektoratCom = () => {
     <div className="px-5 py-3 md:px-10 mb-3 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
-          steps={[{ text: "Bosh sahifa", link: "/" }, { text: "Rektorat" }]}
+          steps={[{ text: <TextTranslate id="boshSahifa" />, link: "/" }, { text: <TextTranslate id="rektorat" /> }]}
         />
       </div>
       <h2 className="text-xl md:text-3xl font-bold my-5 text-[#004269] text-center">
-        Rektorat
+      <TextTranslate id="rektorat" />
       </h2>
       <div className="max-w-7xl mx-auto">
         <Tabs
@@ -213,10 +214,10 @@ const RektoratCom = () => {
                               {mutahasisligi}
                             </h4>
                             <h4 className="block mb-2 lg:mb-3 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                              Qabul kunlari: {qabul}
+                            <TextTranslate id="qabul" />: {qabul}
                             </h4>
                             <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                              Telefon: {tel}
+                            <TextTranslate id="telefon" />: {tel}
                             </h4>
                           </div>
                           <div className={`${value === "rektor" ? "block" : "hidden"} p-3 pt-0 lg:place-items-end text-center lg:text-start`}>
@@ -224,7 +225,7 @@ const RektoratCom = () => {
                               to="/qabulxona"
                               className="btn align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-[#004269] text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:bg-[#004269]/90 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
                             >
-                              Rektorga murojaat
+                              <TextTranslate id="rektoratMurojaat" />
                             </Link>
                           </div>
                         </div>
