@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TextTranslate from "../TextTranslate";
 import { PiStudentFill } from "react-icons/pi";
 import { LuDownload } from "react-icons/lu";
 import DTSvaMalakaPDF from "../../assets/pdf/DTSvaMalaka2020.pdf";
@@ -160,7 +161,7 @@ function OquvRejalariCom() {
   return (
     <div className="max-w-7xl xl:mx-auto py-10 mx-4 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <h1 className="text-md text-4xl font-bold text-[#004269] text-center">
-        O'quv rejalari
+        <TextTranslate id="bakalavrOquvRejalar" />
       </h1>
       <div className="md:flex mt-4 md:mt-8">
         <ul className="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
@@ -212,16 +213,16 @@ function OquvRejalariCom() {
                       №
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                      Hujjat nomi
+                      <TextTranslate id="DTSvaMalakaHujjatNomi" />
                     </th>
                     <th
                       scope="col"
                       className="px-2 md:px-6 py-4 hidden md:block"
                     >
-                      Sana
+                      <TextTranslate id="DTSvaMalakaSana" />
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                      Batafsil
+                    <TextTranslate id="DTSvaMalakaBatafsil" />
                     </th>
                   </tr>
                 </thead>
