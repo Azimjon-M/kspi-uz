@@ -86,7 +86,7 @@ const InstitutHaqidaCom = () => {
       <div className="py-20 max-w-[1910px] mx-auto" style={{backgroundImage: `url(${require("../../assets/images/institutHaqidaCom/bacgroundSayt.png")})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold font-source text-center text-[#ffffff]">
-            Kirish
+          <TextTranslate id="kirish" />
           </h1>
           <div className="grid items-center grid-cols-1 md:grid-cols-2 px-6 my-20 md:my-32">
             <div className="z-10 mx-6 md:mx-0">
