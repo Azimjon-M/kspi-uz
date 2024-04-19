@@ -161,7 +161,7 @@ function OquvRejalariCom() {
   return (
     <div className="max-w-7xl xl:mx-auto py-10 mx-4 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <h1 className="text-md text-4xl font-bold text-[#004269] text-center">
-        <TextTranslate id="bakalavrOquvRejalar" />
+        <TextTranslate id="oquvRejalar" />
       </h1>
       <div className="md:flex mt-4 md:mt-8">
         <ul className="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">

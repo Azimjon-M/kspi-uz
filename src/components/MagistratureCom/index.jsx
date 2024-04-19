@@ -1,4 +1,5 @@
 import React from "react";
+import TextTranslate from "../TextTranslate";
 import { MdOutlineLibraryBooks } from "react-icons/md";
 import { BsJournalCheck } from "react-icons/bs";
 import { GiMaterialsScience } from "react-icons/gi";
@@ -15,19 +16,13 @@ function MagistraturaCom() {
             className="text-center text-3xl sm:text-5xl md:text-7xl font-bold text-gray-100 text-shadow"
             style={{ textShadow: "0 0 20px rgba(0,0,0, 1)" }}
           >
-            Magistratura ta'limi
+            <TextTranslate id="magistraturaTitle"/>
           </div>
           <p
             className="text-gray-100 text-2xl text-center hidden md:block md:px-12 lg:px-32 xl:px-44 mt-5 leading-10 text-shadaw"
             style={{ textShadow: "0 0 30px rgba(0,0,0, 1)" }}
           >
-            Magistratura talabalaridan QDPIni nimadan ajratib turishini so'rang
-            va siz 9560 xil javob olasiz. Buning sababi, hech qanday tajriba
-            QDPI ta'limini aniqlamaydi. Buning o'rniga, keng ko'lamli ta'lim
-            innovatsion imkoniyatlar va tajribalar bitiruvchilarni yetuk
-            liderlar, mustaqil fikrlovchilar va ta'sir ko'rsatishga
-            bag'ishlangan faol global fuqarolar sifatida rivojlanishiga
-            tayyorlaydi.
+            <TextTranslate id="magistraturaSubtitle"/>
           </p>
         </div>
         <img src={bachlorImg} className="w-full max-h-[1333px]" alt="" />
@@ -40,7 +35,7 @@ function MagistraturaCom() {
           <div>
             <MdOutlineLibraryBooks className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              DTS va malaka talablari
+              <TextTranslate id="dTSvaMalakaTalablari"/>
             </p>
           </div>
         </Link>
@@ -51,7 +46,7 @@ function MagistraturaCom() {
           <div>
             <BsJournalCheck className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              O'quv rejalar
+            <TextTranslate id="oquvRejalar"/>
             </p>
           </div>
         </Link>
@@ -62,7 +57,7 @@ function MagistraturaCom() {
           <div>
             <GiMaterialsScience className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              Fan dasturlari
+            <TextTranslate id="fanDasturlari"/>
             </p>
           </div>
         </Link>
@@ -73,7 +68,7 @@ function MagistraturaCom() {
           <div>
             <GrCatalog className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              Fanlar katalogi
+            <TextTranslate id="fanKatalogi"/>
             </p>
           </div>
         </Link>

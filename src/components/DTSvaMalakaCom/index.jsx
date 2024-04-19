@@ -100,7 +100,7 @@ function DTSvaMalakaCom() {
   return (
     <div className="max-w-7xl mx-auto py-16">
       <h1 className="text-md md: text-4xl font-bold text-[#004269] text-center">
-        <TextTranslate id="bakalavrDTSvaMalakaTalablari"/>
+        <TextTranslate id="dTSvaMalakaTalablari"/>
       </h1>
       <div className="relative shadow-md overflow-x-auto sm:rounded-lg mx-5 mt-10">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">

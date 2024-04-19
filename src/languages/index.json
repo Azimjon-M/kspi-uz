@@ -220,10 +220,14 @@
 
     "bakalavrTitle": "Bakalavr ta'limi",
     "bakalavrSubtitle": "Bakalavriat talabalaridan QDPIni nimadan ajratib turishini so'rang va siz 9560 xil javob olasiz. Buning sababi, hech qanday tajriba QDPI ta'limini aniqlamaydi. Buning o'rniga, keng ko'lamli ta'lim innovatsion imkoniyatlar va tajribalar bitiruvchilarni yetuk liderlar, mustaqil fikrlovchilar va ta'sir ko'rsatishga bag'ishlangan faol global fuqarolar sifatida rivojlanishiga tayyorlaydi.",
-    "bakalavrDTSvaMalakaTalablari": "DTS va malaka talablari",
-    "bakalavrOquvRejalar": "O'quv rejalari",
-    "bakalavrFanDasturlari": "Fan dasturlari",
-    "bakalavrFanKatalogi": "Fan katalogi",
+   
+    "dTSvaMalakaTalablari": "DTS va malaka talablari",
+    "oquvRejalar": "O'quv rejalari",
+    "fanDasturlari": "Fan dasturlari",
+    "fanKatalogi": "Fan katalogi",
+
+    "magistraturaTitle": "Magistratura ta'limi",
+    "magistraturaSubtitle": "Magistratura talabalaridan QDPIni nimadan ajratib turishini so'rang va siz 9560 xil javob olasiz. Buning sababi, hech qanday tajriba QDPI ta'limini aniqlamaydi. Buning o'rniga, keng ko'lamli ta'lim innovatsion imkoniyatlar va tajribalar bitiruvchilarni yetuk liderlar, mustaqil fikrlovchilar va ta'sir ko'rsatishga bag'ishlangan faol global fuqarolar sifatida rivojlanishiga tayyorlaydi.",
 
     "DTSvaMalakaHujjatNomi": "Hujjat nomi",
     "DTSvaMalakaSana": "Sana",
@@ -481,10 +485,14 @@
 
     "bakalavrTitle": "Бакалавриат",
     "bakalavrSubtitle": "Спросите студентов, что отличает QDPI, и вы получите 9560 разных ответов. Это связано с тем, что ни один опыт не определяет образование QDPI. Вместо этого, широкое образование с инновационными возможностями и опытом готовит выпускников к тому, чтобы стать зрелыми лидерами, независимыми мыслителями и заинтересованными гражданами мира, стремящимися оказать влияние.",
-    "bakalavrDTSvaMalakaTalablari": "ДТС и квалификационные требования",
-    "bakalavrOquvRejalar": "Планы обучения",
-    "bakalavrFanDasturlari": "Научные программы",
-    "bakalavrFanKatalogi": "Научный каталог",
+   
+    "dTSvaMalakaTalablari": "ДТС и квалификационные требования",
+    "oquvRejalar": "Планы обучения",
+    "fanDasturlari": "Научные программы",
+    "fanKatalogi": "Научный каталог",
+
+    "magistraturaTitle": "Высшее образование",
+    "magistraturaSubtitle": "Спросите аспирантов, что отличает QDPI, и вы получите 9560 разных ответов. Это связано с тем, что ни один опыт не определяет образование QDPI. Вместо этого, широкое образование с инновационными возможностями и опытом готовит выпускников к тому, чтобы стать зрелыми лидерами, независимыми мыслителями и заинтересованными гражданами мира, стремящимися оказать влияние.",
 
     "DTSvaMalakaHujjatNomi": "Название документа",
     "DTSvaMalakaSana": "Дата",
@@ -742,10 +750,14 @@
 
     "bakalavrTitle": "Bachelor's education",
     "bakalavrSubtitle": "Ask undergraduate students what sets QDPI apart and you'll get 9,560 different answers. This is because no one experience defines QDPI education. Instead, a broad education with innovative opportunities and experiences prepares graduates to develop into mature leaders, independent thinkers, and engaged global citizens dedicated to making an impact.",
-    "bakalavrDTSvaMalakaTalablari": "DTS and qualification requirements",
-    "bakalavrOquvRejalar": "Study plans",
-    "bakalavrFanDasturlari": "Science programs",
-    "bakalavrFanKatalogi": "Science catalog",
+   
+    "dTSvaMalakaTalablari": "DTS and qualification requirements",
+    "oquvRejalar": "Study plans",
+    "fanDasturlari": "Science programs",
+    "fanKatalogi": "Science catalog",
+
+    "magistraturaTitle": "Graduate education",
+    "magistraturaSubtitle": "Ask graduate students what sets QDPI apart and you'll get 9,560 different answers. This is because no one experience defines QDPI education. Instead, a broad education with innovative opportunities and experiences prepares graduates to develop into mature leaders, independent thinkers, and engaged global citizens dedicated to making an impact.",
 
     "DTSvaMalakaHujjatNomi": "Document name",
     "DTSvaMalakaSana": "The date",

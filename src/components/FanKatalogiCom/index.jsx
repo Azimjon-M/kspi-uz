@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import TextTranslate from "../TextTranslate";
 import { LuDownload } from "react-icons/lu";
 import DTSvaMalakaPDF from "../../assets/pdf/DTSvaMalaka2020.pdf";
 
@@ -9,13 +10,13 @@ const dataPDF = [
     name: "Oliy ta'limning davlat ta'lim standarti 2020",
     pdf: "../../assets/pdf/DTSvaMalaka2020.pdf",
   },
-]
+];
 
 function FanKatalogiCom() {
   return (
     <div className="max-w-7xl mx-auto py-16 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <h1 className="text-md md: text-4xl font-bold text-[#004269] text-center">
-        Fan katalogi
+        <TextTranslate id="fanKatalogi" />
       </h1>
       <div className="relative shadow-md overflow-x-auto sm:rounded-lg mx-5 mt-10">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -25,20 +26,20 @@ function FanKatalogiCom() {
                 №
               </th>
               <th scope="col" className="px-2 md:px-6 py-4">
-                Hujjat nomi
+                <TextTranslate id="DTSvaMalakaHujjatNomi" />
               </th>
               <th scope="col" className="px-2 md:px-6 py-4 hidden md:block">
-                Sana
+                <TextTranslate id="DTSvaMalakaSana" />
               </th>
               <th scope="col" className="px-2 md:px-6 py-4">
-                Batafsil
+                <TextTranslate id="DTSvaMalakaBatafsil" />
               </th>
             </tr>
           </thead>
           <tbody className="text-base">
             {dataPDF &&
               dataPDF.map((item) => {
-                const { id, sana, name} = item;
+                const { id, sana, name } = item;
                 return (
                   <tr
                     key={id}
@@ -73,4 +74,4 @@ function FanKatalogiCom() {
   );
 }
 
-export default FanKatalogiCom
+export default FanKatalogiCom;
