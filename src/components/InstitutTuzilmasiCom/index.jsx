@@ -1,4 +1,5 @@
 import React from "react";
+import TextTranslate from "../TextTranslate";
 import Breadcrumb from "../Breadcrumb";
 import insTuz1 from "../../assets/images/insTuz1.png";
 import insTuz2 from "../../assets/images/insTuz2.png";
@@ -11,8 +12,8 @@ const InstitutTuzilmasiCom = () => {
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
           steps={[
-            { text: "Bosh sahifa", link: "/" },
-            { text: "Institut tuzilmasi" },
+            { text: <TextTranslate id="boshSahifa" />, link: "/" },
+            { text: <TextTranslate id="tuzilma" /> },
           ]}
         />
       </div>
@@ -20,7 +21,7 @@ const InstitutTuzilmasiCom = () => {
           {/* News heading */}
           <div className="my-1 md:my-3">
             <h2 className="text-xl md:text-3xl font-bold my-2 text-[#004269] text-center">
-              Institut tuzilmasi
+            <TextTranslate id="tuzilma" />
             </h2>
           </div>
         <div className="mb-3">
@@ -37,14 +38,14 @@ const InstitutTuzilmasiCom = () => {
         </div>
         <div className="border-2 border-[#004269] flex items-center justify-between rounded p-2">
           <div className="font-semibold md:text-lg lg:text-xl">
-            Institut tuzilmasining pdf shakli
+          <TextTranslate id="tuzilmaShakli" />
           </div>
           <Link
             to={insTuzilmasi}
             target="blank"
             className="btn bg-[#004269] hover:bg-white hover:border-[#004269] hover:text-[#004269] text-white"
           >
-            Yuklab olish
+            <TextTranslate id="tuzilmaShakliYuklash" />
           </Link>
         </div>
       </div>

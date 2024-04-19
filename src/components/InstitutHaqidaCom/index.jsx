@@ -1,4 +1,5 @@
 import React from "react";
+import Breadcrumb from "../Breadcrumb";
 import TextTranslate from "../TextTranslate";
 import institutImage from "../../assets/images/institutImage.jpg";
 import qoshmaTalim from "../../assets/images/institutHaqidaCom/QoshmaTalim.jpg";
@@ -10,6 +11,14 @@ import sportBilanBirga from "../../assets/images/institutHaqidaCom/sportBilanBir
 const InstitutHaqidaCom = () => {
   return (
     <div>
+      <div className="border-b-2 border-[#004269] block w-full px-5 md:px-10">
+        <Breadcrumb
+          steps={[
+            { text: <TextTranslate id="boshSahifa" />, link: "/" },
+            { text: <TextTranslate id="navDropInstitut_2" /> },
+          ]}
+        />
+      </div>
       <div className="max-w-7xl mx-auto my-20">
         <div>
           <h1 className="text-3xl md:text-4xl font-bold font-source text-center text-[#004269]">
