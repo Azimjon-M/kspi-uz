@@ -173,7 +173,7 @@ function OquvRejalariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              2-kurs o'quv rejasi
+              <TextTranslate id="2KursOquvRejasi"/>
             </button>
           </li>
           <li>
@@ -184,7 +184,7 @@ function OquvRejalariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              3-kurs o'quv rejasi
+              <TextTranslate id="3KursOquvRejasi"/>
             </button>
           </li>
           <li>
@@ -195,7 +195,7 @@ function OquvRejalariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              4-kurs o'quv rejasi
+              <TextTranslate id="4KursOquvRejasii"/>
             </button>
           </li>
         </ul>
