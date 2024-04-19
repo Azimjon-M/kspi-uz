@@ -161,7 +161,7 @@ function MagistrFanDasturlariCom() {
   return (
     <div className="max-w-7xl xl:mx-auto py-10 mx-4 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <h1 className="text-md text-4xl font-bold text-[#004269] text-center">
-        <TextTranslate/>
+        <TextTranslate id="oquvRejalar" />
       </h1>
       <div className="md:flex mt-4 md:mt-8">
         <ul className="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
@@ -173,7 +173,7 @@ function MagistrFanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              2-kurs o'quv rejasi
+              <TextTranslate id="2KursOquvRejasi" />
             </button>
           </li>
           <li>
@@ -184,7 +184,7 @@ function MagistrFanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              3-kurs o'quv rejasi
+              <TextTranslate id="3KursOquvRejasi" />
             </button>
           </li>
           <li>
@@ -195,7 +195,7 @@ function MagistrFanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              4-kurs o'quv rejasi
+              <TextTranslate id="4KursOquvRejasi" />
             </button>
           </li>
         </ul>
@@ -213,16 +213,17 @@ function MagistrFanDasturlariCom() {
                       №
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                      Hujjat nomi
+                    <TextTranslate id="DTSvaMalakaHujjatNomi"/>
+
                     </th>
                     <th
                       scope="col"
                       className="px-2 md:px-6 py-4 hidden md:block"
                     >
-                      Sana
+                      <TextTranslate id="DTSvaMalakaSana"/>
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                      Batafsil
+                    <TextTranslate id="DTSvaMalakaBatafsil"/>
                     </th>
                   </tr>
                 </thead>
