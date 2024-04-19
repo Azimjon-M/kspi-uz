@@ -10,8 +10,8 @@ const InstitutKengashiCom = () => {
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
           steps={[
-            { text: "Bosh sahifa", link: "/" },
-            { text: "Institut kengashi" },
+            { text: <TextTranslate id="boshSahifa" />, link: "/" },
+            { text: <TextTranslate id="kengash" /> },
           ]}
         />
       </div>

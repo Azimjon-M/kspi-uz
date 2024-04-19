@@ -1,5 +1,6 @@
 import React from "react";
 import Breadcrumb from "../Breadcrumb";
+import TextTranslate from "../TextTranslate";
 
 const VirQabulCom = () => {
   return (
@@ -7,18 +8,18 @@ const VirQabulCom = () => {
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
           steps={[
-            { text: "Bosh sahifa", link: "/" },
-            { text: "Virtual qabulxona" },
+            { text: <TextTranslate id="boshSahifa" />, link: "/" },
+            { text: <TextTranslate id="qabulxona" /> },
           ]}
         />
       </div>
       <section className="bg-white dark:bg-gray-900">
         <div className="py-2 lg:py-6 px-4 mx-auto max-w-screen-md">
           <h1 className="text-xl md:text-3xl font-bold my-2 text-[#004269] text-center">
-            Virtual qabulxona
+          <TextTranslate id="qabulxona" />
           </h1>
           <h2 className="py-2 text-lg font-bold lg:mb-10 text-center text-[#004269] dark:text-gray-400 sm:text-xl">
-            Taklif va shikoyatlaringizni yuboring
+          <TextTranslate id="qabulxonaTaklif" />
           </h2>
           <form action="#" className="space-y-8">
             <div>
@@ -26,13 +27,12 @@ const VirQabulCom = () => {
                 htmlFor="fish"
                 className="block mb-2 text-sm font-medium text-[#004269] dark:text-gray-300"
               >
-                FISH
+                <TextTranslate id="qabulxonaFish" />
               </label>
               <input
                 type="text"
                 id="fish"
                 className="shadow-sm bg-gray-50 border border-gray-300 text-[#004269] text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="Familiya Ism Sharif"
                 required
               />
             </div>
@@ -42,13 +42,12 @@ const VirQabulCom = () => {
                   htmlFor="telefon"
                   className="block mb-2 text-sm font-medium text-[#004269] dark:text-gray-300"
                 >
-                  Telefon
+                  <TextTranslate id="qabulxonaTelefon" />
                 </label>
                 <input
                   type="text"
                   id="telefon"
                   className="shadow-sm bg-gray-50 border border-gray-300 text-[#004269] text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="+998 ** *** ** **"
                   required
                 />
               </div>
@@ -57,13 +56,12 @@ const VirQabulCom = () => {
                   htmlFor="email"
                   className="block mb-2 text-sm font-medium text-[#004269] dark:text-gray-300"
                 >
-                  Email
+                  <TextTranslate id="qabulxonaEmail" />
                 </label>
                 <input
                   type="email"
                   id="email"
                   className="shadow-sm bg-gray-50 border border-gray-300 text-[#004269] text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="Email"
                   required
                 />
               </div>
@@ -73,13 +71,12 @@ const VirQabulCom = () => {
                 htmlFor="subject"
                 className="block mb-2 text-sm font-medium text-[#004269] dark:text-gray-300"
               >
-                Mavzu
+                <TextTranslate id="qabulxonaMavzu" />
               </label>
               <input
                 type="text"
                 id="subject"
                 className="block p-3 w-full text-sm text-[#004269] bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="Qanday mavzuda xabar qoldiryapsiz"
                 required
               />
             </div>
@@ -88,20 +85,19 @@ const VirQabulCom = () => {
                 htmlFor="message"
                 className="block mb-2 text-sm font-medium text-[#004269] dark:text-gray-400"
               >
-                Xabar
+                <TextTranslate id="qabulxonaXabar" />
               </label>
               <textarea
                 id="message"
                 rows="6"
                 className="block p-2.5 w-full text-sm text-[#004269] bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Batafsil..."
               ></textarea>
             </div>
             <button
               type="submit"
               className="py-3 px-5 w-full text-sm font-medium text-center btn xl:justify-between bg-[#004269] text-white rounded-bl-lg sm:w-fit hover:bg-[#004369ce] focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
             >
-              Yuborish
+              <TextTranslate id="qabulxonaYuborish" />
             </button>
           </form>
         </div>
