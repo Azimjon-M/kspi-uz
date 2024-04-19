@@ -161,7 +161,7 @@ function FanDasturlariCom() {
   return (
     <div className="max-w-7xl xl:mx-auto py-10 mx-4 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <h1 className="text-md text-4xl font-bold text-[#004269] text-center">
-        <TextTranslate id="bakalavrFanDasturlari"/>
+        <TextTranslate id="bakalavrFanDasturlari" />
       </h1>
       <div className="md:flex mt-4 md:mt-8">
         <ul className="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
@@ -173,7 +173,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="pedagogika"/>
+              <TextTranslate id="pedagogika" />
             </button>
           </li>
           <li>
@@ -184,7 +184,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="maktabgachaTalim"/>
+              <TextTranslate id="maktabgachaTalim" />
             </button>
           </li>
           <li>
@@ -195,7 +195,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="maktabgachaTTP"/>
+              <TextTranslate id="maktabgachaTTP" />
             </button>
           </li>
           <li>
@@ -206,7 +206,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="boshlangichtalim"/>
+              <TextTranslate id="boshlangichtalim" />
             </button>
           </li>
           <li>
@@ -217,7 +217,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="matematikaVaInformatika"/>
+              <TextTranslate id="matematikaVaInformatika" />
             </button>
           </li>
           <li>
@@ -228,7 +228,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="fizikaVaAstronomiya"/>
+              <TextTranslate id="fizikaVaAstronomiya" />
             </button>
           </li>
           <li>
@@ -239,7 +239,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="kimyo"/>
+              <TextTranslate id="kimyo" />
             </button>
           </li>
           <li>
@@ -250,7 +250,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="biologiya"/>
+              <TextTranslate id="biologiya" />
             </button>
           </li>
           <li>
@@ -261,7 +261,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="geografiyaVaIBA"/>
+              <TextTranslate id="geografiyaVaIBA" />
             </button>
           </li>
           <li>
@@ -272,7 +272,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="tarix"/>
+              <TextTranslate id="tarix" />
             </button>
           </li>
           <li>
@@ -283,7 +283,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="tasviriySanatVaMG"/>
+              <TextTranslate id="tasviriySanatVaMG" />
             </button>
           </li>
           <li>
@@ -294,7 +294,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="musiqaTalimi"/>
+              <TextTranslate id="musiqaTalimi" />
             </button>
           </li>
           <li>
@@ -305,7 +305,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              O'zbek tili va Adabiyoti
+              <TextTranslate id="ozbekTiliVaAdabiyoti" />
             </button>
           </li>
           <li>
@@ -316,7 +316,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Родной язик
+              <TextTranslate id="роднойязик" />
             </button>
           </li>
           <li>
@@ -327,7 +327,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Русский язик в ИГ
+              <TextTranslate id="русскийязикВИГ" />
             </button>
           </li>
           <li>
@@ -338,7 +338,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Xorijiy til va adabiyoti
+              <TextTranslate id="XorijiyTilVaAdabiyoti" />
             </button>
           </li>
           <li>
@@ -349,7 +349,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Milliy g'oya va HA
+              <TextTranslate id="MilliyGoyaVaHA" />
             </button>
           </li>
           <li>
@@ -360,7 +360,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Jismoniy madaniyat
+              <TextTranslate id="jismoniyMadaniyat" />
             </button>
           </li>
           <li>
@@ -371,7 +371,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Jismoniy madaniyat
+              <TextTranslate id="texnologikTalim" />
             </button>
           </li>
           <li>
@@ -382,7 +382,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Texnologik ta'lim
+              <TextTranslate id="maktabMenejmenti" />
             </button>
           </li>
           <li>
@@ -393,7 +393,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Maktab menejmenti
+              <TextTranslate id="maktabgachaVaBTXT" />
             </button>
           </li>
           <li>
@@ -404,7 +404,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Maktabgacha va BTXT
+              <TextTranslate id="mP(Logopediya)" />
             </button>
           </li>
           <li>
@@ -415,18 +415,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              MP (Logopediya)
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => handleClick(3)}
-              className={`${
-                showContent === 22 ? "bg-blue-500 text-white" : "bg-gray-50"
-              } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
-            >
-              <PiStudentFill className="w-4 h-4 me-2" />
-              MP (Oligofrenopedagogika)
+              <TextTranslate id="mP(Oligofrenopedagogika)" />
             </button>
           </li>
           <li>
@@ -437,7 +426,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              MP (Surdopedagogika)
+              <TextTranslate id="mP(Surdopedagogika)" />
             </button>
           </li>
           <li>
@@ -448,7 +437,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Amaliy psixologiya
+              <TextTranslate id="amaliyPsixologiya" />
             </button>
           </li>
           <li>
@@ -459,7 +448,7 @@ function FanDasturlariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              Fakultetlararo
+              <TextTranslate id="fakultetlararo" />
             </button>
           </li>
         </ul>
@@ -477,16 +466,16 @@ function FanDasturlariCom() {
                       №
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                      <TextTranslate id="DTSvaMalakaHujjatNomi"/>
+                      <TextTranslate id="DTSvaMalakaHujjatNomi" />
                     </th>
                     <th
                       scope="col"
                       className="px-2 md:px-6 py-4 hidden md:block"
                     >
-                      <TextTranslate id="DTSvaMalakaSana"/>
+                      <TextTranslate id="DTSvaMalakaSana" />
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                    <TextTranslate id="DTSvaMalakaBatafsil"/>
+                      <TextTranslate id="DTSvaMalakaBatafsil" />
                     </th>
                   </tr>
                 </thead>
