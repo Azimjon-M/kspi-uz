@@ -5,6 +5,7 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
+import TextTranslate from "../TextTranslate";
 import Breadcrumb from "../Breadcrumb";
 import fizika from "../../assets/images/fak_fizika.jpg";
 import boshlan from "../../assets/images/fak_boshlan.jpg";
@@ -17,7 +18,6 @@ import xorijiy from "../../assets/images/fak_xorijiy.jpg";
 import tabiiy from "../../assets/images/fak_tabiiy.jpg";
 import rus from "../../assets/images/fak-rus.jpg";
 import tarix from "../../assets/images/fak_tarix.jpg";
-// import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -25,133 +25,133 @@ const FakultetlarCom = () => {
   const data = useMemo(
     () => [
       {
-        label: "Fizika va matemtika",
+        label: <TextTranslate id="fakultetlarFizika" />,
         value: "fizika-matematika",
-        lavozim: "Fizika va matemtika fakulteti dekani",
-        ism: "Poʻlatov Sharifjon Yigitaliyevich",
+        lavozim: <TextTranslate id="fakultetlarFizikaDekan" />,
+        ism: <TextTranslate id="fakultetlarFizikaIsm" />,
         tel: " +998 97 725 75 63",
-        mutahasisligi: "Texnika fanlari doktori, dotsent.",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarFizikaMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: fizika,
       },
       {
-        label: "Boshlang'ich ta'lim",
+        label: <TextTranslate id="fakultetlarBoshlan" />,
         value: "boshlangich",
-        lavozim: "Boshlang'ich ta'lim fakulteti dekani",
-        ism: "Jamoliddinova Dilnoza Mirxojiddinovna",
+        lavozim: <TextTranslate id="fakultetlarBoshlanDekan" />,
+        ism: <TextTranslate id="fakultetlarBoshlanIsm" />,
         tel: "+998 90 556 55 81",
-        mutahasisligi: "Professor, Filoligiya fanlari doktori (DcS)",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarBoshlanMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi.",
         img: boshlan,
       },
       {
-        label: "O'zbek tili va adabiyoti",
+        label: <TextTranslate id="fakultetlarUzbek" />,
         value: "ozbek-tili",
-        lavozim: "O'zbek tili va adabiyoti fakulteti dekani",
-        ism: "Hasanova Barnoxon Yusupovna",
+        lavozim: <TextTranslate id="fakultetlarUzbekDekan" />,
+        ism: <TextTranslate id="fakultetlarUzbekIsm" />,
         tel: "+998 91 202 44 40",
-        mutahasisligi: "-",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarUzbekMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: uzbek,
       },
       {
-        label: "Pedagogika va psixologiya",
+        label: <TextTranslate id="fakultetlarPedagog" />,
         value: "pedagogika-psixologiya",
-        lavozim: "Pedagogika va psixologiya fakulteti dekani",
-        ism: "Erkaboyeva Nigora Shermatovna",
+        lavozim: <TextTranslate id="fakultetlarPedagogDekan" />,
+        ism: <TextTranslate id="fakultetlarPedagogIsm" />,
         tel: "+998 91 140 67 69",
-        mutahasisligi: "Pedagogika fanlar doctori, Professor",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarPedagogMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: ped,
       },
       {
-        label: "Jismoniy madaniyat",
+        label: <TextTranslate id="fakultetlarJismoniy" />,
         value: "jismoniy-madaniyat",
-        lavozim: "Jismoniy madaniyat fakulteti dekani",
-        ism: "Talipjanov Alijon Akramovich",
+        lavozim: <TextTranslate id="qabulKunlari" />,
+        ism: <TextTranslate id="fakultetlarJismoniyIsm" />,
         tel: "+998 90 556 91 32",
-        mutahasisligi: "Pedagogika fanlar nomzodi, dotsent",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarJismoniyMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti!",
         img: jismon,
       },
       {
-        label: "Maktabgacha ta'lim",
+        label: <TextTranslate id="fakultetlarMaktabDekan" />,
         value: "MaktabgachaTalim",
-        lavozim: "Maktabgacha ta'lim fakulteti dekani",
-        ism: "Abdullayev Oybek Qurbonovich",
+        lavozim: <TextTranslate id="fakultetlarMaktabDekan" />,
+        ism: <TextTranslate id="fakultetlarMaktabIsm" />,
         tel: "+998 91 143 29 81",
-        mutahasisligi: "-",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarMaktabMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat",
         img: maktab,
       },
       {
-        label: "Milliy hunarmandchilik va amaliy san'at",
+        label: <TextTranslate id="fakultetlarMilliy" />,
         value: "MilliyHunarmand",
-        lavozim: "Milliy hunarmandchilik va amaliy san'at fakulteti dekani",
-        ism: "Umrzaqov Behzod Bo‘ronovich",
+        lavozim: <TextTranslate id="fakultetlarMilliyDekan" />,
+        ism: <TextTranslate id="fakultetlarMilliyIsm" />,
         tel: "+998 91 203 48 84 ",
-        mutahasisligi: "-",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarMilliyMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: milliy,
       },
       {
-        label: "Xorijiy tillar",
+        label: <TextTranslate id="fakultetlarXorijiy" />,
         value: "XorijiyTillar",
-        lavozim: "Xorijiy tillar fakulteti dekani",
-        ism: "Karimova Vasila Vahobovna",
+        lavozim: <TextTranslate id="fakultetlarXorijiyDekan" />,
+        ism: <TextTranslate id="fakultetlarXorijiyIsm" />,
         tel: "+998 91 145 99 00",
-        mutahasisligi: "Filologiya fanlari bo‘yicha falsafa doktori (PhD)",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarXorijiyMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: xorijiy,
       },
       {
-        label: "Tabiiy tillar",
+        label: <TextTranslate id="fakultetlarTabiy" />,
         value: "TabiiyFanlar",
-        lavozim: "Tabiiy tillar fakulteti dekani",
-        ism: "Xo‘jayev Vaxobjon Umarovich",
+        lavozim: <TextTranslate id="fakultetlarTabiyDekan" />,
+        ism: <TextTranslate id="fakultetlarTabiyIsm" />,
         tel: "+998 91 141 87 00",
-        mutahasisligi: "Kimyo fanlari doktori, professor.",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarTabiyMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti!",
         img: tabiiy,
       },
       {
-        label: "Rus tili va adabiyoti",
+        label: <TextTranslate id="fakultetlarRus" />,
         value: "RusTili",
-        lavozim: "Rus tili va adabiyoti fakulteti dekani",
-        ism: "Rasulova Matlubaxon Xamzayevna",
+        lavozim: <TextTranslate id="fakultetlarRusDekan" />,
+        ism: <TextTranslate id="fakultetlarRusIsm" />,
         tel: "+998 99 872 05 07",
-        mutahasisligi: "Filologiya fanlari nomzodi, dotsent",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarRusMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat la",
         img: rus,
       },
       {
-        label: "Tarix",
+        label: <TextTranslate id="fakultetlarTarix" />,
         value: "Tarix",
-        lavozim: "Tarix fakulteti dekani",
-        ism: "O‘rinboyev Davlatjon Baxtiyorovich",
+        lavozim: <TextTranslate id="fakultetlarTarixDekan" />,
+        ism: <TextTranslate id="fakultetlarTarixIsm" />,
         tel: "+998 91 688 65 00",
-        mutahasisligi: "Falsafa fanlari bo‘yicha falsafa doktori (PhD)",
-        qabul: "Dushanba-shanba, 10:00 - 18:00",
+        mutahasisligi: <TextTranslate id="fakultetlarTarixMutahasis" />,
+        qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur earum labore dolorum? Quo, facilis. Unde a accusantium dignissimos mollitia, blanditiis eveniet modi deleniti! Obcaecati vel quia perferendis possimus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat tenetur. Architecto labore officia reprehenderit quaerat laborum, dolorum veritatis animi repudiandae sint cupiditate enim minus modi quo? Iure, maxime earum",
         img: tarix,
@@ -229,11 +229,14 @@ const FakultetlarCom = () => {
     <div className="px-5 py-3 md:px-10 mb-3 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
-          steps={[{ text: "Bosh sahifa", link: "/" }, { text: "Fakultetlar" }]}
+          steps={[
+            { text: <TextTranslate id="boshSahifa" />, link: "/" },
+            { text: <TextTranslate id="fakultetlar" /> },
+          ]}
         />
       </div>
       <h2 className="text-xl md:text-3xl font-bold my-5 text-[#004269] text-center">
-        Fakultetlar
+        <TextTranslate id="fakultetlar" />
       </h2>
       <div className="max-w-7xl mx-auto">
         <Tabs
@@ -296,10 +299,10 @@ const FakultetlarCom = () => {
                               {mutahasisligi}
                             </h4>
                             <h4 className="block mb-2 lg:mb-3 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                              Qabul kunlari: {qabul}
+                              <TextTranslate id="qabul" />: {qabul}
                             </h4>
                             <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                              Telefon: {tel}
+                              <TextTranslate id="telefon" />: {tel}
                             </h4>
                           </div>
                         </div>
