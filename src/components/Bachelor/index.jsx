@@ -39,7 +39,7 @@ function Bachelor() {
           <div>
             <MdOutlineLibraryBooks className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              <TextTranslate id="bakalavrDTSvaMalakaTalablari" />
+              <TextTranslate id="dTSvaMalakaTalablari" />
             </p>
           </div>
         </Link>
@@ -50,7 +50,7 @@ function Bachelor() {
           <div>
             <BsJournalCheck className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              <TextTranslate id="bakalavrOquvRejalar" />
+              <TextTranslate id="oquvRejalar" />
             </p>
           </div>
         </Link>
@@ -61,7 +61,7 @@ function Bachelor() {
           <div>
             <GiMaterialsScience className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              <TextTranslate id="bakalavrFanDasturlari" />
+              <TextTranslate id="fanDasturlari" />
             </p>
           </div>
         </Link>
@@ -72,7 +72,7 @@ function Bachelor() {
           <div>
             <GrCatalog className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              <TextTranslate id="bakalavrFanKatalogi" />
+              <TextTranslate id="fanKatalogi" />
             </p>
           </div>
         </Link>
