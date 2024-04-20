@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import TextTranslate from "../TextTranslate";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
@@ -41,7 +42,7 @@ function TalabalarTurarJoyiCom() {
 
       {/* Leader's opinion */}
       <h1 className="text-2xl md:text-4xl font-bold text-center text-[#004269] mt-5 md:mt-20">
-        Talabalar turar joyiga xush kelibsiz
+        <TextTranslate id="ttjTitle" />
       </h1>
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-5 md:mt-12">
         <div className="flex justify-center">
@@ -54,12 +55,10 @@ function TalabalarTurarJoyiCom() {
         <div className="md:pr-20 text-center md:text-start">
           <RiDoubleQuotesL className="text-6xl text-gray-300" />
           <p className="text-lg text-gray-600 font-bold mt-3">
-            Talabalar shaharchasida yashash yangi odamlar bilan tanishish va
-            doimiy do'stlikni rivojlantirish uchun son-sanoqsiz imkoniyatlarni
-            taqdim etadi.
+            <TextTranslate id="ttjRaxbarText" />
           </p>
           <p className="mt-2 text-amber-800 italic">
-            Alisher Abduraximov TTJ raxbari
+            <TextTranslate id="ttjRaxbarName" />
           </p>
         </div>
       </div>
@@ -72,18 +71,20 @@ function TalabalarTurarJoyiCom() {
               <div className="border-b-4 md:border-b-0 md:border-r-4 border-[#004269] p-7">
                 <div className="bg-[#004269] text-center">
                   <p className="text-2xl text-white font-bold py-2">
-                    Bizning TTJ da
+                    <TextTranslate id="ttjStatisticTitle" />
                   </p>
                 </div>
                 <p className="num text-5xl font-bold text-center text-[#EB7D46] mt-4">
                   {isVisible && <CountUp end={1938} duration={4} />}
                 </p>
-                <p className="text-xl text-center font-bold mt-3">Talaba</p>
+                <p className="text-xl text-center font-bold mt-3">
+                  <TextTranslate id="ttjStatisticTalaba" />
+                </p>
               </div>
               <div className="border-b-4 md:border-b-0 md:border-r-4 border-[#004269] p-7">
                 <div className="bg-[#004269] text-center">
                   <p className="text-2xl text-white font-bold py-2">
-                    Bizning TTJ da
+                    <TextTranslate id="ttjStatisticTitle" />
                   </p>
                 </div>
                 <p
@@ -92,18 +93,22 @@ function TalabalarTurarJoyiCom() {
                 >
                   {isVisible && <CountUp end={402} duration={5} />}
                 </p>
-                <p className="text-xl text-center font-bold mt-3">Xona</p>
+                <p className="text-xl text-center font-bold mt-3">
+                  <TextTranslate id="ttjStatisticXona" />
+                </p>
               </div>
               <div className="p-7">
                 <div className="bg-[#004269] text-center">
                   <p className="text-2xl text-white font-bold py-2">
-                    Bizning TTJ da
+                    <TextTranslate id="ttjStatisticTitle" />
                   </p>
                 </div>
                 <p className="num text-5xl font-bold text-center text-[#EB7D46] mt-4">
                   {isVisible && <CountUp end={4} duration={6} />}
                 </p>
-                <p className="text-xl text-center font-bold mt-3">Bino</p>
+                <p className="text-xl text-center font-bold mt-3">
+                  <TextTranslate id="ttjStatisticBino" />
+                </p>
               </div>
             </div>
           </VisibilitySensor>
@@ -113,7 +118,7 @@ function TalabalarTurarJoyiCom() {
       {/* TTJ compus */}
       <div className="max-w-7xl mx-auto">
         <h1 className="text-2xl md:text-4xl font-bold text-center text-[#004269] mt-5 md:mt-20">
-          Bizning kompus
+          <TextTranslate id="ttjBizningKompus" />
         </h1>
         <div className="grid items-center grid-cols-1 md:grid-cols-2 px-6 my-20 md:my-32">
           <div className="z-10 mx-6 md:mx-0">
@@ -124,17 +129,11 @@ function TalabalarTurarJoyiCom() {
             />
           </div>
           <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-16 md:py-20 -mt-6 md:mt-0 md:-ml-16">
-            <h3 className="text-2xl md:text-3xl font-medium">Kompus</h3>
+            <h3 className="text-2xl md:text-3xl font-medium">
+              <TextTranslate id="ttjKompus" />
+            </h3>
             <p className="text-md md:text-xl mt-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              voluptatum aut, nam totam rem sed explicabo autem consectetur
-              facere illo tenetur error cumque non a possimus eius maxime
-              adipisci veritatis! Excepturi quia est rerum porro perferendis,
-              illo ipsam ullam similique odit. Saepe culpa tempore aliquid
-              adipisci repudiandae ad. Excepturi quia est rerum porro
-              perferendis, illo ipsam ullam similique odit. Saepe culpa tempore
-              aliquid adipisci repudiandae ad. Excepturi quia est rerum porro
-              perferendis, illo ipsam ullam similique odit.
+              <TextTranslate id="ttjKompusText" />
             </p>
           </div>
         </div>
@@ -148,18 +147,10 @@ function TalabalarTurarJoyiCom() {
           </div>
           <div className="bg-[#F2F2F2] p-10 md:pl-16 md:pr-28 md:py-20 -mt-6 md:mt-0 md:-mr-16">
             <h3 className="text-2xl md:text-3xl font-medium">
-              Bizning sharoitlarimiz
+              <TextTranslate id="ttjBizningSharoitlarimiz" />
             </h3>
             <p className="text-md md:text-xl mt-3">
-              Institutga qarashli 4 ta talabalar turar binolarida talabalarning
-              dam olishlari, ovqatlanishi, internet tarmoqlaridan foydalanishi,
-              turli maʼnaviy-maʼrifiy tadbirlar tashkil etish, oʻtkazish uchun
-              qulayliklarga ega boʻlib, jumladan 19 ta oshxona, 12 ta dam olish
-              xonasi (13 ta 32 dyuymlik televizor bilan jihozlangan), 52 ta kir
-              yuvish xonasi, 26 ta muzlatgich, 2 ta tibbiy xizmat koʻrsatish
-              punkti, 4 ta maʼnaviyat va maʼrifat xonalari va 11 ta Wi-Fi
-              qurilmalari va 4 ta talabalar turar joylariga “Xavf” tugmalari
-              (Milliy gvardiyaga ulangan) oʻrnatilgan.
+              <TextTranslate id="ttjBizningSharoitlarimizText" />
             </p>
           </div>
         </div>
@@ -172,18 +163,11 @@ function TalabalarTurarJoyiCom() {
             />
           </div>
           <div className="bg-[#F2F2F2] p-10 md:pl-28 md:pr-20 md:py-20 -mt-6 md:mt-0 md:-ml-16">
-            <h3 className="text-2xl md:text-3xl font-medium">Tadbirlar</h3>
+            <h3 className="text-2xl md:text-3xl font-medium">
+              <TextTranslate id="ttjTadbirlar" />
+            </h3>
             <p className="text-md md:text-xl mt-3">
-              Talabalar turar joyida talabalar bo‘sh vaqtini mazmunli tashkl
-              etish maqsadida Talabalar turar joyi bilan ta’minlash bo‘limi
-              mutahassislari, fakultet tyutorlari tomonidan ma’naviy-ma’rifiy
-              tadbirlar tashkil etiladi. Jumladan: ma’naviy-ma’rifiy tadbirlar
-              bo‘yicha 8 ta, kitobhonlik tanlovlari, 9 ta, sport musobaqalari
-              bo‘yicha, 7 ta, pazandachilik tanlovlari, 17 ta, davra suhbatlari,
-              21 ta, zakovat intelektual o‘yinlari, 11 ta, bayram tadbirlari har
-              bir davlat bayramlarida o‘tkazilib borildi. Ushbu tadbirlarni
-              mazmun mohiyatini yanada oshirish maqsadida tadbir mavzusiga
-              asoslanib soha mutahassislari ham taklif etib boriladi.
+            <TextTranslate id="ttjTadbirlarText" />
             </p>
           </div>
         </div>
@@ -199,7 +183,7 @@ function TalabalarTurarJoyiCom() {
       </div>
       <div>
         <h1 className="text-2xl md:text-4xl font-bold text-center text-[#004269] mt-5">
-          TTJ uchun ariza topshirish
+        <TextTranslate id="ttjUchunArizaTopshirish" />
         </h1>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 my-16">
           <div className="text-center">
@@ -210,7 +194,7 @@ function TalabalarTurarJoyiCom() {
               <LuCopyCheck className="text-5xl text-sky-700 group-hover:text-sky-50" />
             </a>
             <p className="text-xl font-bold text-gray-600 mt-5">
-              Boshlang'ich(1) kurs uchun
+            <TextTranslate id="ttjBoshlangichKursUchun" />
             </p>
           </div>
           <div className="text-center mt-10 md:mt-0">
@@ -221,7 +205,7 @@ function TalabalarTurarJoyiCom() {
               <GoChecklist className="text-5xl text-sky-700 group-hover:text-sky-50" />
             </a>
             <p className="text-xl font-bold text-gray-600 mt-5">
-              Yuqori kusrlar uchun
+            <TextTranslate id="ttjYuqoriKurslarUchun" />
             </p>
           </div>
         </div>
@@ -231,7 +215,3 @@ function TalabalarTurarJoyiCom() {
 }
 
 export default TalabalarTurarJoyiCom;
-
-// "ttjXushKelibsiz": "Talabalar turar joyiga xush kelibsiz",
-//     "ttjRaxbarText": "Talabalar shaharchasida yashash yangi odamlar bilan tanishish va doimiy do'stlikni rivojlantirish uchun son-sanoqsiz imkoniyatlarni taqdim etadi.",
-//     "ttjRaxbarName": "Alisher Abduraximov TTJ raxbari"
