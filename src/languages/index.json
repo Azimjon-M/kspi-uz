@@ -382,6 +382,35 @@
     "kafedralarInklyuzivIsm": "Raximova Xurshidaxon Sodiqovna",
     "kafedralarInklyuzivMutahasis": "PhD dotsent",
 
+    "abiBakalavr": "Bakalavr ta'limi",
+    "abiBakalavrTavsif": "QDPI turli xil qarashlar, tajribalar va istiqbollarga hissa qo'shadigan iqtidorli, yuqori natijalarga erishgan talabalarni qabul qiladi. Biz sizni ushbu faol akademik hamjamiyatga qanday qo'shilish haqida ko'proq ma'lumot olishga taklif qilamiz.",
+    "abiBakalavrLink1": "O'tish ballari",
+    "abiBakalavrLink2": "Fanlar majmuasi",
+    "abiBakalavrLink3": "Qabul kvotasi",
+    "abiBakalavrLink4": "Xorijiy fuqaro",
+
+    "abiMagistr": "Magistratura ta'limi",
+    "abiMagistrTavsif": "Magistratura talabalaridan QDPIni nimadan ajratib turishini so'rang va siz 3250 xil javob olasiz. Buning sababi, hech qanday tajriba QDPI ta'limini aniqlamaydi. Buning o'rniga, keng ko'lamli ta'lim innovatsion imkoniyatlar va tajribalar bitiruvchilarni yetuk liderlar, mustaqil fikrlovchilar va ta'sir ko'rsatishga bag'ishlangan faol global fuqarolar sifatida rivojlanishiga tayyorlaydi.",
+
+    "abiXorijiyTalaba": "Xorijiy talabalarni qabul qilish hujjatlari",
+    "abiXorijiyTalabaBreadcrumb": "Xorijiy talabalarni qabul qilish",
+    "abiXorijiyTalabaHujjat": "HUJJAT NOMI",
+    "abiXorijiyTalabaBatafsil": "BATAFSIL",
+
+    "abiMeyoriy": "Me'yoriy-huquqiy hujjatlar",
+    "abiMeyoriySubtitle": "2024/2025 oʻquv yili uchun respublika oliy taʼlim muassasalariga abituriyent sifatida roʻyxatdan o'tish onlayn tarzda amalga oshriladi",
+    "abiMeyoriyYagona": "Yagona interaktiv davlat xizmatlari portali orqali",
+    "abiMeyoriyDavlat": "Davlat test markazining rasmiy veb-sayti orqali",
+    "abiMeyoriyUmum": "Umumta'lim fanlarini bilish darajasini baholashning milliy test tizimini joriy etish to'g'risidagi qaror",
+    "abiMeyoriyKorish": "Ko'rish",
+
+    "abiCall": "Qo‘qon davlat pedagogika institutida 2024/2025 o‘quv yili uchun qabul jarayonlari davom etmoqda",
+    "abiCallTitle": "Call markazi",
+    "abiCallTavsif1": "Qabul komissiyasi huzuridagi «Call-centr» o‘qishga qabul qilish jarayonlarida jismoniy va yuridik shaxslarning, ota-onalar hamda abituriyentlarning murojaatlarini tezkor va samarali ko‘rib chiqmoqda, ularlarga real vaqt rejimida huquqiy tushuntirish va maslahatlar berib bormoqda.",
+    "abiCallTavsif2": "Maʼlumot o‘rnida, bugungi kunda institutimizda 11 ta fakultet, 25 ta taʼlim yo‘nalishi va 16 ta magistratura mutaxassisliklari mavjud. Bu yil Qo‘qon davlat pedagogika instituti qabul parametrida 520 ta davlat granti ajratilgan.",
+    "abiCallTavsif3": "Call-markaz dushanbadan shanbagacha har kuni soat 9:00dan 17:00ga qadar (tushlik – soat 13:00 dan 14:00gacha) faoliyat koʻrsatadi.",
+    "abiCallRaqamlar": "Call markazi raqamlari",
+
     "bakalavrTitle": "Bakalavr ta'limi",
     "bakalavrSubtitle": "Bakalavriat talabalaridan QDPIni nimadan ajratib turishini so'rang va siz 9560 xil javob olasiz. Buning sababi, hech qanday tajriba QDPI ta'limini aniqlamaydi. Buning o'rniga, keng ko'lamli ta'lim innovatsion imkoniyatlar va tajribalar bitiruvchilarni yetuk liderlar, mustaqil fikrlovchilar va ta'sir ko'rsatishga bag'ishlangan faol global fuqarolar sifatida rivojlanishiga tayyorlaydi.",
 
@@ -407,7 +436,6 @@
     "ttjStatisticTitle": "Bizning TTJ da",
     "ttjStatisticSubtitle": "Alisher Abduraximov TTJ raxbari",
     "ttjRaxbarName": "Alisher Abduraximov TTJ raxbari",
-
 
     "pedagogika": "Pedagogika",
     "maktabgachaTalim": "Maktabgacha ta'lim",
@@ -818,6 +846,35 @@
     "kafedralarInklyuzivMudir": "Заведующий кафедрой инклюзивного образования",
     "kafedralarInklyuzivIsm": "Рахимова Хуршидахон Содиковна",
     "kafedralarInklyuzivMutahasis": "PhD доцент",
+
+    "abiBakalavr": "Бакалавриат",
+    "abiBakalavrTavsif": "Программа бакалавриата принимает талантливых студентов, достигших высоких результатов в различных областях, способствуя различным направлениям, опытам и перспективам. Мы предлагаем вам больше информации о том, как присоединиться к этому активному академическому сообществу.",
+    "abiBakalavrLink1": "Баллы поступления",
+    "abiBakalavrLink2": "Сбор предметов",
+    "abiBakalavrLink3": "Квота поступления",
+    "abiBakalavrLink4": "Иностранные граждане",
+
+    "abiMagistr": "Магистратура",
+    "abiMagistrTavsif": "Спросите у студента магистратуры, что отличает его, и вы получите 3250 разных ответов. Причина в том, что ни один опыт не определяет программу магистратуры. Вместо этого он готовит выпускников к развитию как активных глобальных граждан, приверженных инновациям и влиянию как опытные лидеры, независимые мыслители и влиятельные глобальные граждане.",
+
+    "abiXorijiyTalaba": "Документы для поступления иностранных студентов",
+    "abiXorijiyTalabaBreadcrumb": "Поступление иностранных студентов",
+    "abiXorijiyTalabaHujjat": "НАЗВАНИЕ ДОКУМЕНТА",
+    "abiXorijiyTalabaBatafsil": "ДЕТАЛИ",
+
+    "abiMeyoriy": "Правовые документы",
+    "abiMeyoriySubtitle": "Поступление в высшие учебные заведения Республики на 2024/2025 учебный год осуществляется онлайн как абитуриент.",
+    "abiMeyoriyYagona": "Через единичный интерактивный портал государственных услуг",
+    "abiMeyoriyDavlat": "Через официальный сайт Государственного тестового центра",
+    "abiMeyoriyUmum": "О решении установить национальную систему тестирования для оценки уровня знаний общеобразовательных предметов",
+    "abiMeyoriyKorish": "Посмотреть",
+
+    "abiCall": "Процесс приема на учебный год 2024/2025 продолжается в Кокандском государственном педагогическом институте",
+    "abiCallTitle": "Центр обращений",
+    "abiCallTavsif1": "Центр обращений на приемной комиссии рассматривает обращения физических и юридических лиц, родителей и абитуриентов в процессе поступления на обучение быстро и эффективно, предоставляя им юридические пояснения и консультации в реальном времени.",
+    "abiCallTavsif2": "Информация показывает, что в нашем институте в этом году 11 факультетов, 25 образовательных направлений и 16 специализаций магистратуры. Кокандский государственный педагогический институт выделил 520 государственных грантов в параметрах поступления в этом году.",
+    "abiCallTavsif3": "Центр обращений работает ежедневно с понедельника по субботу с 9:00 до 17:00 (перерыв - с 13:00 до 14:00).",
+    "abiCallRaqamlar": "Номера Центра обращений",
 
     "bakalavrTitle": "Бакалавриат",
     "bakalavrSubtitle": "Спросите студентов, что отличает QDPI, и вы получите 9560 разных ответов. Это связано с тем, что ни один опыт не определяет образование QDPI. Вместо этого, широкое образование с инновационными возможностями и опытом готовит выпускников к тому, чтобы стать зрелыми лидерами, независимыми мыслителями и заинтересованными гражданами мира, стремящимися оказать влияние.",
@@ -1247,6 +1304,35 @@
     "kafedralarInklyuzivMudir": "Head of the Department of Inclusive Education",
     "kafedralarInklyuzivIsm": "Raximova Xurshidaxon Sodiqovna",
     "kafedralarInklyuzivMutahasis": "PhD, associate professor",
+
+    "abiBakalavr": "Bachelor's degree",
+    "abiBakalavrTavsif": "The Bachelor's degree program admits talented students who have achieved high results in various fields, contributing to different directions, experiences, and perspectives. We offer you more information on how to join this active academic community.",
+    "abiBakalavrLink1": "Admission scores",
+    "abiBakalavrLink2": "Subject collection",
+    "abiBakalavrLink3": "Admission quota",
+    "abiBakalavrLink4": "Foreign citizens",
+
+    "abiMagistr": "Master's degree",
+    "abiMagistrTavsif": "Ask a master's student what sets them apart and you'll get 3250 different answers. The reason is that no experience defines the Master's degree program. Instead, it prepares graduates to develop as active global citizens committed to innovation and influencing as accomplished leaders, independent thinkers, and impactful global citizens.",
+
+    "abiXorijiyTalaba": "Admission documents for foreign students",
+    "abiXorijiyTalabaBreadcrumb": "Admission of foreign students",
+    "abiXorijiyTalabaHujjat": "DOCUMENT NAME",
+    "abiXorijiyTalabaBatafsil": "DETAILS",
+
+    "abiMeyoriy": "Legal documents",
+    "abiMeyoriySubtitle": "Admission to the Republic's higher education institutions for the 2024/2025 academic year is carried out online as an applicant.",
+    "abiMeyoriyYagona": "Through the single interactive state services portal",
+    "abiMeyoriyDavlat": "Through the official website of the State Testing Center",
+    "abiMeyoriyUmum": "On the decision to establish a national test system for assessing the knowledge level of general education subjects",
+    "abiMeyoriyKorish": "View",
+
+    "abiCall": "Admission process for the 2024/2025 academic year is ongoing at the Qo‘qon State Pedagogical Institute",
+    "abiCallTitle": "Call center",
+    "abiCallTavsif1": "The 'Call center' at the admission commission is reviewing inquiries of physical and legal persons, parents, and applicants during the admission process to education in a quick and effective manner, providing them with legal explanations and advice in real time.",
+    "abiCallTavsif2": "Information shows that there are 11 faculties, 25 educational directions, and 16 master's degree specializations at our institute this year. Qo‘qon State Pedagogical Institute has allocated 520 state grants in the admission parameters this year.",
+    "abiCallTavsif3": "The Call center operates every day from Monday to Saturday from 9:00 to 17:00 (break - from 13:00 to 14:00).",
+    "abiCallRaqamlar": "Call center numbers",
 
     "bakalavrTitle": "Bachelor's education",
     "bakalavrSubtitle": "Ask undergraduate students what sets QDPI apart and you'll get 9,560 different answers. This is because no one experience defines QDPI education. Instead, a broad education with innovative opportunities and experiences prepares graduates to develop into mature leaders, independent thinkers, and engaged global citizens dedicated to making an impact.",
