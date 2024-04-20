@@ -5,6 +5,7 @@ import { MdOutlineCreditScore } from "react-icons/md";
 import { GrCatalog } from "react-icons/gr";
 import masterImg from "../../assets/images/master.jpg";
 import { Link } from "react-router-dom";
+import TextTranslate from "../TextTranslate";
 
 function AbiturientMagistrCom() {
   return (
@@ -15,19 +16,13 @@ function AbiturientMagistrCom() {
             className="text-center text-3xl sm:text-5xl md:text-7xl font-bold text-gray-100 text-shadow"
             style={{ textShadow: "0 0 20px rgba(0,0,0, 1)" }}
           >
-            Magistratura ta'limi
+            <TextTranslate id="abiMagistr" />
           </div>
           <p
             className="text-gray-100 text-2xl text-center hidden md:block md:px-12 lg:px-32 xl:px-44 mt-5 leading-10 text-shadaw"
             style={{ textShadow: "0 0 30px rgba(0,0,0, 1)" }}
           >
-            Magistratura talabalaridan QDPIni nimadan ajratib turishini so'rang
-            va siz 3250 xil javob olasiz. Buning sababi, hech qanday tajriba
-            QDPI ta'limini aniqlamaydi. Buning o'rniga, keng ko'lamli ta'lim
-            innovatsion imkoniyatlar va tajribalar bitiruvchilarni yetuk
-            liderlar, mustaqil fikrlovchilar va ta'sir ko'rsatishga
-            bag'ishlangan faol global fuqarolar sifatida rivojlanishiga
-            tayyorlaydi.
+            <TextTranslate id="abiMagistrTavsif" />
           </p>
         </div>
         <img src={masterImg} className="w-full h-full" alt="" />
@@ -41,7 +36,7 @@ function AbiturientMagistrCom() {
           <div>
             <MdOutlineCreditScore className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              O'tish ballari
+            <TextTranslate id="abiBakalavrLink1" />
             </p>
           </div>
         </Link>
@@ -53,7 +48,7 @@ function AbiturientMagistrCom() {
           <div>
             <MdOutlineSubject className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              Fanlar majmuasi
+            <TextTranslate id="abiBakalavrLink2" />
             </p>
           </div>
         </Link>
@@ -65,7 +60,7 @@ function AbiturientMagistrCom() {
           <div>
             <RiNumbersFill className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              Qabul kvotasi
+            <TextTranslate id="abiBakalavrLink3" />
             </p>
           </div>
         </Link>
@@ -77,7 +72,7 @@ function AbiturientMagistrCom() {
           <div>
             <GrCatalog className="text-7xl md:text-8xl mx-auto group-hover:text-slate-200" />
             <p className="text-xl text-center font-bold group-hover:text-slate-200 mt-2">
-              Xorijiy fuqaro
+            <TextTranslate id="abiBakalavrLink4" />
             </p>
           </div>
         </Link>

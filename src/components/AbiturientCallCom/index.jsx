@@ -1,6 +1,7 @@
 import React from "react";
 import { LuPhoneCall } from "react-icons/lu";
 import callImg from "../../assets/images/call.jpg";
+import TextTranslate from "../TextTranslate";
 
 const AbiturientCallCom = () => {
   return (
@@ -8,38 +9,29 @@ const AbiturientCallCom = () => {
       <div className="relative">
         <img src={callImg} alt="Call-center" className="w-full" />
         <h3 className="absolute top-5 sm:top-10 md:top-14 lg:top-28 xl:top-32 w-56 md:w-96 lg:w-3/5 left-3 md:left-8 lg:left-20 font-semibold sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-7xl text-[#004269] text-center xl:text-start">
-          Qo‘qon davlat pedagogika institutida 2024/2025 o‘quv yili uchun qabul
-          jarayonlari davom etmoqda
+        <TextTranslate id="abiCall" />
         </h3>
       </div>
       <div className="px-5 xl:px-10">
         <h1 className="text-center text-2xl md:text-3xl xl:text-5xl font-semibold py-3 md:py-5 text-[#004269]">
-          Call markazi
+        <TextTranslate id="abiCallTitle" />
         </h1>
         <div className="max-w-7xl md:grid md:grid-cols-2 xl:grid-cols-3 mx-auto md:px-3 2xl:px-0">
           <div className="xl:col-span-2 mb-5">
             <p className="mb-3 text-xl">
-              Qabul komissiyasi huzuridagi «Call-centr» o‘qishga qabul qilish
-              jarayonlarida jismoniy va yuridik shaxslarning, ota-onalar hamda
-              abituriyentlarning murojaatlarini tezkor va samarali ko‘rib
-              chiqmoqda, ularlarga real vaqt rejimida huquqiy tushuntirish va
-              maslahatlar berib bormoqda.
+            <TextTranslate id="abiCallTavsif1" />
             </p>
             <p className="mb-3 text-xl">
-              Maʼlumot o‘rnida, bugungi kunda institutimizda 11 ta fakultet, 25
-              ta taʼlim yo‘nalishi va 16 ta magistratura mutaxassisliklari
-              mavjud. Bu yil Qo‘qon davlat pedagogika instituti qabul
-              parametrida 520 ta davlat granti ajratilgan.
+            <TextTranslate id="abiCallTavsif2" />
             </p>
             <p className="text-xl">
-              Call-markaz dushanbadan shanbagacha har kuni soat 9:00dan 17:00ga
-              qadar (tushlik – soat 13:00 dan 14:00gacha) faoliyat koʻrsatadi.
+            <TextTranslate id="abiCallTavsif3" />
             </p>
           </div>
           <div className="ml-auto">
             <ul className="border-2 p-5 border-[#004269] rounded text-center">
               <h4 className="font-semibold mb-3 text-2xl text-[#004269]">
-                Call markazi raqamlari:
+              <TextTranslate id="abiCallRaqamlar" />:
               </h4>
               <li className="mb-2">
                 <a

@@ -7,6 +7,7 @@ import anketaUzb from "../../assets/docs/anketaUzb.docx";
 import anketaRu from "../../assets/docs/anketaRu.docx";
 import anketaEng from "../../assets/docs/anketaEng.docx";
 import qabulEng from "../../assets/docs/qabulEng.docx";
+import TextTranslate from "../TextTranslate";
 
 const dataDocs = [
   {
@@ -21,23 +22,23 @@ const dataDocs = [
   },
   {
     id: 3,
+    name: "ADMISSION OF FOREIGN STUDENTS",
+    doc: qabulEng,
+  },
+  {
+    id: 4,
     name: "Anketa (Uzb)",
     doc: anketaUzb,
   },
   {
-    id: 4,
+    id: 5,
     name: "Anketa (Rus)",
     doc: anketaRu,
   },
   {
-    id: 5,
+    id: 6,
     name: "Anketa (Eng)",
     doc: anketaEng,
-  },
-  {
-    id: 6,
-    name: "ADMISSION OF FOREIGN STUDENTS",
-    doc: qabulEng,
   },
 ];
 
@@ -47,14 +48,14 @@ function AbiturientXorijiyCom() {
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
           steps={[
-            { text: "Bosh sahifa", link: "/" },
-            { text: "Xorijiy talabalarni qabul qilish" },
+            { text: <TextTranslate id="boshSahifa" />, link: "/" },
+            { text: <TextTranslate id="abiXorijiyTalabaBreadcrumb" /> },
           ]}
         />
       </div>
       <div className="max-w-7xl mx-auto py-5">
         <h1 className="text-2xl md:text-4xl font-bold text-[#004269] text-center">
-          Xorijiy talabalarni qabul qilish hujjatlari
+        <TextTranslate id="abiXorijiyTalaba" />
         </h1>
         <div className="relative shadow-md overflow-x-auto sm:rounded-lg mx-5 mt-10">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -64,13 +65,13 @@ function AbiturientXorijiyCom() {
                   №
                 </th>
                 <th scope="col" className="px-2 md:px-6 py-4">
-                  Hujjat nomi
+                <TextTranslate id="abiXorijiyTalabaHujjat" />
                 </th>
                 <th
                   scope="col"
                   className="px-2 md:px-6 py-4 flex justify-center"
                 >
-                  Batafsil
+                  <TextTranslate id="abiXorijiyTalabaBatafsil" />
                 </th>
               </tr>
             </thead>
