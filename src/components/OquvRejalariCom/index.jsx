@@ -173,7 +173,7 @@ function OquvRejalariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="2KursOquvRejasi"/>
+              <TextTranslate id="2KursOquvRejasi" />
             </button>
           </li>
           <li>
@@ -184,7 +184,7 @@ function OquvRejalariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="3KursOquvRejasi"/>
+              <TextTranslate id="3KursOquvRejasi" />
             </button>
           </li>
           <li>
@@ -195,7 +195,7 @@ function OquvRejalariCom() {
               } inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white`}
             >
               <PiStudentFill className="w-4 h-4 me-2" />
-              <TextTranslate id="4KursOquvRejasii"/>
+              <TextTranslate id="4KursOquvRejasi" />
             </button>
           </li>
         </ul>
@@ -222,7 +222,7 @@ function OquvRejalariCom() {
                       <TextTranslate id="DTSvaMalakaSana" />
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                    <TextTranslate id="DTSvaMalakaBatafsil" />
+                      <TextTranslate id="DTSvaMalakaBatafsil" />
                     </th>
                   </tr>
                 </thead>
@@ -274,16 +274,16 @@ function OquvRejalariCom() {
                       №
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                      Hujjat nomi
+                      <TextTranslate id="DTSvaMalakaSana" />
                     </th>
                     <th
                       scope="col"
                       className="px-2 md:px-6 py-4 hidden md:block"
                     >
-                      Sana
+                      <TextTranslate id="DTSvaMalakaHujjatNomi" />
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                      Batafsil
+                      <TextTranslate id="DTSvaMalakaBatafsil" />
                     </th>
                   </tr>
                 </thead>
@@ -335,16 +335,16 @@ function OquvRejalariCom() {
                       №
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                      Hujjat nomi
+                      <TextTranslate id="DTSvaMalakaHujjatNomi" />
                     </th>
                     <th
                       scope="col"
                       className="px-2 md:px-6 py-4 hidden md:block"
                     >
-                      Sana
+                      <TextTranslate id="DTSvaMalakaSana" />
                     </th>
                     <th scope="col" className="px-2 md:px-6 py-4">
-                      Batafsil
+                      <TextTranslate id="DTSvaMalakaBatafsil" />
                     </th>
                   </tr>
                 </thead>
