@@ -5,6 +5,7 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
+import TextTranslate from "../TextTranslate";
 import Breadcrumb from "../Breadcrumb";
 import raqamliImg from "../../assets/images/raqamli.JPG";
 import axborot from "../../assets/images/arm.jpg";
@@ -23,67 +24,75 @@ const MarkazlarCom = () => {
   const data = useMemo(
     () => [
       {
-        label: "Raqamli ta'lim texnalogiyalari markazi",
+        label: <TextTranslate id="markazlarRaqamli" />,
         value: "raqamli",
-        lavozim: "Raqamli ta'lim texnalogiyalari markazi boshlig'i",
-        ism: "Ubaydullayev Muhammadjon Abdusamad o'g'li",
+        lavozim: <TextTranslate id="markazlarRaqamliBoshliq" />,
+        ism: <TextTranslate id="markazlarRaqamliIsm" />,
         tel: "+998 99 998 00 57",
+        telegram: "-",
         img: raqamliImg,
       },
       {
-        label: "Axborot resurs markazi",
+        label: <TextTranslate id="markazlarAxborot" />,
         value: "axborot",
-        lavozim: "Axborot resurs markazi boshlig'i",
-        ism: "Meliqo'ziyev Dadaqo'zi Jo'raqo'zi o'g'li",
+        lavozim: <TextTranslate id="markazlarAxborotBoshliq" />,
+        ism: <TextTranslate id="markazlarAxborotIsm" />,
         tel: "+998 91 323 04 77",
+        telegram: "-",
         img: axborot,
       },
       {
-        label: "Bosh muhandis",
+        label: <TextTranslate id="markazlarMuhandis" />,
         value: "muhandis",
-        lavozim: "Bosh muhandis",
-        ism: "",
+        lavozim: <TextTranslate id="markazlarMuhandisBoshliq" />,
+        ism: <TextTranslate id="markazlarMuhandisIsm" />,
         tel: "+998 9",
+        telegram: "-",
         img: muhandis,
       },
       {
-        label: "Bosh energetik",
+        label: <TextTranslate id="markazlarEnergetik" />,
         value: "energetik",
-        lavozim: "Bosh energetik",
-        ism: "Ikromov Aziz",
+        lavozim: <TextTranslate id="markazlarEnergetikBoshliq" />,
+        ism: <TextTranslate id="markazlarEnergetikIsm" />,
         tel: "+998 94 495 00 93",
+        telegram: "-",
         img: energetik,
       },
       {
-        label: "Rektor yordamchisi",
+        label: <TextTranslate id="markazlarYordamchi" />,
         value: "rekYordamchi",
-        lavozim: "Rektor yordamchisi",
-        ism: "Hoshimov Murodjon Solijonovich",
+        lavozim: <TextTranslate id="markazlarYordamchiBoshliq" />,
+        ism: <TextTranslate id="markazlarYordamchiIsm" />,
         tel: "+998 91 695 15 15",
+        telegram: "-",
         img: "",
       },
       {
-        label: "Matbuot kotibi",
+        label: <TextTranslate id="markazlarMatbuot" />,
         value: "kotib",
-        lavozim: "Matbuot kotibi",
-        ism: "Begmatov Oybek Rustamovich",
+        lavozim: <TextTranslate id="markazlarMatbuotBoshliq" />,
+        ism: <TextTranslate id="markazlarMatbuotIsm" />,
         tel: "+998 90 556 30 01",
+        telegram: "-",
         img: "",
       },
       {
-        label: "Yuriskonsolt",
+        label: <TextTranslate id="markazlarYuriskonsolt" />,
         value: "yuriskonsolt",
-        lavozim: "Yuriskonsolt",
-        ism: "Hazratqulov Hayrullo",
+        lavozim: <TextTranslate id="markazlarYuriskonsoltBoshliq" />,
+        ism: <TextTranslate id="markazlarYuriskonsoltIsm" />,
         tel: "+998 91 201 98 73",
+        telegram: "-",
         img: yuriskonsolt,
       },
       {
-        label: "Bosh auditor",
+        label: <TextTranslate id="markazlarAuditor" />,
         value: "auditor",
-        lavozim: "Bosh auditor",
-        ism: "Alimov Elyor Akramovich",
+        lavozim: <TextTranslate id="markazlarAuditorBoshliq" />,
+        ism: <TextTranslate id="markazlarAuditorIsm" />,
         tel: "+998 94 440 83 31",
+        telegram: "-",
         img: auditor,
       },
     ],
@@ -147,11 +156,11 @@ const MarkazlarCom = () => {
     <div className="px-5 py-3 md:px-10 mb-3 md:min-h-[calc(100vh-565px)] lg:min-h-[calc(100vh-400px)]">
       <div className="border-b-2 border-[#004269] block w-full">
         <Breadcrumb
-          steps={[{ text: "Bosh sahifa", link: "/" }, { text: "Markazlar" }]}
+          steps={[{ text: <TextTranslate id="boshSahifa" />, link: "/" }, { text: <TextTranslate id="markazlar" /> }]}
         />
       </div>
       <h2 className="text-xl md:text-3xl font-bold my-5 text-[#004269] text-center">
-        Markazlar
+      <TextTranslate id="markazlar" />
       </h2>
       <div className="max-w-7xl mx-auto">
         <Tabs
@@ -189,7 +198,7 @@ const MarkazlarCom = () => {
                   ism,
                   tel,
                   link,
-                  qabul,
+                  telegram,
                   mutahasisligi,
                   vazifasi,
                 }) => (
@@ -215,10 +224,10 @@ const MarkazlarCom = () => {
                               {mutahasisligi}
                             </h4>
                             <h4 className="block mb-2 lg:mb-3 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                              Qabul kunlari: {qabul}
+                            <TextTranslate id="markazlarTelegram" />: {telegram}
                             </h4>
                             <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                              Telefon: {tel}
+                            <TextTranslate id="telefon" />: {tel}
                             </h4>
                           </div>
                         </div>
