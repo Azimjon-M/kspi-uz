@@ -75,7 +75,7 @@ const Bolimlar = () => {
         value: "TalimSifati",
         lavozim: <TextTranslate id="bolimlarTalimSifatiniNazoratQilishBoshligi"/>,
         ism: <TextTranslate id="bolimlarTalimSifatiniNazoratQilishIsmi"/>,
-        tel: "+998 94 495 00 93",
+        tel: "-",
         mutahasisligi: <TextTranslate id="bolimlarTalimSifatiniNazoratQilishUnvoni"/>,
         qabul: <TextTranslate id="qabulKunlari"/>,
         vazifasi:
