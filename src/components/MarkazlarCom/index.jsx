@@ -46,7 +46,7 @@ const MarkazlarCom = () => {
         value: "muhandis",
         lavozim: <TextTranslate id="markazlarMuhandisBoshliq" />,
         ism: <TextTranslate id="markazlarMuhandisIsm" />,
-        tel: "+998 9",
+        tel: "+998 99 077 34 64",
         telegram: "-",
         img: muhandis,
       },

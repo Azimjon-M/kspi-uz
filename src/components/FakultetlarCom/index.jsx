@@ -75,7 +75,7 @@ const FakultetlarCom = () => {
       {
         label: <TextTranslate id="fakultetlarJismoniy" />,
         value: "jismoniy-madaniyat",
-        lavozim: <TextTranslate id="qabulKunlari" />,
+        lavozim: <TextTranslate id="fakultetlarJismoniyDekan" />,
         ism: <TextTranslate id="fakultetlarJismoniyIsm" />,
         tel: "+998 90 556 91 32",
         mutahasisligi: <TextTranslate id="fakultetlarJismoniyMutahasis" />,

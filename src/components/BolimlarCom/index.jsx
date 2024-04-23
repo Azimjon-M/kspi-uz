@@ -353,7 +353,7 @@ const Bolimlar = () => {
                               {mutahasisligi}
                             </h4>
                             <h4 className="block mb-2 lg:mb-3 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                              <TextTranslate id="qabul"/>: {qabul}
+                              <TextTranslate id="markazlarTelegram"/>: -
                             </h4>
                             <h4 className="block mb-2 text-center lg:text-start font-sans text-md antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                               <TextTranslate id="telefon"/>: {tel}
