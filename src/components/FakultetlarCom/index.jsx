@@ -137,7 +137,7 @@ const FakultetlarCom = () => {
         value: "RusTili",
         lavozim: <TextTranslate id="fakultetlarRusDekan" />,
         ism: <TextTranslate id="fakultetlarRusIsm" />,
-        tel: "+998 99 872 05 07",
+        tel: "+998 91 202 40 33",
         mutahasisligi: <TextTranslate id="fakultetlarRusMutahasis" />,
         qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:
