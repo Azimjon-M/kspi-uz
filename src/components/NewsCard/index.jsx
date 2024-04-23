@@ -62,7 +62,7 @@ const NewsCard = () => {
           </h2>
 
           {/* IMAGES */}
-          <div className="relative">
+          <div className="relative mb-5">
             <Swiper
               style={{
                 "--swiper-navigation-color": "#fff",
