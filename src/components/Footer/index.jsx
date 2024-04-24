@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="flex justify-center md:justify-end mb-3 md:pr-10 z-0">
         <Link
           target="blank"
-          to={"https://t.me/kspi_official"}
+          to={"https://t.me/kspi_rector"}
           className="mr-4 group"
         >
           <FaTelegram className="h-6 lg:h-7 w-auto group-hover:bg-[#0088cc] rounded-full" />
