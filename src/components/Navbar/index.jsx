@@ -87,12 +87,11 @@ function Navbar() {
     <div
       className={`${
         scrollY
-          ? `sticky bg-white shadow-xl`
+          ? `sticky top-0 bg-white shadow-xl`
           : `${location.pathname === "/" ? "absolute" : "relative shadow-xl"} `
       } ${
-        isActiveMenu && "bg-white"
-      }  top-0 left-0 flex flex-col justify-between w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
-      // className={`${ scrollY || location.pathname === "/" ? "absolute" : "relative bg-white shadow-xl"} flex flex-col justify-between top-0 left-0 w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
+        isActiveMenu && "bg-white top-0"
+      }  left-0 flex flex-col justify-between w-full h-auto z-50 px-4 py-2 sm:px-4 md:px-8 md:py-4 xl:px-0 xl:py-0`}
     >
       <nav className="flex justify-between">
         {/* Doimo bor */}
