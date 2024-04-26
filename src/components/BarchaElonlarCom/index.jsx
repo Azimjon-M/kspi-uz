@@ -22,40 +22,93 @@ function BarchaElonlarCom() {
     fetchdata();
   }, []);
 
-  const formatDate = (dateString) => {
-    const months = [
-      "Yanvar",
-      "Fevral",
-      "Mart",
-      "Aprel",
-      "May",
-      "Iyun",
-      "Iyul",
-      "Avgust",
-      "Sentyabr",
-      "Oktyabr",
-      "Noyabr",
-      "Dekabr",
-    ];
+  const formatDate = (dateString, Lang) => {
 
-    const weekDays = [
-      "Dushanba",
-      "Sheshanba",
-      "Chorshanba",
-      "Payshanba",
-      "Juma",
-      "Shanba",
-      "Yakshanba",
-    ];
+    const yearLang = {year_uz: "yil", year_ru: "год", year_en: "year"};
+
+    const months = {
+      uz: [
+        "Yanvar",
+        "Fevral",
+        "Mart",
+        "Aprel",
+        "May",
+        "Iyun",
+        "Iyul",
+        "Avgust",
+        "Sentyabr",
+        "Oktyabr",
+        "Noyabr",
+        "Dekabr",
+      ],
+      ru: [
+        "Январь",
+        "Февраль",
+        "Март",
+        "Апрель",
+        "Май",
+        "Июнь",
+        "Июль",
+        "Август",
+        "Сентябрь",
+        "Октябрь",
+        "Ноябрь",
+        "Декабрь",
+      ],
+      en: [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ],
+    };
+
+    const weekDays = {
+      uz: [
+        "Dushanba",
+        "Sheshanba",
+        "Chorshanba",
+        "Payshanba",
+        "Juma",
+        "Shanba",
+        "Yakshanba",
+      ],
+      ru: [
+        "Понедельник",
+        "вторник",
+        "среда",
+        "Четверг",
+        "Пятница",
+        "Суббота",
+        "воскресенье",
+      ],
+      en: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+    };
 
     const date = new Date(dateString);
     const time = date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false });
     const day = date.getDate();
-    const weekDay = weekDays[date.getDay()];
-    const month = months[date.getMonth()];
+    const weekDay = weekDays[Lang][date.getDay()];
+    const month = months[Lang][date.getMonth()];
     const year = date.getFullYear();
 
-    return `${weekDay}, ${year}-yil ${day}-${month}, ${time} da`;
+    return `${weekDay}, ${year}-${yearLang[`year_${Lang}`]} ${day}-${month}, ${time}`;
   };
 
   return (
@@ -92,7 +145,7 @@ function BarchaElonlarCom() {
                     <p className="flex  text-base md:text-lg md:items-center mt-2">
                       <FaRegCalendarAlt />
                       <span className="pl-2">
-                        {formatDate(item.boshlanish_vaqti)}
+                        {formatDate(item.boshlanish_vaqti, Lang)}
                       </span>
                     </p>
                     <p className="flex text-base md:text-lg md:items-center mt-2">

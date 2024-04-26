@@ -28,39 +28,92 @@ function ElonBatafsilCom() {
     getData();
   }, [id]);
 
-  const formatDate = (dateString) => {
-    const months = [
-      "Yanvar",
-      "Fevral",
-      "Mart",
-      "Aprel",
-      "May",
-      "Iyun",
-      "Iyul",
-      "Avgust",
-      "Sentyabr",
-      "Oktyabr",
-      "Noyabr",
-      "Dekabr",
-    ];
+  const formatDate = (dateString, Lang) => {
 
-    const weekDays = [
-      "Dushanba",
-      "Sheshanba",
-      "Chorshanba",
-      "Payshanba",
-      "Juma",
-      "Shanba",
-      "Yakshanba",
-    ];
+    const yearLang = {year_uz: "yil", year_ru: "год", year_en: "year"};
+
+    const months = {
+      uz: [
+        "Yanvar",
+        "Fevral",
+        "Mart",
+        "Aprel",
+        "May",
+        "Iyun",
+        "Iyul",
+        "Avgust",
+        "Sentyabr",
+        "Oktyabr",
+        "Noyabr",
+        "Dekabr",
+      ],
+      ru: [
+        "Январь",
+        "Февраль",
+        "Март",
+        "Апрель",
+        "Май",
+        "Июнь",
+        "Июль",
+        "Август",
+        "Сентябрь",
+        "Октябрь",
+        "Ноябрь",
+        "Декабрь",
+      ],
+      en: [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ],
+    };
+
+    const weekDays = {
+      uz: [
+        "Dushanba",
+        "Sheshanba",
+        "Chorshanba",
+        "Payshanba",
+        "Juma",
+        "Shanba",
+        "Yakshanba",
+      ],
+      ru: [
+        "Понедельник",
+        "вторник",
+        "среда",
+        "Четверг",
+        "Пятница",
+        "Суббота",
+        "воскресенье",
+      ],
+      en: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+    };
 
     const date = new Date(dateString);
     const day = date.getDate();
-    const weekDay = weekDays[date.getDay()];
-    const month = months[date.getMonth()];
+    const weekDay = weekDays[Lang][date.getDay()];
+    const month = months[Lang][date.getMonth()];
     const year = date.getFullYear();
 
-    return `${weekDay}, ${year}-yil ${day}-${month}`;
+    return `${weekDay}, ${year}-${yearLang[`year_${Lang}`]} ${day}-${month}`;
   };
 
   return (
@@ -82,11 +135,11 @@ function ElonBatafsilCom() {
               <FaCalendarAlt className="text-xl text-red-800 mt-1" />
               <span className="pl-4 text-xl">
                 <span className="font-bold">
-                  {data && formatDate(data.boshlanish_vaqti)}
+                  {data && formatDate(data.boshlanish_vaqti, Lang)}
                 </span>
                 <br />
                 <span className="font-light">
-                  {data?.boshlanish_vaqti.slice(11, 16)} da
+                  {data?.boshlanish_vaqti.slice(11, 16)}
                 </span>
               </span>
             </p>
@@ -101,7 +154,9 @@ function ElonBatafsilCom() {
             <p className="flex items-start mt-7">
               <IoShareSocial className="text-xl text-cyan-700 mt-1" />
               <span className="pl-4 text-xl">
-                <span className="font-light"><TextTranslate id="elonBatafsilBizningIjtimoiyTarmoqlar"/></span>
+                <span className="font-light">
+                  <TextTranslate id="elonBatafsilBizningIjtimoiyTarmoqlar" />
+                </span>
                 <span className="flex gap-3 mt-3 text-2xl text-sky-800">
                   <a href="https://www.instagram.com/kspi_uz/">
                     <TiSocialInstagram className="hover:rotate-[360deg] duration-500 hover:scale-150" />
@@ -114,7 +169,9 @@ function ElonBatafsilCom() {
           </div>
         </div>
         <div className="md:col-span-2 pt-7 px-8 md:pl-8">
-          <h1 className="text-3xl font-bold"><TextTranslate id="elonBatafsilTadbirTafsilotlari"/>:</h1>
+          <h1 className="text-3xl font-bold">
+            <TextTranslate id="elonBatafsilTadbirTafsilotlari" />:
+          </h1>
           <p className="text-lg">{data && data[`detail_${Lang}`]}</p>
         </div>
       </div>
