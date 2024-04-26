@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
+import TextTranslate from "../TextTranslate";
 import APIElon from "../../services/elon";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
@@ -27,20 +28,20 @@ function ElonBatafsilCom() {
     getData();
   }, [id]);
 
-  const formatDate = (dateString) => {
+  const formatDate = (dateString, translatedYear, translatedMonth) => {
     const months = [
-      "Yanvar",
-      "Fevral",
-      "Mart",
-      "Aprel",
-      "May",
-      "Iyun",
-      "Iyul",
-      "Avgust",
-      "Sentyabr",
-      "Oktyabr",
-      "Noyabr",
-      "Dekabr",
+      "yanvar",
+      "fevral",
+      "mart",
+      "aprel",
+      "may",
+      "iyun",
+      "iyul",
+      "avgust",
+      "sentyabr",
+      "oktyabr",
+      "noyabr",
+      "dekabr",
     ];
 
     const weekDays = [
@@ -56,11 +57,13 @@ function ElonBatafsilCom() {
     const date = new Date(dateString);
     const day = date.getDate();
     const weekDay = weekDays[date.getDay()];
-    const month = months[date.getMonth()];
+    // const month = months[date.getMonth()];
+    const month = data ? months[new Date(data.boshlanish_vaqti).getMonth()] : "";
     const year = date.getFullYear();
 
-    return `${weekDay}, ${year}-yil ${day}-${month}`;
+    return `${weekDay}, ${year}-${translatedYear} ${day}-${translatedMonth} ${month}`;
   };
+
 
   return (
     <div className="bg-[#f4f4f4] pb-10">
@@ -81,11 +84,11 @@ function ElonBatafsilCom() {
               <FaCalendarAlt className="text-xl text-red-800 mt-1" />
               <span className="pl-4 text-xl">
                 <span className="font-bold">
-                  {data && formatDate(data.boshlanish_vaqti)}
+                  {data && formatDate(data.boshlanish_vaqti, <TextTranslate id="yil"/>,)}
                 </span>
                 <br />
                 <span className="font-light">
-                  {data?.boshlanish_vaqti.slice(11, 16)} da
+                  {data?.boshlanish_vaqti.slice(11, 16)}
                 </span>
               </span>
             </p>
@@ -100,7 +103,7 @@ function ElonBatafsilCom() {
             <p className="flex items-start mt-7">
               <IoShareSocial className="text-xl text-cyan-700 mt-1" />
               <span className="pl-4 text-xl">
-                <span className="font-light">Bizning ijtimoiy tarmoqlar</span>
+                <span className="font-light"><TextTranslate id="elonBatafsilBizningIjtimoiyTarmoqlar"/></span>
                 <span className="flex gap-3 mt-3 text-2xl text-sky-800">
                   <a href="https://www.instagram.com/kspi_uz/">
                     <TiSocialInstagram className="hover:rotate-[360deg] duration-500 hover:scale-150" />
@@ -113,7 +116,7 @@ function ElonBatafsilCom() {
           </div>
         </div>
         <div className="md:col-span-2 pt-7 px-8 md:pl-8">
-          <h1 className="text-3xl font-bold">Tadbir tafsilotlari:</h1>
+          <h1 className="text-3xl font-bold"><TextTranslate id="elonBatafsilTadbirTafsilotlari"/>:</h1>
           <p className="text-lg">{data && data[`detail_${Lang}`]}</p>
         </div>
       </div>

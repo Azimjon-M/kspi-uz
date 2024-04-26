@@ -582,7 +582,25 @@
     "mP(Oligofrenopedagogika)": "MP (Oligofrenopedagogika)",
     "mP(Surdopedagogika)": "MP (Surdopedagogika)",
     "amaliyPsixologiya": "Amaliy psixologiya",
-    "fakultetlararo": "Fakultetlararo"
+    "fakultetlararo": "Fakultetlararo",
+
+    "yanvar": "Yanvar",
+    "fevral": "Fevral",
+    "mart": "Mart",
+    "aprel": "Aprel",
+    "may": "May",
+    "iyun": "Iyun",
+    "iyul": "Iyul",
+    "avgust": "Avgust",
+    "sentyabr": "Sentyabr",
+    "oktyabr": "Oktyabr",
+    "noyabr": "Noyabr",
+    "dekabr": "Dekabr",
+
+    "yil": "yil",
+
+    "elonBatafsilBizningIjtimoiyTarmoqlar": "Bizning ijtimoiy tarmoqlar",
+    "elonBatafsilTadbirTafsilotlari": "Tadbir tafsilotlari"
   },
   "ru": {
     "saytTestRejimida": "Сайт находится в тестовом режиме!",
