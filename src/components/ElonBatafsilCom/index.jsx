@@ -28,20 +28,20 @@ function ElonBatafsilCom() {
     getData();
   }, [id]);
 
-  const formatDate = (dateString, translatedYear, translatedMonth) => {
+  const formatDate = (dateString) => {
     const months = [
-      "yanvar",
-      "fevral",
-      "mart",
-      "aprel",
-      "may",
-      "iyun",
-      "iyul",
-      "avgust",
-      "sentyabr",
-      "oktyabr",
-      "noyabr",
-      "dekabr",
+      "Yanvar",
+      "Fevral",
+      "Mart",
+      "Aprel",
+      "May",
+      "Iyun",
+      "Iyul",
+      "Avgust",
+      "Sentyabr",
+      "Oktyabr",
+      "Noyabr",
+      "Dekabr",
     ];
 
     const weekDays = [
@@ -57,13 +57,11 @@ function ElonBatafsilCom() {
     const date = new Date(dateString);
     const day = date.getDate();
     const weekDay = weekDays[date.getDay()];
-    // const month = months[date.getMonth()];
-    const month = data ? months[new Date(data.boshlanish_vaqti).getMonth()] : "";
+    const month = months[date.getMonth()];
     const year = date.getFullYear();
 
-    return `${weekDay}, ${year}-${translatedYear} ${day}-${translatedMonth} ${month}`;
+    return `${weekDay}, ${year}-yil ${day}-${month}`;
   };
-
 
   return (
     <div className="bg-[#f4f4f4] pb-10">
@@ -84,11 +82,11 @@ function ElonBatafsilCom() {
               <FaCalendarAlt className="text-xl text-red-800 mt-1" />
               <span className="pl-4 text-xl">
                 <span className="font-bold">
-                  {data && formatDate(data.boshlanish_vaqti, <TextTranslate id="yil"/>,)}
+                  {data && formatDate(data.boshlanish_vaqti)}
                 </span>
                 <br />
                 <span className="font-light">
-                  {data?.boshlanish_vaqti.slice(11, 16)}
+                  {data?.boshlanish_vaqti.slice(11, 16)} da
                 </span>
               </span>
             </p>
