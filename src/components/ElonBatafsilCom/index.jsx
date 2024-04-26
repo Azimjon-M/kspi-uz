@@ -7,7 +7,6 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoShareSocial } from "react-icons/io5";
 import { TiSocialInstagram } from "react-icons/ti";
-import rrr from "../../assets/images/call.jpg";
 import { useSelector } from "react-redux";
 
 function ElonBatafsilCom() {
@@ -21,7 +20,6 @@ function ElonBatafsilCom() {
       try {
         const response = await APIElon.getById(id);
         setData(response.data);
-        console.log(response.data);
       } catch (error) {
         console.log(error);
       }
@@ -56,11 +54,6 @@ function ElonBatafsilCom() {
     ];
 
     const date = new Date(dateString);
-    // const time = date.toLocaleTimeString([], {
-    //   hour: "2-digit",
-    //   minute: "2-digit",
-    //   hour12: false,
-    // });
     const day = date.getDate();
     const weekDay = weekDays[date.getDay()];
     const month = months[date.getMonth()];
@@ -81,7 +74,7 @@ function ElonBatafsilCom() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-3">
         <div className="relative md:-top-28 shadow-xl">
           <div className="h-96 border border-white">
-            <img src={rrr} className="w-full h-full" alt="" />
+            <img src={data && data.rasm} className="w-full h-full" alt="" />
           </div>
           <div className="p-8 bg-white">
             <p className="flex items-start">
