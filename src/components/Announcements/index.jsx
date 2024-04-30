@@ -59,7 +59,7 @@ function Announcements() {
                 <div className="h-1/2 hidden md:block">
                   <img
                     src={item.rasm}
-                    className="h-full w-full object-caver object-center group-hover:scale-105 duration-300"
+                    className="h-full w-full object-cover object-center group-hover:scale-105 duration-300"
                     alt=""
                   />
                 </div>

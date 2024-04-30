@@ -14,7 +14,7 @@ function BarchaElonlarCom() {
     const fetchdata = async () => {
       try {
         const response = await APIElon.get();
-        setData(response.data);
+        setData(response.data.reverse());
       } catch (error) {
         console.log(error);
       }
@@ -125,14 +125,14 @@ function BarchaElonlarCom() {
                   key={item.id}
                   className="flex p-4 md:p-5 shadow-md bg-white hover:-translate-y-2 duration-150 hover:shadow-2xl"
                 >
-                  <div className="w-60 h-52 hidden md:block">
+                  <div className="lg:w-1/5 h-52 hidden md:block">
                     <img
                       src={item.rasm}
-                      className="w-full h-52 object-center"
+                      className="w-full h-52 object-cover object-center"
                       alt=""
                     />
                   </div>
-                  <div className="md:pl-5">
+                  <div className="md:pl-5 lg:w-4/5">
                     <h3 className="text-base uppercase font-semibold text-red-800">
                       {item && item[`field_${Lang}`]}
                     </h3>

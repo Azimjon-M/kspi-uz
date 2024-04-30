@@ -128,7 +128,7 @@ function ElonBatafsilCom() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-3">
         <div className="relative md:-top-28 shadow-xl">
           <div className="h-96 border border-white">
-            <img src={data && data.rasm} className="w-full h-full" alt="" />
+            <img src={data && data.rasm} className="w-full h-full object-cover object-center" alt="" />
           </div>
           <div className="p-8 bg-white">
             <p className="flex items-start">
