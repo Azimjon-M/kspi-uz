@@ -584,21 +584,6 @@
     "amaliyPsixologiya": "Amaliy psixologiya",
     "fakultetlararo": "Fakultetlararo",
 
-    "yanvar": "Yanvar",
-    "fevral": "Fevral",
-    "mart": "Mart",
-    "aprel": "Aprel",
-    "may": "May",
-    "iyun": "Iyun",
-    "iyul": "Iyul",
-    "avgust": "Avgust",
-    "sentyabr": "Sentyabr",
-    "oktyabr": "Oktyabr",
-    "noyabr": "Noyabr",
-    "dekabr": "Dekabr",
-
-    "yil": "yil",
-
     "elonBatafsilBizningIjtimoiyTarmoqlar": "Bizning ijtimoiy tarmoqlar",
     "elonBatafsilTadbirTafsilotlari": "Tadbir tafsilotlari"
   },
@@ -1185,7 +1170,10 @@
     "mP(Oligofrenopedagogika)": "МП (олигофренопедагогика)",
     "mP(Surdopedagogika)": "МП (педагогика глухих)",
     "amaliyPsixologiya": "Прикладная психология",
-    "fakultetlararo": "Межфакультетский"
+    "fakultetlararo": "Межфакультетский",
+
+    "elonBatafsilBizningIjtimoiyTarmoqlar": "Наши социальные сети",
+    "elonBatafsilTadbirTafsilotlari": "Подробности мероприятия"
   },
   "en": {
     "saytTestRejimida": "The site is in test mode.!",
@@ -1770,6 +1758,9 @@
     "mP(Oligofrenopedagogika)": "MP (Oligophrenopedagogy)",
     "mP(Surdopedagogika)": "MP (Deaf Pedagogy)",
     "amaliyPsixologiya": "Practical psychology",
-    "fakultetlararo": "Inter-faculty"
+    "fakultetlararo": "Inter-faculty",
+
+    "elonBatafsilBizningIjtimoiyTarmoqlar": "Our social networks",
+    "elonBatafsilTadbirTafsilotlari": "Event details"
   }
 }
