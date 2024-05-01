@@ -20,7 +20,7 @@ function ElonBatafsilCom() {
     const getData = async () => {
       try {
         const response = await APIElon.getById(id);
-        setData(response.data.reverse());
+        setData(response.data);
       } catch (error) {
         console.log(error);
       }
