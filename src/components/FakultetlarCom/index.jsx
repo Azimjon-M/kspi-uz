@@ -13,7 +13,7 @@ import uzbek from "../../assets/images/fak_uzbek.jpg";
 import ped from "../../assets/images/fak_ped.jpg";
 import jismon from "../../assets/images/fak_jismoniy.jpg";
 import maktab from "../../assets/images/fak_maktabgacha.jpg";
-import milliy from "../../assets/images/fak_milliy.jpg";
+import milliy from "../../assets/images/kafedra/kaf_texnologik_talim.jpg";
 import xorijiy from "../../assets/images/fak_xorijiy.jpg";
 import tabiiy from "../../assets/images/fak_tabiiy.jpg";
 import rus from "../../assets/images/fak-rus.jpg";
@@ -101,7 +101,7 @@ const FakultetlarCom = () => {
         value: "MilliyHunarmand",
         lavozim: <TextTranslate id="fakultetlarMilliyDekan" />,
         ism: <TextTranslate id="fakultetlarMilliyIsm" />,
-        tel: "+998 91 203 48 84 ",
+        tel: "+998 91 156 21 28",
         mutahasisligi: <TextTranslate id="fakultetlarMilliyMutahasis" />,
         qabul: <TextTranslate id="qabulKunlari" />,
         vazifasi:

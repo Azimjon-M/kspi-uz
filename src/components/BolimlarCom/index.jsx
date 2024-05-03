@@ -11,7 +11,7 @@ import reja from "../../assets/images/rejaMoliya/boshliq.JPG"
 import oquv from "../../assets/images/oquvBolimi/boshliq.JPG"
 import korrupsiya from "../../assets/images/korrupsiya/boshliq.JPG"
 // import talimSifat from "../../assets/images/nazorat"
-import nazorat from "../../assets/images/ichkiNazorat/boshliq.JPG"
+import nazorat from "../../assets/images/devonxona/boshliq.JPG"
 import xodimlar from "../../assets/images/xodimlar/boshliq.jpg"
 import xalqaro from "../../assets/images/xalqaroHamkorlik/boshliq.JPG"
 import talabaAmaliyot from "../../assets/images/marketingTalabaAmaliyot/boshliq.JPG"
@@ -25,7 +25,7 @@ import QoshmaTalim from "../../assets/images/qoshma/boshliq.JPG"
 import buxgalteriya from "../../assets/images/hisobchi.jpg"
 import texnikFoydalanish from "../../assets/images/xojalik/boshliq.JPG"
 import fuqaroMehnat from "../../assets/images/mehnatMuhofazasi/boshliq.JPG"
-import devonxona from "../../assets/images/devonxona/boshliq.JPG"
+import devonxona from "../../assets/images/fak_milliy.jpg";
 import turarJoy from "../../assets/images/turarJoy/boshliq.JPG"
 import { useEffect, useMemo } from "react";
 import { IoIosArrowForward } from "react-icons/io";
@@ -87,7 +87,7 @@ const Bolimlar = () => {
         value: "JismoniyYuridikqilishKafedrasi",
         lavozim:<TextTranslate id="bolimlarJismoniyVaYuridikShaxslarningMurojaatlariBilanIshlashNazoratVaQonitoringQilishBoshligi"/>,
         ism: <TextTranslate id="bolimlarJismoniyVaYuridikShaxslarningMurojaatlariBilanIshlashNazoratVaQonitoringQilishIsmi"/>,
-        tel: "+998 91 202 30 22",
+        tel: "+998 94 557 20 79",
         mutahasisligi: <TextTranslate id="bolimlarJismoniyVaYuridikShaxslarningMurojaatlariBilanIshlashNazoratVaQonitoringQilishUnvoni"/>,
         qabul: <TextTranslate id="qabulKunlari"/>,
         vazifasi:
@@ -254,7 +254,7 @@ const Bolimlar = () => {
         value: "Devonxona",
         lavozim: <TextTranslate id="bolimlarDevonxonaVaArxivBoshligi"/>,
         ism: <TextTranslate id="bolimlarDevonxonaVaArxivIsmi"/>,
-        tel: "+998 94 557 20 79",
+        tel: "+998 91 203 48 84",
         mutahasisligi: <TextTranslate id="bolimlarDevonxonaVaArxivUnvoni"/>,
         qabul: <TextTranslate id="qabulKunlari"/>,
         vazifasi:
