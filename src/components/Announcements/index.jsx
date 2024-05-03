@@ -12,7 +12,7 @@ function Announcements() {
     const getData = async () => {
       try {
         const response = await APIElon.get();
-        setData(response.data);
+        setData(response.data.reverse());
       } catch (error) {
         console.log(error);
       }
@@ -20,24 +20,54 @@ function Announcements() {
     getData();
   }, []);
 
-  const formatDate = (dateString) => {
-    const months = [
-      "Yanvar",
-      "Fevral",
-      "Mart",
-      "Aprel",
-      "May",
-      "Iyun",
-      "Iyul",
-      "Avgust",
-      "Sentyabr",
-      "Oktyabr",
-      "Noyabr",
-      "Dekabr",
-    ];
+  const formatDate = (dateString, Lang) => {
+    const months = {
+      uz: [
+        "Yanvar",
+        "Fevral",
+        "Mart",
+        "Aprel",
+        "May",
+        "Iyun",
+        "Iyul",
+        "Avgust",
+        "Sentyabr",
+        "Oktyabr",
+        "Noyabr",
+        "Dekabr",
+      ],
+      ru: [
+        "Январь",
+        "Февраль",
+        "Март",
+        "Апрель",
+        "Май",
+        "Июнь",
+        "Июль",
+        "Август",
+        "Сентябрь",
+        "Октябрь",
+        "Ноябрь",
+        "Декабрь",
+      ],
+      en: [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ],
+    };
 
     const date = new Date(dateString);
-    const month = months[date.getMonth()];
+    const month = months[Lang][date.getMonth()];
 
     return `${month}`;
   };
@@ -66,7 +96,7 @@ function Announcements() {
                 <div className="flex items-center bg-slate-600 md:bg-inherit">
                   <div className="md:inline-block bg-slate-600 px-2 md:px-4 py-2 text-slate-100 text-center uppercase relative md:-top-9 md:ml-6">
                     <p className="text-base">
-                      {formatDate(item.boshlanish_vaqti)}
+                      {formatDate(item.boshlanish_vaqti, Lang)}
                     </p>
                     <p className="text-2xl font-bold">
                       {item.boshlanish_vaqti.slice(8, 10)}
