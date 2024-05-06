@@ -127,7 +127,7 @@ function BarchaElonlarCom() {
                 >
                   <div className="md:w-1/5 h-52 hidden md:block">
                     <img
-                      src={item.rasm}
+                      src={item.rasm.replace(/^http:\/\//i, 'https://')}
                       className="w-full h-52 object-cover object-center"
                       alt=""
                     />

@@ -88,7 +88,7 @@ function Announcements() {
               >
                 <div className="h-1/2 hidden md:block">
                   <img
-                    src={item.rasm}
+                    src={item.rasm.replace(/^http:\/\//i, 'https://')}
                     className="h-full w-full object-cover object-center group-hover:scale-105 duration-300"
                     alt=""
                   />
