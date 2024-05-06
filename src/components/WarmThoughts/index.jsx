@@ -66,7 +66,7 @@ function WarmThoughts() {
                     <div className="before:content-[' ']  group-hover:before:opacity-100 before:opacity-0 before:transition-opacity before:duration-[350] before:z-[2] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:pointer-events-none before:bg-gradient-to-t from-black via-transparent to-transparent after:content-[' '] after:w-[calc(100%-20px)] after:h-[calc(100%-20px)] group-hover:after:opacity-100 after:opacity-0 after:z-[2] after:absolute after:top-[1.5%] after:left-[2.5%] after:border-solid after:border after:border-gray-400 after:pointer-events-none after:transition-opacity after:duration-[350]">
                       <div className="w-full h-full group-hover:opacity-0 object-contain">
                         <img
-                          src={fikr.rasm}
+                          src={fikr.rasm.replace(/^http:\/\//i, 'https://')}
                           alt="Aquielle"
                           className="w-full h-full"
                         />
@@ -79,7 +79,7 @@ function WarmThoughts() {
                       muted
                       autoPlay
                     >
-                      <source src={fikr.video} type="video/mp4" />
+                      <source src={fikr.video.replace(/^http:\/\//i, 'https://')} type="video/mp4" />
                     </video>
                     <Link
                       onClick={() => handleClick(fikr.id)}
@@ -141,7 +141,7 @@ function WarmThoughts() {
                     <div className="before:content-[' ']  group-hover:before:opacity-100 before:opacity-0 before:transition-opacity before:duration-[350] before:z-[2] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:pointer-events-none before:bg-gradient-to-t from-black via-transparent to-transparent ">
                       <div className="w-full h-full group-hover:opacity-0">
                         <img
-                          src={fikr.rasm}
+                          src={fikr.rasm.replace(/^http:\/\//i, 'https://')}
                           alt="Aquielle"
                           className="w-full h-full"
                         />
@@ -154,7 +154,7 @@ function WarmThoughts() {
                       muted
                       autoPlay
                     >
-                      <source src={fikr.video} type="video/mp4" />
+                      <source src={fikr.video.replace(/^http:\/\//i, 'https://')} type="video/mp4" />
                     </video>
                     <Link
                       onClick={() => handleClick(fikr.id)}
