@@ -79,7 +79,7 @@ const NewsHome = () => {
                   <div className="flex items-center mb-3 relative overflow-hidden">
                     <img
                       className="w-full rounded group-hover/item:scale-105 ease-in duration-300 ..."
-                      src={item.rasm_1}
+                      src={item.rasm_1.replace(/^http:\/\//i, 'https://')}
                       alt="Sunset in the mountains"
                     />
                     <div className="absolute top-0 left-3 h-12 w-12 bg-[#802323] text-center flex flex-col text-sm p-1 rounded-b-md">
@@ -124,7 +124,7 @@ const NewsHome = () => {
                     <div className="flex items-center mb-3 relative overflow-hidden">
                       <img
                         className="w-full md:h-56 lg:h-40 xl:h-44 object-cover rounded group-hover/item:scale-105 ease-in duration-300 ..."
-                        src={item.rasm_1}
+                        src={item.rasm_1.replace(/^http:\/\//i, 'https://')}
                         alt="Sunset in the mountains"
                       />
                       <div className="absolute top-0 left-3 h-12 w-12 bg-[#802323] text-center flex flex-col text-sm p-1 rounded-b-md">

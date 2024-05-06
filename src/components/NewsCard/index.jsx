@@ -77,27 +77,27 @@ const NewsCard = () => {
             >
               {news.rasm_1 && (
                 <SwiperSlide>
-                  <img src={news.rasm_1} alt="news" />
+                  <img src={news.rasm_1.replace(/^http:\/\//i, 'https://')} alt="news" />
                 </SwiperSlide>
               )}
               {news.rasm_2 && (
                 <SwiperSlide>
-                  <img src={news.rasm_2} alt="news" />
+                  <img src={news.rasm_2.replace(/^http:\/\//i, 'https://')} alt="news" />
                 </SwiperSlide>
               )}
               {news.rasm_3 && (
                 <SwiperSlide>
-                  <img src={news.rasm_3} alt="news" />
+                  <img src={news.rasm_3.replace(/^http:\/\//i, 'https://')} alt="news" />
                 </SwiperSlide>
               )}
               {news.rasm_4 && (
                 <SwiperSlide>
-                  <img src={news.rasm_4} alt="news" />
+                  <img src={news.rasm_4.replace(/^http:\/\//i, 'https://')} alt="news" />
                 </SwiperSlide>
               )}
               {news.rasm_5 && (
                 <SwiperSlide>
-                  <img src={news.rasm_5} alt="news" />
+                  <img src={news.rasm_5.replace(/^http:\/\//i, 'https://')} alt="news" />
                 </SwiperSlide>
               )}
             </Swiper>
@@ -113,27 +113,27 @@ const NewsCard = () => {
             >
               {news.rasm_1 && (
                 <SwiperSlide>
-                  <img src={news.rasm_1} alt="news" />
+                  <img src={news.rasm_1.replace(/^http:\/\//i, 'https://')} alt="news" />
                 </SwiperSlide>
               )}
               {news.rasm_2 && (
                 <SwiperSlide>
-                  <img src={news.rasm_2} alt="news" />
+                  <img src={news.rasm_2.replace(/^http:\/\//i, 'https://')} alt="news" />
                 </SwiperSlide>
               )}
               {news.rasm_3 && (
                 <SwiperSlide>
-                  <img src={news.rasm_3} alt="news" />
+                  <img src={news.rasm_3.replace(/^http:\/\//i, 'https://')} alt="news" />
                 </SwiperSlide>
               )}
               {news.rasm_4 && (
                 <SwiperSlide>
-                  <img src={news.rasm_4} alt="news" />
+                  <img src={news.rasm_4.replace(/^http:\/\//i, 'https://')} alt="news" />
                 </SwiperSlide>
               )}
               {news.rasm_5 && (
                 <SwiperSlide>
-                  <img src={news.rasm_5} alt="news" />
+                  <img src={news.rasm_5.replace(/^http:\/\//i, 'https://')} alt="news" />
                 </SwiperSlide>
               )}
             </Swiper>
