@@ -30,7 +30,7 @@
     "footerTexts": "Qo'qon davlat pedagogika instituti 1931-yil yanvar oyida kechki pedagogika instituti sifatida tashkil etilgan. Institut 1939-1940 o'quv yilidan boshlab kunduzgi davlat o'qituvchilar institutiga aylantirilgan.",
     "foydaliLinklar": "Foydali havolalar",
     "yangiliklar": "Yangiliklar",
-    "virtualQabulxona": "Virtual qabulxona",
+    "virtualQabulxona": "Rektorga murojaat",
     "vakansiyalar": "Bo'sh ish o'rinlari",
     "saytgaTashriflarSoni": "Saytga tashriflar soni",
     "saytIshlabChiquvchi": "Sayt ishlab chiquvchisi",
@@ -44,7 +44,7 @@
     "talabaFikriIsm": "Nozanin Ikromova",
     "talabaFikriNomzodligi": "Rus tili va adabiyoti fakulteti talabasi, Navoiy nomli davlat stipendiyasi sovrindori.",
 
-    "intVertualQabulxona": "Virtual qabulxona",
+    "intVertualQabulxona": "Rektorga murojaat",
     "intEKutubxona": "e-kutubxona",
     "intMasofaviyTalim": "Masofaviy ta'lim",
     "intVideoMaruzalar": "Video ma'ruzalar",
@@ -89,7 +89,7 @@
     "navDropInstitut_2": "Institut haqida",
     "navDropInstitut_3": "Institut tuzilmasi",
     "navDropInstitut_4": "Rekvizitlar",
-    "navDropInstitut_5": "Virtual qabulxona",
+    "navDropInstitut_5": "Rektorga murojaat",
 
     "navDropFaoliyat_1": "Jamoatchilik kengashi faoliyati",
     "navDropFaoliyat_2": "Ma'daniy-marifiy faoliyat",
@@ -187,7 +187,7 @@
     "rekvizitlarMfo": "MFO ",
     "rekvizitlarIfut": "IFUT",
 
-    "qabulxona": "Virtual qabulxona",
+    "qabulxona": "Rektorga murojaat",
     "qabulxonaTaklif": "Taklif va shikoyatlaringizni yuboring",
     "qabulxonaFish": "FISH",
     "qabulxonaFishToliq": "Familiya Ism Sharif",
@@ -618,7 +618,7 @@
     "footerTexts": "Коканский государственный педагогический институт был основан в январе 1931 года как вечерний педагогический институт. С 1939-1940 учебного года институт преобразован в государственный педагогический институт дневной формы обучения.",
     "foydaliLinklar": "Полезные ссылки",
     "yangiliklar": "Новости",
-    "virtualQabulxona": "Виртуальная приемная",
+    "virtualQabulxona": "Обращение к ректору",
     "vakansiyalar": "Вакансии",
     "saytgaTashriflarSoni": "Количество посещений сайта",
     "saytIshlabChiquvchi": "Разработчик сайта",
@@ -677,7 +677,7 @@
     "navDropInstitut_2": "ОБ ИНСТИТУТЕ",
     "navDropInstitut_3": "СТРУКТУРА ИНСТИТУТА",
     "navDropInstitut_4": "РЕКВИЗИТЫ",
-    "navDropInstitut_5": "ВИРТУАЛЬНАЯ ПРИЕМНАЯ",
+    "navDropInstitut_5": "Обращение к ректору",
 
     "navDropFaoliyat_1": "ДЕЯТЕЛЬНОСТЬ ОБЩЕСТВЕННОГО СОВЕТА",
     "navDropFaoliyat_2": "КУЛЬТУРНАЯ И ОБРАЗОВАТЕЛЬНАЯ ДЕЯТЕЛЬНОСТЬ",
@@ -775,7 +775,7 @@
     "rekvizitlarMfo": "МФО",
     "rekvizitlarIfut": "ИФУТ",
 
-    "qabulxona": "Виртуальная приемная",
+    "qabulxona": "Обращение к ректору",
     "qabulxonaTaklif": "Отправить свои предложения и жалобы",
     "qabulxonaFish": "ФИО",
     "qabulxonaFishToliq": "Фамилия Имя Отчество",
@@ -1206,7 +1206,7 @@
     "footerTexts": "Kokand State Pedagogical Institute was established in January 1931 as an evening pedagogic institute. The institute was transformed into a full-time state teachers' institute from the 1939-1940 academic year.",
     "foydaliLinklar": "Useful links",
     "yangiliklar": "News",
-    "virtualQabulxona": "Virtual reception",
+    "virtualQabulxona": "Appeal to the Rector",
     "vakansiyalar": "Vacancies",
     "saytgaTashriflarSoni": "Number of visits to the site",
     "saytIshlabChiquvchi": "Site developer",
@@ -1220,7 +1220,7 @@
     "talabaFikriIsm": "Nozanin Ikromova",
     "talabaFikriNomzodligi": "A student of the Faculty of Russian Language and Literature, a laureate of the state scholarship named after Navoi.",
 
-    "intVertualQabulxona": "virtual lobby",
+    "intVertualQabulxona": "Appeal to the Rector",
     "intEKutubxona": "e-library",
     "intMasofaviyTalim": "Distance education",
     "intVideoMaruzalar": "Video lessons",
@@ -1265,7 +1265,7 @@
     "navDropInstitut_2": "About the institute",
     "navDropInstitut_3": "Structure of the institute",
     "navDropInstitut_4": "Requisites",
-    "navDropInstitut_5": "Virtual reception",
+    "navDropInstitut_5": "Appeal to the Rector",
 
     "navDropFaoliyat_1": "Community council activities",
     "navDropFaoliyat_2": "Cultural and educational activity",
@@ -1363,7 +1363,7 @@
     "rekvizitlarMfo": "MFO",
     "rekvizitlarIfut": "IFUT",
 
-    "qabulxona": "Virtual Reception",
+    "qabulxona": "Appeal to the Rector",
     "qabulxonaTaklif": "Submit Your Suggestions and Complaints",
     "qabulxonaFish": "Full Name",
     "qabulxonaFishToliq": "Last Name First Name Middle Name",

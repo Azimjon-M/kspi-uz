@@ -42,7 +42,8 @@ const ContactUs = () => {
                 <div className="flex items-center">
                   <MdMarkEmailUnread className="w-[40px] md:w-[60px] h-auto mr-4" />
                   <p className="text-[#004269]">
-                    <Link href="mailto:kspi_info@edu.uz">kspi_info@edu.uz</Link>
+                    <Link href="mailto:kspi_info@edu.uz">kspi_info@edu.uz</Link><br />
+                    <Link href="mailto:info.kspi.uz">info.kspi.uz</Link>
                   </p>
                 </div>
               </div>

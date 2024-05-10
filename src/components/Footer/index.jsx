@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { FaTelegram } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
@@ -7,9 +7,21 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import TextTranslate from "../TextTranslate/index";
 import Logo from "../../assets/icons/logo_kspi.png";
 import { useSelector } from "react-redux";
+import countapi from 'countapi-js';
 
 const Footer = () => {
   const isLang = useSelector((state) => state.reducerLang.isLang);
+
+  const [count, setCount] = useState(null)
+
+  countapi.visits('global')
+  .then((result) => {
+    setCount(result.value);
+    console.log(result.value);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
   return (
     <footer className="w-full h-auto relative flex flex-col text-white pt-3">
@@ -98,6 +110,14 @@ const Footer = () => {
             </li>
             <li>
               <Link
+                to="mailto:info.kspi.uz"
+                className="transform hover:translate-x-2 transition duration-300 ease-in-out"
+              >
+                info.kspi.uz
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="tel:+998 73 542 38 38"
                 className="transform hover:translate-x-2 transition duration-300 ease-in-out"
               >
@@ -140,7 +160,7 @@ const Footer = () => {
             <TextTranslate id="saytgaTashriflarSoni" />
           </h1>
           <Link
-            href="https://www.freecounterstat.com"
+            to="https://www.freecounterstat.com"
             title="page visitor counter"
           >
             <img
