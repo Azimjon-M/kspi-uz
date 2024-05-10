@@ -139,12 +139,15 @@ const Footer = () => {
           <h1 className="font-bold mb-3">
             <TextTranslate id="saytgaTashriflarSoni" />
           </h1>
-          <Link to="https://www.freecounterstat.com" title="page counter">
+          <Link
+            href="https://www.freecounterstat.com"
+            title="page visitor counter"
+          >
             <img
-              src="https://counter4.optistats.ovh/private/freecounterstat.php?c=538ryg4dw6wx1u1crenh4wjpzjs28awp"
+              src="https://counter4.optistats.ovh/private/freecounterstat.php?c=j46qsp2lnkbdgewxprmglf8w2q1fbsuq"
               border="0"
-              title="page counter"
-              alt="page counter"
+              title="page visitor counter"
+              alt="page visitor counter"
             />
           </Link>
         </div>
