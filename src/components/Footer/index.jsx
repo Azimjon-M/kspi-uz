@@ -66,9 +66,9 @@ const Footer = () => {
             <div className="flex items-end mb-3">
               <img className="w-10 mr-3" src={Logo} alt="" />
               <h1
-                className={`${isLang === "ru"
-                  ? "w-[240px]"
-                  : "w-[150px]"} font-bold`}
+                className={`${
+                  isLang === "ru" ? "w-[240px]" : "w-[150px]"
+                } font-bold`}
               >
                 <TextTranslate id="navLogo" />
               </h1>
@@ -139,15 +139,27 @@ const Footer = () => {
           <h1 className="font-bold mb-3">
             <TextTranslate id="saytgaTashriflarSoni" />
           </h1>
-          <p className="lg:text-center font-bold text-3xl">5k+</p>
+          <Link to="https://www.freecounterstat.com" title="page counter">
+            <img
+              src="https://counter4.optistats.ovh/private/freecounterstat.php?c=538ryg4dw6wx1u1crenh4wjpzjs28awp"
+              border="0"
+              title="page counter"
+              alt="page counter"
+            />
+          </Link>
         </div>
       </div>
 
       {/* Copyright */}
       <div className="bg-[#113246] text-center md:flex md:justify-center px-2 py-2">
-        <p className="mr-3"><TextTranslate id="copyright" /></p>
+        <p className="mr-3">
+          <TextTranslate id="copyright" />
+        </p>
         <Link to="/yangiliklar" className="cursor-pointer">
-          <TextTranslate id="saytIshlabChiquvchi" />: <b><TextTranslate id="copyrightPlace" /></b>
+          <TextTranslate id="saytIshlabChiquvchi" />:{" "}
+          <b>
+            <TextTranslate id="copyrightPlace" />
+          </b>
         </Link>
       </div>
     </footer>
