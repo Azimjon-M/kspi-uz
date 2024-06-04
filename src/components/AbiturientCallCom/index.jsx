@@ -39,61 +39,7 @@ const AbiturientCallCom = () => {
                   className="flex items-center justify-center text-xl hover:scale-110 duration-150"
                 >
                   <LuPhoneCall className="mr-2 text-[#004269]" />
-                  +998-73-542-06-41
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="tel:+998903060680"
-                  className="flex items-center justify-center text-xl hover:scale-110 duration-150"
-                >
-                  <LuPhoneCall className="mr-2 text-[#004269]" />
-                  +998-90-306-06-80
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="tel:+998905702568"
-                  className="flex items-center justify-center text-xl hover:scale-110 duration-150"
-                >
-                  <LuPhoneCall className="mr-2 text-[#004269]" />
-                  +998-90-570-25-68
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="tel:+998903040588"
-                  className="flex items-center justify-center text-xl hover:scale-110 duration-150"
-                >
-                  <LuPhoneCall className="mr-2 text-[#004269]" />
-                  +998-90-304-05-88
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="tel:+998997234448"
-                  className="flex items-center justify-center text-xl hover:scale-110 duration-150"
-                >
-                  <LuPhoneCall className="mr-2 text-[#004269]" />
-                  +998-99-723-44-48
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="tel:+998903088989"
-                  className="flex items-center justify-center text-xl hover:scale-110 duration-150"
-                >
-                  <LuPhoneCall className="mr-2 text-[#004269]" />
-                  +998-90-308-89-89
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="tel:+998917413778"
-                  className="flex items-center justify-center text-xl hover:scale-110 duration-150"
-                >
-                  <LuPhoneCall className="mr-2 text-[#004269]" />
-                  +998-91-741-37-78
+                  +998-73-249-38-38
                 </a>
               </li>
             </ul>
