@@ -118,10 +118,10 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to="tel:+998 73 542 38 38"
+                to="tel:+998 73 249 38 38"
                 className="transform hover:translate-x-2 transition duration-300 ease-in-out"
               >
-                <TextTranslate id="ishonchTelefon" />: +998 73 542 38 38
+                <TextTranslate id="ishonchTelefon" />: +998 73 249 38 38
               </Link>
             </li>
           </ul>

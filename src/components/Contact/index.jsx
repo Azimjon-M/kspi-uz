@@ -34,8 +34,8 @@ const ContactUs = () => {
                 <div className="flex items-center mb-5 md:mb-10">
                   <FaSquarePhone className="w-[40px] md:w-[60px] h-auto mr-4" />
                   <p className="text-[#004269]">
-                    <Link href="tel:+998735423838">
-                      <TextTranslate id="ishonchTelefon" />: +998 73 542 38 38
+                    <Link href="tel:+998732493838">
+                      <TextTranslate id="ishonchTelefon" />: +998 73 249 38 38
                     </Link>
                   </p>
                 </div>
