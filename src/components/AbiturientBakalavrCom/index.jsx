@@ -3,7 +3,7 @@ import { MdOutlineSubject } from "react-icons/md";
 import { RiNumbersFill } from "react-icons/ri";
 import { MdOutlineCreditScore } from "react-icons/md";
 import { GrCatalog } from "react-icons/gr";
-import bachlorImg from "../../assets/images/bachelor.jpg";
+import bachlorImg from "../../assets/images/1.JPG";
 import { Link } from "react-router-dom";
 import TextTranslate from "../TextTranslate";
 

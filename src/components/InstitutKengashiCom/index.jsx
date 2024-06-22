@@ -1,7 +1,7 @@
 import React from "react";
 import Breadcrumb from "../Breadcrumb";
 import { Link } from "react-router-dom";
-import kotib from "../../assets/images/kotib.jpg";
+import kotib from "../../assets/images/1.JPG";
 import TextTranslate from "../TextTranslate";
 
 const InstitutKengashiCom = () => {

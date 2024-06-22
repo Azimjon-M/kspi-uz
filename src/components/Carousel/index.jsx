@@ -1,9 +1,9 @@
-import React, {useRef} from "react";
+import React from "react";
 // import mainVid from "../../assets/video/asosiy.mp4";
-import asosiy from "../../assets/images/StudentsHouse.jpg"
+import asosiy from "../../assets/images/1.JPG"
 
 const Carousel = () => {
-  const mainRef = useRef(null);
+  // const mainRef = useRef(null);
 
 
   return (

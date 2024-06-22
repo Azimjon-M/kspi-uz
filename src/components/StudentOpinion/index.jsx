@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
-import fikr from "../../assets/images/fikr.jpg"
+import fikr from "../../assets/images/1.JPG"
 import TextTranslate from "../TextTranslate/index";
 
 function StudentOpinion() {

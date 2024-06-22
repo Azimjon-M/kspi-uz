@@ -1,14 +1,14 @@
 import React from "react";
 import TextTranslate from "../TextTranslate";
 import styled, { keyframes } from "styled-components";
-import hamkor1 from "../../assets/images/xalqaroHamkorlar/hamkor1.png";
-import hamkor2 from "../../assets/images/xalqaroHamkorlar/hamkor2.png";
-import hamkor3 from "../../assets/images/xalqaroHamkorlar/hamkor3.png";
-import hamkor4 from "../../assets/images/xalqaroHamkorlar/hamkor4.png";
-import hamkor5 from "../../assets/images/xalqaroHamkorlar/hamkor5.png";
-import hamkor6 from "../../assets/images/xalqaroHamkorlar/hamkor6.png";
-import hamkor7 from "../../assets/images/xalqaroHamkorlar/hamkor7.png";
-import hamkor8 from "../../assets/images/xalqaroHamkorlar/hamkor8.png";
+import hamkor1 from "../../assets/images/1.JPG";
+import hamkor2 from "../../assets/images/1.JPG";
+import hamkor3 from "../../assets/images/1.JPG";
+import hamkor4 from "../../assets/images/1.JPG";
+import hamkor5 from "../../assets/images/1.JPG";
+import hamkor6 from "../../assets/images/1.JPG";
+import hamkor7 from "../../assets/images/1.JPG";
+import hamkor8 from "../../assets/images/1.JPG";
 
 function Partners() {
   const data = [

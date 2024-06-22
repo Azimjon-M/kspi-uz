@@ -1,6 +1,6 @@
 import React from "react";
 import { LuPhoneCall } from "react-icons/lu";
-import callImg from "../../assets/images/call.jpg";
+import callImg from "../../assets/images/1.JPG";
 import TextTranslate from "../TextTranslate";
 
 const AbiturientCallCom = () => {

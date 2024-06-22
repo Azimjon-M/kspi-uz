@@ -3,7 +3,7 @@ import { MdOutlineLibraryBooks } from "react-icons/md";
 import { BsJournalCheck } from "react-icons/bs";
 import { GiMaterialsScience } from "react-icons/gi";
 import { GrCatalog } from "react-icons/gr";
-import bachlorImg from "../../assets/images/bachelor.jpg";
+import bachlorImg from "../../assets/images/1.JPG";
 import { Link } from "react-router-dom";
 import TextTranslate from "../TextTranslate";
 

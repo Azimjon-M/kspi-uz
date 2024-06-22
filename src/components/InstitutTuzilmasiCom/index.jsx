@@ -1,8 +1,8 @@
 import React from "react";
 import TextTranslate from "../TextTranslate";
 import Breadcrumb from "../Breadcrumb";
-import insTuz1 from "../../assets/images/insTuz1.png";
-import insTuz2 from "../../assets/images/insTuz2.png";
+import insTuz1 from "../../assets/images/1.JPG";
+import insTuz2 from "../../assets/images/1.JPG";
 import { Link } from "react-router-dom";
 import insTuzilmasi from "../../assets/pdf/insTuzilmasi.pdf";
 

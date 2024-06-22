@@ -1,12 +1,12 @@
 import React from "react";
 import Breadcrumb from "../Breadcrumb";
 import TextTranslate from "../TextTranslate";
-import institutImage from "../../assets/images/institutImage.jpg";
-import qoshmaTalim from "../../assets/images/institutHaqidaCom/QoshmaTalim.jpg";
-import Talabalar from "../../assets/images/institutHaqidaCom/RivojlanayotganTalabalar.jpg";
-import XilmaXilTalabalar from "../../assets/images/institutHaqidaCom/XilmxXilTalabalar.jpg";
-import farqQiladiganMoliyav from "../../assets/images/institutHaqidaCom/farqQiladiganMoliyav.jpg";
-import sportBilanBirga from "../../assets/images/institutHaqidaCom/sportBilanBirga.jpg";
+import institutImage from "../../assets/images/1.JPG";
+import qoshmaTalim from "../../assets/images/1.JPG";
+import Talabalar from "../../assets/images/1.JPG";
+import XilmaXilTalabalar from "../../assets/images/1.JPG";
+import farqQiladiganMoliyav from "../../assets/images/1.JPG";
+import sportBilanBirga from "../../assets/images/1.JPG";
 
 const InstitutHaqidaCom = () => {
   return (

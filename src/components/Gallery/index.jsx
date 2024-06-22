@@ -7,18 +7,18 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 // import APIGallery from "../../services/gallery";
-import thayot1 from "../../assets/images/gallery/thayot1.JPG"
-import thayot2 from "../../assets/images/gallery/thayot2.JPG"
-import thayot3 from "../../assets/images/gallery/thayot3.JPG"
-import thayot4 from "../../assets/images/gallery/thayot4.JPG"
-import tadbir1 from "../../assets/images/gallery/tadbir.JPG"
-import tadbir2 from "../../assets/images/gallery/tadbir2.jpg"
-import tadbir3 from "../../assets/images/gallery/tadbir3.jpg"
-import tadbir4 from "../../assets/images/gallery/tadbir4.jpg"
-import ilmiy1 from "../../assets/images/gallery/ilmiy1.JPG"
-import ilmiy2 from "../../assets/images/gallery/ilmiy2.JPG"
-import ilmiy3 from "../../assets/images/gallery/ilmiy3.JPG"
-import ilmiy4 from "../../assets/images/gallery/ilmiy4.JPG"
+import thayot1 from "../../assets/images/1.JPG"
+import thayot2 from "../../assets/images/1.JPG"
+import thayot3 from "../../assets/images/1.JPG"
+import thayot4 from "../../assets/images/1.JPG"
+import tadbir1 from "../../assets/images/1.JPG"
+import tadbir2 from "../../assets/images/1.JPG"
+import tadbir3 from "../../assets/images/1.JPG"
+import tadbir4 from "../../assets/images/1.JPG"
+import ilmiy1 from "../../assets/images/1.JPG"
+import ilmiy2 from "../../assets/images/1.JPG"
+import ilmiy3 from "../../assets/images/1.JPG"
+import ilmiy4 from "../../assets/images/1.JPG"
 
 import TextTranslate from "../TextTranslate/index";
 

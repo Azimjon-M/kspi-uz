@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import dasturUchun from "../../assets/images/dasturUchun.jpg";
-import dasturUchun1 from "../../assets/images/dasturUchun1.jpg";
-import abiturient from "../../assets/images/abiturient.jpg";
-import bakalavr from "../../assets/images/bakalavr.jpg";
+import dasturUchun from "../../assets/images/1.JPG";
+import dasturUchun1 from "../../assets/images/1.JPG";
+import abiturient from "../../assets/images/1.JPG";
+import bakalavr from "../../assets/images/1.JPG";
 import TextTranslate from "../TextTranslate/index";
 
 const ExploreProgram = () => {

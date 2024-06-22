@@ -7,12 +7,12 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 import { LuCopyCheck } from "react-icons/lu";
 import { GoChecklist } from "react-icons/go";
 
-import mainVid from "../../assets/images/talabalarTurarJoyi/ttjHomeVideo.mp4";
-import ttjTalabalari from "../../assets/images/talabalarTurarJoyi/ttjTalabalari.jpg";
-import ttjKompus from "../../assets/images/talabalarTurarJoyi/ttjKompus.jpg";
-import ttjXona from "../../assets/images/talabalarTurarJoyi/ttjXona.jpg";
-import ttj8Mart from "../../assets/images/talabalarTurarJoyi/mart8.jpg";
-import AlisherAbduraximovTTJ from "../../assets/images/talabalarTurarJoyi/ttjRaxbari.jpg";
+import mainVid from "../../assets/images/1.JPG";
+import ttjTalabalari from "../../assets/images/1.JPG";
+import ttjKompus from "../../assets/images/1.JPG";
+import ttjXona from "../../assets/images/1.JPG";
+import ttj8Mart from "../../assets/images/1.JPG";
+import AlisherAbduraximovTTJ from "../../assets/images/1.JPG";
 
 function TalabalarTurarJoyiCom() {
   const [isVisible, setIsVisible] = useState(false);

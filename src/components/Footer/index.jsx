@@ -13,6 +13,7 @@ const Footer = () => {
   const isLang = useSelector((state) => state.reducerLang.isLang);
 
   const [count, setCount] = useState(null)
+  console.log(count);
 
   countapi.visits('global')
   .then((result) => {
